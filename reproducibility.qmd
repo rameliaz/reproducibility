@@ -94,7 +94,7 @@ of 164 papers across 12 disciplines replicated — COS **SCORE project** ([Natur
 - **SCORE is the largest check yet**: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). Reproducing published analyses on the *original* data succeeded [only 54% of the time](https://www.nature.com/articles/s41586-026-10203-5).
 - This pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the **"[replication crisis](https://www.nature.com/articles/d41586-026-00955-5)."**
 
-## Two Words You Must Not Confuse {.columns-slide}
+## Three Words You Must Not Confuse {.columns-slide}
 
 ::: {.lead}
 Following [Barba (2018)](https://arxiv.org/abs/1802.03311) and [The Turing Way](https://book.the-turing-way.org/), people mix these up all the time:
@@ -176,7 +176,7 @@ Ensuring that our results are reproducible gives us more confidence in our work.
 ::: {.content-box}
 - **Your closest collaborator is you, six months ago** and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.
 - **Errors get caught early**, before they end up in your dissertation, your defense, or a retraction.
-- **Inernational reviewers, supervisors, and committees increasingly expect it**. Funders and journals now routinely require data, code, and analysis plans.
+- **International reviewers, supervisors, and committees increasingly expect it**. Funders and journals now routinely require data, code, and analysis plans.
 - **It makes you more efficient**. Re-running an analysis after "please just add one covariate" takes one click instead of one week.
 - **It builds trust in your work**. Reproducible research gets reused, cited, and extended.
 :::
@@ -388,11 +388,11 @@ The exact statistical model for each hypothesis, handling of missing data and ou
 
 ::: {.incremental}
 
-- **"It's a prison — I can't deviate."** You can! Deviations are fine; you just report them transparently ("we deviated from the plan because..."). The registry makes deviations *visible*, not forbidden.
+- **"It's a prison — I can't deviate."** You can! Deviations are fine; you just report them transparently ("we deviated from the plan because..."). The registry only makes deviations *visible*.
 - **"It kills exploration."** No. You can explore freely; results are simply labelled as exploratory. Many templates even have a section for planned exploratory analyses.
 - **"Someone will scoop my idea."** Registrations can be **embargoed** (kept private) until you publish.
-- **"It's too much work."** An [AsPredicted](https://aspredicted.org/) registration is 9 questions. And most of it is text you need for your ethics application and methods section anyway — you are just writing it *earlier*.
-- **Honest caveat**: pre-registration is not magic. Many pre-registrations are vague, and deviations are common and often unreported ([van den Akker et al., 2024](https://psycnet.apa.org/fulltext/2025-33919-001.html)). The value comes from *specific* plans and *transparent* reporting, which is a skill you can practice from your very first study.
+- **"It's too much work."** An [AsPredicted](https://aspredicted.org/) registration is 9 questions. And most of it is text you need for your ethics application and methods section anyway. You are basically writing it *earlier*.
+- **Caveat**: pre-registration is not magic. Many pre-registrations are vague, and deviations are common and often unreported ([van den Akker et al., 2024](https://psycnet.apa.org/fulltext/2025-33919-001.html)). The value comes from *specific* plans and *transparent* reporting, which is a skill you can practice from your very first study.
 
 :::
 
@@ -415,7 +415,7 @@ The traditional workflow in psychology looks like this:
 
 ::: {.incremental}
 
-- Run the analysis in SPSS/Excel by clicking through menus...
+- Run the analysis in SPSS by clicking through menus...
 - ...copy the numbers into a Word document by hand...
 - ...format the table manually...
 - ...then a reviewer asks you to exclude three participants and you do **all of it again**, hoping you click the same buttons.
@@ -430,7 +430,7 @@ The traditional workflow in psychology looks like this:
 > Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.
 
 ::: {.quote-author}
-Donald Knuth (1984), *Literate Programming*
+[Donald Knuth (1984), *Literate Programming*](https://academic.oup.com/comjnl/article-abstract/27/2/97/343244)
 :::
 :::
 
@@ -445,14 +445,14 @@ Donald Knuth (1984), *Literate Programming*
 - You write text and code together; one click ("Render") runs all code and produces the finished report, so numbers, tables and figures are **inserted automatically**.
 - Change the data or the analysis → re-render → **every number in the document updates itself** without having to manually copy-paste the numbers. 
 - The document *is* the audit trail: anyone can see exactly which code produced which result.
-- Fun fact: **these very slides** are literate programming😉 This is a Quarto document rendered to a presentation.
+- **Fun fact**: **these very slides** are literate programming😉 This is a Quarto document rendered to a presentation.
 
 :::
 
 ## From My Own Work: Where the Ladder Bent
 
 ::: {.lead}
-I pre-registered diligently for years before I touched Quarto. Literate programming was the rung I picked up *after* and it changed how I write my papers.
+I pre-registered diligently for years before I learned Quarto. Literate programming was the rung I picked up much *after* and it changed how I write my papers.
 :::
 
 ::: {.content-box}
@@ -460,7 +460,7 @@ I pre-registered diligently for years before I touched Quarto. Literate programm
 - The document pulls numbers directly from the analysis.
   + I stopped hand-typing results into Word, which is exactly the step where copy-paste errors used to creep in.
 - Real example: [`grm-tutorial-paper`](https://github.com/rameliaz/grm-tutorial-paper), the repository behind a [published paper](https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265) written entirely as a literate document.
-- A suprising bonus: editors and reviewers comment on how *organized* the project looks. That's not the point of literate programming, but it doesn't hurt your reputation either.
+- A pleasantly suprising bonus: editors and reviewers comment on how *organized* the project looks. That's actually not the point of literate programming, but it doesn't hurt your reputation either.
 :::
 
 ## The Tools {.columns-slide}
@@ -475,7 +475,7 @@ All free, all open source, all with huge communities and tutorials:
 
 ### Quarto/R Markdown
 
-Text (Markdown) + chunks of R/Python code → papers, slides, websites, dissertations. Together with **R** and RStudio/Positron, the standard in our field. [quarto.org](https://quarto.org)
+Text (Markdown) + chunks of R/Python code → papers, slides, websites, dissertations. Together with **R** and RStudio/Positron. [quarto.org](https://quarto.org)
 :::
 ::: {.col-item}
 [<i class="fa-brands fa-python"></i>]{.col-icon}
@@ -619,8 +619,8 @@ journals now offer the RR format, incl. *Nature Human Behaviour*, *Cortex*, and 
 - **Null results become publishable findings**, not wasted years, which is honest science *and* good for your CV.
 - Timing matters: Stage 1 review takes time, so RRs suit studies planned **well in advance** (perfect for a PhD proposal!), but less suited for quick pilot work.
 - Some journals offer fast-track or scheduled review for student projects; **Peer Community In RR** ([PCI RR](https://rr.peercommunityin.org)) reviews Stage 1 protocols journal-independently.
-- Talk to your supervisor early: an RR-based dissertation chapter is increasingly common and highly regarded.
-  + Probably, *not yet* a common practice in Airlangga, but it is certainly the norm in many parts of the world.
+- Talk to your supervisor and co-supervisor early: an RR-based dissertation chapter is increasingly common and highly valuable for one's scientific career.
+  + Probably, *not yet* a common practice in Airlangga, but it is getting common in many parts of the world.
 :::
 
 ## {.section-slide}
@@ -648,19 +648,19 @@ Start with the transparency **you need**, not the transparency **you want**. Her
 - All of these happened over roughly 15 years, started from one habit at a time.
 :::
 
-## The Big Picture: One Reproducible Research Lifecycle
+## The Big Picture
 
 ::: {.incremental}
 
 - **Plan** → write a **data management plan**; pre-register your hypotheses and analysis plan — or go all-in with a **registered report**.
 - **Do** → organize your project in one folder; keep raw data read-only; analyze with **literate programming** so every result is regenerable with one click.
 - **Share** → deposit data (FAIR!), code, and materials in a trusted repository with a DOI and a license; link everything from the paper, with enough **computational empathy** that a stranger can actually run it.
-- None of these practices requires genius — they require **habits**, and habits are easiest to build **now**, at the start of your PhD, before you have legacy chaos to untangle.
+- These practices only require **habits**, and habits are easiest to build **now**, at the start of your PhD, before you have legacy chaos to untangle.
 - Reproducibility is a **spectrum, not a purity yes/no test**: every step (a codebook here, a script there) already makes your work more trustworthy than without doing anything.
 
 :::
 
-## Your Starter Kit for This Semester {.columns-slide}
+## Your Starter Kit for Your 1st Year {.columns-slide}
 
 ::: {.lead}
 Concrete first steps:
@@ -729,7 +729,7 @@ E-mail: [amelia.zein@cais-research.de](mailto:amelia.zein@cais-research.de) · H
 ::: {.closing-text}
 Thank you!
 
-Selamat datang & selamat memulai perjalanan doktoral Anda!
+Selamat datang & selamat memulai perjalanan doktoral Anda😉🎉
 :::
 
 ::: {.closing-bottom}

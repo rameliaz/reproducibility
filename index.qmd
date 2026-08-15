@@ -1,0 +1,53 @@
+---
+title: "How Research is Made Reproducible"
+subtitle: "A first-person perspective on open and reproducible science"
+format:
+  html:
+    toc: false
+    page-layout: full
+---
+
+::: {.lang-landing}
+
+Choose your language / Pilih bahasa:
+
+::: {.lang-cards}
+
+[**English**\
+A first-person perspective on open and reproducible science](reproducibility.html){.lang-card}
+
+[**Bahasa Indonesia**\
+Memastikan riset dapat direka ulang dari sudut pandang orang pertama](reproducibility-id.html){.lang-card}
+
+:::
+
+:::
+
+<style>
+.lang-landing {
+  text-align: center;
+  margin-top: 3rem;
+}
+.lang-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+a.lang-card {
+  display: block;
+  width: 320px;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid var(--bs-border-color, #dee2e6);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+a.lang-card:hover {
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+</style>

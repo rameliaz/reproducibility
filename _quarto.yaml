@@ -5,7 +5,9 @@ project:
     - img/
     - libs/
   render:
+    - index.qmd
     - reproducibility.qmd
+    - reproducibility-id.qmd
 
 website:
   title: "Amelia Zein"

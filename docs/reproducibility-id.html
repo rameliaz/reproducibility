@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bb62276ab45c84d9efd712f51ff97b5a.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Dr.&nbsp;Rizqy Amelia Zein (Research Data and Methods Team, Center for Advanced Internet Studies &amp; Department of Psychology, Universitas Airlangga)">
+  <title>Amelia Zein – Bagaimana Riset Dibuat Reproducible</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-cfeed0e88d32a869b698aa5bfe7c7dd3.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <!-- Linke weiße Spalte: Logos, Veranstaltungsinfos -->
+  <div class="cais-title-left">
+
+    <div class="cais-logos">
+      <img src="img/Transparent.png" alt="CAIS – Research for the Digital Age" class="cais-logo-img">
+    </div>
+
+    <div class="cais-title-meta">
+      <p class="cais-event">Matrikulasi Program Studi S3 Psikologi</p>
+      <p class="cais-author">Dr.&nbsp;Rizqy Amelia Zein (Research Data and Methods Team, Center for Advanced Internet Studies &amp; Department of Psychology, Universitas Airlangga)</p>
+    </div>
+
+  </div>
+  <!-- Rechte Spalte: Präsentationstitel auf CAIS-Blau Muster-Hintergrund -->
+  <div class="cais-title-right">
+    <h1 class="title">Bagaimana Riset Dibuat Reproducible</h1>
+    <p class="subtitle">Memastikan riset dapat direka ulang dari sudut pandang orang pertama</p>
+  </div>
+</section>
+<section id="agenda" class="slide level2 agenda-slide">
+<h2>AGENDA</h2>
+<!-- Klasse: .agenda-slide -->
+<ol type="1">
+<li><em>Replication Crisis</em> dan Mengapa <em>Reproducibility</em> Penting</li>
+<li><em>Data Management Plan</em></li>
+<li>Pra-registrasi</li>
+<li><em>Literate Programming</em></li>
+<li><em>Registered Reports</em></li>
+<li>Kesimpulan</li>
+</ol>
+</section>
+<section id="section" class="slide level2 section-slide">
+<h2></h2>
+<!-- Zwischentitelfolie 01 -->
+<div class="section-number">
+<p>01</p>
+</div>
+<div class="section-bubble">
+<p><em>Replication Crisis</em> dan Mengapa <em>Reproducibility</em> Penting</p>
+</div>
+</section>
+<section id="mari-kita-mulai-dengan-sebuah-thought-experiment" class="slide level2">
+<h2>Mari Kita Mulai dengan Sebuah <em>Thought Experiment</em></h2>
+<div class="lead">
+<p>Anda membaca sebuah temuan menarik di suatu jurnal top dan membayangkan <em>paper</em> ini akan menjadi landasan fundamental dari disertasi Anda.</p>
+</div>
+<ul>
+<li class="fragment"><strong>Pertanyaan 1:</strong> Jika tim lain mencoba ulang <em>studi yang sama dengan mengambil data baru</em>, apakah mereka akan menemukan hasil yang sama?</li>
+<li class="fragment"><strong>Pertanyaan 2:</strong> Jika Anda mengambil <em>data asli dan script analisis asli</em> dari penelitian tersebut, apakah Anda akan mendapatkan hasil yang sama persis seperti yang dilaporkan dalam paper tersebut?</li>
+<li class="fragment">Secara intuitif, kita berasumsi jawaban untuk keduanya adalah “<em>ya, tentu saja! Paper ini, kan, sudah dipublikasikan di jurnal top Q1!</em>”</li>
+<li class="fragment">Selama 15 tahun terakhir, para peneliti benar-benar mengeceknya. Jawabannya… <strong>akan membuat Anda kaget</strong>.</li>
+</ul>
+</section>
+<section id="bagaimana-masalah-ini-bermula-awal-2010-an" class="slide level2">
+<h2>Bagaimana Masalah Ini Bermula (awal 2010-an)</h2>
+<ul>
+<li class="fragment"><strong>2011 — <em>Paper</em> “prekognisi” Bem</strong>: sebuah jurnal top (Journal of Personality and Social Psychology - JPSP) mempublikasikan bukti bahwa orang bisa <em>merasakan apa yang akan terjadi di masa depan</em> (<a href="https://psycnet.apa.org/record/2011-01894-001">Bem, 2011</a>) dengan menggunakan metode eksperimen dan menguji hipotesisnya dengan tes statistik standar. Jika sebuah eksperimen perilaku bisa “membuktikan” hal yang mustahil, lalu apa implikasinya bagi metode tersebut?</li>
+<li class="fragment"><a href="https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html"><strong>2011 — Kasus kecurangan akademik Stapel</strong></a>: seorang profesor psikologi sosial terkemuka terbukti memalsukan data di puluhan paper yang sudah dipublikasikan.</li>
+<li class="fragment"><strong>2011 — “False-Positive Psychology”</strong> (<a href="https://journals.sagepub.com/doi/10.1177/0956797611417632">Simmons, Nelson, &amp; Simonsohn</a>): menunjukkan bahwa pilihan-pilihan analitis yang kesannya remeh, biasa, tetapi tidak diungkapkan bisa membuat <em>apa pun</em> menjadi signifikan secara statistik. Di <em>paper</em> ini, mereka menunjukkan betapa “mudahnya” membuktikan bahwa mendengarkan sebuah lagu yang spesifik (“<em>When I’m 64</em>”) membuat orang menjadi lebih muda.</li>
+<li class="fragment">Peristiwa-peristiwa ini memicu pertanyaan besar: <strong>seberapa banyak klaim ilmiah di literatur Psikologi yang benar-benar bisa kita percaya?</strong></li>
+</ul>
+</section>
+<section id="proyek-proyek-replikasi-multi-situs" class="slide level2">
+<h2>Proyek-Proyek Replikasi Multi-Situs</h2>
+<div class="lead">
+<p>Tim-tim riset besar secara sistematis mencoba ulang studi-studi yang sudah dipublikasikan dengan data baru, dan inilah hasilnya:</p>
+</div>
+<div class="infographic">
+<div class="infographic-cols">
+<div class="infographic-item">
+<p><span class="stat">36%</span></p>
+<p>dari 100 studi psikologi yang dicoba ulang — <a href="https://www.science.org/doi/10.1126/science.aac4716">Open Science Collaboration (2015)</a></p>
+</div>
+<div class="infographic-item">
+<p><span class="stat">61%</span></p>
+<p>dari 18 eksperimen laboratorium ekonomi yang dicoba ulang — <a href="https://www.science.org/doi/10.1126/science.aaf0918">Camerer et al.&nbsp;(2016)</a></p>
+</div>
+<div class="infographic-item">
+<p><span class="stat">62%</span></p>
+<p>dari 21 studi ilmu sosial dari <em>Nature</em> &amp; <em>Science</em> yang dicoba ulang — <a href="https://www.nature.com/articles/s41562-018-0399-z">Camerer et al.&nbsp;(2018)</a></p>
+</div>
+<div class="infographic-item">
+<p><span class="stat">49%</span></p>
+<p>dari 164 paper di 12 disiplin ilmu yang dicoba ulang dalam proyek <strong>SCORE</strong> (<a href="https://www.cos.io/about/news/large-scale-collaboration-releases-new-findings-on-research-credibility">Nature, April 2026</a>)</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Bahkan ketika efeknya berhasil dicoba ulang, rata-rata <em>effect size</em>nya <strong>hanya sekitar setengah</strong> dari yang dilaporkan pada awalnya (dikenal sebagai “<a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full">The Decline Effect</a>”) — SCORE menemukan pola yang sama lagi pada 2026.</li>
+<li><strong>SCORE adalah riset reka ulang terbesar sejauh ini</strong>: 865 peneliti menilai 3.900 paper (2009–2018, 62 jurnal, mencakup ekonomi, psikologi, ilmu politik, sosiologi, dan lainnya). Mereka ulang analisis yang sudah dipublikasikan pada data <em>asli</em> hanya berhasil <a href="https://www.nature.com/articles/s41586-026-10203-5">54% dari keseluruhan kasus</a>.</li>
+<li>Pola ini, yang muncul di psikologi, ekonomi, dan bidang-bidang lainnya, dan kini terkonfirmasi dalam skala besar, bahwa apa yang disebut media sebagai <strong>“<a href="https://www.nature.com/articles/d41586-026-00955-5">replication crisis</a>”</strong> memang benar-benar terjadi.</li>
+</ul>
+</section>
+<section id="tiga-istilah-yang-sering-tertukar" class="slide level2 columns-slide">
+<h2>Tiga Istilah yang Sering Tertukar</h2>
+<div class="lead">
+<p>Berdasarkan <a href="https://arxiv.org/abs/1802.03311">Barba (2018)</a> dan <a href="https://book.the-turing-way.org/">The Turing Way</a>, kebanyakan orang sering mencampuradukkan istilah-istilah ini:</p>
+</div>
+<div class="columns-area">
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-rotate-right"></i></span></p>
+<h3 id="reproducibility-reka-ulang">Reproducibility (🇮🇩 “<em>reka ulang</em>”)</h3>
+<p><strong>Data sama + analisis sama → hasil sama.</strong> Orang lain (atau diri Anda sendiri di masa depan) menjalankan ulang analisis <em>Anda</em> pada data milik <em>Anda</em> dan mendapatkan angka-angka yang sama seperti di <em>paper</em> Anda.</p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-people-group"></i></span></p>
+<h3 id="replicability-coba-ulang">Replicability (🇮🇩 “<em>coba ulang</em>”)</h3>
+<p><strong>Data baru + metode sama → hasil serupa.</strong> Tim independen mengulang studi tersebut dengan partisipan baru dan menemukan <em>effect size</em> yang sebanding dengan penelitian aslinya.</p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-lightbulb"></i></span></p>
+<h3 id="robustness-keandalan">Robustness (🇮🇩 “<em>keandalan</em>”)</h3>
+<p><strong>Data sama + analisis baru → hasil sama, atau setidaknya kesimpulan yang serupa.</strong> Temuan tetap stabil meskipun menggunakan strategi analitis yang berbeda.</p>
+</div>
+</div>
+</section>
+<section id="bagian-yang-benar-benar-mencemaskan" class="slide level2">
+<h2>Bagian yang Benar-Benar Mencemaskan</h2>
+<div class="lead">
+<p>Mari kita lupakan sejenak soal mengumpulkan data baru (atau replikasi). Bisakah kita bahkan mereka ulang <em>hasil penelitian</em> dari <em>data aslinya</em>? (atau <em>reproducibility</em>)</p>
+</div>
+<ul>
+<li class="fragment"><a href="https://royalsocietypublishing.org/doi/10.1098/rsos.180448">Hardwicke et al.&nbsp;(2018)</a> mencoba mereka ulang hasil dari <em>paper-paper</em> yang terbit di jurnal dengan kebijakan yang mewajibkan <em>data terbuka</em> di jurnal <em>Cognition</em>: hanya 11 dari 35 <em>paper</em> yang berhasil direka ulang tanpa bantuan dari penulis aslinya.</li>
+<li class="fragment"><a href="https://psycnet.apa.org/record/2020-81352-001">Artner et al.&nbsp;(2021)</a> hanya bisa mereproduksi ~70% klaim statistik utama dari artikel-artikel psikologi yang sudah dipublikasikan, dan sebagian di antaranya baru berhasil setelah melakukan kerja ala detektif yang cukup berat.</li>
+<li class="fragment"><a href="https://journals.sagepub.com/doi/10.1177/09567976221140828">Crüwell et al.&nbsp;(2023)</a> mengecek <em>badge</em> “<em>open data</em>” di <em>Psychological Science</em>: hanya 1 dari 14 artikel yang dinilai sepenuhnya <em>computationally reproducible</em>.</li>
+<li class="fragment">Dan ini langsung berdampak pada kehidupan banyak orang: <em>flagship paper</em> tentang kebijakan <em>austerity</em> <strong>Reinhart &amp; Rogoff</strong> yang sangat terkenal, yang banyak digunakan untuk membenarkan kebijakan ekonomi di banyak negara, ternyata mengandung <strong>kesalahan di <em>file</em> Excelnya</strong> yang amat sepele, dan baru ditemukan ketika seorang mahasiswa pascasarjana mendapatkan <em>spreadsheet</em>-nya (<a href="https://academic.oup.com/cje/article/38/2/257/1714018">Herndon et al., 2014</a>).</li>
+</ul>
+</section>
+<section id="mengapa-ini-bisa-terjadi" class="slide level2">
+<h2>Mengapa Ini Bisa Terjadi?</h2>
+<div class="lead">
+<p>Ini sebagian besar bukan soal kecurangan yang benar-benar mengandung niat jahat, melainkan perilaku manusia yang sekadar mengikuti insentif.</p>
+</div>
+<ul>
+<li class="fragment"><strong><em>Publication bias</em></strong>: jurnal lebih menyukai temuan yang baru, positif, dan “bersih”. Karena itu, hasil negatif/<em>null</em> sering kali berakhir di laci arsip (<em>file drawer</em>).</li>
+<li class="fragment"><strong><em>Publish or perish</em></strong>: karier akademik dibangun berdasarkan <em>jumlah</em> publikasi, bukan kualitas substantifnya.</li>
+<li class="fragment"><strong><em>Questionable research practices</em> (QRPs)</strong>: area abu-abu antara praktik baik dan kecurangan (<a href="https://journals.sagepub.com/doi/10.1177/0956797611430953">John et al., 2012</a>):
+<ul>
+<li class="fragment"><strong><em>p</em>-<em>hacking</em></strong>: mencoba banyak analisis dan hanya melaporkan yang “berhasil”</li>
+<li class="fragment"><strong>HARKing</strong>: <em>Hypothesizing After the Results are Known</em> — menyajikan temuan eksploratif seolah-olah memang sudah diprediksi sebelumnya (<a href="https://journals.sagepub.com/doi/10.1207/s15327957pspr0203_4">Kerr, 1998</a>)</li>
+<li class="fragment"><strong>Pelaporan selektif</strong> (<em>selective reporting</em>) terhadap ukuran, kondisi, atau hasil</li>
+</ul></li>
+<li class="fragment"><strong><em>The garden of forking paths</em></strong>: bahkan tanpa niat buruk sekalipun, setiap dataset memungkinkan pilihan analisis yang sangat banyak dan sama-sama bisa dipertahankan, sehingga fleksibilitas dalam pilihan analitis bisa meningkatkan <em>false positive rate</em> (<a href="http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf">Gelman &amp; Loken, 2014</a>).</li>
+</ul>
+</section>
+<section id="section-1" class="slide level2 quote-slide">
+<h2></h2>
+<div class="quote-bubble">
+<blockquote>
+<p>An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.</p>
+</blockquote>
+<div class="quote-author">
+<p>Buckheit &amp; Donoho (1995), memparafrasekan Jon Claerbout</p>
+</div>
+</div>
+</section>
+<section id="mengapa-anda-perlu-peduli" class="slide level2 text-slide-bg">
+<h2>Mengapa <em>Anda</em> Perlu Peduli?</h2>
+<div class="lead">
+<p>Memastikan hasil kita dapat direka ulang dapat memberi kita lebih banyak kepercayaan diri atas pekerjaan kita.</p>
+</div>
+<div class="content-box">
+<ul>
+<li><strong>Kolaborator terdekat Anda adalah diri Anda sendiri, enam bulan yang lalu</strong>, dan Anda-di-masa-lalu tidak dapat membalas chat WhatsApp. Alur kerja yang <em>reproducible</em> berarti Anda selalu bisa menelusuri kembali langkah-langkah Anda sendiri.</li>
+<li><strong>Kesalahan tertangkap lebih awal</strong>, sebelum berakhir di disertasi Anda, ujian/sidang, atau bahkan <em>retraction</em>.</li>
+<li><strong><em>Reviewer</em>, promotor, dan komite ujian semakin mengharapkannya</strong>. Pendana dan jurnal kini rutin mensyaratkan peneliti untuk membagikan data dan material riset.</li>
+<li><strong>Membuat Anda lebih efisien</strong>. Menjalankan ulang analisis setelah “tolong tambahkan satu variabel kontrol saja” hanya butuh satu klik.</li>
+<li><strong>Ini membangun kepercayaan terhadap pekerjaan Anda</strong>. Riset yang <em>reproducible</em> akan lebih banyak digunakan ulang, disitasi, dan dikembangkan lebih lanjut.</li>
+</ul>
+</div>
+</section>
+<section id="tangga-reproducibility" class="slide level2">
+<h2>“Tangga <em>Reproducibility</em>”🪜</h2>
+<div class="lead">
+<p>Mulailah dengan tingkat transparansi <strong>yang Anda butuhkan</strong>, bukan yang <strong>Anda inginkan</strong>. Empat praktik dalam presentasi ini <em>bukan checklist</em> yang harus selesaikan semester ini, atau bahkan sepanjang program S3 Anda. Ini adalah tangga yang akan Anda daki selama bertahun-tahun sepanjang karier profesional Anda ke depan.</p>
+</div>
+<ul>
+<li class="fragment"><strong>Anak tangga 1 — <em>Data Management Plan</em></strong>: memiliki hambatan yang paling rendah, manfaat paling langsung. Sebuah <em>folder</em> yang bisa dijelajahi siapa pun, termasuk Anda di masa depan.</li>
+<li class="fragment"><strong>Anak tangga 2 — Pre-Registration</strong>: sebuah disiplin perencanaan riset — menuliskan hipotesis sebelum Anda tahu jawabannya.</li>
+<li class="fragment"><strong>Anak tangga 3 — Literate Programming</strong>: sebuah kebiasaan teknis — biarkan dokumennya sendiri yang menghitung, bukan Anda yang menyalin angka secara manual.</li>
+<li class="fragment"><strong>Anak tangga 4 — Registered Reports</strong>: komitmen terbesar — <em>review</em> dilakukan sebelum hasil ada, berlangsung selama bertahun-tahun.</li>
+<li class="fragment">Inilah urutan yang <strong>saya alami</strong> ketika mendaki tangga ini, selama kurang lebih 15 tahun perjalanan karier akademik saya. Saya akan tunjukkan seperti apa bentuknya masing-masing anak tangga ini dari sudut pandang saya.</li>
+</ul>
+</section>
+<section id="section-2" class="slide level2 section-slide">
+<h2></h2>
+<!-- Zwischentitelfolie 02 -->
+<div class="section-number">
+<p>02</p>
+</div>
+<div class="section-bubble">
+<p>Data Management Plan</p>
+</div>
+</section>
+<section id="apa-itu-data-management-plan-dmp" class="slide level2">
+<h2>Apa Itu <em>Data Management Plan</em> (DMP)?</h2>
+<div class="lead">
+<p>Sebuah dokumen singkat dan hidup (living document), yang ditulis <strong>sebelum</strong> Anda mengumpulkan data, yang menjelaskan bagaimana data akan dikumpulkan, didokumentasikan, disimpan, dilindungi, dan dibagikan.</p>
+</div>
+<ul>
+<li class="fragment">Anggap saja ini sebagai menjawab pertanyaan: <em>“Jika saya menghilang besok, bisakah orang lain menemukan, memahami, dan menggunakan data saya?”</em></li>
+<li class="fragment">Semakin <strong>diwajibkan oleh <em>funder</em></strong> (DFG, ERC, NIH, dan banyak <em>funder</em> internasional lainnya) dan oleh komite etik.</li>
+<li class="fragment">DMP memaksa munculnya pertanyaan yang tepat pada waktu yang tepat, <em>sebelum</em> masalah menjadi tidak bisa diperbaiki lagi (misalnya, formulir <em>informed consent</em> yang justru melarang data dibagikan).</li>
+<li class="fragment"><em>Tools</em> gratis dengan <em>template</em> dan panduan: <a href="https://dmptool.org">DMPTool</a> dan <a href="https://dmponline.dcc.ac.uk">DMPonline</a>.</li>
+</ul>
+</section>
+<section id="menanamkan-kebiasaan-dmp-ke-dalam-proyek-yang-sedang-berjalan" class="slide level2">
+<h2>Menanamkan Kebiasaan DMP ke dalam Proyek yang Sedang Berjalan</h2>
+<div class="lead">
+<p>Saya sedang mengerjakan <em>scoping review</em> tentang praktik <em>reproducibility</em> di bidang ekonomi dan ilmu sosial, yang merupakan bagian dari proyek yang lebih besar tempat saya terlibat. Struktur <em>folder</em> kerjanya seperti ini:</p>
+</div>
+<div class="content-box">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a aria-label="1"></a>litsearch/</span>
+<span id="cb1-2"><a aria-label="2"></a>├── codes/                        R scripts</span>
+<span id="cb1-3"><a aria-label="3"></a>├── coding/                       Codebooks, coding sheets, dan Google Form/Sheet</span>
+<span id="cb1-4"><a aria-label="4"></a>├── dataset/                      Dataset siap analisis, hasil ekspor dari coding</span>
+<span id="cb1-5"><a aria-label="5"></a>├── output/</span>
+<span id="cb1-6"><a aria-label="6"></a>│   ├── search_output/            Output pipeline pencarian literatur (01–11)</span>
+<span id="cb1-7"><a aria-label="7"></a>│   ├── analysis_output/          Tabel dan gambar dari analisis</span>
+<span id="cb1-8"><a aria-label="8"></a>│   └── cleaning_log/             Flag kualitas data dari proses pembersihan respons</span>
+<span id="cb1-9"><a aria-label="9"></a>└── protocol_logbook.docx         Logbook protokol dan keputusan</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>Setiap <em>file</em> juga diberi satu kalimat deskripsi — misalnya <code>10_final_set.xlsx</code>: <em>“The 145-paper final corpus… verified against Zotero subcollection RIS exports.”</em> <a href="libs/README.md">Lihat README-nya di sini</a>.</li>
+<li><strong>Manfaat #1 — untuk diri saya di masa depan</strong>: saya kembali ke <em>folder</em> ini setelah berbulan-bulan mengerjakan tugas lain, dan tetap tahu persis harus mencari ke mana.</li>
+<li><strong>Manfaat #2 — pembaca di masa depan</strong>: ketika ini nanti menjadi <em>paper</em> yang dipublikasikan, <em>reviewer</em> dan pembaca bisa memverifikasi apa pun yang saya lakukan.</li>
+</ul>
+</div>
+</section>
+<section id="apa-saja-yang-termasuk-dalam-dmp" class="slide level2 columns-slide">
+<h2>Apa Saja yang Termasuk dalam DMP?</h2>
+<div class="columns-area">
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-file-lines"></i></span></p>
+<h3 id="documentation"><em>Documentation</em></h3>
+<p>Data apa yang akan Anda kumpulkan dan bagaimana caranya? Format apa saja? Sebuah <strong>kamus data (<em>codebook</em>)</strong> yang mendeskripsikan setiap variabel (nama, redaksi pertanyaan, <em>coding</em>, <em>missing value</em>) agar data tetap bisa dipahami tanpa kehadiran Anda.</p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-shield-halved"></i></span></p>
+<h3 id="storage-ethics"><em>Storage</em> &amp; <em>Ethics</em></h3>
+<p>Di mana data akan disimpan, bagaimana cara backup-nya (<a href="https://en.wikipedia.org/wiki/Backup">aturan 3-2-1</a>), siapa yang punya akses? Bagaimana partisipan dilindungi, termasuk informed consent, anonimisasi atau pseudonimisasi, serta persyaratan hukum yang berlaku?</p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-share-nodes"></i></span></p>
+<h3 id="sharing-preservation"><em>Sharing</em> &amp; <em>Preservation</em></h3>
+<p>Data mana yang bisa dibagikan, di mana, <a href="https://id.creativecommons.net/pilihan-lisensi-cc/">dengan lisensi apa</a>, dan kapan? Apa yang diarsipkan dalam jangka panjang (biasanya 10 tahun) dan di repository tepercaya yang mana?</p>
+</div>
+</div>
+</section>
+<section id="data-fair" class="slide level2">
+<h2>Data FAIR</h2>
+<div class="lead">
+<p>Standar acuan untuk data riset yang dibagikan (<a href="https://www.nature.com/articles/sdata201618">Wilkinson et al., 2016</a>), data seharusnya <strong>FAIR</strong>:</p>
+</div>
+<div class="infographic">
+<div class="infographic-cols">
+<div class="infographic-item">
+<p><span class="stat">F</span></p>
+<p><strong><em>Findable</em></strong> — disimpan dengan pengenal permanen (DOI) dan metadata yang kaya</p>
+</div>
+<div class="infographic-item">
+<p><span class="stat">A</span></p>
+<p><strong><em>Accessible</em></strong> — dapat diambil lewat protokol standar; syarat aksesnya jelas</p>
+</div>
+<div class="infographic-item">
+<p><span class="stat">I</span></p>
+<p><strong><em>Interoperable</em></strong> — format terbuka (CSV, bukan hanya SPSS), kosakata standar</p>
+</div>
+<div class="infographic-item">
+<p><span class="stat">R</span></p>
+<p><strong><em>Reusable</em></strong> — lisensi jelas, provenance, dan dokumentasi yang cukup untuk digunakan ulang</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Penting: <strong>FAIR ≠ terbuka (<em>open</em>)</strong>. Prinsipnya adalah <em>“seterbuka mungkin, setertutup yang diperlukan.”</em> Data sensitif tetap bisa FAIR meskipun aksesnya dibatasi.</li>
+</ul>
+</section>
+<section id="kebiasaan-praktis-yang-gratis" class="slide level2 text-slide-bg">
+<h2>Kebiasaan Praktis yang Gratis</h2>
+<div class="content-box">
+<ul>
+<li><strong>Penamaan <em>file</em></strong>: mudah dibaca mesin, mudah dibaca manusia, mudah diurutkan — <code>2026-07-08_study1_raw.csv</code>, bukan <code>data baru FINAL (2).sav</code>. Tanpa spasi, tanpa karakter khusus, tanggal dalam format YYYY-MM-DD.</li>
+<li><strong>Data mentah adalah sesuatu yang sakral</strong>: simpan sebagai <code>read-only</code>, di satu tempat; semua perubahan dilakukan lewat <em>script</em> ke <code>data/processed/</code>.</li>
+<li><strong>Tulis <em>codebook</em>-nya sambil Anda menyusun survei</strong>.</li>
+<li><strong>Pilih <em>repository</em> untuk menyimpan data</strong>: <a href="https://osf.io">OSF</a>, <a href="https://zenodo.org">Zenodo</a>, <a href="https://www.psychdata.de">PsychData</a>, <a href="https://data.brin.go.id/">RIN Dataverse (BRIN)</a> — semuanya menyediakan DOI dan preservasi jangka panjang.</li>
+<li><a href="https://www.imperial.ac.uk/research-and-innovation/support-for-staff/scholarly-communication/research-data-management/sharing-data/licensing-your-data/"><strong>Pilih lisensi</strong></a> agar orang lain tahu apa yang boleh mereka lakukan: misalnya, <a href="https://id.creativecommons.net/pilihan-lisensi-cc/">CC0/CC-BY</a> untuk data dan materi, <a href="https://www.credativ.de/en/blog/credativ-inside/understanding-open-source-licenses-gpl-mit-apache-compared/">MIT/GPL</a> untuk kode.</li>
+<li><strong>Rencanakan <em>consent</em> untuk berbagi data</strong>: tambahkan bahasa terkait berbagi data ke <em>informed consent</em> Anda <em>sekarang juga</em>, karena Anda tidak bisa meminta izin secara retroaktif kepada 800 partisipan anonim.</li>
+</ul>
+</div>
+</section>
+<section id="section-3" class="slide level2 section-slide">
+<h2></h2>
+<!-- Zwischentitelfolie 03 -->
+<div class="section-number">
+<p>03</p>
+</div>
+<div class="section-bubble">
+<p>Pre-Registration</p>
+</div>
+</section>
+<section id="masalah-yang-diselesaikan-oleh-pre-registration" class="slide level2">
+<h2>Masalah yang Diselesaikan oleh Pre-Registration</h2>
+<ul>
+<li class="fragment">Ingat kembali <strong><em>garden of forking paths</em></strong>: dengan fleksibilitas yang cukup, hasil signifikan hampir selalu bisa ditemukan.</li>
+<li class="fragment">Statistik hanya bisa berfungsi dengan baik jika perbedaan antara dua mode riset ini diakui secara jujur:
+<ul>
+<li class="fragment">Riset <strong>konfirmatori</strong>: hipotesis ditentukan <em>sebelum</em> melihat data → nilai <em>p</em> menjadi pengujian yang bermakna.</li>
+<li class="fragment">Riset <strong>eksploratori</strong>: pola ditemukan <em>di dalam</em> data → berguna untuk menghasilkan hipotesis, tetapi nilai <em>p</em> tidak lagi berarti seperti yang diklaim.</li>
+</ul></li>
+<li class="fragment">Keduanya sama-sama boleh. Masalahnya adalah <strong>menyajikan eksplorasi seolah-olah konfirmasi</strong> (HARKing).</li>
+<li class="fragment"><strong>Pre-registration</strong> mengembalikan perbedaan ini: Anda menuliskan hipotesis, desain, dan rencana analisis Anda <strong>sebelum</strong> pengumpulan data, dalam sebuah registry yang <strong>diberi cap waktu (<em>time-stamped</em>) dan <em>read-only</em></strong> (<a href="https://www.pnas.org/doi/10.1073/pnas.1708274114">Nosek et al., 2018</a>).</li>
+</ul>
+</section>
+<section id="dari-pekerjaan-saya-sendiri-mengunci-hipotesis-sebelum-melihat-data" class="slide level2">
+<h2>Dari Pekerjaan Saya Sendiri: Mengunci Hipotesis Sebelum Melihat Data</h2>
+<div class="lead">
+<p>Salah satu contoh saya yang paling jelas: <a href="https://osf.io/ctru2/overview"><em>“Science and Religion in the Times of Crisis”</em></a>, <em>pre-registered</em> di OSF.</p>
+</div>
+<div class="content-box">
+<ul>
+<li>Studi ini menguji <strong>“<em>dilution effect</em>”</strong>: apakah menawarkan <em>lebih banyak</em> penjelasan atas suatu krisis justru mengurangi seberapa berguna setiap penjelasan itu terasa bagi orang (<a href="https://osf.io/ctru2/overview">Jackson et al., 2024</a>).</li>
+<li>Saya menuliskan hipotesisnya, dalam sebuah catatan publik yang diberi cap waktu, <strong>sebelum</strong> saya tahu apakah datanya akan mendukungnya atau tidak.</li>
+<li>Ini sangat membantu saya merencanakan studi dengan lebih baik dan mempertahankan pilihan desain saya ketika mendiskusikannya dengan supervisor saya.</li>
+<li>Apa pun hasilnya nanti, saya tidak bisa begitu saja membingkai ulang studi ini seolah-olah “memang ini yang saya prediksi sejak awal.” Cap waktu itu membuat hal itu mustahil, dan itu membantu saya tetap jujur pada diri saya sendiri.</li>
+<li>Saya sudah melakukan <em>pre-registration</em> untuk setiap studi yang saya jalankan sejak 2021.
+<ul>
+<li>Ini sekarang sudah menjadi bagian normal dari mendesain sebuah studi.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="apa-saja-yang-termasuk-dalam-pre-registration" class="slide level2 columns-slide">
+<h2>Apa Saja yang Termasuk dalam <em>Pre-Registration</em>?</h2>
+<div class="lead">
+<p><em>Registry</em> gratis dengan template: <a href="https://osf.io/registries">OSF Registries</a> dan <a href="https://aspredicted.org">AsPredicted</a>. Isi umumnya:</p>
+</div>
+<div class="columns-area">
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-clipboard-question"></i></span></p>
+<h3 id="hypotheses-design"><em>Hypotheses &amp; Design</em></h3>
+<p>Hipotesis terarah (directional), IV dan DV dengan operasionalisasi yang tepat, desain studi, kondisi, dan prosedur.</p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-users"></i></span></p>
+<h3 id="sample-exclusions"><em>Sample &amp; Exclusions</em></h3>
+<p>Target ukuran sampel <strong>dengan justifikasi</strong> (misalnya, power analysis), stopping rule, dan kriteria eksklusi.</p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-chart-line"></i></span></p>
+<h3 id="analysis-plan"><em>Analysis Plan</em></h3>
+<p>Model statistik yang pasti untuk setiap hipotesis, penanganan missing data dan outlier, kriteria inferensi, serta apa yang akan Anda lakukan jika asumsinya tidak terpenuhi.</p>
+</div>
+</div>
+</section>
+<section id="kekhawatiran-umum-dan-mengapa-sebagian-besar-tidak-beralasan" class="slide level2">
+<h2>Kekhawatiran Umum (dan Mengapa Sebagian Besar Tidak Beralasan)</h2>
+<ul>
+<li class="fragment"><strong>“Ini seperti penjara — saya jadi tidak bisa fleksibel.”</strong> Bisa, kok! Penyimpangan itu wajar; Anda tinggal melaporkannya secara transparan (“kami menyimpang dari rencana karena…”). Registry hanya membuat penyimpangan itu menjadi <em>terlihat</em>.</li>
+<li class="fragment"><strong>“Ini membunuh eksplorasi.”</strong> Tidak. Anda tetap bisa bereksplorasi dengan bebas; hasilnya hanya diberi label sebagai eksploratif. Banyak <em>template</em> bahkan punya bagian khusus untuk analisis eksploratif yang sudah direncanakan.</li>
+<li class="fragment"><strong>“Nanti ide saya diserobot orang.”</strong> Registrasi bisa <strong>diembargo</strong> (dirahasiakan) sampai Anda mempublikasikannya.</li>
+<li class="fragment"><strong>“Ini menambah terlalu banyak pekerjaan administratif.”</strong> Registrasi <a href="https://aspredicted.org/">AsPredicted</a> hanya berisi 9 pertanyaan. Dan sebagian besar isinya adalah teks yang tetap Anda butuhkan untuk pengajuan etik dan bagian metode Anda. Anda pada dasarnya hanya menulisnya <em>lebih awal</em>.</li>
+<li class="fragment"><strong>Catatan penting</strong>: <em>pre-registration</em> bukan solusi instan. Banyak <em>pre-registration</em> yang masih tidak jelas, dan penyimpangan sering tidak dilaporkan (<a href="https://psycnet.apa.org/fulltext/2025-33919-001.html">van den Akker et al., 2024</a>). Nilainya justru datang dari rencana yang <em>spesifik</em> dan pelaporan yang <em>transparan</em> yang merupakan sebuah keterampilan yang bisa Anda latih sejak studi pertama Anda.</li>
+</ul>
+</section>
+<section id="section-4" class="slide level2 section-slide">
+<h2></h2>
+<!-- Zwischentitelfolie 04 -->
+<div class="section-number">
+<p>04</p>
+</div>
+<div class="section-bubble">
+<p>Literate Programming</p>
+</div>
+</section>
+<section id="alur-kerja-copy-paste" class="slide level2">
+<h2>Alur Kerja <em>Copy-Paste</em></h2>
+<div class="lead">
+<p>Alur kerja dalam riset psikologi biasanya seperti ini:</p>
+</div>
+<ul>
+<li class="fragment">Menjalankan analisis di SPSS dengan mengklik-klik menu…</li>
+<li class="fragment">…menyalin angka-angkanya ke dokumen Word secara manual…</li>
+<li class="fragment">…memformat tabelnya secara manual…</li>
+<li class="fragment">…lalu seorang <em>reviewer</em> meminta Anda mengeluarkan tiga partisipan, dan Anda harus <strong>melakukan semuanya lagi dari awal</strong>, sambil berharap Anda mengklik tombol-tombol yang persis sama.</li>
+<li class="fragment">Setiap langkah manual adalah tempat kesalahan bisa menyelinap masuk, dan tidak ada seorang pun (termasuk Anda sendiri) yang bisa memverifikasi kembali apa yang sebenarnya sudah dilakukan.</li>
+<li class="fragment">Kira-kira <strong>separuh dari <em>paper</em> psikologi yang dipublikasikan mengandung setidaknya satu statistik yang tidak konsisten</strong> — misalnya, nilai <em>p</em> yang tidak cocok dengan statistik ujinya sendiri (<a href="https://link.springer.com/article/10.3758/s13428-015-0664-2">Nuijten et al., 2016</a>).</li>
+</ul>
+</section>
+<section id="section-5" class="slide level2 quote-slide">
+<h2></h2>
+<div class="quote-bubble">
+<blockquote>
+<p>Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.</p>
+</blockquote>
+<div class="quote-author">
+<p><a href="https://academic.oup.com/comjnl/article-abstract/27/2/97/343244">Donald Knuth (1984), <em>Literate Programming</em></a></p>
+</div>
+</div>
+</section>
+<section id="literate-programming-satu-dokumen-untuk-semuanya" class="slide level2">
+<h2><em>Literate Programming</em>: Satu Dokumen untuk Semuanya</h2>
+<div class="lead">
+<p><strong>Idenya:</strong> menganyam narasi teks, kode analisis, dan hasilnya (tabel, gambar, statistik) menjadi <em>satu</em> dokumen yang memperbarui dirinya sendiri.</p>
+</div>
+<ul>
+<li class="fragment">Anda menulis teks dan <em>script</em> secara bersamaan; satu klik (“<em>Render</em>”) menjalankan semua perintah dan menghasilkan laporan jadi, sehingga angka, tabel, dan gambar <strong>disisipkan secara otomatis</strong>.</li>
+<li class="fragment">Ubah datanya atau analisisnya → <em>render</em> ulang → <strong>setiap angka dalam dokumen memperbarui dirinya sendiri</strong>, tanpa perlu menyalin-tempel angka secara manual.</li>
+<li class="fragment">Dokumennya sendiri <em>adalah</em> jejak audit: siapa pun bisa melihat persis kode mana yang menghasilkan hasil yang mana.</li>
+<li class="fragment"><strong>Fakta menarik</strong>: <strong><em>slide</em> yang sedang Anda lihat ini</strong> adalah hasil <em>literate programming</em>😉 Ini adalah dokumen Quarto yang di-<em>render</em> menjadi presentasi.</li>
+</ul>
+</section>
+<section id="contoh-dari-pekerjaan-saya-sendiri" class="slide level2">
+<h2>Contoh Dari Pekerjaan Saya Sendiri</h2>
+<div class="lead">
+<p>Saya melakukan <em>pre-registration</em> dengan tekun selama bertahun-tahun sebelum saya belajar Quarto. <em>Literate programming</em> adalah anak tangga yang baru saya kuasai jauh <em>setelah</em> itu, dan pilihan ini mengubah cara saya menulis <em>paper</em>.</p>
+</div>
+<div class="content-box">
+<ul>
+<li>Setiap <em>folder</em> proyek juga merupakan <strong><em>repository</em> <a href="https://id.wikipedia.org/wiki/Git">Git</a></strong> — riwayat lengkap dari setiap perubahan, sehingga saya (atau seorang <em>reviewer</em>) bisa melihat persis bagaimana sebuah angka muncul.</li>
+<li>Dokumennya menarik angka langsung dari hasil analisis.
+<ul>
+<li>Saya berhenti mengetik hasil secara manual ke Word, yang justru merupakan langkah tempat kesalahan <em>copy-paste</em> dulu sering muncul.</li>
+</ul></li>
+<li>Contoh: <a href="https://github.com/rameliaz/grm-tutorial-paper"><code>grm-tutorial-paper</code></a>, repository di balik <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265"><em>paper</em> yang sudah dipublikasikan</a> yang ditulis sepenuhnya sebagai dokumen <em>literate</em>.</li>
+<li>Bonus yang menyenangkan: editor dan <em>reviewer</em> berkomentar soal betapa <em>rapinya</em> proyek ini terlihat. Ini sebenarnya bukan tujuan utama dari <em>literate</em> programming, tapi tentu saja baik untuk reputasi Anda juga.</li>
+</ul>
+</div>
+</section>
+<section id="alat-alatnya" class="slide level2 columns-slide">
+<h2>Alat-Alatnya</h2>
+<div class="lead">
+<p>Semuanya gratis, semuanya <em>open source</em>, dan semuanya punya komunitas serta tutorial yang besar:</p>
+</div>
+<div class="columns-area">
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-brands fa-r-project"></i></span></p>
+<h3 id="quartor-markdown">Quarto/R Markdown</h3>
+<p>Teks (Markdown) + potongan <em>script</em> R/Python → paper, <em>slide</em>, situs web, disertasi. Bersama <strong>R</strong> dan RStudio/Positron. <a href="https://quarto.org">quarto.org</a></p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-brands fa-python"></i></span></p>
+<h3 id="jupyter-notebooks">Jupyter Notebooks</h3>
+<p>Notebook interaktif untuk Python (dan R, Julia). Umum digunakan dalam data science dan pemodelan komputasional. <a href="https://jupyter.org">jupyter.org</a></p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-brands fa-git-alt"></i></span></p>
+<h3 id="git-githubosf">Git &amp; GitHub/OSF</h3>
+<p>Version control: riwayat lengkap dari setiap perubahan pada kode dan teks Anda, semacam “track changes” untuk seluruh proyek Anda, jadi tidak ada lagi <code>thesis_final_v7_REALLYFINAL.docx</code>.</p>
+</div>
+</div>
+</section>
+<section id="seperti-apa-bentuknya" class="slide level2">
+<h2>Seperti Apa Bentuknya</h2>
+<p>Alih-alih menyalin angka, Anda tinggal menulis:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a aria-label="1"></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a aria-label="2"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"processed"</span>, <span class="st">"study1.csv"</span>))</span>
+<span id="cb2-3"><a aria-label="3"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(wellbeing <span class="sc">~</span> social_media_use <span class="sc">+</span> age, <span class="at">data =</span> data)</span>
+<span id="cb2-4"><a aria-label="4"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Dan di teks Anda, Anda menulis:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-label="1"></a>Social media use was negatively associated with wellbeing,</span>
+<span id="cb3-2"><a aria-label="2"></a>b = <span class="in">`r round(coef(model)[2], 2)`</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>Ketika di-render, <code>`r `</code> digantikan oleh <strong>nilai aktual yang dihitung dari data</strong>, sehingga selalu terkini dan tidak pernah salah ketik.</li>
+<li><em>Package</em> seperti <a href="https://github.com/crsh/papaja"><code>papaja</code></a> dan <a href="https://wjschne.github.io/apaquarto/writing.html"><code>apaquarto</code></a> (manuskrip APA) serta <a href="https://dstanley4.github.io/apaTables/articles/apaTables.html"><code>apaTables</code></a> memformat seluruh bagian hasil untuk Anda secara otomatis.</li>
+</ul>
+</section>
+<section id="melampaui-dokumen-proyek-yang-reproducible" class="slide level2 text-slide-bg">
+<h2>Melampaui Dokumen: Proyek yang <em>Reproducible</em></h2>
+<div class="lead">
+<p><em>Literate programming</em> bekerja paling baik di dalam proyek yang terorganisasi dengan baik:</p>
+</div>
+<div class="content-box">
+<ul>
+<li><strong>Satu folder per proyek</strong>, dengan struktur standar: <code>data/raw/</code> (read-only!), <code>data/processed/</code>, <code>scripts/</code>, <code>output/</code>, <code>README.md</code>.</li>
+<li><strong><em>Path</em> relatif</strong>, jangan pernah pakai <em>path</em> absolut: <code>here::here("data", "raw", "survey.csv")</code>, bukan <code>C:/Users/amelia/Desktop/...</code> — sehingga bisa dijalankan di komputer <em>mana pun</em>, bukan hanya komputer Anda.</li>
+<li><strong>Atur <em>seed</em></strong> (<code>set.seed(42)</code>) setiap kali ada unsur keacakan (<em>randomness</em>), agar hasilnya identik setiap kali dijalankan.</li>
+<li><strong>Catat <em>environment</em> Anda</strong>: versi <em>package</em> bisa berubah. <em>Tools</em> seperti <code>renv</code> (R) atau <em>virtual environment</em> (Python) menyimpan <em>snapshot</em> dari versi persis yang Anda gunakan.</li>
+<li><strong>Jangan pernah mengedit data mentah secara manual</strong> — setiap langkah pembersihan data dilakukan lewat <em>script</em>, sehingga jejak dari data mentah ke tabel akhir terdokumentasi sepenuhnya.</li>
+</ul>
+</div>
+</section>
+<section id="computational-empathy" class="slide level2">
+<h2><em>Computational Empathy</em></h2>
+<div class="lead">
+<p>Semangat di balik semua kebiasaan ini adalah apa yang disebut <a href="https://book.the-turing-way.org/reproducible-research/overview/overview-definitions">The Turing Way</a> sebagai <strong><em>computational empathy</em></strong>: mengantisipasi kebutuhan orang yang akan mencoba menjalankan pekerjaan Anda <em>tanpa Anda ada di ruangan</em>.</p>
+</div>
+<ul>
+<li class="fragment">Orang ini <strong>tidak</strong> memiliki struktur <em>folder</em> Anda, <em>package</em> yang Anda <em>install</em>, sistem operasi Anda, atau detail krusial yang hanya ada di kepala Anda (“<em>oh, kamu harus menjalankan script 2 dulu sebelum script 1</em>”).</li>
+<li class="fragment">Tanyakan pada diri Anda: <em>bisakah orang asing di komputer yang berbeda, tanpa kesempatan untuk mengirim email ke saya, sampai dari data mentah saya ke hasil saya?</em></li>
+<li class="fragment">Dalam praktiknya, <em>computational empathy</em> berarti:
+<ul>
+<li class="fragment">sebuah <a href="https://osf.io/uqyr3/files/2nd9w"><strong>README</strong></a> yang menjelaskan apa proyek ini, apa yang ada di mana, dan <strong>dalam urutan apa</strong> menjalankan semuanya;</li>
+<li class="fragment">menyatakan <strong>kebutuhan (<em>requirements</em>) di depan</strong>: <em>software</em>, versi <em>package</em> (<code>renv</code>!), estimasi waktu <em>running script</em>nya;</li>
+<li class="fragment"><strong>mmeberikan komentar “mengapa”-nya</strong> dalam kode Anda;</li>
+<li class="fragment">menghindari dependensi tersembunyi — tanpa <em>path</em> absolut, tanpa “hapus baris 13 secara manual dulu,” tanpa <em>file</em> yang hanya ada di desktop Anda.</li>
+</ul></li>
+<li class="fragment">Uji yang paling disarankan: serahkan proyek Anda ke seorang kolega dan lihat mereka mencobanya. Setiap pertanyaan yang mereka ajukan adalah <strong>potongan dokumentasi yang hilang</strong>.</li>
+<li class="fragment">Dan ingat: <em>orang asing</em> yang Anda perlakukan dengan baik ini biasanya adalah <strong>diri Anda sendiri di masa depan</strong>.</li>
+</ul>
+</section>
+<section id="section-6" class="slide level2 section-slide">
+<h2></h2>
+<!-- Zwischentitelfolie 05 -->
+<div class="section-number">
+<p>05</p>
+</div>
+<div class="section-bubble">
+<p>Registered Reports</p>
+</div>
+</section>
+<section id="registered-reports-pre-registration-dengan-kekuatan-super" class="slide level2">
+<h2><em>Registered Reports</em>: <em>Pre-Registration</em> dengan Kekuatan Super</h2>
+<div class="lead">
+<p>Sebuah <strong><em>Registered Report</em> (RR)</strong> adalah format artikel jurnal di mana peer review terjadi <strong>sebelum</strong> hasilnya ada (<a href="https://www.nature.com/articles/s41562-021-01193-7">Chambers &amp; Tzavella, 2022</a>).</p>
+</div>
+<ul>
+<li class="fragment"><strong>Stage 1</strong>: Anda mengajukan pendahuluan, hipotesis, dan metode yang detail <em>sebelum</em> pengumpulan data. <em>Reviewer</em> mengkritisi desainnya <strong>selagi Anda masih bisa memperbaikinya</strong>.</li>
+<li class="fragment">Jika diterima, Anda mendapatkan <strong><em>In-Principle Acceptance</em> (IPA)</strong>: jurnal berkomitmen untuk mempublikasikan paper Anda <strong>apa pun hasil yang keluar nanti</strong>.</li>
+<li class="fragment"><strong>Stage 2</strong>: Anda menjalankan studinya persis seperti yang sudah disetujui, mengajukan paper lengkap; <em>reviewer</em> hanya mengecek apakah Anda mengikuti rencana dan menginterpretasikan hasil secara masuk akal.</li>
+<li class="fragment">Publikasi tidak lagi bergantung pada hasil yang “menarik” → <strong><em>publication bias</em> terpotong dari akarnya</strong>, dan <em>p</em>-<em>hacking</em> kehilangan tujuannya.</li>
+</ul>
+</section>
+<section id="dari-pekerjaan-saya-sendiri-anak-tangga-yang-butuh-25-tahun" class="slide level2">
+<h2>Dari Pekerjaan Saya Sendiri: Anak Tangga yang Butuh 2,5 Tahun</h2>
+<div class="lead">
+<p>Saya sekarang sudah menjadi bagian dari tiga <em>Registered Reports</em> yang sudah dipublikasikan. Ini adalah yang pertama kali saya menjadi penulis utama (<em>first author</em>), dan yang paling saya banggakan.</p>
+</div>
+<div class="content-box">
+<ul>
+<li>Dari pertama kali merancang desainnya hingga <em>paper</em>-nya terbit: <strong>sekitar dua setengah tahun</strong>.</li>
+<li>Dipublikasikan sebagai <a href="https://www.tandfonline.com/doi/abs/10.1080/10508619.2025.2535033">sebuah <em>Registered Report</em></a>; <a href="https://osf.io/preprints/psyarxiv/bn6r4"><em>postprint</em>-nya tersedia <em>open-access</em> di PsyArXiv</a>.</li>
+<li>Prosesnya lambat, dan pada beberapa titik terasa membuat frustrasi.
+<ul>
+<li><em>Review Stage</em> 1 mendorong Anda untuk mendesain ulang sebelum Anda sempat mengumpulkan satu pun data.</li>
+<li>Ini tidak nyaman, <strong>dan justru di situlah letak seluruh manfaatnya</strong>: saya memperbaiki masalah lebih awal di atas kertas, bukan ketika setelah menjalankan beberapa studi dengan ~300 partisipan.</li>
+</ul></li>
+<li>Saya tidak akan mencoba ini sebagai praktik <em>reproducibility</em> pertama saya. Ini baru masuk akal setelah <em>pre-registration</em> dan <em>literate programming</em> sudah menjadi kebiasaan rutin.</li>
+</ul>
+</div>
+</section>
+<section id="apakah-ini-berhasil" class="slide level2">
+<h2>Apakah Ini Berhasil?</h2>
+<div class="infographic">
+<div class="infographic-cols">
+<div class="infographic-item">
+<p><span class="stat">96%</span></p>
+<p>dari artikel psikologi standar melaporkan hasil <strong>positif</strong> (mengonfirmasi hipotesis) — sebuah tingkat keberhasilan yang secara statistik tidak masuk akal</p>
+</div>
+<div class="infographic-item">
+<p><span class="stat">44%</span></p>
+<p>dari <em>Registered Reports</em> melaporkan hasil positif (<a href="https://journals.sagepub.com/doi/10.1177/25152459211007467">Scheel, Schijen, &amp; Lakens, 2021</a>)</p>
+</div>
+<div class="infographic-item">
+<p><span class="stat">300+</span></p>
+<p>jurnal kini menawarkan format RR, termasuk <em>Nature Human Behaviour</em>, <em>Cortex</em>, dan banyak jurnal psikologi top lainnya (<a href="https://www.cos.io/initiatives/registered-reports">daftar COS</a>)</p>
+</div>
+</div>
+</div>
+<ul>
+<li>RR juga dinilai <strong>lebih cermat secara ilmiah (<em>rigorous</em>) dan berkualitas lebih tinggi</strong> dibandingkan <em>paper</em> standar yang sebanding (<a href="https://www.nature.com/articles/s41562-021-01142-4">Soderberg et al., 2021</a>).</li>
+</ul>
+</section>
+<section id="registered-reports-dan-s3-anda" class="slide level2 text-slide-bg">
+<h2><em>Registered Reports</em> dan S3 Anda</h2>
+<div class="content-box">
+<ul>
+<li><strong>Masukan dari <em>reviewer</em> datang saat masih berguna</strong>, sebelum Anda menghabiskan satu tahun untuk mengumpulkan data.</li>
+<li><strong>IPA adalah jaminan publikasi yang bisa Anda jadikan dasar merencanakan disertasi</strong>: tidak perlu lagi berharap-harap cemas menunggu hasil publikasi sebelum ujian.</li>
+<li><strong>Hasil <em>null</em> menjadi temuan yang bisa dipublikasikan</strong>, bukan tahun-tahun yang terbuang percuma dan <em>sekaligus</em> baik untuk CV Anda.</li>
+<li>Soal waktu: <em>review Stage</em> 1 memerlukan waktu, jadi RR cocok untuk studi yang direncanakan <strong>jauh-jauh hari</strong> (tetapi sempurna untuk proposal S3!), tapi kurang cocok untuk <em>pilot study</em> yang cepat.</li>
+<li>Beberapa jurnal menawarkan <em>fast-track</em> atau jadwal <em>review</em> khusus untuk proyek mahasiswa; <strong>Peer Community In RR</strong> (<a href="https://rr.peercommunityin.org">PCI RR</a>) me<em>review</em> protokol Stage 1 secara independen dari jurnal mana pun.</li>
+<li>Bicarakan dengan promotor dan kopromotor Anda sejak dini: bab disertasi berbasis RR semakin umum dan sangat berharga bagi karier ilmiah seseorang.
+<ul>
+<li>Mungkin <em>belum</em> menjadi praktik umum di Unair, tapi ini semakin umum di banyak belahan dunia lain.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-7" class="slide level2 section-slide">
+<h2></h2>
+<!-- Zwischentitelfolie 06 -->
+<div class="section-number">
+<p>06</p>
+</div>
+<div class="section-bubble">
+<p>Kesimpulan</p>
+</div>
+</section>
+<section id="dari-mana-saya-memulai" class="slide level2">
+<h2>Dari Mana Saya Memulai</h2>
+<div class="lead">
+<p>Mulailah dengan transparansi <strong>yang Anda butuhkan</strong>, bukan yang <strong>Anda inginkan</strong>. Berikut urutan yang benar-benar saya daki:</p>
+</div>
+<div class="content-box">
+<ol type="1">
+<li><strong><em>Data Management Plan</em></strong> — hambatan paling rendah, hasil paling langsung. Saya mulai dari sini karena ini langsung membantu studi yang sedang saya jalankan <em>saat itu</em>.</li>
+<li><strong><em>Pre-registration</em></strong> — setelah mengorganisasi data menjadi rutinitas, merencanakan analisis di muka menjadi komitmen berikutnya yang wajar.</li>
+<li><strong><em>Literate programming</em></strong> — sebuah keterampilan teknis yang saya bangun setelah <em>pre-registration</em> membuat saya terbiasa berpikir dalam kerangka “rencana yang tertulis.”</li>
+<li><strong><em>Registered Report</em></strong> — anak tangga tersulit, dan yang butuh 2,5 tahun. Saya tidak akan memulai dari sini.</li>
+</ol>
+<ul>
+<li>Semua ini terjadi selama kurang lebih 15 tahun, dimulai satu kebiasaan pada satu waktu.</li>
+</ul>
+</div>
+</section>
+<section id="gambaran-besarnya" class="slide level2">
+<h2>Gambaran Besarnya</h2>
+<ul>
+<li class="fragment"><strong>Rencanakan (<em>Plan</em>)</strong> → tulis <strong><em>data management plan</em></strong>; lakukan <em>pre-registration</em> untuk hipotesis dan rencana analisis Anda atau langsung <em>all-in</em> dengan <strong><em>registered report</em></strong>.</li>
+<li class="fragment"><strong>Kerjakan (<em>Do</em>)</strong> → organisasikan proyek Anda dalam satu <em>folder</em>; jaga data mentah tetap <em>read-only</em>; analisis dengan <strong><em>literate programming</em></strong> agar setiap hasil bisa diperbarui dengan satu klik.</li>
+<li class="fragment"><strong>Bagikan (<em>Share</em>)</strong> → simpan data (FAIR!), <em>script</em>, dan material riset di <em>repository</em> terpercaya dengan DOI dan lisensi; tautkan semuanya dari paper, dengan <strong><em>computational empathy</em></strong> yang cukup agar orang asing benar-benar bisa menjalankannya.</li>
+<li class="fragment">Praktik-praktik ini hanya membutuhkan <strong>kebiasaan</strong>, dan kebiasaan paling mudah dibangun <strong>sekarang</strong>, di awal S3 Anda, sebelum Anda punya warisan masalah yang harus diurai.</li>
+<li class="fragment"><em>Reproducibility</em> adalah sebuah <strong>spektrum, bukan tes ya/tidak</strong>: setiap langkah (sebuah <em>codebook</em> di sini, sebuah <em>script</em> di sana) sudah membuat pekerjaan Anda lebih bisa dipercaya dibandingkan kalau Anda tidak melakukan apa pun sama sekali.</li>
+</ul>
+</section>
+<section id="starter-kit-anda-untuk-tahun-pertama" class="slide level2 columns-slide">
+<h2>Starter Kit Anda untuk Tahun Pertama</h2>
+<div class="lead">
+<p>Langkah-langkah konkret pertama:</p>
+</div>
+<div class="columns-area">
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-1"></i></span></p>
+<h3 id="minggu-ini">Minggu Ini</h3>
+<p>Buat akun <a href="https://zenodo.org/">Zenodo</a> gratis. Siapkan proyek pertama Anda dengan struktur folder yang rapi dan sebuah README. Ganti nama <em>file-file</em> Anda dengan benar.</p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-2"></i></span></p>
+<h3 id="bulan-ini">Bulan Ini</h3>
+<p>Pelajari cara menggunakan <i class="fa-brands fa-r-project"></i> dan <a href="https://quarto.org/docs/get-started/">Quarto</a> atau R Markdown lewat tutorial yang tersedia (<a href="https://kpuka.ca/resources/r_intro.html">Intro to <i class="fa-brands fa-r-project"></i></a>, <a href="https://r4ds.hadley.nz/">R4DS</a>, <a href="https://quarto-tdg.org/">Quarto TPG</a>). Lalu, tulis tugas Anda berikutnya sebagai dokumen <em>literate</em>. Susun draf DMP satu halaman untuk proyek disertasi Anda.</p>
+</div>
+<div class="col-item">
+<p><span class="col-icon"><i class="fa-solid fa-3"></i></span></p>
+<h3 id="tahun-ini">Tahun Ini</h3>
+<p>Lakukan <em>pre-registration</em> untuk studi pertama Anda di OSF atau AsPredicted. Diskusikan dengan promotor Anda apakah salah satu bagian disertasi memungkinkan dijadikan <em>Registered Report</em>.</p>
+</div>
+</div>
+</section>
+<section id="di-mana-bisa-belajar-lebih-lanjut" class="slide level2 text-slide-bg">
+<h2>Di Mana Bisa Belajar Lebih Lanjut</h2>
+<div class="content-box">
+<ul>
+<li><strong><a href="https://book.the-turing-way.org">The Turing Way</a></strong> — buku panduan gratis yang ditulis bersama komunitas tentang riset yang reproducible (mulai dari “Guide for Reproducible Research”).</li>
+<li><strong><a href="https://forrt.org">FORRT</a></strong> — Framework for Open and Reproducible Research Training: glosarium, kumpulan sumber daya, dan ringkasan literatur-literatur kunci.</li>
+<li><strong><a href="https://help.osf.io">Halaman dukungan OSF</a></strong> — panduan praktis untuk proyek, registrasi, dan preprint.</li>
+<li><strong><a href="https://quarto.org">quarto.org</a></strong> — tutorial resmi untuk <em>literate programming</em> dengan R dan Python.</li>
+<li>Bacaan lanjutan: <a href="https://www.nature.com/articles/s41562-016-0021">Munafò et al.&nbsp;(2017), <em>A manifesto for reproducible science</em></a> — <em>paper overview</em> terbaik untuk memulai.</li>
+<li>Temukan <strong>komunitas <em>open science</em></strong> lokal Anda (misalnya, <a href="https://sainsterbukaua.github.io/">Sains Terbuka Airlangga</a>) — <em>reproducibility</em> jauh lebih mudah, dan lebih menyenangkan, jika dilakukan bersama-sama.</li>
+</ul>
+</div>
+</section>
+<section id="section-8" class="slide level2 quote-slide">
+<h2></h2>
+<div class="quote-bubble">
+<blockquote>
+<p>Your closest collaborator is you six months ago, but you don’t reply to emails.</p>
+</blockquote>
+<div class="quote-author">
+<p>Mark Holder (dipopulerkan oleh Karl Broman) — permudah hidup diri Anda sendiri di masa depan.</p>
+</div>
+</div>
+</section>
+<section id="section-9" class="slide level2 closing-slide no-footer">
+<h2></h2>
+<div class="closing-left">
+<div class="closing-contact-box">
+<p><strong>Dr.&nbsp;Rizqy Amelia Zein</strong><br>
+Center for Advanced Internet Studies (CAIS) &amp; Universitas Airlangga<br>
+E-mail: <a href="mailto:amelia.zein@cais-research.de">amelia.zein@cais-research.de</a> · Homepage: <a href="https://rameliaz.github.io/">rameliaz.github.io</a></p>
+</div>
+<div class="closing-cais-logo">
+<p><img data-src="img/Transparent.png"></p>
+</div>
+</div>
+<div class="closing-right">
+<div class="closing-text">
+<p>Terima kasih!</p>
+<p>Selamat datang &amp; selamat memulai perjalanan doktoral Anda😉🎉</p>
+</div>
+<div class="closing-bottom">
+<div class="closing-org">
+<p>Center for Advanced Internet Studies (CAIS) gGmbH</p>
+<p>Konrad-Zuse-Str. 2a, 44801 Bochum</p>
+</div>
+<div class="closing-contact-info">
+<p><a href="mailto:info@cais-research.de">info@cais-research.de</a><br>
++49 234 9531 5000<br>
+<a href="https://www.cais-research.de">www.cais-research.de</a></p>
+</div>
+<div class="closing-social">
+<p><a href="https://www.linkedin.com/company/cais-nrw" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a> <a href="https://x.com/cais_nrw" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a> <a href="https://www.instagram.com/cais_nrw" title="Instagram"><i class="fa-brands fa-instagram"></i></a> <a href="https://scholar.social/@cais" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a> <a href="https://www.facebook.com/caisnrw" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a> <a href="https://www.youtube.com/@cais_nrw" title="YouTube"><i class="fa-brands fa-youtube"></i></a></p>
+</div>
+</div>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="img/Transparent.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Riset Reproducible | Zein | 2026</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: false,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
