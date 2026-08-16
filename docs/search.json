@@ -28,11 +28,18 @@
     "text": "Bagaimana Masalah Ini Bermula (awal 2010-an)\n\n2011 — Paper “prekognisi” Bem: sebuah jurnal top (Journal of Personality and Social Psychology - JPSP) mempublikasikan bukti bahwa orang bisa merasakan apa yang akan terjadi di masa depan (Bem, 2011) dengan menggunakan metode eksperimen dan menguji hipotesisnya dengan tes statistik standar. Jika sebuah eksperimen perilaku bisa “membuktikan” hal yang mustahil, lalu apa implikasinya bagi metode tersebut?\n2011 — Kasus kecurangan akademik Stapel: seorang profesor psikologi sosial terkemuka terbukti memalsukan data di puluhan paper yang sudah dipublikasikan.\n2011 — “False-Positive Psychology” (Simmons, Nelson, & Simonsohn): menunjukkan bahwa pilihan-pilihan analitis yang kesannya remeh, biasa, tetapi tidak diungkapkan bisa membuat apa pun menjadi signifikan secara statistik. Di paper ini, mereka menunjukkan betapa “mudahnya” membuktikan bahwa mendengarkan sebuah lagu yang spesifik (“When I’m 64”) membuat orang menjadi lebih muda.\nPeristiwa-peristiwa ini memicu pertanyaan besar: seberapa banyak klaim ilmiah di literatur Psikologi yang benar-benar bisa kita percaya?"
   },
   {
-    "objectID": "reproducibility-id.html#proyek-proyek-replikasi-multi-situs",
-    "href": "reproducibility-id.html#proyek-proyek-replikasi-multi-situs",
+    "objectID": "reproducibility-id.html#awal-mula-masalahnya-sebenarnya-sudah-muncul-lebih-lama",
+    "href": "reproducibility-id.html#awal-mula-masalahnya-sebenarnya-sudah-muncul-lebih-lama",
     "title": "Bagaimana Riset Dibuat Reproducible",
-    "section": "Proyek-Proyek Replikasi Multi-Situs",
-    "text": "Proyek-Proyek Replikasi Multi-Situs\n\nTim-tim riset besar secara sistematis mencoba ulang studi-studi yang sudah dipublikasikan dengan data baru, dan inilah hasilnya:\n\n\n\n\n36%\ndari 100 studi psikologi yang dicoba ulang — Open Science Collaboration (2015)\n\n\n61%\ndari 18 eksperimen laboratorium ekonomi yang dicoba ulang — Camerer et al. (2016)\n\n\n62%\ndari 21 studi ilmu sosial dari Nature & Science yang dicoba ulang — Camerer et al. (2018)\n\n\n49%\ndari 164 paper di 12 disiplin ilmu yang dicoba ulang dalam proyek SCORE (Nature, April 2026)\n\n\n\n\nBahkan ketika efeknya berhasil dicoba ulang, rata-rata effect sizenya hanya sekitar setengah dari yang dilaporkan pada awalnya (dikenal sebagai “The Decline Effect”) — SCORE menemukan pola yang sama lagi pada 2026.\nSCORE adalah riset reka ulang terbesar sejauh ini: 865 peneliti menilai 3.900 paper (2009–2018, 62 jurnal, mencakup ekonomi, psikologi, ilmu politik, sosiologi, dan lainnya). Mereka ulang analisis yang sudah dipublikasikan pada data asli hanya berhasil 54% dari keseluruhan kasus.\nPola ini, yang muncul di psikologi, ekonomi, dan bidang-bidang lainnya, dan kini terkonfirmasi dalam skala besar, bahwa apa yang disebut media sebagai “replication crisis” memang benar-benar terjadi."
+    "section": "Awal mula masalahnya sebenarnya sudah muncul lebih lama",
+    "text": "Awal mula masalahnya sebenarnya sudah muncul lebih lama"
+  },
+  {
+    "objectID": "reproducibility-id.html#studi-studi-multisite-replications",
+    "href": "reproducibility-id.html#studi-studi-multisite-replications",
+    "title": "Bagaimana Riset Dibuat Reproducible",
+    "section": "Studi-studi multisite replications",
+    "text": "Studi-studi multisite replications\n\nTim-tim riset besar secara sistematis mencoba ulang studi-studi yang sudah dipublikasikan dengan data baru, dan inilah hasilnya:\n\n\n\n\n36%\ndari 100 studi psikologi yang dicoba ulang — Open Science Collaboration (2015)\n\n\n61%\ndari 18 eksperimen laboratorium ekonomi yang dicoba ulang — Camerer et al. (2016)\n\n\n62%\ndari 21 studi ilmu sosial dari Nature & Science yang dicoba ulang — Camerer et al. (2018)\n\n\n49%\ndari 164 paper di 12 disiplin ilmu yang dicoba ulang dalam proyek SCORE (Nature, April 2026)\n\n\n\n\nBahkan ketika efeknya berhasil dicoba ulang, rata-rata effect sizenya hanya sekitar setengah dari yang dilaporkan pada awalnya (dikenal sebagai “The Decline Effect”) — SCORE menemukan pola yang sama lagi pada 2026.\nSCORE adalah riset reka ulang terbesar sejauh ini: 865 peneliti menilai 3.900 paper (2009–2018, 62 jurnal, mencakup ekonomi, psikologi, ilmu politik, sosiologi, dan lainnya). Mereka ulang analisis yang sudah dipublikasikan pada data asli hanya berhasil 54% dari keseluruhan kasus.\nPola ini, yang muncul di psikologi, ekonomi, dan bidang-bidang lainnya, dan kini terkonfirmasi dalam skala besar, bahwa apa yang disebut media sebagai “replication crisis” memang benar-benar terjadi."
   },
   {
     "objectID": "reproducibility-id.html#tiga-istilah-yang-sering-tertukar",
@@ -42,11 +49,18 @@
     "text": "Tiga Istilah yang Sering Tertukar\n\nBerdasarkan Barba (2018) dan The Turing Way, kebanyakan orang sering mencampuradukkan istilah-istilah ini:\n\n\n\n\nReproducibility (🇮🇩 “reka ulang”)\nData sama + analisis sama → hasil sama. Orang lain (atau diri Anda sendiri di masa depan) menjalankan ulang analisis Anda pada data milik Anda dan mendapatkan angka-angka yang sama seperti di paper Anda.\n\n\n\nReplicability (🇮🇩 “coba ulang”)\nData baru + metode sama → hasil serupa. Tim independen mengulang studi tersebut dengan partisipan baru dan menemukan effect size yang sebanding dengan penelitian aslinya.\n\n\n\nRobustness (🇮🇩 “keandalan”)\nData sama + analisis baru → hasil sama, atau setidaknya kesimpulan yang serupa. Temuan tetap stabil meskipun menggunakan strategi analitis yang berbeda."
   },
   {
-    "objectID": "reproducibility-id.html#bagian-yang-benar-benar-mencemaskan",
-    "href": "reproducibility-id.html#bagian-yang-benar-benar-mencemaskan",
+    "objectID": "reproducibility-id.html#lihat-perbedaannya-lebih-jelas",
+    "href": "reproducibility-id.html#lihat-perbedaannya-lebih-jelas",
     "title": "Bagaimana Riset Dibuat Reproducible",
-    "section": "Bagian yang Benar-Benar Mencemaskan",
-    "text": "Bagian yang Benar-Benar Mencemaskan\n\nMari kita lupakan sejenak soal mengumpulkan data baru (atau replikasi). Bisakah kita bahkan mereka ulang hasil penelitian dari data aslinya? (atau reproducibility)\n\n\nHardwicke et al. (2018) mencoba mereka ulang hasil dari paper-paper yang terbit di jurnal dengan kebijakan yang mewajibkan data terbuka di jurnal Cognition: hanya 11 dari 35 paper yang berhasil direka ulang tanpa bantuan dari penulis aslinya.\nArtner et al. (2021) hanya bisa mereproduksi ~70% klaim statistik utama dari artikel-artikel psikologi yang sudah dipublikasikan, dan sebagian di antaranya baru berhasil setelah melakukan kerja ala detektif yang cukup berat.\nCrüwell et al. (2023) mengecek badge “open data” di Psychological Science: hanya 1 dari 14 artikel yang dinilai sepenuhnya computationally reproducible.\nDan ini langsung berdampak pada kehidupan banyak orang: flagship paper tentang kebijakan austerity Reinhart & Rogoff yang sangat terkenal, yang banyak digunakan untuk membenarkan kebijakan ekonomi di banyak negara, ternyata mengandung kesalahan di file Excelnya yang amat sepele, dan baru ditemukan ketika seorang mahasiswa pascasarjana mendapatkan spreadsheet-nya (Herndon et al., 2014)."
+    "section": "Lihat Perbedaannya Lebih Jelas",
+    "text": "Lihat Perbedaannya Lebih Jelas"
+  },
+  {
+    "objectID": "reproducibility-id.html#yang-lebih-mencemaskan",
+    "href": "reproducibility-id.html#yang-lebih-mencemaskan",
+    "title": "Bagaimana Riset Dibuat Reproducible",
+    "section": "Yang Lebih Mencemaskan",
+    "text": "Yang Lebih Mencemaskan\n\nMari kita lupakan sejenak soal mengumpulkan data baru (atau replikasi). Bisakah kita bahkan mereka ulang hasil penelitian dari data aslinya? (atau reproducibility)\n\n\nHardwicke et al. (2018) mencoba mereka ulang hasil dari paper-paper yang terbit di jurnal dengan kebijakan yang mewajibkan data terbuka di jurnal Cognition: hanya 11 dari 35 paper yang berhasil direka ulang tanpa bantuan dari penulis aslinya.\nArtner et al. (2021) hanya bisa mereproduksi ~70% klaim statistik utama dari artikel-artikel psikologi yang sudah dipublikasikan, dan sebagian di antaranya baru berhasil setelah melakukan kerja ala detektif yang cukup berat.\nCrüwell et al. (2023) mengecek badge “open data” di Psychological Science: hanya 1 dari 14 artikel yang dinilai sepenuhnya computationally reproducible.\nDan ini langsung berdampak pada kehidupan banyak orang: flagship paper tentang kebijakan austerity Reinhart & Rogoff yang sangat terkenal, yang banyak digunakan untuk membenarkan kebijakan ekonomi di banyak negara, ternyata mengandung kesalahan di file Excelnya yang amat sepele, dan baru ditemukan ketika seorang mahasiswa pascasarjana mendapatkan spreadsheet-nya (Herndon et al., 2014)."
   },
   {
     "objectID": "reproducibility-id.html#mengapa-ini-bisa-terjadi",
@@ -109,7 +123,7 @@
     "href": "reproducibility-id.html#data-fair",
     "title": "Bagaimana Riset Dibuat Reproducible",
     "section": "Data FAIR",
-    "text": "Data FAIR\n\nStandar acuan untuk data riset yang dibagikan (Wilkinson et al., 2016), data seharusnya FAIR:\n\n\n\n\nF\nFindable — disimpan dengan pengenal permanen (DOI) dan metadata yang kaya\n\n\nA\nAccessible — dapat diambil lewat protokol standar; syarat aksesnya jelas\n\n\nI\nInteroperable — format terbuka (CSV, bukan hanya SPSS), kosakata standar\n\n\nR\nReusable — lisensi jelas, provenance, dan dokumentasi yang cukup untuk digunakan ulang\n\n\n\n\nPenting: FAIR ≠ terbuka (open). Prinsipnya adalah “seterbuka mungkin, setertutup yang diperlukan.” Data sensitif tetap bisa FAIR meskipun aksesnya dibatasi."
+    "text": "Data FAIR\n\nStandar acuan untuk data riset yang dibagikan (Wilkinson et al., 2016), data seharusnya FAIR:\n\n\n\n\nF\nFindable — disimpan dengan pengenal permanen (DOI) dan metadata yang kaya\n\n\nA\nAccessible — dapat diambil lewat protokol standar; syarat aksesnya jelas\n\n\nI\nInteroperable — format terbuka (CSV, bukan hanya SPSS), menggunakan kosakata standar\n\n\nR\nReusable — lisensi jelas, provenance (informasi tentang asal-usul data), dan dokumentasi yang cukup untuk digunakan ulang\n\n\n\n\nPenting: FAIR ≠ terbuka (open). Prinsipnya adalah “seterbuka mungkin, setertutup yang diperlukan.” Data sensitif tetap bisa FAIR meskipun aksesnya dibatasi."
   },
   {
     "objectID": "reproducibility-id.html#kebiasaan-praktis-yang-gratis",
@@ -336,6 +350,13 @@
     "text": "How It Started (early 2010s)\n\n2011 — Bem’s “precognition” paper: a top journal (Journal of Personality and Social Psychology - JPSP) published evidence that people can feel the future (Bem, 2011) by using standard methods and standard statistics. If the method can “prove” the impossible, what does that say about the method?\n2011 — The Stapel fraud case: a prominent social psychologist was found to have fabricated data in dozens of published papers.\n2011 — “False-Positive Psychology” (Simmons, Nelson, & Simonsohn): showed that ordinary, small, undisclosed analytic choices can make anything statistically significant — they “demonstrated” that listening to a song makes people younger.\nThese events triggered a field-wide question: how much of our literature can we actually trust?"
   },
   {
+    "objectID": "reproducibility.html#but-the-problem-started-much-earlier-than-that",
+    "href": "reproducibility.html#but-the-problem-started-much-earlier-than-that",
+    "title": "How Research is Made Reproducible",
+    "section": "But the problem started much earlier than that",
+    "text": "But the problem started much earlier than that"
+  },
+  {
     "objectID": "reproducibility.html#the-multi-site-replication-projects",
     "href": "reproducibility.html#the-multi-site-replication-projects",
     "title": "How Research is Made Reproducible",
@@ -348,6 +369,13 @@
     "title": "How Research is Made Reproducible",
     "section": "Three Words You Must Not Confuse",
     "text": "Three Words You Must Not Confuse\n\nFollowing Barba (2018) and The Turing Way, people mix these up all the time:\n\n\n\n\nReproducibility (🇮🇩 “reka ulang”)\nSame data + same analysis → same result. Someone else (or future you) re-runs your analysis on your data and gets the numbers in your paper.\n\n\n\nReplicability (🇮🇩 “coba ulang”)\nNew data + same method → similar result. An independent team repeats the study with new participants and finds a comparable effect.\n\n\n\nRobustness (🇮🇩 “keandalan”)\nSame data + new analysis → same result or at least, similar conclusion. The finding remains stable when different analytical strategies are used."
+  },
+  {
+    "objectID": "reproducibility.html#notice-the-differences",
+    "href": "reproducibility.html#notice-the-differences",
+    "title": "How Research is Made Reproducible",
+    "section": "Notice the Differences",
+    "text": "Notice the Differences"
   },
   {
     "objectID": "reproducibility.html#the-really-uncomfortable-part",
@@ -382,7 +410,7 @@
     "href": "reproducibility.html#a-reproducibility-ladder",
     "title": "How Research is Made Reproducible",
     "section": "A “Reproducibility Ladder”🪜",
-    "text": "A “Reproducibility Ladder”🪜\n\nStart with the transparency you need, not the transparency you want. The four practices in this talk are not a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.\n\n\nRung 1 — Data Management Plan: lowest barrier, most direct benefit. A folder that anyone, including future you, can navigate.\nRung 2 — Pre-Registration: a planning discipline — write the hypothesis down before you know the answer.\nRung 3 — Literate Programming: a technical habit — let the document compute itself instead of copying numbers by hand.\nRung 4 — Registered Reports: the biggest commitment — review before results exist, over years.\nThis is the order I personally climbed it, over about 15 years of my scientific career. I’ll show you what each rung actually looked like from where I stood."
+    "text": "A “Reproducibility Ladder”🪜\n\nStart with the transparency you need, not the transparency you want. The four practices in this talk are not supposed to be a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.\n\n\nRung 1 — Data Management Plan: lowest barrier, most direct benefit. A folder that anyone, including future you, can navigate.\nRung 2 — Pre-Registration: a planning discipline — write the hypothesis down before you know the answer.\nRung 3 — Literate Programming: a technical habit — let the document compute itself instead of copying numbers by hand.\nRung 4 — Registered Reports: the biggest commitment — review before results exist, over years.\nThis is the order I personally climbed it, over about 15 years of my scientific career. I’ll show you what each rung actually looked like from where I stood."
   },
   {
     "objectID": "reproducibility.html#section-2",

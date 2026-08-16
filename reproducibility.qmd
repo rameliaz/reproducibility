@@ -59,6 +59,10 @@ You read a fascinating finding in a top journal and want to build your dissertat
 
 :::
 
+## But the problem started much earlier than that
+
+![](img/history.JPG){fig-align="center"}
+
 ## The Multi-Site Replication Projects
 
 ::: {.lead}
@@ -124,6 +128,10 @@ Following [Barba (2018)](https://arxiv.org/abs/1802.03311) and [The Turing Way](
 :::
 :::
 
+## Notice the Differences
+
+![](img/matrix.JPG){fig-align="center"}
+
 ## The Really Uncomfortable Part
 
 ::: {.lead}
@@ -184,7 +192,7 @@ Ensuring that our results are reproducible gives us more confidence in our work.
 ## A "Reproducibility Ladder"🪜
 
 ::: {.lead}
-Start with the transparency **you need**, not the transparency **you want**. The four practices in this talk are *not* a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.
+Start with the transparency **you need**, not the transparency **you want**. The four practices in this talk are *not supposed to be* a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.
 :::
 
 ::: {.incremental}

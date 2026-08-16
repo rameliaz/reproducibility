@@ -59,7 +59,11 @@ Anda membaca sebuah temuan menarik di suatu jurnal top dan membayangkan *paper* 
 
 :::
 
-## Proyek-Proyek Replikasi Multi-Situs
+## Awal mula masalahnya sebenarnya sudah muncul lebih lama
+
+![](img/history.JPG){fig-align="center"}
+
+## Studi-studi *multisite replications*
 
 ::: {.lead}
 Tim-tim riset besar secara sistematis mencoba ulang studi-studi yang sudah dipublikasikan dengan data baru, dan inilah hasilnya:
@@ -124,7 +128,11 @@ Berdasarkan [Barba (2018)](https://arxiv.org/abs/1802.03311) dan [The Turing Way
 :::
 :::
 
-## Bagian yang Benar-Benar Mencemaskan
+## Lihat Perbedaannya Lebih Jelas
+
+![](img/matrix.JPG){fig-align="center"}
+
+## Yang Lebih Mencemaskan
 
 ::: {.lead}
 Mari kita lupakan sejenak soal mengumpulkan data baru (atau replikasi). Bisakah kita bahkan mereka ulang *hasil penelitian* dari *data aslinya*? (atau *reproducibility*)
@@ -292,12 +300,12 @@ Standar acuan untuk data riset yang dibagikan ([Wilkinson et al., 2016](https://
 ::: {.infographic-item}
 [I]{.stat}
 
-***Interoperable*** — format terbuka (CSV, bukan hanya SPSS), kosakata standar
+***Interoperable*** — format terbuka (CSV, bukan hanya SPSS), menggunakan kosakata standar
 :::
 ::: {.infographic-item}
 [R]{.stat}
 
-***Reusable*** — lisensi jelas, provenance, dan dokumentasi yang cukup untuk digunakan ulang
+***Reusable*** — lisensi jelas, *provenance* (informasi tentang asal-usul data), dan dokumentasi yang cukup untuk digunakan ulang
 :::
 :::
 :::
