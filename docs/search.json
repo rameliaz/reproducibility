@@ -2,315 +2,315 @@
   {
     "objectID": "reproducibility-id.html#agenda",
     "href": "reproducibility-id.html#agenda",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "AGENDA",
-    "text": "AGENDA\n\n\nReplication Crisis dan Mengapa Reproducibility Penting\nData Management Plan\nPra-registrasi\nLiterate Programming\nRegistered Reports\nKesimpulan"
+    "text": "AGENDA\n\n\nReplication Crisis dan Mengapa Reproducibility Penting\nData Management Plan\nPre-registration\nLiterate Programming\nRegistered Reports\nKesimpulan"
   },
   {
     "objectID": "reproducibility-id.html#section",
     "href": "reproducibility-id.html#section",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "01\n\n\nReplication Crisis dan Mengapa Reproducibility Penting"
   },
   {
     "objectID": "reproducibility-id.html#mari-kita-mulai-dengan-sebuah-thought-experiment",
     "href": "reproducibility-id.html#mari-kita-mulai-dengan-sebuah-thought-experiment",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Mari Kita Mulai dengan Sebuah Thought Experiment",
-    "text": "Mari Kita Mulai dengan Sebuah Thought Experiment\n\nAnda membaca sebuah temuan menarik di suatu jurnal top dan membayangkan paper ini akan menjadi landasan fundamental dari disertasi Anda.\n\n\nPertanyaan 1: Jika tim lain mencoba ulang studi yang sama dengan mengambil data baru, apakah mereka akan menemukan hasil yang sama?\nPertanyaan 2: Jika Anda mengambil data asli dan script analisis asli dari penelitian tersebut, apakah Anda akan mendapatkan hasil yang sama persis seperti yang dilaporkan dalam paper tersebut?\nSecara intuitif, kita berasumsi jawaban untuk keduanya adalah “ya, tentu saja! Paper ini, kan, sudah dipublikasikan di jurnal top Q1!”\nSelama 15 tahun terakhir, para peneliti benar-benar mengeceknya. Jawabannya… akan membuat Anda kaget."
+    "text": "Mari Kita Mulai dengan Sebuah Thought Experiment\n\nAnda membaca sebuah temuan menarik di suatu jurnal top dan membayangkan paper ini akan menjadi landasan fundamental dari disertasi Anda.\n\n\nPertanyaan 1: Jika tim lain mencoba ulang studi yang sama dengan mengambil data baru, apakah mereka akan menemukan hasil yang sama?\nPertanyaan 2: Jika Anda menganalisis ulang data asli dengan script/file analisis asli dari penelitian tersebut, apakah Anda akan mendapatkan hasil yang sama persis seperti yang dilaporkan dalam paper tersebut?\nSecara intuitif, kita berasumsi jawaban untuk keduanya adalah “ya, tentu saja! Paper ini, kan, sudah dipublikasikan di jurnal top Q1!”\nSelama 15 tahun terakhir, para peneliti benar-benar mengeceknya dan jawabannya… akan membuat Anda kaget."
   },
   {
-    "objectID": "reproducibility-id.html#bagaimana-masalah-ini-bermula-awal-2010-an",
-    "href": "reproducibility-id.html#bagaimana-masalah-ini-bermula-awal-2010-an",
-    "title": "Bagaimana Riset Dibuat Reproducible",
-    "section": "Bagaimana Masalah Ini Bermula (awal 2010-an)",
-    "text": "Bagaimana Masalah Ini Bermula (awal 2010-an)\n\n2011 — Paper “prekognisi” Bem: sebuah jurnal top (Journal of Personality and Social Psychology - JPSP) mempublikasikan bukti bahwa orang bisa merasakan apa yang akan terjadi di masa depan (Bem, 2011) dengan menggunakan metode eksperimen dan menguji hipotesisnya dengan tes statistik standar. Jika sebuah eksperimen perilaku bisa “membuktikan” hal yang mustahil, lalu apa implikasinya bagi metode tersebut?\n2011 — Kasus kecurangan akademik Stapel: seorang profesor psikologi sosial terkemuka terbukti memalsukan data di puluhan paper yang sudah dipublikasikan.\n2011 — “False-Positive Psychology” (Simmons, Nelson, & Simonsohn): menunjukkan bahwa pilihan-pilihan analitis yang kesannya remeh, biasa, tetapi tidak diungkapkan bisa membuat apa pun menjadi signifikan secara statistik. Di paper ini, mereka menunjukkan betapa “mudahnya” membuktikan bahwa mendengarkan sebuah lagu yang spesifik (“When I’m 64”) membuat orang menjadi lebih muda.\nPeristiwa-peristiwa ini memicu pertanyaan besar: seberapa banyak klaim ilmiah di literatur Psikologi yang benar-benar bisa kita percaya?"
+    "objectID": "reproducibility-id.html#awal-mula-masalahnya-awal-2010-an",
+    "href": "reproducibility-id.html#awal-mula-masalahnya-awal-2010-an",
+    "title": "Agar Riset Dapat Direka Ulang",
+    "section": "Awal Mula Masalahnya (awal 2010-an)",
+    "text": "Awal Mula Masalahnya (awal 2010-an)\n\n2011 — Paper “prekognisi” Bem: sebuah jurnal top (Journal of Personality and Social Psychology - JPSP) mempublikasikan bukti bahwa orang bisa merasakan apa yang akan terjadi di masa depan (Bem, 2011) dengan menggunakan metode eksperimen dan menguji hipotesisnya dengan tes statistik standar. Jika sebuah eksperimen perilaku bisa “membuktikan” hal yang mustahil, lalu apa implikasinya bagi metode tersebut?\n2011 — Kasus kecurangan akademik Diederik Stapel: seorang profesor psikologi sosial terkemuka terbukti memalsukan data di puluhan paper yang sudah dipublikasikan.\n2011 — “False-Positive Psychology” (Simmons, Nelson, & Simonsohn): menunjukkan bahwa pilihan-pilihan analitis yang kesannya remeh, biasa, tetapi tidak diungkapkan bisa membuat apa pun menjadi signifikan secara statistik. Di paper ini, mereka menunjukkan betapa “mudahnya” membuktikan bahwa mendengarkan sebuah lagu yang spesifik (“When I’m 64”) membuat orang menjadi lebih muda.\nPeristiwa-peristiwa ini memicu pertanyaan besar: seberapa banyak klaim ilmiah di literatur Psikologi yang benar-benar bisa kita percaya?"
   },
   {
-    "objectID": "reproducibility-id.html#awal-mula-masalahnya-sebenarnya-sudah-muncul-lebih-lama",
-    "href": "reproducibility-id.html#awal-mula-masalahnya-sebenarnya-sudah-muncul-lebih-lama",
-    "title": "Bagaimana Riset Dibuat Reproducible",
-    "section": "Awal mula masalahnya sebenarnya sudah muncul lebih lama",
-    "text": "Awal mula masalahnya sebenarnya sudah muncul lebih lama"
+    "objectID": "reproducibility-id.html#sebanarnya-bukan-masalah-baru",
+    "href": "reproducibility-id.html#sebanarnya-bukan-masalah-baru",
+    "title": "Agar Riset Dapat Direka Ulang",
+    "section": "Sebanarnya… bukan masalah baru",
+    "text": "Sebanarnya… bukan masalah baru"
   },
   {
-    "objectID": "reproducibility-id.html#studi-studi-multisite-replications",
-    "href": "reproducibility-id.html#studi-studi-multisite-replications",
-    "title": "Bagaimana Riset Dibuat Reproducible",
-    "section": "Studi-studi multisite replications",
-    "text": "Studi-studi multisite replications\n\nTim-tim riset besar secara sistematis mencoba ulang studi-studi yang sudah dipublikasikan dengan data baru, dan inilah hasilnya:\n\n\n\n\n36%\ndari 100 studi psikologi yang dicoba ulang — Open Science Collaboration (2015)\n\n\n61%\ndari 18 eksperimen laboratorium ekonomi yang dicoba ulang — Camerer et al. (2016)\n\n\n62%\ndari 21 studi ilmu sosial dari Nature & Science yang dicoba ulang — Camerer et al. (2018)\n\n\n49%\ndari 164 paper di 12 disiplin ilmu yang dicoba ulang dalam proyek SCORE (Nature, April 2026)\n\n\n\n\nBahkan ketika efeknya berhasil dicoba ulang, rata-rata effect sizenya hanya sekitar setengah dari yang dilaporkan pada awalnya (dikenal sebagai “The Decline Effect”) — SCORE menemukan pola yang sama lagi pada 2026.\nSCORE adalah riset reka ulang terbesar sejauh ini: 865 peneliti menilai 3.900 paper (2009–2018, 62 jurnal, mencakup ekonomi, psikologi, ilmu politik, sosiologi, dan lainnya). Mereka ulang analisis yang sudah dipublikasikan pada data asli hanya berhasil 54% dari keseluruhan kasus.\nPola ini, yang muncul di psikologi, ekonomi, dan bidang-bidang lainnya, dan kini terkonfirmasi dalam skala besar, bahwa apa yang disebut media sebagai “replication crisis” memang benar-benar terjadi."
+    "objectID": "reproducibility-id.html#multisite-replications",
+    "href": "reproducibility-id.html#multisite-replications",
+    "title": "Agar Riset Dapat Direka Ulang",
+    "section": "Multisite replications",
+    "text": "Multisite replications\n\nTim-tim riset besar secara sistematis mencoba ulang studi-studi yang sudah dipublikasikan dengan data baru, dan inilah hasilnya:\n\n\n\n\n36%\ndari 100 studi psikologi yang dicoba ulang — Open Science Collaboration (2015)\n\n\n61%\ndari 18 eksperimen laboratorium ekonomi yang dicoba ulang — Camerer et al. (2016)\n\n\n62%\ndari 21 studi ilmu sosial dari Nature & Science yang dicoba ulang — Camerer et al. (2018)\n\n\n49%\ndari 164 paper di 12 disiplin ilmu yang dicoba ulang dalam proyek SCORE (Nature, April 2026)\n\n\n\n\nBahkan ketika efeknya berhasil dicoba ulang, rata-rata effect sizenya hanya sekitar setengah dari yang dilaporkan pada awalnya (dikenal sebagai “The Decline Effect”) — SCORE menemukan pola yang sama lagi pada 2026.\nSCORE adalah riset reka ulang terbesar sejauh ini: 865 peneliti menilai 3.900 paper (2009–2018, 62 jurnal, mencakup ekonomi, psikologi, ilmu politik, sosiologi, dan lainnya). Mereka ulang analisis yang sudah dipublikasikan pada data asli hanya berhasil 54% dari keseluruhan kasus.\nPola ini, yang muncul di psikologi, ekonomi, dan bidang-bidang lainnya, dan kini terkonfirmasi dalam skala besar, bahwa apa yang disebut media sebagai “replication crisis” memang benar-benar terjadi."
   },
   {
     "objectID": "reproducibility-id.html#tiga-istilah-yang-sering-tertukar",
     "href": "reproducibility-id.html#tiga-istilah-yang-sering-tertukar",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Tiga Istilah yang Sering Tertukar",
     "text": "Tiga Istilah yang Sering Tertukar\n\nBerdasarkan Barba (2018) dan The Turing Way, kebanyakan orang sering mencampuradukkan istilah-istilah ini:\n\n\n\n\nReproducibility (🇮🇩 “reka ulang”)\nData sama + analisis sama → hasil sama. Orang lain (atau diri Anda sendiri di masa depan) menjalankan ulang analisis Anda pada data milik Anda dan mendapatkan angka-angka yang sama seperti di paper Anda.\n\n\n\nReplicability (🇮🇩 “coba ulang”)\nData baru + metode sama → hasil serupa. Tim independen mengulang studi tersebut dengan partisipan baru dan menemukan effect size yang sebanding dengan penelitian aslinya.\n\n\n\nRobustness (🇮🇩 “keandalan”)\nData sama + analisis baru → hasil sama, atau setidaknya kesimpulan yang serupa. Temuan tetap stabil meskipun menggunakan strategi analitis yang berbeda."
   },
   {
     "objectID": "reproducibility-id.html#lihat-perbedaannya-lebih-jelas",
     "href": "reproducibility-id.html#lihat-perbedaannya-lebih-jelas",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Lihat Perbedaannya Lebih Jelas",
     "text": "Lihat Perbedaannya Lebih Jelas"
   },
   {
     "objectID": "reproducibility-id.html#yang-lebih-mencemaskan",
     "href": "reproducibility-id.html#yang-lebih-mencemaskan",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Yang Lebih Mencemaskan",
     "text": "Yang Lebih Mencemaskan\n\nMari kita lupakan sejenak soal mengumpulkan data baru (atau replikasi). Bisakah kita bahkan mereka ulang hasil penelitian dari data aslinya? (atau reproducibility)\n\n\nHardwicke et al. (2018) mencoba mereka ulang hasil dari paper-paper yang terbit di jurnal dengan kebijakan yang mewajibkan data terbuka di jurnal Cognition: hanya 11 dari 35 paper yang berhasil direka ulang tanpa bantuan dari penulis aslinya.\nArtner et al. (2021) hanya bisa mereproduksi ~70% klaim statistik utama dari artikel-artikel psikologi yang sudah dipublikasikan, dan sebagian di antaranya baru berhasil setelah melakukan kerja ala detektif yang cukup berat.\nCrüwell et al. (2023) mengecek badge “open data” di Psychological Science: hanya 1 dari 14 artikel yang dinilai sepenuhnya computationally reproducible.\nDan ini langsung berdampak pada kehidupan banyak orang: flagship paper tentang kebijakan austerity Reinhart & Rogoff yang sangat terkenal, yang banyak digunakan untuk membenarkan kebijakan ekonomi di banyak negara, ternyata mengandung kesalahan di file Excelnya yang amat sepele, dan baru ditemukan ketika seorang mahasiswa pascasarjana mendapatkan spreadsheet-nya (Herndon et al., 2014)."
   },
   {
     "objectID": "reproducibility-id.html#mengapa-ini-bisa-terjadi",
     "href": "reproducibility-id.html#mengapa-ini-bisa-terjadi",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Mengapa Ini Bisa Terjadi?",
-    "text": "Mengapa Ini Bisa Terjadi?\n\nIni sebagian besar bukan soal kecurangan yang benar-benar mengandung niat jahat, melainkan perilaku manusia yang sekadar mengikuti insentif.\n\n\nPublication bias: jurnal lebih menyukai temuan yang baru, positif, dan “bersih”. Karena itu, hasil negatif/null sering kali berakhir di laci arsip (file drawer).\nPublish or perish: karier akademik dibangun berdasarkan jumlah publikasi, bukan kualitas substantifnya.\nQuestionable research practices (QRPs): area abu-abu antara praktik baik dan kecurangan (John et al., 2012):\n\np-hacking: mencoba banyak analisis dan hanya melaporkan yang “berhasil”\nHARKing: Hypothesizing After the Results are Known — menyajikan temuan eksploratif seolah-olah memang sudah diprediksi sebelumnya (Kerr, 1998)\nPelaporan selektif (selective reporting) terhadap ukuran, kondisi, atau hasil\n\nThe garden of forking paths: bahkan tanpa niat buruk sekalipun, setiap dataset memungkinkan pilihan analisis yang sangat banyak dan sama-sama bisa dipertahankan, sehingga fleksibilitas dalam pilihan analitis bisa meningkatkan false positive rate (Gelman & Loken, 2014)."
+    "text": "Mengapa Ini Bisa Terjadi?\n\nIni sebagian besar bukan soal kecurangan yang benar-benar mengandung niat jahat, melainkan perilaku manusia yang sekadar mengikuti insentif.\n\n\nPublication bias: jurnal lebih menyukai temuan yang baru, positif, dan “bersih”. Karena itu, hasil negatif/null sering kali berakhir di laci arsip (file drawer).\nPublish or perish: karier akademik dibangun berdasarkan jumlah publikasi, bukan kualitas substantifnya.\nQuestionable research practices (QRPs): area abu-abu antara praktik baik dan kecurangan (John et al., 2012):\n\np-hacking: mencoba banyak analisis dan hanya melaporkan yang “berhasil”\nHARKing: Hypothesizing After the Results are Known — menyajikan temuan eksploratif seolah-olah memang sudah diprediksi sebelumnya (Kerr, 1998).\nPelaporan selektif (selective reporting) terhadap pengukuran, kondisi (eksperimen), atau temuan penelitian.\n\nThe garden of forking paths: bahkan tanpa niat buruk sekalipun, setiap dataset memungkinkan pilihan analisis yang sangat banyak dan sama-sama bisa dipertahankan secara metodologis, sehingga fleksibilitas dalam pilihan analitis bisa meningkatkan false positive rate (Gelman & Loken, 2014)."
   },
   {
     "objectID": "reproducibility-id.html#section-1",
     "href": "reproducibility-id.html#section-1",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.\n\n\nBuckheit & Donoho (1995), memparafrasekan Jon Claerbout"
   },
   {
     "objectID": "reproducibility-id.html#mengapa-anda-perlu-peduli",
     "href": "reproducibility-id.html#mengapa-anda-perlu-peduli",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Mengapa Anda Perlu Peduli?",
-    "text": "Mengapa Anda Perlu Peduli?\n\nMemastikan hasil kita dapat direka ulang dapat memberi kita lebih banyak kepercayaan diri atas pekerjaan kita.\n\n\n\nKolaborator terdekat Anda adalah diri Anda sendiri, enam bulan yang lalu, dan Anda-di-masa-lalu tidak dapat membalas chat WhatsApp. Alur kerja yang reproducible berarti Anda selalu bisa menelusuri kembali langkah-langkah Anda sendiri.\nKesalahan tertangkap lebih awal, sebelum berakhir di disertasi Anda, ujian/sidang, atau bahkan retraction.\nReviewer, promotor, dan komite ujian semakin mengharapkannya. Pendana dan jurnal kini rutin mensyaratkan peneliti untuk membagikan data dan material riset.\nMembuat Anda lebih efisien. Menjalankan ulang analisis setelah “tolong tambahkan satu variabel kontrol saja” hanya butuh satu klik.\nIni membangun kepercayaan terhadap pekerjaan Anda. Riset yang reproducible akan lebih banyak digunakan ulang, disitasi, dan dikembangkan lebih lanjut."
+    "text": "Mengapa Anda Perlu Peduli?\n\nMemastikan hasil kita dapat direka ulang dapat memberi kita lebih banyak kepercayaan diri atas pekerjaan kita.\n\n\n\nKolaborator terdekat Anda adalah diri Anda sendiri, enam bulan yang lalu, dan diri Anda di masa lalu tidak dapat membalas chat WhatsApp. Alur kerja yang reproducible berarti Anda selalu bisa menelusuri kembali langkah-langkah Anda sendiri.\nKesalahan tertangkap lebih awal, sebelum berakhir di disertasi Anda, ujian/sidang, atau bahkan retraction.\nReviewer, promotor, dan komite ujian semakin mengharapkannya. Pendana besar dan jurnal kini rutin mensyaratkan peneliti untuk membagikan data dan material riset.\nMembuat Anda lebih efisien. Menjalankan ulang analisis setelah diminta promotor: “tolong tambahkan satu variabel kontrol saja” hanya butuh satu klik.\nIni membangun kepercayaan terhadap pekerjaan Anda. Riset yang reproducible akan lebih banyak digunakan ulang, disitasi, dan dikembangkan lebih lanjut."
   },
   {
     "objectID": "reproducibility-id.html#tangga-reproducibility",
     "href": "reproducibility-id.html#tangga-reproducibility",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "“Tangga Reproducibility”🪜",
-    "text": "“Tangga Reproducibility”🪜\n\nMulailah dengan tingkat transparansi yang Anda butuhkan, bukan yang Anda inginkan. Empat praktik dalam presentasi ini bukan checklist yang harus selesaikan semester ini, atau bahkan sepanjang program S3 Anda. Ini adalah tangga yang akan Anda daki selama bertahun-tahun sepanjang karier profesional Anda ke depan.\n\n\nAnak tangga 1 — Data Management Plan: memiliki hambatan yang paling rendah, manfaat paling langsung. Sebuah folder yang bisa dijelajahi siapa pun, termasuk Anda di masa depan.\nAnak tangga 2 — Pre-Registration: sebuah disiplin perencanaan riset — menuliskan hipotesis sebelum Anda tahu jawabannya.\nAnak tangga 3 — Literate Programming: sebuah kebiasaan teknis — biarkan dokumennya sendiri yang menghitung, bukan Anda yang menyalin angka secara manual.\nAnak tangga 4 — Registered Reports: komitmen terbesar — review dilakukan sebelum hasil ada, berlangsung selama bertahun-tahun.\nInilah urutan yang saya alami ketika mendaki tangga ini, selama kurang lebih 15 tahun perjalanan karier akademik saya. Saya akan tunjukkan seperti apa bentuknya masing-masing anak tangga ini dari sudut pandang saya."
+    "text": "“Tangga Reproducibility”🪜\n\nMulailah dengan strategi yang Anda butuhkan, bukan yang Anda inginkan. Empat praktik dalam presentasi ini bukan checklist yang harus selesaikan semester ini, atau bahkan sepanjang program S3 Anda. Ini adalah tangga yang akan Anda daki selama bertahun-tahun sepanjang karier profesional Anda ke depan.\n\n\nAnak tangga 1 — Data Management Plan: memiliki hambatan yang paling rendah, manfaat paling langsung. Sebuah folder yang bisa dijelajahi siapa pun, termasuk Anda di masa depan.\nAnak tangga 2 — Pre-Registration: sebuah disiplin perencanaan riset — menuliskan hipotesis sebelum Anda tahu jawabannya.\nAnak tangga 3 — Literate Programming: sebuah kebiasaan teknis — biarkan dokumennya sendiri yang menghitung, bukan Anda yang menyalin angka secara manual.\nAnak tangga 4 — Registered Reports: komitmen terbesar — review dilakukan sebelum hasil ada, berlangsung selama bertahun-tahun.\nInilah urutan yang saya alami ketika mendaki tangga ini, selama kurang lebih 15 tahun perjalanan karier akademik saya. Saya akan tunjukkan seperti apa bentuknya masing-masing anak tangga ini dari sudut pandang saya."
   },
   {
     "objectID": "reproducibility-id.html#section-2",
     "href": "reproducibility-id.html#section-2",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "02\n\n\nData Management Plan"
   },
   {
     "objectID": "reproducibility-id.html#apa-itu-data-management-plan-dmp",
     "href": "reproducibility-id.html#apa-itu-data-management-plan-dmp",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Apa Itu Data Management Plan (DMP)?",
-    "text": "Apa Itu Data Management Plan (DMP)?\n\nSebuah dokumen singkat dan hidup (living document), yang ditulis sebelum Anda mengumpulkan data, yang menjelaskan bagaimana data akan dikumpulkan, didokumentasikan, disimpan, dilindungi, dan dibagikan.\n\n\nAnggap saja ini sebagai menjawab pertanyaan: “Jika saya menghilang besok, bisakah orang lain menemukan, memahami, dan menggunakan data saya?”\nSemakin diwajibkan oleh funder (DFG, ERC, NIH, dan banyak funder internasional lainnya) dan oleh komite etik.\nDMP memaksa munculnya pertanyaan yang tepat pada waktu yang tepat, sebelum masalah menjadi tidak bisa diperbaiki lagi (misalnya, formulir informed consent yang justru melarang data dibagikan).\nTools gratis dengan template dan panduan: DMPTool dan DMPonline."
+    "text": "Apa Itu Data Management Plan (DMP)?\n\nSebuah dokumen singkat dan hidup (living document), yang ditulis sebelum Anda mengumpulkan data, yang menjelaskan bagaimana data akan dikumpulkan, didokumentasikan, disimpan, dilindungi, dan dibagikan.\n\n\nAnggap saja ini sebagai menjawab pertanyaan: “Jika saya menghilang besok, bisakah orang lain menemukan, memahami, dan menggunakan data saya?”\nSemakin diwajibkan oleh funder (DFG, ERC, NIH, dan banyak funder internasional lainnya) dan oleh komite etik.\nDMP memaksa munculnya pertanyaan yang tepat pada waktu yang tepat, sebelum masalah menjadi tidak bisa diperbaiki lagi (misalnya, formulir informed consent yang justru melarang data dibagikan).\nTools gratis dengan template dan panduan: DMPTool dan DMPonline.\nBerikut beberapa contoh yang bisa diadopsi: Contoh 1, Contoh 2, Contoh 3, Berbagai macam contoh."
   },
   {
-    "objectID": "reproducibility-id.html#menanamkan-kebiasaan-dmp-ke-dalam-proyek-yang-sedang-berjalan",
-    "href": "reproducibility-id.html#menanamkan-kebiasaan-dmp-ke-dalam-proyek-yang-sedang-berjalan",
-    "title": "Bagaimana Riset Dibuat Reproducible",
-    "section": "Menanamkan Kebiasaan DMP ke dalam Proyek yang Sedang Berjalan",
-    "text": "Menanamkan Kebiasaan DMP ke dalam Proyek yang Sedang Berjalan\n\nSaya sedang mengerjakan scoping review tentang praktik reproducibility di bidang ekonomi dan ilmu sosial, yang merupakan bagian dari proyek yang lebih besar tempat saya terlibat. Struktur folder kerjanya seperti ini:\n\n\nlitsearch/\n├── codes/                        R scripts\n├── coding/                       Codebooks, coding sheets, dan Google Form/Sheet\n├── dataset/                      Dataset siap analisis, hasil ekspor dari coding\n├── output/\n│   ├── search_output/            Output pipeline pencarian literatur (01–11)\n│   ├── analysis_output/          Tabel dan gambar dari analisis\n│   └── cleaning_log/             Flag kualitas data dari proses pembersihan respons\n└── protocol_logbook.docx         Logbook protokol dan keputusan\n\nSetiap file juga diberi satu kalimat deskripsi — misalnya 10_final_set.xlsx: “The 145-paper final corpus… verified against Zotero subcollection RIS exports.” Lihat README-nya di sini.\nManfaat #1 — untuk diri saya di masa depan: saya kembali ke folder ini setelah berbulan-bulan mengerjakan tugas lain, dan tetap tahu persis harus mencari ke mana.\nManfaat #2 — pembaca di masa depan: ketika ini nanti menjadi paper yang dipublikasikan, reviewer dan pembaca bisa memverifikasi apa pun yang saya lakukan."
+    "objectID": "reproducibility-id.html#menanamkan-kebiasaan-manajemen-data-ke-dalam-proyek-yang-sedang-berjalan",
+    "href": "reproducibility-id.html#menanamkan-kebiasaan-manajemen-data-ke-dalam-proyek-yang-sedang-berjalan",
+    "title": "Agar Riset Dapat Direka Ulang",
+    "section": "Menanamkan Kebiasaan Manajemen Data ke dalam Proyek yang Sedang Berjalan",
+    "text": "Menanamkan Kebiasaan Manajemen Data ke dalam Proyek yang Sedang Berjalan\n\nSaya sedang mengerjakan scoping review tentang praktik reproducibility di bidang ekonomi dan ilmu sosial, yang merupakan bagian dari proyek yang lebih besar tempat saya terlibat. Struktur folder kerjanya seperti ini:\n\n\nlitsearch/\n├── codes/                        R scripts\n├── coding/                       Codebooks, coding sheets, dan Google Form/Sheet\n├── dataset/                      Dataset siap analisis, hasil ekspor dari coding\n├── output/\n│   ├── search_output/            Output pipeline pencarian literatur (01–11)\n│   ├── analysis_output/          Tabel dan gambar dari analisis\n│   └── cleaning_log/             Flag kualitas data dari proses pembersihan respons\n└── protocol_logbook.docx         Logbook protokol dan keputusan\n\nSetiap file juga diberi satu kalimat deskripsi — misalnya 10_final_set.xlsx: “The 145-paper final corpus… verified against Zotero subcollection RIS exports.” Lihat README-nya di sini.\nManfaat #1 — untuk diri saya di masa depan: saya kembali ke folder ini setelah berbulan-bulan mengerjakan tugas lain, dan tetap tahu persis harus mencari ke mana.\nManfaat #2 — pembaca di masa depan: ketika ini nanti menjadi paper yang dipublikasikan, reviewer dan pembaca bisa memverifikasi apa pun yang saya lakukan."
   },
   {
     "objectID": "reproducibility-id.html#apa-saja-yang-termasuk-dalam-dmp",
     "href": "reproducibility-id.html#apa-saja-yang-termasuk-dalam-dmp",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Apa Saja yang Termasuk dalam DMP?",
     "text": "Apa Saja yang Termasuk dalam DMP?\n\n\n\nDocumentation\nData apa yang akan Anda kumpulkan dan bagaimana caranya? Format apa saja? Sebuah kamus data (codebook) yang mendeskripsikan setiap variabel (nama, redaksi pertanyaan, coding, missing value) agar data tetap bisa dipahami tanpa kehadiran Anda.\n\n\n\nStorage & Ethics\nDi mana data akan disimpan, bagaimana cara backup-nya (aturan 3-2-1), siapa yang punya akses? Bagaimana partisipan dilindungi, termasuk informed consent, anonimisasi atau pseudonimisasi, serta persyaratan hukum yang berlaku?\n\n\n\nSharing & Preservation\nData mana yang bisa dibagikan, di mana, dengan lisensi apa, dan kapan? Apa yang diarsipkan dalam jangka panjang (biasanya 10 tahun) dan di repository tepercaya yang mana?"
   },
   {
     "objectID": "reproducibility-id.html#data-fair",
     "href": "reproducibility-id.html#data-fair",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Data FAIR",
     "text": "Data FAIR\n\nStandar acuan untuk data riset yang dibagikan (Wilkinson et al., 2016), data seharusnya FAIR:\n\n\n\n\nF\nFindable — disimpan dengan pengenal permanen (DOI) dan metadata yang kaya\n\n\nA\nAccessible — dapat diambil lewat protokol standar; syarat aksesnya jelas\n\n\nI\nInteroperable — format terbuka (CSV, bukan hanya SPSS), menggunakan kosakata standar\n\n\nR\nReusable — lisensi jelas, provenance (informasi tentang asal-usul data), dan dokumentasi yang cukup untuk digunakan ulang\n\n\n\n\nPenting: FAIR ≠ terbuka (open). Prinsipnya adalah “seterbuka mungkin, setertutup yang diperlukan.” Data sensitif tetap bisa FAIR meskipun aksesnya dibatasi."
   },
   {
     "objectID": "reproducibility-id.html#kebiasaan-praktis-yang-gratis",
     "href": "reproducibility-id.html#kebiasaan-praktis-yang-gratis",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Kebiasaan Praktis yang Gratis",
-    "text": "Kebiasaan Praktis yang Gratis\n\n\nPenamaan file: mudah dibaca mesin, mudah dibaca manusia, mudah diurutkan — 2026-07-08_study1_raw.csv, bukan data baru FINAL (2).sav. Tanpa spasi, tanpa karakter khusus, tanggal dalam format YYYY-MM-DD.\nData mentah adalah sesuatu yang sakral: simpan sebagai read-only, di satu tempat; semua perubahan dilakukan lewat script ke data/processed/.\nTulis codebook-nya sambil Anda menyusun survei.\nPilih repository untuk menyimpan data: OSF, Zenodo, PsychData, RIN Dataverse (BRIN) — semuanya menyediakan DOI dan preservasi jangka panjang.\nPilih lisensi agar orang lain tahu apa yang boleh mereka lakukan: misalnya, CC0/CC-BY untuk data dan materi, MIT/GPL untuk kode.\nRencanakan consent untuk berbagi data: tambahkan bahasa terkait berbagi data ke informed consent Anda sekarang juga, karena Anda tidak bisa meminta izin secara retroaktif kepada 800 partisipan anonim."
+    "text": "Kebiasaan Praktis yang Gratis\n\n\nPenamaan file: mudah dibaca mesin, mudah dibaca manusia, mudah diurutkan — 2026-07-08_study1_raw.csv, bukan data baru FINAL (2).sav. Tanpa spasi, tanpa karakter khusus, tanggal dalam format YYYY-MM-DD.\nData mentah adalah sesuatu yang sakral: simpan sebagai read-only, di satu tempat; semua perubahan dilakukan lewat script ke data/processed/.\nTulis codebook-nya sambil Anda menyusun survei.\nPilih repository untuk menyimpan data: OSF, Zenodo, PsychData, RIN Dataverse (BRIN) — semuanya menyediakan DOI dan preservasi jangka panjang.\nPilih lisensi agar orang lain tahu apa yang boleh mereka lakukan: misalnya, CC0/CC-BY untuk data dan materi, MIT/GPL untuk kode.\nRencanakan informed consent yang mencakup izin pembagian data: tambahkan kalimat terkait berbagi data ke informed consent Anda sekarang juga, karena Anda tidak bisa meminta izin secara retroaktif kepada 800 partisipan yang anonim."
   },
   {
     "objectID": "reproducibility-id.html#section-3",
     "href": "reproducibility-id.html#section-3",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "03\n\n\nPre-Registration"
   },
   {
     "objectID": "reproducibility-id.html#masalah-yang-diselesaikan-oleh-pre-registration",
     "href": "reproducibility-id.html#masalah-yang-diselesaikan-oleh-pre-registration",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Masalah yang Diselesaikan oleh Pre-Registration",
-    "text": "Masalah yang Diselesaikan oleh Pre-Registration\n\nIngat kembali garden of forking paths: dengan fleksibilitas yang cukup, hasil signifikan hampir selalu bisa ditemukan.\nStatistik hanya bisa berfungsi dengan baik jika perbedaan antara dua mode riset ini diakui secara jujur:\n\nRiset konfirmatori: hipotesis ditentukan sebelum melihat data → nilai p menjadi pengujian yang bermakna.\nRiset eksploratori: pola ditemukan di dalam data → berguna untuk menghasilkan hipotesis, tetapi nilai p tidak lagi berarti seperti yang diklaim.\n\nKeduanya sama-sama boleh. Masalahnya adalah menyajikan eksplorasi seolah-olah konfirmasi (HARKing).\nPre-registration mengembalikan perbedaan ini: Anda menuliskan hipotesis, desain, dan rencana analisis Anda sebelum pengumpulan data, dalam sebuah registry yang diberi cap waktu (time-stamped) dan read-only (Nosek et al., 2018)."
+    "text": "Masalah yang Diselesaikan oleh Pre-Registration\n\nIngat kembali garden of forking paths: dengan fleksibilitas yang cukup, hasil signifikan hampir selalu bisa ditemukan.\nStatistik hanya bisa berfungsi dengan baik jika perbedaan antara dua mode riset ini diakui secara jujur:\n\nRiset confirmatory: hipotesis ditentukan sebelum melihat data → nilai p menjadi pengujian yang bermakna.\nRiset exploratory: pola ditemukan di dalam data → berguna untuk menghasilkan hipotesis, tetapi nilai p tidak lagi berarti seperti yang diklaim.\n\nKeduanya sama-sama boleh. Masalahnya adalah menyajikan eksplorasi seolah-olah konfirmasi (HARKing).\nPre-registration mengembalikan perbedaan ini: Anda menuliskan hipotesis, desain, dan rencana analisis Anda sebelum pengumpulan data, dalam sebuah registry yang diberi cap waktu (time-stamped) dan read-only (Nosek et al., 2018)."
   },
   {
     "objectID": "reproducibility-id.html#dari-pekerjaan-saya-sendiri-mengunci-hipotesis-sebelum-melihat-data",
     "href": "reproducibility-id.html#dari-pekerjaan-saya-sendiri-mengunci-hipotesis-sebelum-melihat-data",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Dari Pekerjaan Saya Sendiri: Mengunci Hipotesis Sebelum Melihat Data",
-    "text": "Dari Pekerjaan Saya Sendiri: Mengunci Hipotesis Sebelum Melihat Data\n\nSalah satu contoh saya yang paling jelas: “Science and Religion in the Times of Crisis”, pre-registered di OSF.\n\n\n\nStudi ini menguji “dilution effect”: apakah menawarkan lebih banyak penjelasan atas suatu krisis justru mengurangi seberapa berguna setiap penjelasan itu terasa bagi orang (Jackson et al., 2024).\nSaya menuliskan hipotesisnya, dalam sebuah catatan publik yang diberi cap waktu, sebelum saya tahu apakah datanya akan mendukungnya atau tidak.\nIni sangat membantu saya merencanakan studi dengan lebih baik dan mempertahankan pilihan desain saya ketika mendiskusikannya dengan supervisor saya.\nApa pun hasilnya nanti, saya tidak bisa begitu saja membingkai ulang studi ini seolah-olah “memang ini yang saya prediksi sejak awal.” Cap waktu itu membuat hal itu mustahil, dan itu membantu saya tetap jujur pada diri saya sendiri.\nSaya sudah melakukan pre-registration untuk setiap studi yang saya jalankan sejak 2021.\n\nIni sekarang sudah menjadi bagian normal dari mendesain sebuah studi."
+    "text": "Dari Pekerjaan Saya Sendiri: Mengunci Hipotesis Sebelum Melihat Data\n\nSalah satu contoh yang sudah saya lakukan: “Science and Religion in the Times of Crisis”, pre-registered di OSF.\n\n\n\nStudi ini menguji “dilution effect”: apakah menawarkan lebih banyak penjelasan atas suatu krisis justru mengurangi seberapa berguna setiap penjelasan tersebut terasa bagi orang (Jackson et al., 2024).\nSaya menuliskan hipotesisnya, dalam sebuah catatan publik yang diberi cap waktu, sebelum saya tahu apakah datanya akan mendukungnya atau tidak.\nIni sangat membantu saya merencanakan studi dengan lebih baik dan mempertahankan pilihan desain saya ketika mendiskusikannya dengan supervisor saya.\nApa pun hasilnya nanti, saya tidak bisa begitu saja membingkai ulang studi ini seolah-olah “memang ini yang saya prediksi sejak awal.” Cap waktu membuat klaim ini mustahil, dan ini membantu saya tetap jujur pada diri saya sendiri.\nSaya sudah melakukan pre-registration untuk setiap studi yang saya jalankan sejak 2021.\n\nPre-registration sekarang sudah menjadi bagian normal dari mendesain sebuah studi."
   },
   {
     "objectID": "reproducibility-id.html#apa-saja-yang-termasuk-dalam-pre-registration",
     "href": "reproducibility-id.html#apa-saja-yang-termasuk-dalam-pre-registration",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Apa Saja yang Termasuk dalam Pre-Registration?",
     "text": "Apa Saja yang Termasuk dalam Pre-Registration?\n\nRegistry gratis dengan template: OSF Registries dan AsPredicted. Isi umumnya:\n\n\n\n\nHypotheses & Design\nHipotesis terarah (directional), IV dan DV dengan operasionalisasi yang tepat, desain studi, kondisi, dan prosedur.\n\n\n\nSample & Exclusions\nTarget ukuran sampel dengan justifikasi (misalnya, power analysis), stopping rule, dan kriteria eksklusi.\n\n\n\nAnalysis Plan\nModel statistik yang pasti untuk setiap hipotesis, penanganan missing data dan outlier, kriteria inferensi, serta apa yang akan Anda lakukan jika asumsinya tidak terpenuhi."
   },
   {
     "objectID": "reproducibility-id.html#kekhawatiran-umum-dan-mengapa-sebagian-besar-tidak-beralasan",
     "href": "reproducibility-id.html#kekhawatiran-umum-dan-mengapa-sebagian-besar-tidak-beralasan",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Kekhawatiran Umum (dan Mengapa Sebagian Besar Tidak Beralasan)",
-    "text": "Kekhawatiran Umum (dan Mengapa Sebagian Besar Tidak Beralasan)\n\n“Ini seperti penjara — saya jadi tidak bisa fleksibel.” Bisa, kok! Penyimpangan itu wajar; Anda tinggal melaporkannya secara transparan (“kami menyimpang dari rencana karena…”). Registry hanya membuat penyimpangan itu menjadi terlihat.\n“Ini membunuh eksplorasi.” Tidak. Anda tetap bisa bereksplorasi dengan bebas; hasilnya hanya diberi label sebagai eksploratif. Banyak template bahkan punya bagian khusus untuk analisis eksploratif yang sudah direncanakan.\n“Nanti ide saya diserobot orang.” Registrasi bisa diembargo (dirahasiakan) sampai Anda mempublikasikannya.\n“Ini menambah terlalu banyak pekerjaan administratif.” Registrasi AsPredicted hanya berisi 9 pertanyaan. Dan sebagian besar isinya adalah teks yang tetap Anda butuhkan untuk pengajuan etik dan bagian metode Anda. Anda pada dasarnya hanya menulisnya lebih awal.\nCatatan penting: pre-registration bukan solusi instan. Banyak pre-registration yang masih tidak jelas, dan penyimpangan sering tidak dilaporkan (van den Akker et al., 2024). Nilainya justru datang dari rencana yang spesifik dan pelaporan yang transparan yang merupakan sebuah keterampilan yang bisa Anda latih sejak studi pertama Anda."
+    "text": "Kekhawatiran Umum (dan Mengapa Sebagian Besar Tidak Beralasan)\n\n“Ini seperti penjara — saya jadi tidak bisa fleksibel.” Bisa, kok! Penyimpangan itu wajar; Anda tinggal melaporkannya secara transparan (“kami menyimpang dari rencana karena…”). Registry hanya membuat penyimpangan itu menjadi terlihat.\n“Ini membunuh eksplorasi.” Tidak. Anda tetap bisa bereksplorasi dengan bebas; hasilnya hanya diberi label sebagai exploratory. Banyak template bahkan punya bagian khusus untuk analisis eksploratif yang sudah direncanakan.\n“Nanti ide saya diserobot orang.” Registrasi bisa diembargo (dirahasiakan) sampai Anda mempublikasikannya.\n“Ini menambah terlalu banyak pekerjaan administratif.” Registrasi AsPredicted hanya berisi 9 pertanyaan. Dan sebagian besar isinya adalah teks yang tetap Anda butuhkan untuk pengajuan etik dan bagian metode Anda. Anda pada dasarnya hanya menulisnya lebih awal.\nCatatan penting: pre-registration bukan solusi instan untuk kualitas temuan. Banyak pre-registration yang masih tidak jelas, dan penyimpangan sering tidak dilaporkan (van den Akker et al., 2024). Nilainya justru datang dari rencana yang spesifik dan pelaporan yang transparan yang merupakan sebuah keterampilan yang bisa Anda latih sejak studi pertama Anda."
   },
   {
     "objectID": "reproducibility-id.html#section-4",
     "href": "reproducibility-id.html#section-4",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "04\n\n\nLiterate Programming"
   },
   {
     "objectID": "reproducibility-id.html#alur-kerja-copy-paste",
     "href": "reproducibility-id.html#alur-kerja-copy-paste",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Alur Kerja Copy-Paste",
-    "text": "Alur Kerja Copy-Paste\n\nAlur kerja dalam riset psikologi biasanya seperti ini:\n\n\nMenjalankan analisis di SPSS dengan mengklik-klik menu…\n…menyalin angka-angkanya ke dokumen Word secara manual…\n…memformat tabelnya secara manual…\n…lalu seorang reviewer meminta Anda mengeluarkan tiga partisipan, dan Anda harus melakukan semuanya lagi dari awal, sambil berharap Anda mengklik tombol-tombol yang persis sama.\nSetiap langkah manual adalah tempat kesalahan bisa menyelinap masuk, dan tidak ada seorang pun (termasuk Anda sendiri) yang bisa memverifikasi kembali apa yang sebenarnya sudah dilakukan.\nKira-kira separuh dari paper psikologi yang dipublikasikan mengandung setidaknya satu statistik yang tidak konsisten — misalnya, nilai p yang tidak cocok dengan statistik ujinya sendiri (Nuijten et al., 2016)."
+    "text": "Alur Kerja Copy-Paste\n\nAlur kerja dalam riset psikologi biasanya seperti ini:\n\n\nMenjalankan analisis di SPSS dengan mengklik-klik menu…\n…menyalin angka-angkanya ke dokumen Word secara manual…\n…memformat tabelnya secara manual…\n…lalu seorang reviewer meminta Anda mengeluarkan tiga partisipan, dan Anda harus melakukan semuanya lagi dari awal, sambil berharap Anda mengklik tombol-tombol yang persis sama.\nSetiap langkah manual adalah tempat kesalahan sangat mungkin terjadi, dan tidak ada seorang pun (termasuk Anda sendiri) yang bisa memverifikasi kembali apa yang sebenarnya sudah dilakukan.\n\nKalau pun ada yang mengecek, butuh usaha, waktu, dan tenaga yang sangat besar untuk melakukannya.\n\nKira-kira separuh dari paper psikologi yang dipublikasikan mengandung setidaknya satu statistik yang tidak konsisten — misalnya, nilai p yang tidak cocok dengan statistik ujinya sendiri (Nuijten et al., 2016)."
   },
   {
     "objectID": "reproducibility-id.html#section-5",
     "href": "reproducibility-id.html#section-5",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.\n\n\nDonald Knuth (1984), Literate Programming"
   },
   {
     "objectID": "reproducibility-id.html#literate-programming-satu-dokumen-untuk-semuanya",
     "href": "reproducibility-id.html#literate-programming-satu-dokumen-untuk-semuanya",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Literate Programming: Satu Dokumen untuk Semuanya",
     "text": "Literate Programming: Satu Dokumen untuk Semuanya\n\nIdenya: menganyam narasi teks, kode analisis, dan hasilnya (tabel, gambar, statistik) menjadi satu dokumen yang memperbarui dirinya sendiri.\n\n\nAnda menulis teks dan script secara bersamaan; satu klik (“Render”) menjalankan semua perintah dan menghasilkan laporan jadi, sehingga angka, tabel, dan gambar disisipkan secara otomatis.\nUbah datanya atau analisisnya → render ulang → setiap angka dalam dokumen memperbarui dirinya sendiri, tanpa perlu menyalin-tempel angka secara manual.\nDokumennya sendiri adalah jejak audit: siapa pun bisa melihat persis kode mana yang menghasilkan hasil yang mana.\nFakta menarik: slide yang sedang Anda lihat ini adalah hasil literate programming😉 Ini adalah dokumen Quarto yang di-render menjadi presentasi."
   },
   {
     "objectID": "reproducibility-id.html#contoh-dari-pekerjaan-saya-sendiri",
     "href": "reproducibility-id.html#contoh-dari-pekerjaan-saya-sendiri",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Contoh Dari Pekerjaan Saya Sendiri",
-    "text": "Contoh Dari Pekerjaan Saya Sendiri\n\nSaya melakukan pre-registration dengan tekun selama bertahun-tahun sebelum saya belajar Quarto. Literate programming adalah anak tangga yang baru saya kuasai jauh setelah itu, dan pilihan ini mengubah cara saya menulis paper.\n\n\n\nSetiap folder proyek juga merupakan repository Git — riwayat lengkap dari setiap perubahan, sehingga saya (atau seorang reviewer) bisa melihat persis bagaimana sebuah angka muncul.\nDokumennya menarik angka langsung dari hasil analisis.\n\nSaya berhenti mengetik hasil secara manual ke Word, yang justru merupakan langkah tempat kesalahan copy-paste dulu sering muncul.\n\nContoh: grm-tutorial-paper, repository di balik paper yang sudah dipublikasikan yang ditulis sepenuhnya sebagai dokumen literate.\nBonus yang menyenangkan: editor dan reviewer berkomentar soal betapa rapinya proyek ini terlihat. Ini sebenarnya bukan tujuan utama dari literate programming, tapi tentu saja baik untuk reputasi Anda juga."
+    "text": "Contoh Dari Pekerjaan Saya Sendiri\n\nSaya melakukan pre-registration dengan tekun selama bertahun-tahun sebelum saya belajar Quarto. Literate programming adalah anak tangga yang baru saya kuasai jauh setelah itu, dan pilihan ini mengubah cara saya menulis paper.\n\n\n\nSetiap folder proyek juga merupakan repository Git — riwayat lengkap dari setiap perubahan (version control), sehingga saya (atau seorang reviewer) bisa melihat persis bagaimana sebuah angka muncul.\n\nContoh version control untuk presentasi ini.\n\nDokumennya menarik angka langsung dari hasil analisis.\n\nSaya berhenti mengetik hasil secara manual ke Word, yang justru merupakan langkah tempat kesalahan copy-paste dulu sering muncul.\n\nContoh: grm-tutorial-paper, repository di balik paper yang sudah dipublikasikan yang ditulis sepenuhnya sebagai dokumen literate.\nBonus yang memuaskan😉: editor dan reviewer berkomentar soal betapa rapinya proyek ini terlihat. Ini sebenarnya bukan tujuan utama dari literate programming, tapi ini tentu saja baik untuk reputasi Anda juga."
   },
   {
     "objectID": "reproducibility-id.html#alat-alatnya",
     "href": "reproducibility-id.html#alat-alatnya",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Alat-Alatnya",
-    "text": "Alat-Alatnya\n\nSemuanya gratis, semuanya open source, dan semuanya punya komunitas serta tutorial yang besar:\n\n\n\n\nQuarto/R Markdown\nTeks (Markdown) + potongan script R/Python → paper, slide, situs web, disertasi. Bersama R dan RStudio/Positron. quarto.org\n\n\n\nJupyter Notebooks\nNotebook interaktif untuk Python (dan R, Julia). Umum digunakan dalam data science dan pemodelan komputasional. jupyter.org\n\n\n\nGit & GitHub/OSF\nVersion control: riwayat lengkap dari setiap perubahan pada kode dan teks Anda, semacam “track changes” untuk seluruh proyek Anda, jadi tidak ada lagi thesis_final_v7_REALLYFINAL.docx."
+    "text": "Alat-Alatnya\n\nSemuanya gratis, semuanya open source, dan semuanya punya komunitas serta tutorial yang beragam:\n\n\n\n\nQuarto/R Markdown\nTeks (Markdown) + potongan script R/Python → paper, slide, situs web, disertasi. Bersama R dan RStudio/Positron. quarto.org\n\n\n\nJupyter Notebooks\nNotebook interaktif untuk Python (dan R, Julia). Umum digunakan dalam data science dan pemodelan komputasional. jupyter.org\n\n\n\nGit & GitHub/OSF\nVersion control: riwayat lengkap dari setiap perubahan pada kode dan teks Anda, semacam “track changes” untuk seluruh proyek Anda, jadi tidak ada lagi disertasi_final_v7_BISMILLAH.docx."
   },
   {
     "objectID": "reproducibility-id.html#seperti-apa-bentuknya",
     "href": "reproducibility-id.html#seperti-apa-bentuknya",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Seperti Apa Bentuknya",
     "text": "Seperti Apa Bentuknya\nAlih-alih menyalin angka, Anda tinggal menulis:\n```{r}\ndata &lt;- read.csv(here::here(\"data\", \"processed\", \"study1.csv\"))\nmodel &lt;- lm(wellbeing ~ social_media_use + age, data = data)\n```\nDan di teks Anda, Anda menulis:\nSocial media use was negatively associated with wellbeing,\nb = `r round(coef(model)[2], 2)`.\n\nKetika di-render, `r ` digantikan oleh nilai aktual yang dihitung dari data, sehingga selalu terkini dan tidak pernah salah ketik.\nPackage seperti papaja dan apaquarto (manuskrip APA) serta apaTables memformat seluruh bagian hasil untuk Anda secara otomatis."
   },
   {
     "objectID": "reproducibility-id.html#melampaui-dokumen-proyek-yang-reproducible",
     "href": "reproducibility-id.html#melampaui-dokumen-proyek-yang-reproducible",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Melampaui Dokumen: Proyek yang Reproducible",
-    "text": "Melampaui Dokumen: Proyek yang Reproducible\n\nLiterate programming bekerja paling baik di dalam proyek yang terorganisasi dengan baik:\n\n\n\nSatu folder per proyek, dengan struktur standar: data/raw/ (read-only!), data/processed/, scripts/, output/, README.md.\nPath relatif, jangan pernah pakai path absolut: here::here(\"data\", \"raw\", \"survey.csv\"), bukan C:/Users/amelia/Desktop/... — sehingga bisa dijalankan di komputer mana pun, bukan hanya komputer Anda.\nAtur seed (set.seed(42)) setiap kali ada unsur keacakan (randomness), agar hasilnya identik setiap kali dijalankan.\nCatat environment Anda: versi package bisa berubah. Tools seperti renv (R) atau virtual environment (Python) menyimpan snapshot dari versi persis yang Anda gunakan.\nJangan pernah mengedit data mentah secara manual — setiap langkah pembersihan data dilakukan lewat script, sehingga jejak dari data mentah ke tabel akhir terdokumentasi sepenuhnya."
+    "text": "Melampaui Dokumen: Proyek yang Reproducible\n\nLiterate programming bekerja paling baik di dalam proyek yang terorganisasi dengan baik:\n\n\n\nSatu folder per proyek, dengan struktur standar: data/raw/ (read-only!), data/processed/, scripts/, output/, README.md.\nPath relatif, jangan pernah pakai path absolut: here::here(\"data\", \"raw\", \"survey.csv\"), bukan C:/Users/amelia/Desktop/... — sehingga bisa dijalankan di komputer mana pun, bukan hanya komputer Anda.\nAtur seed (set.seed(42)) setiap kali ada unsur keacakan (randomness), agar hasilnya identik setiap kali dijalankan.\nCatat environment Anda: versi package bisa berubah. Tools seperti renv () atau renv + pyenv () menyimpan snapshot dari versi persis yang Anda gunakan.\nJangan pernah mengedit data mentah secara manual — setiap langkah pembersihan data dilakukan lewat script, sehingga jejak dari data mentah ke tabel akhir terdokumentasi sepenuhnya. Selalu simpan data mentah versi asli yang belum dibersihkan."
   },
   {
     "objectID": "reproducibility-id.html#computational-empathy",
     "href": "reproducibility-id.html#computational-empathy",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Computational Empathy",
-    "text": "Computational Empathy\n\nSemangat di balik semua kebiasaan ini adalah apa yang disebut The Turing Way sebagai computational empathy: mengantisipasi kebutuhan orang yang akan mencoba menjalankan pekerjaan Anda tanpa Anda ada di ruangan.\n\n\nOrang ini tidak memiliki struktur folder Anda, package yang Anda install, sistem operasi Anda, atau detail krusial yang hanya ada di kepala Anda (“oh, kamu harus menjalankan script 2 dulu sebelum script 1”).\nTanyakan pada diri Anda: bisakah orang asing di komputer yang berbeda, tanpa kesempatan untuk mengirim email ke saya, sampai dari data mentah saya ke hasil saya?\nDalam praktiknya, computational empathy berarti:\n\nsebuah README yang menjelaskan apa proyek ini, apa yang ada di mana, dan dalam urutan apa menjalankan semuanya;\nmenyatakan kebutuhan (requirements) di depan: software, versi package (renv!), estimasi waktu running scriptnya;\nmmeberikan komentar “mengapa”-nya dalam kode Anda;\nmenghindari dependensi tersembunyi — tanpa path absolut, tanpa “hapus baris 13 secara manual dulu,” tanpa file yang hanya ada di desktop Anda.\n\nUji yang paling disarankan: serahkan proyek Anda ke seorang kolega dan lihat mereka mencobanya. Setiap pertanyaan yang mereka ajukan adalah potongan dokumentasi yang hilang.\nDan ingat: orang asing yang Anda perlakukan dengan baik ini biasanya adalah diri Anda sendiri di masa depan."
+    "text": "Computational Empathy\n\nSemangat di balik semua kebiasaan ini adalah apa yang disebut The Turing Way sebagai computational empathy: mengantisipasi kebutuhan orang lain yang akan mencoba menjalankan pekerjaan Anda tanpa bantuan Anda sama sekali.\n\n\nOrang ini tidak memiliki struktur folder Anda, package yang Anda install, sistem operasi Anda, atau detail krusial yang hanya ada di kepala Anda.\nTanyakan pada diri Anda: bisakah orang lain dengan komputer yang berbeda, tanpa kesempatan untuk mengirim email ke saya, bisa menganalisis data mentah sampai ke temuan penelitian?\nDalam praktiknya, computational empathy berarti:\n\nsebuah README yang memuat informasi tentang riset Anda, file apa yang ada di mana, dan dalam urutan apa menjalankan semuanya;\nmenyatakan requirements di depan: nama dan versi software, versi package (renv!), estimasi waktu running scriptnya;\nmemberikan komentar “mengapa”-nya dalam script Anda;\ntanpa path absolut, tanpa “hapus baris 13 secara manual dulu,” tanpa file yang hanya ada di desktop Anda.\n\nTes mudah: serahkan material riset Anda ke seorang kolega dan lihat mereka mencoba menganalisisnya. Setiap pertanyaan yang mereka ajukan adalah potongan dokumentasi yang hilang.\nDan ingat: orang asing yang Anda perlakukan dengan baik ini biasanya adalah diri Anda sendiri di masa depan."
   },
   {
     "objectID": "reproducibility-id.html#section-6",
     "href": "reproducibility-id.html#section-6",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
-    "text": "05\n\n\nRegistered Reports"
+    "text": "05\n\n\nRegistered Reports (RR)"
   },
   {
     "objectID": "reproducibility-id.html#registered-reports-pre-registration-dengan-kekuatan-super",
     "href": "reproducibility-id.html#registered-reports-pre-registration-dengan-kekuatan-super",
-    "title": "Bagaimana Riset Dibuat Reproducible",
-    "section": "Registered Reports: Pre-Registration dengan Kekuatan Super",
-    "text": "Registered Reports: Pre-Registration dengan Kekuatan Super\n\nSebuah Registered Report (RR) adalah format artikel jurnal di mana peer review terjadi sebelum hasilnya ada (Chambers & Tzavella, 2022).\n\n\nStage 1: Anda mengajukan pendahuluan, hipotesis, dan metode yang detail sebelum pengumpulan data. Reviewer mengkritisi desainnya selagi Anda masih bisa memperbaikinya.\nJika diterima, Anda mendapatkan In-Principle Acceptance (IPA): jurnal berkomitmen untuk mempublikasikan paper Anda apa pun hasil yang keluar nanti.\nStage 2: Anda menjalankan studinya persis seperti yang sudah disetujui, mengajukan paper lengkap; reviewer hanya mengecek apakah Anda mengikuti rencana dan menginterpretasikan hasil secara masuk akal.\nPublikasi tidak lagi bergantung pada hasil yang “menarik” → publication bias terpotong dari akarnya, dan p-hacking kehilangan tujuannya."
+    "title": "Agar Riset Dapat Direka Ulang",
+    "section": "Registered Reports: Pre-Registration dengan Kekuatan Super🦸‍♀️🦸",
+    "text": "Registered Reports: Pre-Registration dengan Kekuatan Super🦸‍♀️🦸\n\n\n\nSebuah Registered Report (RR) adalah format artikel jurnal di mana peer review terjadi sebelum mengambil data (Chambers & Tzavella, 2022).\n\n\nStage 1: Anda mengajukan pendahuluan, hipotesis, dan metode yang detail sebelum pengumpulan data. Reviewer mengkritisi desainnya selagi Anda masih bisa memperbaikinya.\nJika diterima, Anda mendapatkan In-Principle Acceptance (IPA): jurnal berkomitmen untuk mempublikasikan paper Anda apa pun hasilnya nanti.\nStage 2: Anda menjalankan studinya persis seperti yang sudah disetujui, mengajukan paper lengkap; reviewer hanya mengecek apakah Anda mengikuti rencana dan menginterpretasikan hasil secara masuk akal.\nPublikasi tidak lagi bergantung pada hasil yang “menarik” → publication bias terpotong dari akarnya, dan p-hacking kehilangan tujuannya."
   },
   {
     "objectID": "reproducibility-id.html#dari-pekerjaan-saya-sendiri-anak-tangga-yang-butuh-25-tahun",
     "href": "reproducibility-id.html#dari-pekerjaan-saya-sendiri-anak-tangga-yang-butuh-25-tahun",
-    "title": "Bagaimana Riset Dibuat Reproducible",
-    "section": "Dari Pekerjaan Saya Sendiri: Anak Tangga yang Butuh 2,5 Tahun",
-    "text": "Dari Pekerjaan Saya Sendiri: Anak Tangga yang Butuh 2,5 Tahun\n\nSaya sekarang sudah menjadi bagian dari tiga Registered Reports yang sudah dipublikasikan. Ini adalah yang pertama kali saya menjadi penulis utama (first author), dan yang paling saya banggakan.\n\n\n\nDari pertama kali merancang desainnya hingga paper-nya terbit: sekitar dua setengah tahun.\nDipublikasikan sebagai sebuah Registered Report; postprint-nya tersedia open-access di PsyArXiv.\nProsesnya lambat, dan pada beberapa titik terasa membuat frustrasi.\n\nReview Stage 1 mendorong Anda untuk mendesain ulang sebelum Anda sempat mengumpulkan satu pun data.\nIni tidak nyaman, dan justru di situlah letak seluruh manfaatnya: saya memperbaiki masalah lebih awal di atas kertas, bukan ketika setelah menjalankan beberapa studi dengan ~300 partisipan.\n\nSaya tidak akan mencoba ini sebagai praktik reproducibility pertama saya. Ini baru masuk akal setelah pre-registration dan literate programming sudah menjadi kebiasaan rutin."
+    "title": "Agar Riset Dapat Direka Ulang",
+    "section": "Dari Pekerjaan Saya Sendiri: Anak Tangga yang Butuh ~2,5 Tahun",
+    "text": "Dari Pekerjaan Saya Sendiri: Anak Tangga yang Butuh ~2,5 Tahun\n\nSaya sekarang sudah menjadi bagian dari tiga Registered Reports yang sudah dipublikasikan. Ini adalah yang pertama kali saya menjadi penulis utama (first author), dan yang paling saya banggakan.\n\n\n\nDari pertama kali merancang desainnya hingga paper-nya terbit: sekitar dua setengah tahun.\nDipublikasikan sebagai sebuah Registered Report; postprint-nya tersedia open-access di PsyArXiv.\nProsesnya lambat, dan pada beberapa titik terasa membuat frustrasi.\n\nReview Stage 1 mendorong Anda untuk mendesain ulang sebelum Anda sempat mengumpulkan satu pun data.\nIni sangat sulit, tetapi justru di situlah letak seluruh manfaatnya: saya memperbaiki potensi masalah desain penelitian lebih awal di atas kertas, bukan ketika setelah menjalankan beberapa studi dengan ~300 partisipan.\n\nSaya tidak akan mencoba ini sebagai praktik reproducibility pertama saya. Ini baru masuk akal setelah pre-registration dan literate programming sudah menjadi kebiasaan rutin."
   },
   {
-    "objectID": "reproducibility-id.html#apakah-ini-berhasil",
-    "href": "reproducibility-id.html#apakah-ini-berhasil",
-    "title": "Bagaimana Riset Dibuat Reproducible",
-    "section": "Apakah Ini Berhasil?",
-    "text": "Apakah Ini Berhasil?\n\n\n\n96%\ndari artikel psikologi standar melaporkan hasil positif (mengonfirmasi hipotesis) — sebuah tingkat keberhasilan yang secara statistik tidak masuk akal\n\n\n44%\ndari Registered Reports melaporkan hasil positif (Scheel, Schijen, & Lakens, 2021)\n\n\n300+\njurnal kini menawarkan format RR, termasuk Nature Human Behaviour, Cortex, dan banyak jurnal psikologi top lainnya (daftar COS)\n\n\n\n\nRR juga dinilai lebih cermat secara ilmiah (rigorous) dan berkualitas lebih tinggi dibandingkan paper standar yang sebanding (Soderberg et al., 2021)."
+    "objectID": "reproducibility-id.html#apakah-rr-berhasil",
+    "href": "reproducibility-id.html#apakah-rr-berhasil",
+    "title": "Agar Riset Dapat Direka Ulang",
+    "section": "Apakah RR Berhasil?",
+    "text": "Apakah RR Berhasil?\n\n\n\n96%\ndari artikel psikologi standar melaporkan hasil positif (mengonfirmasi hipotesis) — sebuah tingkat keberhasilan yang secara statistik tidak masuk akal\n\n\n44%\ndari Registered Reports melaporkan hasil positif (Scheel, Schijen, & Lakens, 2021)\n\n\n300+\njurnal kini menawarkan format RR, termasuk Nature Human Behaviour, Cortex, dan banyak jurnal psikologi top lainnya (daftar COS)\n\n\n\n\nRR juga dinilai lebih cermat secara ilmiah (rigorous) dan berkualitas lebih tinggi dibandingkan paper standar yang sebanding (Soderberg et al., 2021)."
   },
   {
     "objectID": "reproducibility-id.html#registered-reports-dan-s3-anda",
     "href": "reproducibility-id.html#registered-reports-dan-s3-anda",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Registered Reports dan S3 Anda",
-    "text": "Registered Reports dan S3 Anda\n\n\nMasukan dari reviewer datang saat masih berguna, sebelum Anda menghabiskan satu tahun untuk mengumpulkan data.\nIPA adalah jaminan publikasi yang bisa Anda jadikan dasar merencanakan disertasi: tidak perlu lagi berharap-harap cemas menunggu hasil publikasi sebelum ujian.\nHasil null menjadi temuan yang bisa dipublikasikan, bukan tahun-tahun yang terbuang percuma dan sekaligus baik untuk CV Anda.\nSoal waktu: review Stage 1 memerlukan waktu, jadi RR cocok untuk studi yang direncanakan jauh-jauh hari (tetapi sempurna untuk proposal S3!), tapi kurang cocok untuk pilot study yang cepat.\nBeberapa jurnal menawarkan fast-track atau jadwal review khusus untuk proyek mahasiswa; Peer Community In RR (PCI RR) mereview protokol Stage 1 secara independen dari jurnal mana pun.\nBicarakan dengan promotor dan kopromotor Anda sejak dini: bab disertasi berbasis RR semakin umum dan sangat berharga bagi karier ilmiah seseorang.\n\nMungkin belum menjadi praktik umum di Unair, tapi ini semakin umum di banyak belahan dunia lain."
+    "text": "Registered Reports dan S3 Anda\n\n\nMasukan dari reviewer datang saat masih berguna, sebelum Anda menghabiskan satu tahun untuk mengumpulkan data.\nIPA adalah jaminan publikasi yang bisa Anda jadikan dasar merencanakan disertasi: tidak perlu lagi berharap-harap cemas menunggu hasil publikasi sebelum ujian.\nHasil null menjadi temuan yang bisa dipublikasikan, bukan tahun-tahun yang terbuang percuma dan sekaligus baik untuk track record Anda.\nSoal waktu: review Stage 1 memerlukan waktu, jadi RR cocok untuk studi yang direncanakan jauh-jauh hari (tetapi sangat cocok untuk proposal S3!), tapi kurang cocok untuk pilot study yang cepat.\nDalam beberapa kasus, reviewer meminta pilot study dulu untuk menjustifikasi desain yang diusulkan dalam RR.\nBeberapa jurnal menawarkan fast-track atau jadwal review khusus untuk proyek mahasiswa; Peer Community In RR (PCI RR) mereview protokol Stage 1 secara independen dari jurnal mana pun.\nBicarakan dengan promotor dan kopromotor Anda sejak dini: bab disertasi berbasis RR semakin umum dan sangat berharga bagi karier ilmiah seseorang.\n\nMungkin belum menjadi praktik umum di Unair, tapi ini semakin umum di banyak belahan dunia lain."
   },
   {
     "objectID": "reproducibility-id.html#section-7",
     "href": "reproducibility-id.html#section-7",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "06\n\n\nKesimpulan"
   },
   {
     "objectID": "reproducibility-id.html#dari-mana-saya-memulai",
     "href": "reproducibility-id.html#dari-mana-saya-memulai",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Dari Mana Saya Memulai",
     "text": "Dari Mana Saya Memulai\n\nMulailah dengan transparansi yang Anda butuhkan, bukan yang Anda inginkan. Berikut urutan yang benar-benar saya daki:\n\n\n\nData Management Plan — hambatan paling rendah, hasil paling langsung. Saya mulai dari sini karena ini langsung membantu studi yang sedang saya jalankan saat itu.\nPre-registration — setelah mengorganisasi data menjadi rutinitas, merencanakan analisis di muka menjadi komitmen berikutnya yang wajar.\nLiterate programming — sebuah keterampilan teknis yang saya bangun setelah pre-registration membuat saya terbiasa berpikir dalam kerangka “rencana yang tertulis.”\nRegistered Report — anak tangga tersulit, dan yang butuh 2,5 tahun. Saya tidak akan memulai dari sini.\n\n\nSemua ini terjadi selama kurang lebih 15 tahun, dimulai satu kebiasaan pada satu waktu."
   },
   {
     "objectID": "reproducibility-id.html#gambaran-besarnya",
     "href": "reproducibility-id.html#gambaran-besarnya",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Gambaran Besarnya",
     "text": "Gambaran Besarnya\n\nRencanakan (Plan) → tulis data management plan; lakukan pre-registration untuk hipotesis dan rencana analisis Anda atau langsung all-in dengan registered report.\nKerjakan (Do) → organisasikan proyek Anda dalam satu folder; jaga data mentah tetap read-only; analisis dengan literate programming agar setiap hasil bisa diperbarui dengan satu klik.\nBagikan (Share) → simpan data (FAIR!), script, dan material riset di repository terpercaya dengan DOI dan lisensi; tautkan semuanya dari paper, dengan computational empathy yang cukup agar orang asing benar-benar bisa menjalankannya.\nPraktik-praktik ini hanya membutuhkan kebiasaan, dan kebiasaan paling mudah dibangun sekarang, di awal S3 Anda, sebelum Anda punya warisan masalah yang harus diurai.\nReproducibility adalah sebuah spektrum, bukan tes ya/tidak: setiap langkah (sebuah codebook di sini, sebuah script di sana) sudah membuat pekerjaan Anda lebih bisa dipercaya dibandingkan kalau Anda tidak melakukan apa pun sama sekali."
   },
   {
     "objectID": "reproducibility-id.html#starter-kit-anda-untuk-tahun-pertama",
     "href": "reproducibility-id.html#starter-kit-anda-untuk-tahun-pertama",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Starter Kit Anda untuk Tahun Pertama",
     "text": "Starter Kit Anda untuk Tahun Pertama\n\nLangkah-langkah konkret pertama:\n\n\n\n\nMinggu Ini\nBuat akun Zenodo gratis. Siapkan proyek pertama Anda dengan struktur folder yang rapi dan sebuah README. Ganti nama file-file Anda dengan benar.\n\n\n\nBulan Ini\nPelajari cara menggunakan  dan Quarto atau R Markdown lewat tutorial yang tersedia (Intro to , R4DS, Quarto TPG). Lalu, tulis tugas Anda berikutnya sebagai dokumen literate. Susun draf DMP satu halaman untuk proyek disertasi Anda.\n\n\n\nTahun Ini\nLakukan pre-registration untuk studi pertama Anda di OSF atau AsPredicted. Diskusikan dengan promotor Anda apakah salah satu bagian disertasi memungkinkan dijadikan Registered Report."
   },
   {
     "objectID": "reproducibility-id.html#di-mana-bisa-belajar-lebih-lanjut",
     "href": "reproducibility-id.html#di-mana-bisa-belajar-lebih-lanjut",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "Di Mana Bisa Belajar Lebih Lanjut",
     "text": "Di Mana Bisa Belajar Lebih Lanjut\n\n\nThe Turing Way — buku panduan gratis yang ditulis bersama komunitas tentang riset yang reproducible (mulai dari “Guide for Reproducible Research”).\nFORRT — Framework for Open and Reproducible Research Training: glosarium, kumpulan sumber daya, dan ringkasan literatur-literatur kunci.\nHalaman dukungan OSF — panduan praktis untuk proyek, registrasi, dan preprint.\nquarto.org — tutorial resmi untuk literate programming dengan R dan Python.\nBacaan lanjutan: Munafò et al. (2017), A manifesto for reproducible science — paper overview terbaik untuk memulai.\nTemukan komunitas open science lokal Anda (misalnya, Sains Terbuka Airlangga) — reproducibility jauh lebih mudah, dan lebih menyenangkan, jika dilakukan bersama-sama."
   },
   {
     "objectID": "reproducibility-id.html#section-8",
     "href": "reproducibility-id.html#section-8",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "Your closest collaborator is you six months ago, but you don’t reply to emails.\n\n\nMark Holder (dipopulerkan oleh Karl Broman) — permudah hidup diri Anda sendiri di masa depan."
   },
   {
     "objectID": "reproducibility-id.html#section-9",
     "href": "reproducibility-id.html#section-9",
-    "title": "Bagaimana Riset Dibuat Reproducible",
+    "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "Dr. Rizqy Amelia Zein\nCenter for Advanced Internet Studies (CAIS) & Universitas Airlangga\nE-mail: amelia.zein@cais-research.de · Homepage: rameliaz.github.io\n\n\n\n\n\n\n\nTerima kasih!\nSelamat datang & selamat memulai perjalanan doktoral Anda😉🎉\n\n\n\nCenter for Advanced Internet Studies (CAIS) gGmbH\nKonrad-Zuse-Str. 2a, 44801 Bochum\n\n\ninfo@cais-research.de\n+49 234 9531 5000\nwww.cais-research.de"
   },
@@ -403,14 +403,14 @@
     "href": "reproducibility.html#why-should-you-care",
     "title": "How Research is Made Reproducible",
     "section": "Why Should You Care?",
-    "text": "Why Should You Care?\n\nEnsuring that our results are reproducible gives us more confidence in our work.\n\n\n\nYour closest collaborator is you, six months ago and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.\nErrors get caught early, before they end up in your dissertation, your defense, or a retraction.\nInternational reviewers, supervisors, and committees increasingly expect it. Funders and journals now routinely require data, code, and analysis plans.\nIt makes you more efficient. Re-running an analysis after “please just add one covariate” takes one click instead of one week.\nIt builds trust in your work. Reproducible research gets reused, cited, and extended."
+    "text": "Why Should You Care?\n\nEnsuring that our results are reproducible gives us more confidence in our work.\n\n\n\nYour closest collaborator is you, six months ago and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.\nErrors get caught early, before they end up in your dissertation, your defense, or a retraction.\nInternational reviewers, supervisors, and committees increasingly expect it. Funders and journals now routinely require data, code, and analysis plans.\nIt makes you more efficient. Re-running an analysis after your supervisor/reviewers ask “please just add this one covariate” takes one click instead of one week.\nIt builds trust in your work. Reproducible research gets reused, cited, and extended."
   },
   {
     "objectID": "reproducibility.html#a-reproducibility-ladder",
     "href": "reproducibility.html#a-reproducibility-ladder",
     "title": "How Research is Made Reproducible",
     "section": "A “Reproducibility Ladder”🪜",
-    "text": "A “Reproducibility Ladder”🪜\n\nStart with the transparency you need, not the transparency you want. The four practices in this talk are not supposed to be a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.\n\n\nRung 1 — Data Management Plan: lowest barrier, most direct benefit. A folder that anyone, including future you, can navigate.\nRung 2 — Pre-Registration: a planning discipline — write the hypothesis down before you know the answer.\nRung 3 — Literate Programming: a technical habit — let the document compute itself instead of copying numbers by hand.\nRung 4 — Registered Reports: the biggest commitment — review before results exist, over years.\nThis is the order I personally climbed it, over about 15 years of my scientific career. I’ll show you what each rung actually looked like from where I stood."
+    "text": "A “Reproducibility Ladder”🪜\n\nStart with the practice you really need, not the one you want. The four practices in this talk are not supposed to be a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.\n\n\nRung 1 — Data Management Plan: lowest barrier, most direct benefit. A folder that anyone, including future you, can navigate.\nRung 2 — Pre-Registration: a planning discipline — write the hypothesis down before you know the answer.\nRung 3 — Literate Programming: a technical habit — let the document compute itself instead of copying numbers by hand.\nRung 4 — Registered Reports: the biggest commitment — review before results exist, over years.\nThis is the order I personally climbed it, over about 15 years of my scientific career. I’ll show you what each rung actually looked like from where I stood."
   },
   {
     "objectID": "reproducibility.html#section-2",
@@ -424,7 +424,7 @@
     "href": "reproducibility.html#what-is-a-data-management-plan-dmp",
     "title": "How Research is Made Reproducible",
     "section": "What Is a Data Management Plan (DMP)?",
-    "text": "What Is a Data Management Plan (DMP)?\n\nA short, living document, written before you collect data, describing how data will be collected, documented, stored, protected, and shared.\n\n\nThink of it as answering, in advance: “If I disappeared tomorrow, could someone else find, understand, and use my data?”\nIncreasingly required by funders (DFG, ERC, NIH, and many national funders) and by ethics committees.\nIt forces the right questions at the right time, before problems become unfixable (e.g., a consent form that forbids data sharing).\nFree tools with templates and guidance: DMPTool and DMPonline."
+    "text": "What Is a Data Management Plan (DMP)?\n\nA short, living document, written before you collect data, describing how data will be collected, documented, stored, protected, and shared.\n\n\nThink of it as answering, in advance: “If I disappeared tomorrow, could someone else find, understand, and use my data?”\nIncreasingly required by funders (DFG, ERC, NIH, and many national funders) and by ethics committees.\nIt forces the right questions at the right time, before problems become unfixable (e.g., a consent form that forbids data sharing).\nFree tools with templates and guidance: DMPTool and DMPonline.\nThese are some good examples: Example 1, Example 2, Example 3, DCC UK DMP Database."
   },
   {
     "objectID": "reproducibility.html#from-my-own-work-writing-the-dmp-habit-into-a-live-project",
@@ -501,7 +501,7 @@
     "href": "reproducibility.html#the-copy-paste-workflow-a.k.a.-how-errors-are-born",
     "title": "How Research is Made Reproducible",
     "section": "The Copy-Paste Workflow (a.k.a. How Errors Are Born)",
-    "text": "The Copy-Paste Workflow (a.k.a. How Errors Are Born)\n\nThe traditional workflow in psychology looks like this:\n\n\nRun the analysis in SPSS by clicking through menus…\n…copy the numbers into a Word document by hand…\n…format the table manually…\n…then a reviewer asks you to exclude three participants and you do all of it again, hoping you click the same buttons.\nEvery manual step is a place where errors sneak in and nobody (including you) can later verify what exactly was done.\nRoughly half of published psychology papers contain at least one inconsistent statistic — e.g., a p-value that does not match its own test statistic (Nuijten et al., 2016)."
+    "text": "The Copy-Paste Workflow (a.k.a. How Errors Are Born)\n\nThe traditional workflow in psychology looks like this:\n\n\nRun the analysis in SPSS by clicking through menus…\n…copy the numbers into a Word document by hand…\n…format the table manually…\n…then a reviewer asks you to exclude three participants and you do all of it again, hoping you click the same buttons.\nEvery manual step is a place where errors sneak in and nobody (including you) can later verify what exactly was done.\n\nEven if someone were to check, it would take a tremendous amount of effort, time, and energy to do so.\n\nRoughly half of published psychology papers contain at least one inconsistent statistic — e.g., a p-value that does not match its own test statistic (Nuijten et al., 2016)."
   },
   {
     "objectID": "reproducibility.html#section-5",
@@ -522,14 +522,14 @@
     "href": "reproducibility.html#from-my-own-work-where-the-ladder-bent",
     "title": "How Research is Made Reproducible",
     "section": "From My Own Work: Where the Ladder Bent",
-    "text": "From My Own Work: Where the Ladder Bent\n\nI pre-registered diligently for years before I learned Quarto. Literate programming was the rung I picked up much after and it changed how I write my papers.\n\n\n\nEvery project folder is also a Git repository — a full history of every change, so I (or a reviewer) can see exactly how a number came to be.\nThe document pulls numbers directly from the analysis.\n\nI stopped hand-typing results into Word, which is exactly the step where copy-paste errors used to creep in.\n\nReal example: grm-tutorial-paper, the repository behind a published paper written entirely as a literate document.\nA pleasantly suprising bonus: editors and reviewers comment on how organized the project looks. That’s actually not the point of literate programming, but it doesn’t hurt your reputation either."
+    "text": "From My Own Work: Where the Ladder Bent\n\nI pre-registered diligently for years before I learned Quarto. Literate programming was the rung I picked up much after and it changed how I write my papers.\n\n\n\nEvery project folder is also a Git repository — a full history of every change (version control), so I (or a reviewer) can see exactly how a number came to be.\n\nExample of version control for this presentation.\n\nThe document pulls numbers directly from the analysis.\n\nI stopped hand-typing results into Word, which is exactly the step where copy-paste errors used to creep in.\n\nReal example: grm-tutorial-paper, the repository behind a published paper written entirely as a literate document.\nA pleasantly suprising bonus😉: editors and reviewers comment on how organized the project looks. That’s actually not the point of literate programming, but it doesn’t hurt your reputation either."
   },
   {
     "objectID": "reproducibility.html#the-tools",
     "href": "reproducibility.html#the-tools",
     "title": "How Research is Made Reproducible",
     "section": "The Tools",
-    "text": "The Tools\n\nAll free, all open source, all with huge communities and tutorials:\n\n\n\n\nQuarto/R Markdown\nText (Markdown) + chunks of R/Python code → papers, slides, websites, dissertations. Together with R and RStudio/Positron. quarto.org\n\n\n\nJupyter Notebooks\nInteractive notebooks for Python (and R, Julia). Common in data science and computational modelling. jupyter.org\n\n\n\nGit & GitHub/OSF\nVersion control: a full history of every change to your code and text, which “track changes” for your whole project, so no more thesis_final_v7_REALLYFINAL.docx."
+    "text": "The Tools\n\nAll free, all open source, all with huge communities and tutorials:\n\n\n\n\nQuarto/R Markdown\nText (Markdown) + chunks of R/Python code → papers, slides, websites, dissertations. Together with R and RStudio/Positron. quarto.org\n\n\n\nJupyter Notebooks\nInteractive notebooks for Python (and R, Julia). Common in data science and computational modelling. jupyter.org\n\n\n\nGit & GitHub/OSF\nVersion control: a full history of every change to your code and text, which “track changes” for your whole project, so no more disertasi_final_v7_BISMILLAH.docx."
   },
   {
     "objectID": "reproducibility.html#what-it-looks-like",
@@ -543,7 +543,7 @@
     "href": "reproducibility.html#beyond-the-document-a-reproducible-project",
     "title": "How Research is Made Reproducible",
     "section": "Beyond the Document: A Reproducible Project",
-    "text": "Beyond the Document: A Reproducible Project\n\nLiterate programming works best inside a well-organized project:\n\n\n\nOne folder per project, with a standard structure: data/raw/ (read-only!), data/processed/, scripts/, output/, README.md.\nRelative paths, never absolute ones: here::here(\"data\", \"raw\", \"survey.csv\") instead of C:/Users/amelia/Desktop/... — so it runs on any computer, not just yours.\nSet a seed (set.seed(42)) whenever randomness is involved, so results are identical on every run.\nRecord your environment: package versions change! Tools like renv (R) or virtual environments (Python) snapshot the exact versions you used.\nNever edit raw data by hand — every cleaning step happens in a script, so the path from raw data to final table is fully documented."
+    "text": "Beyond the Document: A Reproducible Project\n\nLiterate programming works best inside a well-organized project:\n\n\n\nOne folder per project, with a standard structure: data/raw/ (read-only!), data/processed/, scripts/, output/, README.md.\nRelative paths, never absolute ones: here::here(\"data\", \"raw\", \"survey.csv\") instead of C:/Users/amelia/Desktop/... — so it runs on any computer, not just yours.\nSet a seed (set.seed(42)) whenever randomness is involved, so results are identical on every run.\nRecord your environment: package versions change! Tools like renv () or renv + pyenv () snapshot the exact versions you used.\nNever edit raw data by hand — every cleaning step happens in a script, so the path from raw data to final table is fully documented. Always keep your raw data untouched."
   },
   {
     "objectID": "reproducibility.html#computational-empathy",
@@ -563,15 +563,15 @@
     "objectID": "reproducibility.html#registered-reports-pre-registration-with-superpowers",
     "href": "reproducibility.html#registered-reports-pre-registration-with-superpowers",
     "title": "How Research is Made Reproducible",
-    "section": "Registered Reports: Pre-Registration with Superpowers",
-    "text": "Registered Reports: Pre-Registration with Superpowers\n\nA Registered Report (RR) is a journal article format where peer review happens before the results exist (Chambers & Tzavella, 2022).\n\n\nStage 1: you submit introduction, hypotheses, and detailed methods before data collection. Reviewers critique the design while you can still fix it.\nIf accepted, you receive In-Principle Acceptance (IPA): the journal commits to publishing your paper regardless of how the results turn out.\nStage 2: you run the study exactly as approved, submit the full paper; reviewers only check that you followed the plan and interpreted results sensibly.\nPublication no longer depends on getting “exciting” results → publication bias is cut off at the root, and p-hacking loses its purpose."
+    "section": "Registered Reports: Pre-Registration with Superpowers🦸‍♀️🦸",
+    "text": "Registered Reports: Pre-Registration with Superpowers🦸‍♀️🦸\n\n\n\nA Registered Report (RR) is a journal article format where peer review happens before the results exist (Chambers & Tzavella, 2022).\n\n\nStage 1: you submit introduction, hypotheses, and detailed methods before data collection. Reviewers critique the design while you can still fix it.\nIf accepted, you receive In-Principle Acceptance (IPA): the journal commits to publishing your paper regardless of how the results turn out.\nStage 2: you run the study exactly as approved, submit the full paper; reviewers only check that you followed the plan and interpreted results sensibly.\nPublication no longer depends on getting “exciting” results → publication bias is cut off at the root, and p-hacking loses its purpose."
   },
   {
     "objectID": "reproducibility.html#from-my-own-work-the-rung-that-took-2.5-years",
     "href": "reproducibility.html#from-my-own-work-the-rung-that-took-2.5-years",
     "title": "How Research is Made Reproducible",
-    "section": "From My Own Work: The Rung That Took 2.5 Years",
-    "text": "From My Own Work: The Rung That Took 2.5 Years\n\nI have now been part of three published Registered Reports. This is the one I first-authored, and the one I’m proudest of.\n\n\n\nFrom first conceiving the design to the paper appearing in print: about two and a half years.\nPublished as a Registered Report; postprint available open-access on PsyArXiv.\nIt was slow, and at several points frustrating.\n\nStage 1 review sends you back to redesign before you’ve collected a single data point.\nThat is uncomfortable, and it is the entire benefit: I fixed problems early on paper, not after running several studies with ~300 participants.\n\nI would not have attempted this as my first reproducibility practice. It only made sense once pre-registration and literate programming were already regular habits."
+    "section": "From My Own Work: The Rung That Took ~2.5 Years",
+    "text": "From My Own Work: The Rung That Took ~2.5 Years\n\nI have now been part of three published Registered Reports. This is the one I first-authored, and the one I’m proudest of.\n\n\n\nFrom first conceiving the design to the paper appearing in print: about two and a half years.\nPublished as a Registered Report; postprint available open-access on PsyArXiv.\nIt was slow, and at several points frustrating.\n\nStage 1 review sends you back to redesign before you’ve collected a single data point.\nThat is uncomfortable, and it is the entire benefit: I fixed problems early on paper, not after running several studies with ~300 participants.\n\nI would not have attempted this as my first reproducibility practice. It only made sense once pre-registration and literate programming were already regular habits."
   },
   {
     "objectID": "reproducibility.html#does-it-work",
@@ -585,7 +585,7 @@
     "href": "reproducibility.html#registered-reports-and-your-phd",
     "title": "How Research is Made Reproducible",
     "section": "Registered Reports and Your PhD",
-    "text": "Registered Reports and Your PhD\n\n\nThe reviewer feedback arrives when it is useful, before you spend a year collecting data.\nIPA is a publication guarantee you can plan a dissertation around: no more praying for significant results in study 3 of 3.\nNull results become publishable findings, not wasted years, which is honest science and good for your CV.\nTiming matters: Stage 1 review takes time, so RRs suit studies planned well in advance (perfect for a PhD proposal!), but less suited for quick pilot work.\nSome journals offer fast-track or scheduled review for student projects; Peer Community In RR (PCI RR) reviews Stage 1 protocols journal-independently.\nTalk to your supervisor and co-supervisor early: an RR-based dissertation chapter is increasingly common and highly valuable for one’s scientific career.\n\nProbably, not yet a common practice in Airlangga, but it is getting common in many parts of the world."
+    "text": "Registered Reports and Your PhD\n\n\nThe reviewer feedback arrives when it is useful, before you spend a year collecting data.\nIPA is a publication guarantee you can plan a dissertation around: no more praying for significant results in study 3 of 3.\nNull results become publishable findings, not wasted years, which is honest science and good for your track record.\nTiming matters: Stage 1 review takes time, so RRs suit studies planned well in advance (perfect for a PhD proposal!), but less suited for quick pilot work.\nIn some cases, reviewers may request a pilot study first to justify the design proposed in the RR.\nSome journals offer fast-track or scheduled review for student projects; Peer Community In RR (PCI RR) reviews Stage 1 protocols journal-independently.\nTalk to your supervisor and co-supervisor early: an RR-based dissertation chapter is increasingly common and highly valuable for one’s scientific career.\n\nProbably, not yet a common practice in Airlangga, but it is getting common in many parts of the world."
   },
   {
     "objectID": "reproducibility.html#section-7",

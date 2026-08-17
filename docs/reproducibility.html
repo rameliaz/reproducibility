@@ -101,7 +101,7 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-cfeed0e88d32a869b698aa5bfe7c7dd3.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-0287504c7f2e57d4dd4a12784837f0e9.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -268,7 +268,7 @@
 <h2>But the problem started much earlier than that</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/history.JPG" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="img/history.JPG" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
 </figure>
 </div>
 </section>
@@ -298,9 +298,9 @@
 </div>
 </div>
 <ul>
-<li>Even when effects did replicate, they were on average <strong>only about half as large</strong> as originally reported (i.e., “<a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full">The Decline Effect</a>”) — SCORE found the same pattern again in 2026.</li>
-<li><strong>SCORE is the largest check yet</strong>: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). Reproducing published analyses on the <em>original</em> data succeeded <a href="https://www.nature.com/articles/s41586-026-10203-5">only 54% of the time</a>.</li>
-<li>This pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the <strong>“<a href="https://www.nature.com/articles/d41586-026-00955-5">replication crisis</a>.”</strong></li>
+<li class="fragment">Even when effects did replicate, they were on average <strong>only about half as large</strong> as originally reported (i.e., “<a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full">The Decline Effect</a>”) — SCORE found the same pattern again in 2026.</li>
+<li class="fragment"><strong>SCORE is the largest check yet</strong>: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). Reproducing published analyses on the <em>original</em> data succeeded <a href="https://www.nature.com/articles/s41586-026-10203-5">only 54% of the time</a>.</li>
+<li class="fragment">This pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the <strong>“<a href="https://www.nature.com/articles/d41586-026-00955-5">replication crisis</a>.”</strong></li>
 </ul>
 </section>
 <section id="three-words-you-must-not-confuse" class="slide level2 columns-slide">
@@ -370,7 +370,7 @@
 <p>An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.</p>
 </blockquote>
 <div class="quote-author">
-<p>Buckheit &amp; Donoho (1995), paraphrasing Jon Claerbout</p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5">Buckheit &amp; Donoho (1995)</a>, paraphrasing Jon Claerbout</p>
 </div>
 </div>
 </section>
@@ -384,7 +384,7 @@
 <li><strong>Your closest collaborator is you, six months ago</strong> and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.</li>
 <li><strong>Errors get caught early</strong>, before they end up in your dissertation, your defense, or a retraction.</li>
 <li><strong>International reviewers, supervisors, and committees increasingly expect it</strong>. Funders and journals now routinely require data, code, and analysis plans.</li>
-<li><strong>It makes you more efficient</strong>. Re-running an analysis after “please just add one covariate” takes one click instead of one week.</li>
+<li><strong>It makes you more efficient</strong>. Re-running an analysis after your supervisor/reviewers ask “<em>please just add this one covariate</em>” takes one click instead of one week.</li>
 <li><strong>It builds trust in your work</strong>. Reproducible research gets reused, cited, and extended.</li>
 </ul>
 </div>
@@ -392,7 +392,7 @@
 <section id="a-reproducibility-ladder" class="slide level2">
 <h2>A “Reproducibility Ladder”🪜</h2>
 <div class="lead">
-<p>Start with the transparency <strong>you need</strong>, not the transparency <strong>you want</strong>. The four practices in this talk are <em>not supposed to be</em> a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.</p>
+<p>Start with the practice <strong>you really need</strong>, not the one <strong>you want</strong>. The four practices in this talk are <em>not supposed to be</em> a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.</p>
 </div>
 <ul>
 <li class="fragment"><strong>Rung 1 — Data Management Plan</strong>: lowest barrier, most direct benefit. A folder that anyone, including future you, can navigate.</li>
@@ -422,6 +422,7 @@
 <li class="fragment">Increasingly <strong>required by funders</strong> (DFG, ERC, NIH, and many national funders) and by ethics committees.</li>
 <li class="fragment">It forces the right questions at the right time, <em>before</em> problems become unfixable (e.g., a consent form that forbids data sharing).</li>
 <li class="fragment">Free tools with templates and guidance: <a href="https://dmptool.org">DMPTool</a> and <a href="https://dmponline.dcc.ac.uk">DMPonline</a>.</li>
+<li class="fragment">These are some good examples: <a href="https://www.fu-berlin.de/en/sites/forschungsdatenmanagement/_dokumente/dmp-sample_v01.pdf">Example 1</a>, <a href="https://data.ncl.ac.uk/articles/data_management_plan/Data_management_plan/23541882/1?file=41295288">Example 2</a>, <a href="https://zenodo.org/records/8411137">Example 3</a>, <a href="https://dmponline.dcc.ac.uk/public_plans">DCC UK DMP Database</a>.</li>
 </ul>
 </section>
 <section id="from-my-own-work-writing-the-dmp-habit-into-a-live-project" class="slide level2">
@@ -540,8 +541,8 @@
 <ul>
 <li>The study tests the <strong>“dilution effect”</strong>: whether offering <em>more</em> explanations for a crisis reduces how useful people find <em>each</em> explanation (<a href="https://osf.io/ctru2/overview">Jackson et al., 2024</a>).</li>
 <li>I wrote the hypothesis down, in a time-stamped, public record, <strong>before</strong> I knew whether the data would support it.</li>
-<li>It greatly helped me to plan my study better and defend my design choice when discussing it with my supervisor.</li>
-<li>Whatever came back, I could not simply reframe the study afterward as “this is what I predicted all along.” The time-stamp made that impossible and that helps keeping me honest with myself.</li>
+<li>It greatly helped me to <strong>plan my study better</strong> and defend my design choice when discussing it with my supervisor.</li>
+<li>Whatever came back, I could not simply reframe the study afterward as “this is what I predicted all along.” The time-stamp made that impossible and that <strong>helps keeping me honest with myself</strong>.</li>
 <li>I have pre-registered every study I have run since 2021.
 <ul>
 <li>It is now simply normal part of designing a study.</li>
@@ -602,7 +603,10 @@
 <li class="fragment">…copy the numbers into a Word document by hand…</li>
 <li class="fragment">…format the table manually…</li>
 <li class="fragment">…then a reviewer asks you to exclude three participants and you do <strong>all of it again</strong>, hoping you click the same buttons.</li>
-<li class="fragment">Every manual step is a place where errors sneak in and nobody (including you) can later verify what exactly was done.</li>
+<li class="fragment">Every manual step is a place where errors sneak in and nobody (including you) can later verify what exactly was done.
+<ul>
+<li class="fragment">Even if someone were to check, it would take a tremendous amount of effort, time, and energy to do so.</li>
+</ul></li>
 <li class="fragment">Roughly <strong>half of published psychology papers contain at least one inconsistent statistic</strong> — e.g., a <em>p</em>-value that does not match its own test statistic (<a href="https://link.springer.com/article/10.3758/s13428-015-0664-2">Nuijten et al., 2016</a>).</li>
 </ul>
 </section>
@@ -636,13 +640,16 @@
 </div>
 <div class="content-box">
 <ul>
-<li>Every project folder is also a <strong>Git repository</strong> — a full history of every change, so I (or a reviewer) can see exactly how a number came to be.</li>
+<li>Every project folder is also a <strong>Git repository</strong> — a full history of every change (version control), so I (or a reviewer) can see exactly how a number came to be.
+<ul>
+<li>Example of <a href="https://github.com/rameliaz/reproducibility/commits/master/">version control</a> for this presentation.</li>
+</ul></li>
 <li>The document pulls numbers directly from the analysis.
 <ul>
 <li>I stopped hand-typing results into Word, which is exactly the step where copy-paste errors used to creep in.</li>
 </ul></li>
 <li>Real example: <a href="https://github.com/rameliaz/grm-tutorial-paper"><code>grm-tutorial-paper</code></a>, the repository behind a <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265">published paper</a> written entirely as a literate document.</li>
-<li>A pleasantly suprising bonus: editors and reviewers comment on how <em>organized</em> the project looks. That’s actually not the point of literate programming, but it doesn’t hurt your reputation either.</li>
+<li>A pleasantly suprising bonus😉: editors and reviewers comment on how <em>organized</em> the project looks. That’s actually not the point of literate programming, but it doesn’t hurt your reputation either.</li>
 </ul>
 </div>
 </section>
@@ -665,7 +672,7 @@
 <div class="col-item">
 <p><span class="col-icon"><i class="fa-brands fa-git-alt"></i></span></p>
 <h3 id="git-githubosf">Git &amp; GitHub/OSF</h3>
-<p>Version control: a full history of every change to your code and text, which “track changes” for your whole project, so no more <code>thesis_final_v7_REALLYFINAL.docx</code>.</p>
+<p>Version control: a full history of every change to your code and text, which “track changes” for your whole project, so no more <code>disertasi_final_v7_BISMILLAH.docx</code>.</p>
 </div>
 </div>
 </section>
@@ -694,8 +701,8 @@
 <li><strong>One folder per project</strong>, with a standard structure: <code>data/raw/</code> (read-only!), <code>data/processed/</code>, <code>scripts/</code>, <code>output/</code>, <code>README.md</code>.</li>
 <li><strong>Relative paths</strong>, never absolute ones: <code>here::here("data", "raw", "survey.csv")</code> instead of <code>C:/Users/amelia/Desktop/...</code> — so it runs on <em>any</em> computer, not just yours.</li>
 <li><strong>Set a seed</strong> (<code>set.seed(42)</code>) whenever randomness is involved, so results are identical on every run.</li>
-<li><strong>Record your environment</strong>: package versions change! Tools like <code>renv</code> (R) or virtual environments (Python) snapshot the exact versions you used.</li>
-<li><strong>Never edit raw data by hand</strong> — every cleaning step happens in a script, so the path from raw data to final table is fully documented.</li>
+<li><strong>Record your environment</strong>: package versions change! Tools like <code>renv</code> (<i class="fa-brands fa-r-project"></i>) or <code>renv</code> + <code>pyenv</code> (<i class="fa-brands fa-python"></i>) snapshot the exact versions you used.</li>
+<li><strong>Never edit raw data by hand</strong> — every cleaning step happens in a script, so the path from raw data to final table is fully documented. <strong>Always keep your raw data untouched</strong>.</li>
 </ul>
 </div>
 </section>
@@ -728,8 +735,10 @@
 <p>Registered Reports</p>
 </div>
 </section>
-<section id="registered-reports-pre-registration-with-superpowers" class="slide level2">
-<h2>Registered Reports: Pre-Registration with Superpowers</h2>
+<section id="registered-reports-pre-registration-with-superpowers" class="slide level2 split-slide">
+<h2>Registered Reports: Pre-Registration with Superpowers🦸‍♀️🦸</h2>
+<div class="split-area">
+<div class="split-text">
 <div class="lead">
 <p>A <strong>Registered Report (RR)</strong> is a journal article format where peer review happens <strong>before</strong> the results exist (<a href="https://www.nature.com/articles/s41562-021-01193-7">Chambers &amp; Tzavella, 2022</a>).</p>
 </div>
@@ -739,9 +748,18 @@
 <li class="fragment"><strong>Stage 2</strong>: you run the study exactly as approved, submit the full paper; reviewers only check that you followed the plan and interpreted results sensibly.</li>
 <li class="fragment">Publication no longer depends on getting “exciting” results → <strong>publication bias is cut off at the root</strong>, and <em>p</em>-hacking loses its purpose.</li>
 </ul>
+</div>
+<div class="split-graphic">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/rr.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="from-my-own-work-the-rung-that-took-2.5-years" class="slide level2">
-<h2>From My Own Work: The Rung That Took 2.5 Years</h2>
+<h2>From My Own Work: The Rung That Took ~2.5 Years</h2>
 <div class="lead">
 <p>I have now been part of three published Registered Reports. This is the one I first-authored, and the one I’m proudest of.</p>
 </div>
@@ -786,8 +804,9 @@
 <ul>
 <li><strong>The reviewer feedback arrives when it is useful</strong>, before you spend a year collecting data.</li>
 <li><strong>IPA is a publication guarantee you can plan a dissertation around</strong>: no more praying for significant results in study 3 of 3.</li>
-<li><strong>Null results become publishable findings</strong>, not wasted years, which is honest science <em>and</em> good for your CV.</li>
+<li><strong>Null results become publishable findings</strong>, not wasted years, which is honest science <em>and</em> good for your track record.</li>
 <li>Timing matters: Stage 1 review takes time, so RRs suit studies planned <strong>well in advance</strong> (perfect for a PhD proposal!), but less suited for quick pilot work.</li>
+<li>In some cases, <em>reviewers</em> may request a <em>pilot study</em> first to justify the design proposed in the RR.</li>
 <li>Some journals offer fast-track or scheduled review for student projects; <strong>Peer Community In RR</strong> (<a href="https://rr.peercommunityin.org">PCI RR</a>) reviews Stage 1 protocols journal-independently.</li>
 <li>Talk to your supervisor and co-supervisor early: an RR-based dissertation chapter is increasingly common and highly valuable for one’s scientific career.
 <ul>

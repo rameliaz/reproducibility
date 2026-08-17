@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Dr.&nbsp;Rizqy Amelia Zein (Research Data and Methods Team, Center for Advanced Internet Studies &amp; Department of Psychology, Universitas Airlangga)">
-  <title>Amelia Zein – Bagaimana Riset Dibuat Reproducible</title>
+  <title>Amelia Zein – Agar Riset Dapat Direka Ulang</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -101,7 +101,7 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-cfeed0e88d32a869b698aa5bfe7c7dd3.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-0287504c7f2e57d4dd4a12784837f0e9.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -217,7 +217,7 @@
   </div>
   <!-- Rechte Spalte: Präsentationstitel auf CAIS-Blau Muster-Hintergrund -->
   <div class="cais-title-right">
-    <h1 class="title">Bagaimana Riset Dibuat Reproducible</h1>
+    <h1 class="title">Agar Riset Dapat Direka Ulang</h1>
     <p class="subtitle">Memastikan riset dapat direka ulang dari sudut pandang orang pertama</p>
   </div>
 </section>
@@ -227,7 +227,7 @@
 <ol type="1">
 <li><em>Replication Crisis</em> dan Mengapa <em>Reproducibility</em> Penting</li>
 <li><em>Data Management Plan</em></li>
-<li>Pra-registrasi</li>
+<li><em>Pre-registration</em></li>
 <li><em>Literate Programming</em></li>
 <li><em>Registered Reports</em></li>
 <li>Kesimpulan</li>
@@ -250,30 +250,30 @@
 </div>
 <ul>
 <li class="fragment"><strong>Pertanyaan 1:</strong> Jika tim lain mencoba ulang <em>studi yang sama dengan mengambil data baru</em>, apakah mereka akan menemukan hasil yang sama?</li>
-<li class="fragment"><strong>Pertanyaan 2:</strong> Jika Anda mengambil <em>data asli dan script analisis asli</em> dari penelitian tersebut, apakah Anda akan mendapatkan hasil yang sama persis seperti yang dilaporkan dalam paper tersebut?</li>
+<li class="fragment"><strong>Pertanyaan 2:</strong> Jika Anda menganalisis ulang <em>data asli dengan script/file analisis asli</em> dari penelitian tersebut, apakah Anda akan mendapatkan hasil yang sama persis seperti yang dilaporkan dalam <em>paper</em> tersebut?</li>
 <li class="fragment">Secara intuitif, kita berasumsi jawaban untuk keduanya adalah “<em>ya, tentu saja! Paper ini, kan, sudah dipublikasikan di jurnal top Q1!</em>”</li>
-<li class="fragment">Selama 15 tahun terakhir, para peneliti benar-benar mengeceknya. Jawabannya… <strong>akan membuat Anda kaget</strong>.</li>
+<li class="fragment">Selama 15 tahun terakhir, para peneliti benar-benar mengeceknya dan jawabannya… <strong>akan membuat Anda kaget</strong>.</li>
 </ul>
 </section>
-<section id="bagaimana-masalah-ini-bermula-awal-2010-an" class="slide level2">
-<h2>Bagaimana Masalah Ini Bermula (awal 2010-an)</h2>
+<section id="awal-mula-masalahnya-awal-2010-an" class="slide level2">
+<h2>Awal Mula Masalahnya (awal 2010-an)</h2>
 <ul>
 <li class="fragment"><strong>2011 — <em>Paper</em> “prekognisi” Bem</strong>: sebuah jurnal top (Journal of Personality and Social Psychology - JPSP) mempublikasikan bukti bahwa orang bisa <em>merasakan apa yang akan terjadi di masa depan</em> (<a href="https://psycnet.apa.org/record/2011-01894-001">Bem, 2011</a>) dengan menggunakan metode eksperimen dan menguji hipotesisnya dengan tes statistik standar. Jika sebuah eksperimen perilaku bisa “membuktikan” hal yang mustahil, lalu apa implikasinya bagi metode tersebut?</li>
-<li class="fragment"><a href="https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html"><strong>2011 — Kasus kecurangan akademik Stapel</strong></a>: seorang profesor psikologi sosial terkemuka terbukti memalsukan data di puluhan paper yang sudah dipublikasikan.</li>
+<li class="fragment"><a href="https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html"><strong>2011 — Kasus kecurangan akademik Diederik Stapel</strong></a>: seorang profesor psikologi sosial terkemuka terbukti memalsukan data di puluhan paper yang sudah dipublikasikan.</li>
 <li class="fragment"><strong>2011 — “False-Positive Psychology”</strong> (<a href="https://journals.sagepub.com/doi/10.1177/0956797611417632">Simmons, Nelson, &amp; Simonsohn</a>): menunjukkan bahwa pilihan-pilihan analitis yang kesannya remeh, biasa, tetapi tidak diungkapkan bisa membuat <em>apa pun</em> menjadi signifikan secara statistik. Di <em>paper</em> ini, mereka menunjukkan betapa “mudahnya” membuktikan bahwa mendengarkan sebuah lagu yang spesifik (“<em>When I’m 64</em>”) membuat orang menjadi lebih muda.</li>
 <li class="fragment">Peristiwa-peristiwa ini memicu pertanyaan besar: <strong>seberapa banyak klaim ilmiah di literatur Psikologi yang benar-benar bisa kita percaya?</strong></li>
 </ul>
 </section>
-<section id="awal-mula-masalahnya-sebenarnya-sudah-muncul-lebih-lama" class="slide level2">
-<h2>Awal mula masalahnya sebenarnya sudah muncul lebih lama</h2>
+<section id="sebanarnya-bukan-masalah-baru" class="slide level2">
+<h2>Sebanarnya… bukan masalah baru</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/history.JPG" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="img/history.JPG" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
 </figure>
 </div>
 </section>
-<section id="studi-studi-multisite-replications" class="slide level2">
-<h2>Studi-studi <em>multisite replications</em></h2>
+<section id="multisite-replications" class="slide level2">
+<h2><em>Multisite replications</em></h2>
 <div class="lead">
 <p>Tim-tim riset besar secara sistematis mencoba ulang studi-studi yang sudah dipublikasikan dengan data baru, dan inilah hasilnya:</p>
 </div>
@@ -298,9 +298,9 @@
 </div>
 </div>
 <ul>
-<li>Bahkan ketika efeknya berhasil dicoba ulang, rata-rata <em>effect size</em>nya <strong>hanya sekitar setengah</strong> dari yang dilaporkan pada awalnya (dikenal sebagai “<a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full">The Decline Effect</a>”) — SCORE menemukan pola yang sama lagi pada 2026.</li>
-<li><strong>SCORE adalah riset reka ulang terbesar sejauh ini</strong>: 865 peneliti menilai 3.900 paper (2009–2018, 62 jurnal, mencakup ekonomi, psikologi, ilmu politik, sosiologi, dan lainnya). Mereka ulang analisis yang sudah dipublikasikan pada data <em>asli</em> hanya berhasil <a href="https://www.nature.com/articles/s41586-026-10203-5">54% dari keseluruhan kasus</a>.</li>
-<li>Pola ini, yang muncul di psikologi, ekonomi, dan bidang-bidang lainnya, dan kini terkonfirmasi dalam skala besar, bahwa apa yang disebut media sebagai <strong>“<a href="https://www.nature.com/articles/d41586-026-00955-5">replication crisis</a>”</strong> memang benar-benar terjadi.</li>
+<li class="fragment">Bahkan ketika efeknya berhasil dicoba ulang, rata-rata <em>effect size</em>nya <strong>hanya sekitar setengah</strong> dari yang dilaporkan pada awalnya (dikenal sebagai “<a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full">The Decline Effect</a>”) — SCORE menemukan pola yang sama lagi pada 2026.</li>
+<li class="fragment"><strong>SCORE adalah riset reka ulang terbesar sejauh ini</strong>: 865 peneliti menilai 3.900 paper (2009–2018, 62 jurnal, mencakup ekonomi, psikologi, ilmu politik, sosiologi, dan lainnya). Mereka ulang analisis yang sudah dipublikasikan pada data <em>asli</em> hanya berhasil <a href="https://www.nature.com/articles/s41586-026-10203-5">54% dari keseluruhan kasus</a>.</li>
+<li class="fragment">Pola ini, yang muncul di psikologi, ekonomi, dan bidang-bidang lainnya, dan kini terkonfirmasi dalam skala besar, bahwa apa yang disebut media sebagai <strong>“<a href="https://www.nature.com/articles/d41586-026-00955-5">replication crisis</a>”</strong> memang benar-benar terjadi.</li>
 </ul>
 </section>
 <section id="tiga-istilah-yang-sering-tertukar" class="slide level2 columns-slide">
@@ -352,15 +352,15 @@
 <p>Ini sebagian besar bukan soal kecurangan yang benar-benar mengandung niat jahat, melainkan perilaku manusia yang sekadar mengikuti insentif.</p>
 </div>
 <ul>
-<li class="fragment"><strong><em>Publication bias</em></strong>: jurnal lebih menyukai temuan yang baru, positif, dan “bersih”. Karena itu, hasil negatif/<em>null</em> sering kali berakhir di laci arsip (<em>file drawer</em>).</li>
+<li class="fragment"><strong><em>Publication bias</em></strong>: jurnal lebih menyukai temuan yang baru, positif, dan “bersih”. Karena itu, hasil negatif/<em>null</em> sering kali berakhir di laci arsip (<a href="https://web.ma.utexas.edu/users/mks/statmistakes/filedrawer.html"><em>file drawer</em></a>).</li>
 <li class="fragment"><strong><em>Publish or perish</em></strong>: karier akademik dibangun berdasarkan <em>jumlah</em> publikasi, bukan kualitas substantifnya.</li>
 <li class="fragment"><strong><em>Questionable research practices</em> (QRPs)</strong>: area abu-abu antara praktik baik dan kecurangan (<a href="https://journals.sagepub.com/doi/10.1177/0956797611430953">John et al., 2012</a>):
 <ul>
 <li class="fragment"><strong><em>p</em>-<em>hacking</em></strong>: mencoba banyak analisis dan hanya melaporkan yang “berhasil”</li>
-<li class="fragment"><strong>HARKing</strong>: <em>Hypothesizing After the Results are Known</em> — menyajikan temuan eksploratif seolah-olah memang sudah diprediksi sebelumnya (<a href="https://journals.sagepub.com/doi/10.1207/s15327957pspr0203_4">Kerr, 1998</a>)</li>
-<li class="fragment"><strong>Pelaporan selektif</strong> (<em>selective reporting</em>) terhadap ukuran, kondisi, atau hasil</li>
+<li class="fragment"><strong>HARKing</strong>: <em>Hypothesizing After the Results are Known</em> — menyajikan temuan eksploratif seolah-olah memang sudah diprediksi sebelumnya (<a href="https://journals.sagepub.com/doi/10.1207/s15327957pspr0203_4">Kerr, 1998</a>).</li>
+<li class="fragment"><strong>Pelaporan selektif</strong> (<em>selective reporting</em>) terhadap pengukuran, kondisi (eksperimen), atau temuan penelitian.</li>
 </ul></li>
-<li class="fragment"><strong><em>The garden of forking paths</em></strong>: bahkan tanpa niat buruk sekalipun, setiap dataset memungkinkan pilihan analisis yang sangat banyak dan sama-sama bisa dipertahankan, sehingga fleksibilitas dalam pilihan analitis bisa meningkatkan <em>false positive rate</em> (<a href="http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf">Gelman &amp; Loken, 2014</a>).</li>
+<li class="fragment"><strong><em>The garden of forking paths</em></strong>: bahkan tanpa niat buruk sekalipun, setiap dataset memungkinkan pilihan analisis yang sangat banyak dan sama-sama bisa dipertahankan secara metodologis, sehingga fleksibilitas dalam pilihan analitis bisa meningkatkan <em>false positive rate</em> (<a href="http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf">Gelman &amp; Loken, 2014</a>).</li>
 </ul>
 </section>
 <section id="section-1" class="slide level2 quote-slide">
@@ -370,7 +370,7 @@
 <p>An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.</p>
 </blockquote>
 <div class="quote-author">
-<p>Buckheit &amp; Donoho (1995), memparafrasekan Jon Claerbout</p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5">Buckheit &amp; Donoho (1995)</a>, memparafrasekan Jon Claerbout</p>
 </div>
 </div>
 </section>
@@ -381,10 +381,10 @@
 </div>
 <div class="content-box">
 <ul>
-<li><strong>Kolaborator terdekat Anda adalah diri Anda sendiri, enam bulan yang lalu</strong>, dan Anda-di-masa-lalu tidak dapat membalas chat WhatsApp. Alur kerja yang <em>reproducible</em> berarti Anda selalu bisa menelusuri kembali langkah-langkah Anda sendiri.</li>
+<li><strong>Kolaborator terdekat Anda adalah diri Anda sendiri, enam bulan yang lalu</strong>, dan diri Anda di masa lalu tidak dapat membalas chat WhatsApp. Alur kerja yang <em>reproducible</em> berarti Anda selalu bisa menelusuri kembali langkah-langkah Anda sendiri.</li>
 <li><strong>Kesalahan tertangkap lebih awal</strong>, sebelum berakhir di disertasi Anda, ujian/sidang, atau bahkan <em>retraction</em>.</li>
-<li><strong><em>Reviewer</em>, promotor, dan komite ujian semakin mengharapkannya</strong>. Pendana dan jurnal kini rutin mensyaratkan peneliti untuk membagikan data dan material riset.</li>
-<li><strong>Membuat Anda lebih efisien</strong>. Menjalankan ulang analisis setelah “tolong tambahkan satu variabel kontrol saja” hanya butuh satu klik.</li>
+<li><strong><em>Reviewer</em>, promotor, dan komite ujian semakin mengharapkannya</strong>. Pendana besar dan jurnal kini rutin mensyaratkan peneliti untuk membagikan data dan material riset.</li>
+<li><strong>Membuat Anda lebih efisien</strong>. Menjalankan ulang analisis setelah diminta promotor: “<em>tolong tambahkan satu variabel kontrol saja</em>” hanya butuh satu klik.</li>
 <li><strong>Ini membangun kepercayaan terhadap pekerjaan Anda</strong>. Riset yang <em>reproducible</em> akan lebih banyak digunakan ulang, disitasi, dan dikembangkan lebih lanjut.</li>
 </ul>
 </div>
@@ -392,7 +392,7 @@
 <section id="tangga-reproducibility" class="slide level2">
 <h2>“Tangga <em>Reproducibility</em>”🪜</h2>
 <div class="lead">
-<p>Mulailah dengan tingkat transparansi <strong>yang Anda butuhkan</strong>, bukan yang <strong>Anda inginkan</strong>. Empat praktik dalam presentasi ini <em>bukan checklist</em> yang harus selesaikan semester ini, atau bahkan sepanjang program S3 Anda. Ini adalah tangga yang akan Anda daki selama bertahun-tahun sepanjang karier profesional Anda ke depan.</p>
+<p>Mulailah dengan strategi <strong>yang Anda butuhkan</strong>, bukan yang <strong>Anda inginkan</strong>. Empat praktik dalam presentasi ini <em>bukan checklist</em> yang harus selesaikan semester ini, atau bahkan sepanjang program S3 Anda. Ini adalah tangga yang akan Anda daki selama bertahun-tahun sepanjang karier profesional Anda ke depan.</p>
 </div>
 <ul>
 <li class="fragment"><strong>Anak tangga 1 — <em>Data Management Plan</em></strong>: memiliki hambatan yang paling rendah, manfaat paling langsung. Sebuah <em>folder</em> yang bisa dijelajahi siapa pun, termasuk Anda di masa depan.</li>
@@ -409,23 +409,24 @@
 <p>02</p>
 </div>
 <div class="section-bubble">
-<p>Data Management Plan</p>
+<p><em>Data Management Plan</em></p>
 </div>
 </section>
 <section id="apa-itu-data-management-plan-dmp" class="slide level2">
 <h2>Apa Itu <em>Data Management Plan</em> (DMP)?</h2>
 <div class="lead">
-<p>Sebuah dokumen singkat dan hidup (living document), yang ditulis <strong>sebelum</strong> Anda mengumpulkan data, yang menjelaskan bagaimana data akan dikumpulkan, didokumentasikan, disimpan, dilindungi, dan dibagikan.</p>
+<p>Sebuah dokumen singkat dan hidup (<a href="https://en.wikipedia.org/wiki/Living_document"><em>living document</em></a>), yang ditulis <strong>sebelum</strong> Anda mengumpulkan data, yang menjelaskan bagaimana data akan dikumpulkan, didokumentasikan, disimpan, dilindungi, dan dibagikan.</p>
 </div>
 <ul>
 <li class="fragment">Anggap saja ini sebagai menjawab pertanyaan: <em>“Jika saya menghilang besok, bisakah orang lain menemukan, memahami, dan menggunakan data saya?”</em></li>
 <li class="fragment">Semakin <strong>diwajibkan oleh <em>funder</em></strong> (DFG, ERC, NIH, dan banyak <em>funder</em> internasional lainnya) dan oleh komite etik.</li>
 <li class="fragment">DMP memaksa munculnya pertanyaan yang tepat pada waktu yang tepat, <em>sebelum</em> masalah menjadi tidak bisa diperbaiki lagi (misalnya, formulir <em>informed consent</em> yang justru melarang data dibagikan).</li>
 <li class="fragment"><em>Tools</em> gratis dengan <em>template</em> dan panduan: <a href="https://dmptool.org">DMPTool</a> dan <a href="https://dmponline.dcc.ac.uk">DMPonline</a>.</li>
+<li class="fragment">Berikut beberapa contoh yang bisa diadopsi: <a href="https://www.fu-berlin.de/en/sites/forschungsdatenmanagement/_dokumente/dmp-sample_v01.pdf">Contoh 1</a>, <a href="https://data.ncl.ac.uk/articles/data_management_plan/Data_management_plan/23541882/1?file=41295288">Contoh 2</a>, <a href="https://zenodo.org/records/8411137">Contoh 3</a>, <a href="https://dmponline.dcc.ac.uk/public_plans">Berbagai macam contoh</a>.</li>
 </ul>
 </section>
-<section id="menanamkan-kebiasaan-dmp-ke-dalam-proyek-yang-sedang-berjalan" class="slide level2">
-<h2>Menanamkan Kebiasaan DMP ke dalam Proyek yang Sedang Berjalan</h2>
+<section id="menanamkan-kebiasaan-manajemen-data-ke-dalam-proyek-yang-sedang-berjalan" class="slide level2">
+<h2>Menanamkan Kebiasaan Manajemen Data ke dalam Proyek yang Sedang Berjalan</h2>
 <div class="lead">
 <p>Saya sedang mengerjakan <em>scoping review</em> tentang praktik <em>reproducibility</em> di bidang ekonomi dan ilmu sosial, yang merupakan bagian dari proyek yang lebih besar tempat saya terlibat. Struktur <em>folder</em> kerjanya seperti ini:</p>
 </div>
@@ -457,12 +458,12 @@
 <div class="col-item">
 <p><span class="col-icon"><i class="fa-solid fa-shield-halved"></i></span></p>
 <h3 id="storage-ethics"><em>Storage</em> &amp; <em>Ethics</em></h3>
-<p>Di mana data akan disimpan, bagaimana cara backup-nya (<a href="https://en.wikipedia.org/wiki/Backup">aturan 3-2-1</a>), siapa yang punya akses? Bagaimana partisipan dilindungi, termasuk informed consent, anonimisasi atau pseudonimisasi, serta persyaratan hukum yang berlaku?</p>
+<p>Di mana data akan disimpan, bagaimana cara <em>backup</em>-nya (<a href="https://en.wikipedia.org/wiki/Backup">aturan 3-2-1</a>), siapa yang punya akses? Bagaimana partisipan dilindungi, termasuk <em>informed consent</em>, anonimisasi atau pseudonimisasi, serta persyaratan hukum yang berlaku?</p>
 </div>
 <div class="col-item">
 <p><span class="col-icon"><i class="fa-solid fa-share-nodes"></i></span></p>
 <h3 id="sharing-preservation"><em>Sharing</em> &amp; <em>Preservation</em></h3>
-<p>Data mana yang bisa dibagikan, di mana, <a href="https://id.creativecommons.net/pilihan-lisensi-cc/">dengan lisensi apa</a>, dan kapan? Apa yang diarsipkan dalam jangka panjang (biasanya 10 tahun) dan di repository tepercaya yang mana?</p>
+<p>Data mana yang bisa dibagikan, di mana, <a href="https://id.creativecommons.net/pilihan-lisensi-cc/">dengan lisensi apa</a>, dan kapan? Apa yang diarsipkan dalam jangka panjang (biasanya 10 tahun) dan di <em>repository</em> tepercaya yang mana?</p>
 </div>
 </div>
 </section>
@@ -504,7 +505,7 @@
 <li><strong>Tulis <em>codebook</em>-nya sambil Anda menyusun survei</strong>.</li>
 <li><strong>Pilih <em>repository</em> untuk menyimpan data</strong>: <a href="https://osf.io">OSF</a>, <a href="https://zenodo.org">Zenodo</a>, <a href="https://www.psychdata.de">PsychData</a>, <a href="https://data.brin.go.id/">RIN Dataverse (BRIN)</a> — semuanya menyediakan DOI dan preservasi jangka panjang.</li>
 <li><a href="https://www.imperial.ac.uk/research-and-innovation/support-for-staff/scholarly-communication/research-data-management/sharing-data/licensing-your-data/"><strong>Pilih lisensi</strong></a> agar orang lain tahu apa yang boleh mereka lakukan: misalnya, <a href="https://id.creativecommons.net/pilihan-lisensi-cc/">CC0/CC-BY</a> untuk data dan materi, <a href="https://www.credativ.de/en/blog/credativ-inside/understanding-open-source-licenses-gpl-mit-apache-compared/">MIT/GPL</a> untuk kode.</li>
-<li><strong>Rencanakan <em>consent</em> untuk berbagi data</strong>: tambahkan bahasa terkait berbagi data ke <em>informed consent</em> Anda <em>sekarang juga</em>, karena Anda tidak bisa meminta izin secara retroaktif kepada 800 partisipan anonim.</li>
+<li><strong>Rencanakan <em>informed consent</em> yang mencakup izin pembagian data</strong>: tambahkan kalimat terkait berbagi data ke <em>informed consent</em> Anda <em>sekarang juga</em>, karena Anda tidak bisa meminta izin secara retroaktif kepada 800 partisipan yang anonim.</li>
 </ul>
 </div>
 </section>
@@ -515,7 +516,7 @@
 <p>03</p>
 </div>
 <div class="section-bubble">
-<p>Pre-Registration</p>
+<p><em>Pre-Registration</em></p>
 </div>
 </section>
 <section id="masalah-yang-diselesaikan-oleh-pre-registration" class="slide level2">
@@ -524,27 +525,27 @@
 <li class="fragment">Ingat kembali <strong><em>garden of forking paths</em></strong>: dengan fleksibilitas yang cukup, hasil signifikan hampir selalu bisa ditemukan.</li>
 <li class="fragment">Statistik hanya bisa berfungsi dengan baik jika perbedaan antara dua mode riset ini diakui secara jujur:
 <ul>
-<li class="fragment">Riset <strong>konfirmatori</strong>: hipotesis ditentukan <em>sebelum</em> melihat data → nilai <em>p</em> menjadi pengujian yang bermakna.</li>
-<li class="fragment">Riset <strong>eksploratori</strong>: pola ditemukan <em>di dalam</em> data → berguna untuk menghasilkan hipotesis, tetapi nilai <em>p</em> tidak lagi berarti seperti yang diklaim.</li>
+<li class="fragment">Riset <strong><em>confirmatory</em></strong>: hipotesis ditentukan <em>sebelum</em> melihat data → nilai <em>p</em> menjadi pengujian yang bermakna.</li>
+<li class="fragment">Riset <strong><em>exploratory</em></strong>: pola ditemukan <em>di dalam</em> data → berguna untuk menghasilkan hipotesis, tetapi nilai <em>p</em> tidak lagi berarti seperti yang diklaim.</li>
 </ul></li>
 <li class="fragment">Keduanya sama-sama boleh. Masalahnya adalah <strong>menyajikan eksplorasi seolah-olah konfirmasi</strong> (HARKing).</li>
-<li class="fragment"><strong>Pre-registration</strong> mengembalikan perbedaan ini: Anda menuliskan hipotesis, desain, dan rencana analisis Anda <strong>sebelum</strong> pengumpulan data, dalam sebuah registry yang <strong>diberi cap waktu (<em>time-stamped</em>) dan <em>read-only</em></strong> (<a href="https://www.pnas.org/doi/10.1073/pnas.1708274114">Nosek et al., 2018</a>).</li>
+<li class="fragment"><strong><em>Pre-registration</em></strong> mengembalikan perbedaan ini: Anda menuliskan hipotesis, desain, dan rencana analisis Anda <strong>sebelum</strong> pengumpulan data, dalam sebuah registry yang <strong>diberi cap waktu (<em>time-stamped</em>) dan <em>read-only</em></strong> (<a href="https://www.pnas.org/doi/10.1073/pnas.1708274114">Nosek et al., 2018</a>).</li>
 </ul>
 </section>
 <section id="dari-pekerjaan-saya-sendiri-mengunci-hipotesis-sebelum-melihat-data" class="slide level2">
 <h2>Dari Pekerjaan Saya Sendiri: Mengunci Hipotesis Sebelum Melihat Data</h2>
 <div class="lead">
-<p>Salah satu contoh saya yang paling jelas: <a href="https://osf.io/ctru2/overview"><em>“Science and Religion in the Times of Crisis”</em></a>, <em>pre-registered</em> di OSF.</p>
+<p>Salah satu contoh yang sudah saya lakukan: <a href="https://osf.io/ctru2/overview"><em>“Science and Religion in the Times of Crisis”</em></a>, <em>pre-registered</em> di OSF.</p>
 </div>
 <div class="content-box">
 <ul>
-<li>Studi ini menguji <strong>“<em>dilution effect</em>”</strong>: apakah menawarkan <em>lebih banyak</em> penjelasan atas suatu krisis justru mengurangi seberapa berguna setiap penjelasan itu terasa bagi orang (<a href="https://osf.io/ctru2/overview">Jackson et al., 2024</a>).</li>
+<li>Studi ini menguji <strong>“<em>dilution effect</em>”</strong>: apakah menawarkan <em>lebih banyak</em> penjelasan atas suatu krisis justru mengurangi seberapa berguna setiap penjelasan tersebut terasa bagi orang (<a href="https://osf.io/ctru2/overview">Jackson et al., 2024</a>).</li>
 <li>Saya menuliskan hipotesisnya, dalam sebuah catatan publik yang diberi cap waktu, <strong>sebelum</strong> saya tahu apakah datanya akan mendukungnya atau tidak.</li>
-<li>Ini sangat membantu saya merencanakan studi dengan lebih baik dan mempertahankan pilihan desain saya ketika mendiskusikannya dengan supervisor saya.</li>
-<li>Apa pun hasilnya nanti, saya tidak bisa begitu saja membingkai ulang studi ini seolah-olah “memang ini yang saya prediksi sejak awal.” Cap waktu itu membuat hal itu mustahil, dan itu membantu saya tetap jujur pada diri saya sendiri.</li>
+<li>Ini sangat membantu saya <strong>merencanakan studi dengan lebih baik</strong> dan mempertahankan pilihan desain saya ketika mendiskusikannya dengan supervisor saya.</li>
+<li>Apa pun hasilnya nanti, saya tidak bisa begitu saja membingkai ulang studi ini seolah-olah “memang ini yang saya prediksi sejak awal.” Cap waktu membuat klaim ini mustahil, dan ini <strong>membantu saya tetap jujur pada diri saya sendiri</strong>.</li>
 <li>Saya sudah melakukan <em>pre-registration</em> untuk setiap studi yang saya jalankan sejak 2021.
 <ul>
-<li>Ini sekarang sudah menjadi bagian normal dari mendesain sebuah studi.</li>
+<li><em>Pre-registration</em> sekarang sudah menjadi bagian normal dari mendesain sebuah studi.</li>
 </ul></li>
 </ul>
 </div>
@@ -575,11 +576,11 @@
 <section id="kekhawatiran-umum-dan-mengapa-sebagian-besar-tidak-beralasan" class="slide level2">
 <h2>Kekhawatiran Umum (dan Mengapa Sebagian Besar Tidak Beralasan)</h2>
 <ul>
-<li class="fragment"><strong>“Ini seperti penjara — saya jadi tidak bisa fleksibel.”</strong> Bisa, kok! Penyimpangan itu wajar; Anda tinggal melaporkannya secara transparan (“kami menyimpang dari rencana karena…”). Registry hanya membuat penyimpangan itu menjadi <em>terlihat</em>.</li>
-<li class="fragment"><strong>“Ini membunuh eksplorasi.”</strong> Tidak. Anda tetap bisa bereksplorasi dengan bebas; hasilnya hanya diberi label sebagai eksploratif. Banyak <em>template</em> bahkan punya bagian khusus untuk analisis eksploratif yang sudah direncanakan.</li>
+<li class="fragment"><strong>“Ini seperti penjara — saya jadi tidak bisa fleksibel.”</strong> Bisa, <em>kok</em>! Penyimpangan itu wajar; Anda tinggal melaporkannya secara transparan (“kami menyimpang dari rencana karena…”). <em>Registry</em> hanya membuat penyimpangan itu menjadi <strong>terlihat</strong>.</li>
+<li class="fragment"><strong>“Ini membunuh eksplorasi.”</strong> Tidak. Anda tetap bisa bereksplorasi dengan bebas; hasilnya hanya diberi label sebagai <em>exploratory</em>. Banyak <em>template</em> bahkan punya bagian khusus untuk analisis eksploratif yang sudah direncanakan.</li>
 <li class="fragment"><strong>“Nanti ide saya diserobot orang.”</strong> Registrasi bisa <strong>diembargo</strong> (dirahasiakan) sampai Anda mempublikasikannya.</li>
 <li class="fragment"><strong>“Ini menambah terlalu banyak pekerjaan administratif.”</strong> Registrasi <a href="https://aspredicted.org/">AsPredicted</a> hanya berisi 9 pertanyaan. Dan sebagian besar isinya adalah teks yang tetap Anda butuhkan untuk pengajuan etik dan bagian metode Anda. Anda pada dasarnya hanya menulisnya <em>lebih awal</em>.</li>
-<li class="fragment"><strong>Catatan penting</strong>: <em>pre-registration</em> bukan solusi instan. Banyak <em>pre-registration</em> yang masih tidak jelas, dan penyimpangan sering tidak dilaporkan (<a href="https://psycnet.apa.org/fulltext/2025-33919-001.html">van den Akker et al., 2024</a>). Nilainya justru datang dari rencana yang <em>spesifik</em> dan pelaporan yang <em>transparan</em> yang merupakan sebuah keterampilan yang bisa Anda latih sejak studi pertama Anda.</li>
+<li class="fragment"><strong>Catatan penting</strong>: <em>pre-registration</em> <strong>bukan solusi instan</strong> untuk kualitas temuan. Banyak <em>pre-registration</em> yang masih tidak jelas, dan penyimpangan sering tidak dilaporkan (<a href="https://psycnet.apa.org/fulltext/2025-33919-001.html">van den Akker et al., 2024</a>). Nilainya justru datang dari rencana yang <em>spesifik</em> dan pelaporan yang <em>transparan</em> yang merupakan sebuah keterampilan yang bisa Anda latih sejak studi pertama Anda.</li>
 </ul>
 </section>
 <section id="section-4" class="slide level2 section-slide">
@@ -589,7 +590,7 @@
 <p>04</p>
 </div>
 <div class="section-bubble">
-<p>Literate Programming</p>
+<p><em>Literate Programming</em></p>
 </div>
 </section>
 <section id="alur-kerja-copy-paste" class="slide level2">
@@ -602,7 +603,10 @@
 <li class="fragment">…menyalin angka-angkanya ke dokumen Word secara manual…</li>
 <li class="fragment">…memformat tabelnya secara manual…</li>
 <li class="fragment">…lalu seorang <em>reviewer</em> meminta Anda mengeluarkan tiga partisipan, dan Anda harus <strong>melakukan semuanya lagi dari awal</strong>, sambil berharap Anda mengklik tombol-tombol yang persis sama.</li>
-<li class="fragment">Setiap langkah manual adalah tempat kesalahan bisa menyelinap masuk, dan tidak ada seorang pun (termasuk Anda sendiri) yang bisa memverifikasi kembali apa yang sebenarnya sudah dilakukan.</li>
+<li class="fragment">Setiap langkah manual adalah tempat kesalahan sangat mungkin terjadi, dan tidak ada seorang pun (termasuk Anda sendiri) yang bisa memverifikasi kembali apa yang sebenarnya sudah dilakukan.
+<ul>
+<li class="fragment">Kalau pun ada yang mengecek, butuh usaha, waktu, dan tenaga yang sangat besar untuk melakukannya.</li>
+</ul></li>
 <li class="fragment">Kira-kira <strong>separuh dari <em>paper</em> psikologi yang dipublikasikan mengandung setidaknya satu statistik yang tidak konsisten</strong> — misalnya, nilai <em>p</em> yang tidak cocok dengan statistik ujinya sendiri (<a href="https://link.springer.com/article/10.3758/s13428-015-0664-2">Nuijten et al., 2016</a>).</li>
 </ul>
 </section>
@@ -636,20 +640,23 @@
 </div>
 <div class="content-box">
 <ul>
-<li>Setiap <em>folder</em> proyek juga merupakan <strong><em>repository</em> <a href="https://id.wikipedia.org/wiki/Git">Git</a></strong> — riwayat lengkap dari setiap perubahan, sehingga saya (atau seorang <em>reviewer</em>) bisa melihat persis bagaimana sebuah angka muncul.</li>
+<li>Setiap <em>folder</em> proyek juga merupakan <strong><em>repository</em> <a href="https://id.wikipedia.org/wiki/Git">Git</a></strong> — riwayat lengkap dari setiap perubahan (<em>version control</em>), sehingga saya (atau seorang <em>reviewer</em>) bisa melihat persis bagaimana sebuah angka muncul.
+<ul>
+<li>Contoh <a href="https://github.com/rameliaz/reproducibility/commits/master/"><em>version control</em></a> untuk presentasi ini.</li>
+</ul></li>
 <li>Dokumennya menarik angka langsung dari hasil analisis.
 <ul>
 <li>Saya berhenti mengetik hasil secara manual ke Word, yang justru merupakan langkah tempat kesalahan <em>copy-paste</em> dulu sering muncul.</li>
 </ul></li>
 <li>Contoh: <a href="https://github.com/rameliaz/grm-tutorial-paper"><code>grm-tutorial-paper</code></a>, repository di balik <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265"><em>paper</em> yang sudah dipublikasikan</a> yang ditulis sepenuhnya sebagai dokumen <em>literate</em>.</li>
-<li>Bonus yang menyenangkan: editor dan <em>reviewer</em> berkomentar soal betapa <em>rapinya</em> proyek ini terlihat. Ini sebenarnya bukan tujuan utama dari <em>literate</em> programming, tapi tentu saja baik untuk reputasi Anda juga.</li>
+<li>Bonus yang memuaskan😉: editor dan <em>reviewer</em> berkomentar soal betapa <em>rapinya</em> proyek ini terlihat. Ini sebenarnya bukan tujuan utama dari <em>literate</em> programming, tapi ini tentu saja baik untuk reputasi Anda juga.</li>
 </ul>
 </div>
 </section>
 <section id="alat-alatnya" class="slide level2 columns-slide">
 <h2>Alat-Alatnya</h2>
 <div class="lead">
-<p>Semuanya gratis, semuanya <em>open source</em>, dan semuanya punya komunitas serta tutorial yang besar:</p>
+<p>Semuanya gratis, semuanya <em>open source</em>, dan semuanya punya komunitas serta tutorial yang beragam:</p>
 </div>
 <div class="columns-area">
 <div class="col-item">
@@ -665,7 +672,7 @@
 <div class="col-item">
 <p><span class="col-icon"><i class="fa-brands fa-git-alt"></i></span></p>
 <h3 id="git-githubosf">Git &amp; GitHub/OSF</h3>
-<p>Version control: riwayat lengkap dari setiap perubahan pada kode dan teks Anda, semacam “track changes” untuk seluruh proyek Anda, jadi tidak ada lagi <code>thesis_final_v7_REALLYFINAL.docx</code>.</p>
+<p><em>Version control</em>: riwayat lengkap dari setiap perubahan pada kode dan teks Anda, semacam “<em>track changes</em>” untuk seluruh proyek Anda, jadi tidak ada lagi <code>disertasi_final_v7_BISMILLAH.docx</code>.</p>
 </div>
 </div>
 </section>
@@ -694,27 +701,27 @@
 <li><strong>Satu folder per proyek</strong>, dengan struktur standar: <code>data/raw/</code> (read-only!), <code>data/processed/</code>, <code>scripts/</code>, <code>output/</code>, <code>README.md</code>.</li>
 <li><strong><em>Path</em> relatif</strong>, jangan pernah pakai <em>path</em> absolut: <code>here::here("data", "raw", "survey.csv")</code>, bukan <code>C:/Users/amelia/Desktop/...</code> — sehingga bisa dijalankan di komputer <em>mana pun</em>, bukan hanya komputer Anda.</li>
 <li><strong>Atur <em>seed</em></strong> (<code>set.seed(42)</code>) setiap kali ada unsur keacakan (<em>randomness</em>), agar hasilnya identik setiap kali dijalankan.</li>
-<li><strong>Catat <em>environment</em> Anda</strong>: versi <em>package</em> bisa berubah. <em>Tools</em> seperti <code>renv</code> (R) atau <em>virtual environment</em> (Python) menyimpan <em>snapshot</em> dari versi persis yang Anda gunakan.</li>
-<li><strong>Jangan pernah mengedit data mentah secara manual</strong> — setiap langkah pembersihan data dilakukan lewat <em>script</em>, sehingga jejak dari data mentah ke tabel akhir terdokumentasi sepenuhnya.</li>
+<li><strong>Catat <em>environment</em> Anda</strong>: versi <em>package</em> bisa berubah. <em>Tools</em> seperti <code>renv</code> (<i class="fa-brands fa-r-project"></i>) atau <code>renv</code> + <code>pyenv</code> (<i class="fa-brands fa-python"></i>) menyimpan <em>snapshot</em> dari versi persis yang Anda gunakan.</li>
+<li><strong>Jangan pernah meng<em>edit</em> data mentah secara manual</strong> — setiap langkah pembersihan data dilakukan lewat <em>script</em>, sehingga jejak dari data mentah ke tabel akhir terdokumentasi sepenuhnya. <strong>Selalu simpan data mentah versi asli yang belum dibersihkan</strong>.</li>
 </ul>
 </div>
 </section>
 <section id="computational-empathy" class="slide level2">
 <h2><em>Computational Empathy</em></h2>
 <div class="lead">
-<p>Semangat di balik semua kebiasaan ini adalah apa yang disebut <a href="https://book.the-turing-way.org/reproducible-research/overview/overview-definitions">The Turing Way</a> sebagai <strong><em>computational empathy</em></strong>: mengantisipasi kebutuhan orang yang akan mencoba menjalankan pekerjaan Anda <em>tanpa Anda ada di ruangan</em>.</p>
+<p>Semangat di balik semua kebiasaan ini adalah apa yang disebut <a href="https://book.the-turing-way.org/reproducible-research/overview/overview-definitions">The Turing Way</a> sebagai <strong><em>computational empathy</em></strong>: mengantisipasi kebutuhan orang lain yang akan mencoba menjalankan pekerjaan Anda <em>tanpa bantuan Anda sama sekali</em>.</p>
 </div>
 <ul>
-<li class="fragment">Orang ini <strong>tidak</strong> memiliki struktur <em>folder</em> Anda, <em>package</em> yang Anda <em>install</em>, sistem operasi Anda, atau detail krusial yang hanya ada di kepala Anda (“<em>oh, kamu harus menjalankan script 2 dulu sebelum script 1</em>”).</li>
-<li class="fragment">Tanyakan pada diri Anda: <em>bisakah orang asing di komputer yang berbeda, tanpa kesempatan untuk mengirim email ke saya, sampai dari data mentah saya ke hasil saya?</em></li>
+<li class="fragment">Orang ini <strong>tidak</strong> memiliki struktur <em>folder</em> Anda, <em>package</em> yang Anda <em>install</em>, sistem operasi Anda, atau detail krusial yang hanya ada di kepala Anda.</li>
+<li class="fragment">Tanyakan pada diri Anda: <em>bisakah orang lain dengan komputer yang berbeda, tanpa kesempatan untuk mengirim email ke saya, bisa menganalisis data mentah sampai ke temuan penelitian?</em></li>
 <li class="fragment">Dalam praktiknya, <em>computational empathy</em> berarti:
 <ul>
-<li class="fragment">sebuah <a href="https://osf.io/uqyr3/files/2nd9w"><strong>README</strong></a> yang menjelaskan apa proyek ini, apa yang ada di mana, dan <strong>dalam urutan apa</strong> menjalankan semuanya;</li>
-<li class="fragment">menyatakan <strong>kebutuhan (<em>requirements</em>) di depan</strong>: <em>software</em>, versi <em>package</em> (<code>renv</code>!), estimasi waktu <em>running script</em>nya;</li>
-<li class="fragment"><strong>mmeberikan komentar “mengapa”-nya</strong> dalam kode Anda;</li>
-<li class="fragment">menghindari dependensi tersembunyi — tanpa <em>path</em> absolut, tanpa “hapus baris 13 secara manual dulu,” tanpa <em>file</em> yang hanya ada di desktop Anda.</li>
+<li class="fragment">sebuah <a href="https://osf.io/uqyr3/files/2nd9w"><strong>README</strong></a> yang memuat informasi tentang riset Anda, <em>file</em> apa yang ada di mana, dan <strong>dalam urutan apa</strong> menjalankan semuanya;</li>
+<li class="fragment">menyatakan <strong><em>requirements</em> di depan</strong>: nama dan versi <em>software</em>, versi <em>package</em> (<code>renv</code>!), estimasi waktu <em>running script</em>nya;</li>
+<li class="fragment"><strong>memberikan komentar “mengapa”-nya</strong> dalam <em>script</em> Anda;</li>
+<li class="fragment">tanpa <em>path</em> absolut, tanpa “<em>hapus baris 13 secara manual dulu,</em>” tanpa <em>file</em> yang hanya ada di <em>desktop</em> Anda.</li>
 </ul></li>
-<li class="fragment">Uji yang paling disarankan: serahkan proyek Anda ke seorang kolega dan lihat mereka mencobanya. Setiap pertanyaan yang mereka ajukan adalah <strong>potongan dokumentasi yang hilang</strong>.</li>
+<li class="fragment">Tes mudah: serahkan material riset Anda ke seorang kolega dan lihat mereka mencoba menganalisisnya. Setiap pertanyaan yang mereka ajukan adalah <strong>potongan dokumentasi yang hilang</strong>.</li>
 <li class="fragment">Dan ingat: <em>orang asing</em> yang Anda perlakukan dengan baik ini biasanya adalah <strong>diri Anda sendiri di masa depan</strong>.</li>
 </ul>
 </section>
@@ -725,23 +732,34 @@
 <p>05</p>
 </div>
 <div class="section-bubble">
-<p>Registered Reports</p>
+<p><em>Registered Reports</em> (RR)</p>
 </div>
 </section>
-<section id="registered-reports-pre-registration-dengan-kekuatan-super" class="slide level2">
-<h2><em>Registered Reports</em>: <em>Pre-Registration</em> dengan Kekuatan Super</h2>
+<section id="registered-reports-pre-registration-dengan-kekuatan-super" class="slide level2 split-slide">
+<h2><em>Registered Reports</em>: <em>Pre-Registration</em> dengan Kekuatan Super🦸‍♀️🦸</h2>
+<div class="split-area">
+<div class="split-text">
 <div class="lead">
-<p>Sebuah <strong><em>Registered Report</em> (RR)</strong> adalah format artikel jurnal di mana peer review terjadi <strong>sebelum</strong> hasilnya ada (<a href="https://www.nature.com/articles/s41562-021-01193-7">Chambers &amp; Tzavella, 2022</a>).</p>
+<p>Sebuah <strong><em>Registered Report</em> (RR)</strong> adalah format artikel jurnal di mana <em>peer review</em> terjadi <strong>sebelum</strong> mengambil data (<a href="https://www.nature.com/articles/s41562-021-01193-7">Chambers &amp; Tzavella, 2022</a>).</p>
 </div>
 <ul>
-<li class="fragment"><strong>Stage 1</strong>: Anda mengajukan pendahuluan, hipotesis, dan metode yang detail <em>sebelum</em> pengumpulan data. <em>Reviewer</em> mengkritisi desainnya <strong>selagi Anda masih bisa memperbaikinya</strong>.</li>
-<li class="fragment">Jika diterima, Anda mendapatkan <strong><em>In-Principle Acceptance</em> (IPA)</strong>: jurnal berkomitmen untuk mempublikasikan paper Anda <strong>apa pun hasil yang keluar nanti</strong>.</li>
-<li class="fragment"><strong>Stage 2</strong>: Anda menjalankan studinya persis seperti yang sudah disetujui, mengajukan paper lengkap; <em>reviewer</em> hanya mengecek apakah Anda mengikuti rencana dan menginterpretasikan hasil secara masuk akal.</li>
+<li class="fragment"><strong><em>Stage</em> 1</strong>: Anda mengajukan pendahuluan, hipotesis, dan metode yang detail <em>sebelum</em> pengumpulan data. <em>Reviewer</em> mengkritisi desainnya <strong>selagi Anda masih bisa memperbaikinya</strong>.</li>
+<li class="fragment">Jika diterima, Anda mendapatkan <strong><em>In-Principle Acceptance</em> (IPA)</strong>: jurnal berkomitmen untuk mempublikasikan paper Anda <strong>apa pun hasilnya nanti</strong>.</li>
+<li class="fragment"><strong><em>Stage</em> 2</strong>: Anda menjalankan studinya persis seperti yang sudah disetujui, mengajukan paper lengkap; <em>reviewer</em> hanya mengecek apakah Anda mengikuti rencana dan menginterpretasikan hasil secara masuk akal.</li>
 <li class="fragment">Publikasi tidak lagi bergantung pada hasil yang “menarik” → <strong><em>publication bias</em> terpotong dari akarnya</strong>, dan <em>p</em>-<em>hacking</em> kehilangan tujuannya.</li>
 </ul>
+</div>
+<div class="split-graphic">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/rr.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="dari-pekerjaan-saya-sendiri-anak-tangga-yang-butuh-25-tahun" class="slide level2">
-<h2>Dari Pekerjaan Saya Sendiri: Anak Tangga yang Butuh 2,5 Tahun</h2>
+<h2>Dari Pekerjaan Saya Sendiri: Anak Tangga yang Butuh ~2,5 Tahun</h2>
 <div class="lead">
 <p>Saya sekarang sudah menjadi bagian dari tiga <em>Registered Reports</em> yang sudah dipublikasikan. Ini adalah yang pertama kali saya menjadi penulis utama (<em>first author</em>), dan yang paling saya banggakan.</p>
 </div>
@@ -752,14 +770,14 @@
 <li>Prosesnya lambat, dan pada beberapa titik terasa membuat frustrasi.
 <ul>
 <li><em>Review Stage</em> 1 mendorong Anda untuk mendesain ulang sebelum Anda sempat mengumpulkan satu pun data.</li>
-<li>Ini tidak nyaman, <strong>dan justru di situlah letak seluruh manfaatnya</strong>: saya memperbaiki masalah lebih awal di atas kertas, bukan ketika setelah menjalankan beberapa studi dengan ~300 partisipan.</li>
+<li>Ini sangat sulit, <strong>tetapi justru di situlah letak seluruh manfaatnya</strong>: saya memperbaiki potensi masalah desain penelitian lebih awal di atas kertas, bukan ketika setelah menjalankan beberapa studi dengan ~300 partisipan.</li>
 </ul></li>
 <li>Saya tidak akan mencoba ini sebagai praktik <em>reproducibility</em> pertama saya. Ini baru masuk akal setelah <em>pre-registration</em> dan <em>literate programming</em> sudah menjadi kebiasaan rutin.</li>
 </ul>
 </div>
 </section>
-<section id="apakah-ini-berhasil" class="slide level2">
-<h2>Apakah Ini Berhasil?</h2>
+<section id="apakah-rr-berhasil" class="slide level2">
+<h2>Apakah RR Berhasil?</h2>
 <div class="infographic">
 <div class="infographic-cols">
 <div class="infographic-item">
@@ -786,8 +804,9 @@
 <ul>
 <li><strong>Masukan dari <em>reviewer</em> datang saat masih berguna</strong>, sebelum Anda menghabiskan satu tahun untuk mengumpulkan data.</li>
 <li><strong>IPA adalah jaminan publikasi yang bisa Anda jadikan dasar merencanakan disertasi</strong>: tidak perlu lagi berharap-harap cemas menunggu hasil publikasi sebelum ujian.</li>
-<li><strong>Hasil <em>null</em> menjadi temuan yang bisa dipublikasikan</strong>, bukan tahun-tahun yang terbuang percuma dan <em>sekaligus</em> baik untuk CV Anda.</li>
-<li>Soal waktu: <em>review Stage</em> 1 memerlukan waktu, jadi RR cocok untuk studi yang direncanakan <strong>jauh-jauh hari</strong> (tetapi sempurna untuk proposal S3!), tapi kurang cocok untuk <em>pilot study</em> yang cepat.</li>
+<li><strong>Hasil <em>null</em> menjadi temuan yang bisa dipublikasikan</strong>, bukan tahun-tahun yang terbuang percuma dan <em>sekaligus</em> baik untuk <em>track record</em> Anda.</li>
+<li>Soal waktu: <em>review Stage</em> 1 memerlukan waktu, jadi RR cocok untuk studi yang direncanakan <strong>jauh-jauh hari</strong> (tetapi sangat cocok untuk proposal S3!), tapi kurang cocok untuk <em>pilot study</em> yang cepat.</li>
+<li>Dalam beberapa kasus, <em>reviewer</em> meminta <em>pilot study</em> dulu untuk menjustifikasi desain yang diusulkan dalam RR.</li>
 <li>Beberapa jurnal menawarkan <em>fast-track</em> atau jadwal <em>review</em> khusus untuk proyek mahasiswa; <strong>Peer Community In RR</strong> (<a href="https://rr.peercommunityin.org">PCI RR</a>) me<em>review</em> protokol Stage 1 secara independen dari jurnal mana pun.</li>
 <li>Bicarakan dengan promotor dan kopromotor Anda sejak dini: bab disertasi berbasis RR semakin umum dan sangat berharga bagi karier ilmiah seseorang.
 <ul>
@@ -919,7 +938,7 @@ E-mail: <a href="mailto:amelia.zein@cais-research.de">amelia.zein@cais-research.
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="img/Transparent.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Riset Reproducible | Zein | 2026</p>
+<p>Reka Ulang Riset | Zein | 2026</p>
 </div>
 </div></div>
 

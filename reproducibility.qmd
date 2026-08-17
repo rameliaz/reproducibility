@@ -61,7 +61,7 @@ You read a fascinating finding in a top journal and want to build your dissertat
 
 ## But the problem started much earlier than that
 
-![](img/history.JPG){fig-align="center"}
+![](img/history.JPG){fig-align="center" width="80%"}
 
 ## The Multi-Site Replication Projects
 
@@ -94,9 +94,13 @@ of 164 papers across 12 disciplines replicated — COS **SCORE project** ([Natur
 :::
 :::
 
+::: {.incremental}
+
 - Even when effects did replicate, they were on average **only about half as large** as originally reported (i.e., "[The Decline Effect](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full)") — SCORE found the same pattern again in 2026.
 - **SCORE is the largest check yet**: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). Reproducing published analyses on the *original* data succeeded [only 54% of the time](https://www.nature.com/articles/s41586-026-10203-5).
 - This pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the **"[replication crisis](https://www.nature.com/articles/d41586-026-00955-5)."**
+
+:::
 
 ## Three Words You Must Not Confuse {.columns-slide}
 
@@ -171,7 +175,7 @@ It's mostly not fraud, but rather ordinary incentives acting on ordinary humans.
 > An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.
 
 ::: {.quote-author}
-Buckheit & Donoho (1995), paraphrasing Jon Claerbout
+[Buckheit & Donoho (1995)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5), paraphrasing Jon Claerbout
 :::
 :::
 
@@ -185,14 +189,14 @@ Ensuring that our results are reproducible gives us more confidence in our work.
 - **Your closest collaborator is you, six months ago** and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.
 - **Errors get caught early**, before they end up in your dissertation, your defense, or a retraction.
 - **International reviewers, supervisors, and committees increasingly expect it**. Funders and journals now routinely require data, code, and analysis plans.
-- **It makes you more efficient**. Re-running an analysis after "please just add one covariate" takes one click instead of one week.
+- **It makes you more efficient**. Re-running an analysis after your supervisor/reviewers ask "*please just add this one covariate*" takes one click instead of one week.
 - **It builds trust in your work**. Reproducible research gets reused, cited, and extended.
 :::
 
 ## A "Reproducibility Ladder"🪜
 
 ::: {.lead}
-Start with the transparency **you need**, not the transparency **you want**. The four practices in this talk are *not supposed to be* a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.
+Start with the practice **you really need**, not the one **you want**. The four practices in this talk are *not supposed to be* a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.
 :::
 
 ::: {.incremental}
@@ -226,6 +230,7 @@ A short, living document, written **before** you collect data, describing how da
 - Increasingly **required by funders** (DFG, ERC, NIH, and many national funders) and by ethics committees.
 - It forces the right questions at the right time, *before* problems become unfixable (e.g., a consent form that forbids data sharing).
 - Free tools with templates and guidance: [DMPTool](https://dmptool.org) and [DMPonline](https://dmponline.dcc.ac.uk).
+- These are some good examples: [Example 1](https://www.fu-berlin.de/en/sites/forschungsdatenmanagement/_dokumente/dmp-sample_v01.pdf), [Example 2](https://data.ncl.ac.uk/articles/data_management_plan/Data_management_plan/23541882/1?file=41295288), [Example 3](https://zenodo.org/records/8411137), [DCC UK DMP Database](https://dmponline.dcc.ac.uk/public_plans).
 
 :::
 
@@ -356,8 +361,8 @@ One of my clearer examples: [*"Science and Religion in the Times of Crisis"*](ht
 ::: {.content-box}
 - The study tests the **"dilution effect"**: whether offering *more* explanations for a crisis reduces how useful people find *each* explanation ([Jackson et al., 2024](https://osf.io/ctru2/overview)).
 - I wrote the hypothesis down, in a time-stamped, public record, **before** I knew whether the data would support it.
-- It greatly helped me to plan my study better and defend my design choice when discussing it with my supervisor.
-- Whatever came back, I could not simply reframe the study afterward as "this is what I predicted all along." The time-stamp made that impossible and that helps keeping me honest with myself.
+- It greatly helped me to **plan my study better** and defend my design choice when discussing it with my supervisor.
+- Whatever came back, I could not simply reframe the study afterward as "this is what I predicted all along." The time-stamp made that impossible and that **helps keeping me honest with myself**.
 - I have pre-registered every study I have run since 2021.
   + It is now simply normal part of designing a study.
 :::
@@ -428,6 +433,7 @@ The traditional workflow in psychology looks like this:
 - ...format the table manually...
 - ...then a reviewer asks you to exclude three participants and you do **all of it again**, hoping you click the same buttons.
 - Every manual step is a place where errors sneak in and nobody (including you) can later verify what exactly was done.
+  + Even if someone were to check, it would take a tremendous amount of effort, time, and energy to do so.
 - Roughly **half of published psychology papers contain at least one inconsistent statistic** — e.g., a *p*-value that does not match its own test statistic ([Nuijten et al., 2016](https://link.springer.com/article/10.3758/s13428-015-0664-2)).
 
 :::
@@ -464,11 +470,12 @@ I pre-registered diligently for years before I learned Quarto. Literate programm
 :::
 
 ::: {.content-box}
-- Every project folder is also a **Git repository** — a full history of every change, so I (or a reviewer) can see exactly how a number came to be.
+- Every project folder is also a **Git repository** — a full history of every change (version control), so I (or a reviewer) can see exactly how a number came to be.
+  + Example of [version control](https://github.com/rameliaz/reproducibility/commits/master/) for this presentation.
 - The document pulls numbers directly from the analysis.
   + I stopped hand-typing results into Word, which is exactly the step where copy-paste errors used to creep in.
 - Real example: [`grm-tutorial-paper`](https://github.com/rameliaz/grm-tutorial-paper), the repository behind a [published paper](https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265) written entirely as a literate document.
-- A pleasantly suprising bonus: editors and reviewers comment on how *organized* the project looks. That's actually not the point of literate programming, but it doesn't hurt your reputation either.
+- A pleasantly suprising bonus😉: editors and reviewers comment on how *organized* the project looks. That's actually not the point of literate programming, but it doesn't hurt your reputation either.
 :::
 
 ## The Tools {.columns-slide}
@@ -497,7 +504,7 @@ Interactive notebooks for Python (and R, Julia). Common in data science and comp
 
 ### Git & GitHub/OSF
 
-Version control: a full history of every change to your code and text, which "track changes" for your whole project, so no more `thesis_final_v7_REALLYFINAL.docx`.
+Version control: a full history of every change to your code and text, which "track changes" for your whole project, so no more `disertasi_final_v7_BISMILLAH.docx`.
 :::
 :::
 
@@ -530,8 +537,8 @@ Literate programming works best inside a well-organized project:
 - **One folder per project**, with a standard structure: `data/raw/` (read-only!), `data/processed/`, `scripts/`, `output/`, `README.md`.
 - **Relative paths**, never absolute ones: `here::here("data", "raw", "survey.csv")` instead of `C:/Users/amelia/Desktop/...` — so it runs on *any* computer, not just yours.
 - **Set a seed** (`set.seed(42)`) whenever randomness is involved, so results are identical on every run.
-- **Record your environment**: package versions change! Tools like `renv` (R) or virtual environments (Python) snapshot the exact versions you used.
-- **Never edit raw data by hand** — every cleaning step happens in a script, so the path from raw data to final table is fully documented.
+- **Record your environment**: package versions change! Tools like `renv` (<i class="fa-brands fa-r-project"></i>) or `renv` + `pyenv` (<i class="fa-brands fa-python"></i>) snapshot the exact versions you used.
+- **Never edit raw data by hand** — every cleaning step happens in a script, so the path from raw data to final table is fully documented. **Always keep your raw data untouched**.
 :::
 
 ## Computational Empathy
@@ -565,7 +572,11 @@ The mindset behind all of these habits is what [The Turing Way](https://book.the
 Registered Reports
 :::
 
-## Registered Reports: Pre-Registration with Superpowers
+## Registered Reports: Pre-Registration with Superpowers🦸‍♀️🦸 {.split-slide}
+
+::: {.split-area}
+
+::: {.split-text}
 
 ::: {.lead}
 A **Registered Report (RR)** is a journal article format where peer review happens **before** the results exist ([Chambers & Tzavella, 2022](https://www.nature.com/articles/s41562-021-01193-7)).
@@ -580,7 +591,17 @@ A **Registered Report (RR)** is a journal article format where peer review happe
 
 :::
 
-## From My Own Work: The Rung That Took 2.5 Years
+:::
+
+::: {.split-graphic}
+
+![](img/rr.png){fig-align="center"}
+
+:::
+
+:::
+
+## From My Own Work: The Rung That Took ~2.5 Years
 
 ::: {.lead}
 I have now been part of three published Registered Reports. This is the one I first-authored, and the one I'm proudest of.
@@ -624,8 +645,9 @@ journals now offer the RR format, incl. *Nature Human Behaviour*, *Cortex*, and 
 ::: {.content-box}
 - **The reviewer feedback arrives when it is useful**, before you spend a year collecting data.
 - **IPA is a publication guarantee you can plan a dissertation around**: no more praying for significant results in study 3 of 3.
-- **Null results become publishable findings**, not wasted years, which is honest science *and* good for your CV.
+- **Null results become publishable findings**, not wasted years, which is honest science *and* good for your track record.
 - Timing matters: Stage 1 review takes time, so RRs suit studies planned **well in advance** (perfect for a PhD proposal!), but less suited for quick pilot work.
+- In some cases, *reviewers* may request a *pilot study* first to justify the design proposed in the RR.
 - Some journals offer fast-track or scheduled review for student projects; **Peer Community In RR** ([PCI RR](https://rr.peercommunityin.org)) reviews Stage 1 protocols journal-independently.
 - Talk to your supervisor and co-supervisor early: an RR-based dissertation chapter is increasingly common and highly valuable for one's scientific career.
   + Probably, *not yet* a common practice in Airlangga, but it is getting common in many parts of the world.

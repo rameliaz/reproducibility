@@ -733,6 +733,44 @@ $presentation-line-height:         1.45;
 }
 
 // ════════════════════════════════════════════════════════════
+// TEXT + GRAFIK – 2 Spalten, Text links breiter / Grafik rechts
+// Verwendung: ## Überschrift {.split-slide}
+//   ::: {.split-area}
+//   ::: {.split-text} ... :::
+//   ::: {.split-graphic} ... :::
+//   :::
+// ════════════════════════════════════════════════════════════
+
+.reveal .slides section.split-slide {
+  padding: 5% 6% !important;
+
+  h2 { margin-bottom: 0.4em; }
+
+  .split-area {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 2.5em;
+    align-items: center;
+  }
+
+  .split-text {
+    .lead { max-width: 100%; }
+  }
+
+  .split-graphic {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      max-height: 65vh;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+// ════════════════════════════════════════════════════════════
 // ÜBERBLICK-FOLIE – 3 Bilder mit Beschriftung (8 Columns V1)
 // Verwendung: ## Überschrift {.overview-slide}
 //   ::: {.overview-grid}

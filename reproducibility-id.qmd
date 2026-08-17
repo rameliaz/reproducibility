@@ -1,5 +1,5 @@
 ---
-title: "Bagaimana Riset Dibuat Reproducible"
+title: "Agar Riset Dapat Direka Ulang"
 subtitle: "Memastikan riset dapat direka ulang dari sudut pandang orang pertama"
 author:
   - "Dr. Rizqy Amelia Zein (Research Data and Methods Team, Center for Advanced Internet Studies & Department of Psychology, Universitas Airlangga)"
@@ -7,7 +7,7 @@ event: "Matrikulasi Program Studi S3 Psikologi"
 format:
   cais-revealjs:
     logo: img/Transparent.png
-    footer: "Riset Reproducible | Zein | 2026"
+    footer: "Reka Ulang Riset | Zein | 2026"
     auto-stretch: false
     chalkboard: true
 ---
@@ -17,7 +17,7 @@ format:
 
 1. *Replication Crisis* dan Mengapa *Reproducibility* Penting
 2. *Data Management Plan*
-3. Pra-registrasi
+3. *Pre-registration*
 4. *Literate Programming*
 5. *Registered Reports*
 6. Kesimpulan
@@ -42,28 +42,28 @@ Anda membaca sebuah temuan menarik di suatu jurnal top dan membayangkan *paper* 
 ::: {.incremental}
 
 - **Pertanyaan 1:** Jika tim lain mencoba ulang *studi yang sama dengan mengambil data baru*, apakah mereka akan menemukan hasil yang sama?
-- **Pertanyaan 2:** Jika Anda mengambil *data asli dan script analisis asli* dari penelitian tersebut, apakah Anda akan mendapatkan hasil yang sama persis seperti yang dilaporkan dalam paper tersebut?
+- **Pertanyaan 2:** Jika Anda menganalisis ulang *data asli dengan script/file analisis asli* dari penelitian tersebut, apakah Anda akan mendapatkan hasil yang sama persis seperti yang dilaporkan dalam *paper* tersebut?
 - Secara intuitif, kita berasumsi jawaban untuk keduanya adalah "*ya, tentu saja! Paper ini, kan, sudah dipublikasikan di jurnal top Q1!*"
-- Selama 15 tahun terakhir, para peneliti benar-benar mengeceknya. Jawabannya... **akan membuat Anda kaget**.
+- Selama 15 tahun terakhir, para peneliti benar-benar mengeceknya dan jawabannya... **akan membuat Anda kaget**.
 
 :::
 
-## Bagaimana Masalah Ini Bermula (awal 2010-an)
+## Awal Mula Masalahnya (awal 2010-an)
 
 ::: {.incremental}
 
 - **2011 — *Paper* "prekognisi" Bem**: sebuah jurnal top (Journal of Personality and Social Psychology - JPSP) mempublikasikan bukti bahwa orang bisa *merasakan apa yang akan terjadi di masa depan* ([Bem, 2011](https://psycnet.apa.org/record/2011-01894-001)) dengan menggunakan metode eksperimen dan menguji hipotesisnya dengan tes statistik standar. Jika sebuah eksperimen perilaku bisa "membuktikan" hal yang mustahil, lalu apa implikasinya bagi metode tersebut?
-- [**2011 — Kasus kecurangan akademik Stapel**](https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html): seorang profesor psikologi sosial terkemuka terbukti memalsukan data di puluhan paper yang sudah dipublikasikan.
+- [**2011 — Kasus kecurangan akademik Diederik Stapel**](https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html): seorang profesor psikologi sosial terkemuka terbukti memalsukan data di puluhan paper yang sudah dipublikasikan.
 - **2011 — "False-Positive Psychology"** ([Simmons, Nelson, & Simonsohn](https://journals.sagepub.com/doi/10.1177/0956797611417632)): menunjukkan bahwa pilihan-pilihan analitis yang kesannya remeh, biasa, tetapi tidak diungkapkan bisa membuat *apa pun* menjadi signifikan secara statistik. Di *paper* ini, mereka menunjukkan betapa "mudahnya" membuktikan bahwa mendengarkan sebuah lagu yang spesifik ("*When I'm 64*") membuat orang menjadi lebih muda.
 - Peristiwa-peristiwa ini memicu pertanyaan besar: **seberapa banyak klaim ilmiah di literatur Psikologi yang benar-benar bisa kita percaya?**
 
 :::
 
-## Awal mula masalahnya sebenarnya sudah muncul lebih lama
+## Sebanarnya... bukan masalah baru
 
-![](img/history.JPG){fig-align="center"}
+![](img/history.JPG){fig-align="center" width="80%"}
 
-## Studi-studi *multisite replications*
+## *Multisite replications*
 
 ::: {.lead}
 Tim-tim riset besar secara sistematis mencoba ulang studi-studi yang sudah dipublikasikan dengan data baru, dan inilah hasilnya:
@@ -94,9 +94,13 @@ dari 164 paper di 12 disiplin ilmu yang dicoba ulang dalam proyek **SCORE** ([Na
 :::
 :::
 
+::: {.incremental}
+
 - Bahkan ketika efeknya berhasil dicoba ulang, rata-rata *effect size*nya **hanya sekitar setengah** dari yang dilaporkan pada awalnya (dikenal sebagai "[The Decline Effect](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full)") — SCORE menemukan pola yang sama lagi pada 2026.
 - **SCORE adalah riset reka ulang terbesar sejauh ini**: 865 peneliti menilai 3.900 paper (2009–2018, 62 jurnal, mencakup ekonomi, psikologi, ilmu politik, sosiologi, dan lainnya). Mereka ulang analisis yang sudah dipublikasikan pada data *asli* hanya berhasil [54% dari keseluruhan kasus](https://www.nature.com/articles/s41586-026-10203-5).
 - Pola ini, yang muncul di psikologi, ekonomi, dan bidang-bidang lainnya, dan kini terkonfirmasi dalam skala besar, bahwa apa yang disebut media sebagai **"[replication crisis](https://www.nature.com/articles/d41586-026-00955-5)"** memang benar-benar terjadi.
+
+:::
 
 ## Tiga Istilah yang Sering Tertukar {.columns-slide}
 
@@ -155,13 +159,13 @@ Ini sebagian besar bukan soal kecurangan yang benar-benar mengandung niat jahat,
 
 ::: {.incremental}
 
-- ***Publication bias***: jurnal lebih menyukai temuan yang baru, positif, dan "bersih". Karena itu, hasil negatif/*null* sering kali berakhir di laci arsip (*file drawer*).
+- ***Publication bias***: jurnal lebih menyukai temuan yang baru, positif, dan "bersih". Karena itu, hasil negatif/*null* sering kali berakhir di laci arsip ([*file drawer*](https://web.ma.utexas.edu/users/mks/statmistakes/filedrawer.html)).
 - ***Publish or perish***: karier akademik dibangun berdasarkan *jumlah* publikasi, bukan kualitas substantifnya.
 - ***Questionable research practices* (QRPs)**: area abu-abu antara praktik baik dan kecurangan ([John et al., 2012](https://journals.sagepub.com/doi/10.1177/0956797611430953)):
   - ***p*-*hacking***: mencoba banyak analisis dan hanya melaporkan yang "berhasil"
-  - **HARKing**: *Hypothesizing After the Results are Known* — menyajikan temuan eksploratif seolah-olah memang sudah diprediksi sebelumnya ([Kerr, 1998](https://journals.sagepub.com/doi/10.1207/s15327957pspr0203_4))
-  - **Pelaporan selektif** (*selective reporting*) terhadap ukuran, kondisi, atau hasil
-- ***The garden of forking paths***: bahkan tanpa niat buruk sekalipun, setiap dataset memungkinkan pilihan analisis yang sangat banyak dan sama-sama bisa dipertahankan, sehingga fleksibilitas dalam pilihan analitis bisa meningkatkan *false positive rate* ([Gelman & Loken, 2014](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)).
+  - **HARKing**: *Hypothesizing After the Results are Known* — menyajikan temuan eksploratif seolah-olah memang sudah diprediksi sebelumnya ([Kerr, 1998](https://journals.sagepub.com/doi/10.1207/s15327957pspr0203_4)).
+  - **Pelaporan selektif** (*selective reporting*) terhadap pengukuran, kondisi (eksperimen), atau temuan penelitian.
+- ***The garden of forking paths***: bahkan tanpa niat buruk sekalipun, setiap dataset memungkinkan pilihan analisis yang sangat banyak dan sama-sama bisa dipertahankan secara metodologis, sehingga fleksibilitas dalam pilihan analitis bisa meningkatkan *false positive rate* ([Gelman & Loken, 2014](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)).
 
 :::
 
@@ -171,7 +175,7 @@ Ini sebagian besar bukan soal kecurangan yang benar-benar mengandung niat jahat,
 > An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.
 
 ::: {.quote-author}
-Buckheit & Donoho (1995), memparafrasekan Jon Claerbout
+[Buckheit & Donoho (1995)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5), memparafrasekan Jon Claerbout
 :::
 :::
 
@@ -182,17 +186,17 @@ Memastikan hasil kita dapat direka ulang dapat memberi kita lebih banyak keperca
 :::
 
 ::: {.content-box}
-- **Kolaborator terdekat Anda adalah diri Anda sendiri, enam bulan yang lalu**, dan Anda-di-masa-lalu tidak dapat membalas chat WhatsApp. Alur kerja yang *reproducible* berarti Anda selalu bisa menelusuri kembali langkah-langkah Anda sendiri.
+- **Kolaborator terdekat Anda adalah diri Anda sendiri, enam bulan yang lalu**, dan diri Anda di masa lalu tidak dapat membalas chat WhatsApp. Alur kerja yang *reproducible* berarti Anda selalu bisa menelusuri kembali langkah-langkah Anda sendiri.
 - **Kesalahan tertangkap lebih awal**, sebelum berakhir di disertasi Anda, ujian/sidang, atau bahkan *retraction*.
-- ***Reviewer*, promotor, dan komite ujian semakin mengharapkannya**. Pendana dan jurnal kini rutin mensyaratkan peneliti untuk membagikan data dan material riset.
-- **Membuat Anda lebih efisien**. Menjalankan ulang analisis setelah "tolong tambahkan satu variabel kontrol saja" hanya butuh satu klik.
+- ***Reviewer*, promotor, dan komite ujian semakin mengharapkannya**. Pendana besar dan jurnal kini rutin mensyaratkan peneliti untuk membagikan data dan material riset.
+- **Membuat Anda lebih efisien**. Menjalankan ulang analisis setelah diminta promotor: "*tolong tambahkan satu variabel kontrol saja*" hanya butuh satu klik.
 - **Ini membangun kepercayaan terhadap pekerjaan Anda**. Riset yang *reproducible* akan lebih banyak digunakan ulang, disitasi, dan dikembangkan lebih lanjut.
 :::
 
 ## "Tangga *Reproducibility*"🪜
 
 ::: {.lead}
-Mulailah dengan tingkat transparansi **yang Anda butuhkan**, bukan yang **Anda inginkan**. Empat praktik dalam presentasi ini *bukan checklist* yang harus selesaikan semester ini, atau bahkan sepanjang program S3 Anda. Ini adalah tangga yang akan Anda daki selama bertahun-tahun sepanjang karier profesional Anda ke depan.
+Mulailah dengan strategi **yang Anda butuhkan**, bukan yang **Anda inginkan**. Empat praktik dalam presentasi ini *bukan checklist* yang harus selesaikan semester ini, atau bahkan sepanjang program S3 Anda. Ini adalah tangga yang akan Anda daki selama bertahun-tahun sepanjang karier profesional Anda ke depan.
 :::
 
 ::: {.incremental}
@@ -211,13 +215,13 @@ Mulailah dengan tingkat transparansi **yang Anda butuhkan**, bukan yang **Anda i
 :::
 
 ::: {.section-bubble}
-Data Management Plan
+*Data Management Plan*
 :::
 
 ## Apa Itu *Data Management Plan* (DMP)?
 
 ::: {.lead}
-Sebuah dokumen singkat dan hidup (living document), yang ditulis **sebelum** Anda mengumpulkan data, yang menjelaskan bagaimana data akan dikumpulkan, didokumentasikan, disimpan, dilindungi, dan dibagikan.
+Sebuah dokumen singkat dan hidup ([*living document*](https://en.wikipedia.org/wiki/Living_document)), yang ditulis **sebelum** Anda mengumpulkan data, yang menjelaskan bagaimana data akan dikumpulkan, didokumentasikan, disimpan, dilindungi, dan dibagikan.
 :::
 
 ::: {.incremental}
@@ -226,10 +230,11 @@ Sebuah dokumen singkat dan hidup (living document), yang ditulis **sebelum** And
 - Semakin **diwajibkan oleh *funder*** (DFG, ERC, NIH, dan banyak *funder* internasional lainnya) dan oleh komite etik.
 - DMP memaksa munculnya pertanyaan yang tepat pada waktu yang tepat, *sebelum* masalah menjadi tidak bisa diperbaiki lagi (misalnya, formulir *informed consent* yang justru melarang data dibagikan).
 - *Tools* gratis dengan *template* dan panduan: [DMPTool](https://dmptool.org) dan [DMPonline](https://dmponline.dcc.ac.uk).
+- Berikut beberapa contoh yang bisa diadopsi: [Contoh 1](https://www.fu-berlin.de/en/sites/forschungsdatenmanagement/_dokumente/dmp-sample_v01.pdf), [Contoh 2](https://data.ncl.ac.uk/articles/data_management_plan/Data_management_plan/23541882/1?file=41295288), [Contoh 3](https://zenodo.org/records/8411137), [Berbagai macam contoh](https://dmponline.dcc.ac.uk/public_plans).
 
 :::
 
-## Menanamkan Kebiasaan DMP ke dalam Proyek yang Sedang Berjalan
+## Menanamkan Kebiasaan Manajemen Data ke dalam Proyek yang Sedang Berjalan
 
 ::: {.lead}
 Saya sedang mengerjakan *scoping review* tentang praktik *reproducibility* di bidang ekonomi dan ilmu sosial, yang merupakan bagian dari proyek yang lebih besar tempat saya terlibat. Struktur *folder* kerjanya seperti ini:
@@ -268,14 +273,14 @@ Data apa yang akan Anda kumpulkan dan bagaimana caranya? Format apa saja? Sebuah
 
 ### *Storage* & *Ethics*
 
-Di mana data akan disimpan, bagaimana cara backup-nya ([aturan 3-2-1](https://en.wikipedia.org/wiki/Backup)), siapa yang punya akses? Bagaimana partisipan dilindungi, termasuk informed consent, anonimisasi atau pseudonimisasi, serta persyaratan hukum yang berlaku?
+Di mana data akan disimpan, bagaimana cara *backup*-nya ([aturan 3-2-1](https://en.wikipedia.org/wiki/Backup)), siapa yang punya akses? Bagaimana partisipan dilindungi, termasuk *informed consent*, anonimisasi atau pseudonimisasi, serta persyaratan hukum yang berlaku?
 :::
 ::: {.col-item}
 [<i class="fa-solid fa-share-nodes"></i>]{.col-icon}
 
 ### *Sharing* & *Preservation*
 
-Data mana yang bisa dibagikan, di mana, [dengan lisensi apa](https://id.creativecommons.net/pilihan-lisensi-cc/), dan kapan? Apa yang diarsipkan dalam jangka panjang (biasanya 10 tahun) dan di repository tepercaya yang mana?
+Data mana yang bisa dibagikan, di mana, [dengan lisensi apa](https://id.creativecommons.net/pilihan-lisensi-cc/), dan kapan? Apa yang diarsipkan dalam jangka panjang (biasanya 10 tahun) dan di *repository* tepercaya yang mana?
 :::
 :::
 
@@ -320,7 +325,7 @@ Standar acuan untuk data riset yang dibagikan ([Wilkinson et al., 2016](https://
 - **Tulis *codebook*-nya sambil Anda menyusun survei**.
 - **Pilih *repository* untuk menyimpan data**: [OSF](https://osf.io), [Zenodo](https://zenodo.org), [PsychData](https://www.psychdata.de), [RIN Dataverse (BRIN)](https://data.brin.go.id/) — semuanya menyediakan DOI dan preservasi jangka panjang.
 - [**Pilih lisensi**](https://www.imperial.ac.uk/research-and-innovation/support-for-staff/scholarly-communication/research-data-management/sharing-data/licensing-your-data/) agar orang lain tahu apa yang boleh mereka lakukan: misalnya, [CC0/CC-BY](https://id.creativecommons.net/pilihan-lisensi-cc/) untuk data dan materi, [MIT/GPL](https://www.credativ.de/en/blog/credativ-inside/understanding-open-source-licenses-gpl-mit-apache-compared/) untuk kode.
-- **Rencanakan *consent* untuk berbagi data**: tambahkan bahasa terkait berbagi data ke *informed consent* Anda *sekarang juga*, karena Anda tidak bisa meminta izin secara retroaktif kepada 800 partisipan anonim.
+- **Rencanakan *informed consent* yang mencakup izin pembagian data**: tambahkan kalimat  terkait berbagi data ke *informed consent* Anda *sekarang juga*, karena Anda tidak bisa meminta izin secara retroaktif kepada 800 partisipan yang anonim.
 :::
 
 ## {.section-slide}
@@ -331,7 +336,7 @@ Standar acuan untuk data riset yang dibagikan ([Wilkinson et al., 2016](https://
 :::
 
 ::: {.section-bubble}
-Pre-Registration
+*Pre-Registration*
 :::
 
 ## Masalah yang Diselesaikan oleh Pre-Registration
@@ -340,26 +345,26 @@ Pre-Registration
 
 - Ingat kembali ***garden of forking paths***: dengan fleksibilitas yang cukup, hasil signifikan hampir selalu bisa ditemukan.
 - Statistik hanya bisa berfungsi dengan baik jika perbedaan antara dua mode riset ini diakui secara jujur:
-  - Riset **konfirmatori**: hipotesis ditentukan *sebelum* melihat data → nilai *p* menjadi pengujian yang bermakna.
-  - Riset **eksploratori**: pola ditemukan *di dalam* data → berguna untuk menghasilkan hipotesis, tetapi nilai *p* tidak lagi berarti seperti yang diklaim.
+  - Riset ***confirmatory***: hipotesis ditentukan *sebelum* melihat data → nilai *p* menjadi pengujian yang bermakna.
+  - Riset ***exploratory***: pola ditemukan *di dalam* data → berguna untuk menghasilkan hipotesis, tetapi nilai *p* tidak lagi berarti seperti yang diklaim.
 - Keduanya sama-sama boleh. Masalahnya adalah **menyajikan eksplorasi seolah-olah konfirmasi** (HARKing).
-- **Pre-registration** mengembalikan perbedaan ini: Anda menuliskan hipotesis, desain, dan rencana analisis Anda **sebelum** pengumpulan data, dalam sebuah registry yang **diberi cap waktu (*time-stamped*) dan *read-only*** ([Nosek et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114)).
+- ***Pre-registration*** mengembalikan perbedaan ini: Anda menuliskan hipotesis, desain, dan rencana analisis Anda **sebelum** pengumpulan data, dalam sebuah registry yang **diberi cap waktu (*time-stamped*) dan *read-only*** ([Nosek et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114)).
 
 :::
 
 ## Dari Pekerjaan Saya Sendiri: Mengunci Hipotesis Sebelum Melihat Data
 
 ::: {.lead}
-Salah satu contoh saya yang paling jelas: [*"Science and Religion in the Times of Crisis"*](https://osf.io/ctru2/overview), *pre-registered* di OSF.
+Salah satu contoh yang sudah saya lakukan: [*"Science and Religion in the Times of Crisis"*](https://osf.io/ctru2/overview), *pre-registered* di OSF.
 :::
 
 ::: {.content-box}
-- Studi ini menguji **"*dilution effect*"**: apakah menawarkan *lebih banyak* penjelasan atas suatu krisis justru mengurangi seberapa berguna setiap penjelasan itu terasa bagi orang ([Jackson et al., 2024](https://osf.io/ctru2/overview)).
+- Studi ini menguji **"*dilution effect*"**: apakah menawarkan *lebih banyak* penjelasan atas suatu krisis justru mengurangi seberapa berguna setiap penjelasan tersebut terasa bagi orang ([Jackson et al., 2024](https://osf.io/ctru2/overview)).
 - Saya menuliskan hipotesisnya, dalam sebuah catatan publik yang diberi cap waktu, **sebelum** saya tahu apakah datanya akan mendukungnya atau tidak.
-- Ini sangat membantu saya merencanakan studi dengan lebih baik dan mempertahankan pilihan desain saya ketika mendiskusikannya dengan supervisor saya.
-- Apa pun hasilnya nanti, saya tidak bisa begitu saja membingkai ulang studi ini seolah-olah "memang ini yang saya prediksi sejak awal." Cap waktu itu membuat hal itu mustahil, dan itu membantu saya tetap jujur pada diri saya sendiri.
+- Ini sangat membantu saya **merencanakan studi dengan lebih baik** dan mempertahankan pilihan desain saya ketika mendiskusikannya dengan supervisor saya.
+- Apa pun hasilnya nanti, saya tidak bisa begitu saja membingkai ulang studi ini seolah-olah "memang ini yang saya prediksi sejak awal." Cap waktu membuat klaim ini mustahil, dan ini **membantu saya tetap jujur pada diri saya sendiri**.
 - Saya sudah melakukan *pre-registration* untuk setiap studi yang saya jalankan sejak 2021.
-  + Ini sekarang sudah menjadi bagian normal dari mendesain sebuah studi.
+  + *Pre-registration* sekarang sudah menjadi bagian normal dari mendesain sebuah studi.
 :::
 
 ## Apa Saja yang Termasuk dalam *Pre-Registration*? {.columns-slide}
@@ -396,11 +401,11 @@ Model statistik yang pasti untuk setiap hipotesis, penanganan missing data dan o
 
 ::: {.incremental}
 
-- **"Ini seperti penjara — saya jadi tidak bisa fleksibel."** Bisa, kok! Penyimpangan itu wajar; Anda tinggal melaporkannya secara transparan ("kami menyimpang dari rencana karena..."). Registry hanya membuat penyimpangan itu menjadi *terlihat*.
-- **"Ini membunuh eksplorasi."** Tidak. Anda tetap bisa bereksplorasi dengan bebas; hasilnya hanya diberi label sebagai eksploratif. Banyak *template* bahkan punya bagian khusus untuk analisis eksploratif yang sudah direncanakan.
+- **"Ini seperti penjara — saya jadi tidak bisa fleksibel."** Bisa, *kok*! Penyimpangan itu wajar; Anda tinggal melaporkannya secara transparan ("kami menyimpang dari rencana karena..."). *Registry* hanya membuat penyimpangan itu menjadi **terlihat**.
+- **"Ini membunuh eksplorasi."** Tidak. Anda tetap bisa bereksplorasi dengan bebas; hasilnya hanya diberi label sebagai *exploratory*. Banyak *template* bahkan punya bagian khusus untuk analisis eksploratif yang sudah direncanakan.
 - **"Nanti ide saya diserobot orang."** Registrasi bisa **diembargo** (dirahasiakan) sampai Anda mempublikasikannya.
 - **"Ini menambah terlalu banyak pekerjaan administratif."** Registrasi [AsPredicted](https://aspredicted.org/) hanya berisi 9 pertanyaan. Dan sebagian besar isinya adalah teks yang tetap Anda butuhkan untuk pengajuan etik dan bagian metode Anda. Anda pada dasarnya hanya menulisnya *lebih awal*.
-- **Catatan penting**: *pre-registration* bukan solusi instan. Banyak *pre-registration* yang masih tidak jelas, dan penyimpangan sering tidak dilaporkan ([van den Akker et al., 2024](https://psycnet.apa.org/fulltext/2025-33919-001.html)). Nilainya justru datang dari rencana yang *spesifik* dan pelaporan yang *transparan* yang merupakan sebuah keterampilan yang bisa Anda latih sejak studi pertama Anda.
+- **Catatan penting**: *pre-registration* **bukan solusi instan** untuk kualitas temuan. Banyak *pre-registration* yang masih tidak jelas, dan penyimpangan sering tidak dilaporkan ([van den Akker et al., 2024](https://psycnet.apa.org/fulltext/2025-33919-001.html)). Nilainya justru datang dari rencana yang *spesifik* dan pelaporan yang *transparan* yang merupakan sebuah keterampilan yang bisa Anda latih sejak studi pertama Anda.
 
 :::
 
@@ -412,7 +417,7 @@ Model statistik yang pasti untuk setiap hipotesis, penanganan missing data dan o
 :::
 
 ::: {.section-bubble}
-Literate Programming
+*Literate Programming*
 :::
 
 ## Alur Kerja *Copy-Paste*
@@ -427,7 +432,8 @@ Alur kerja dalam riset psikologi biasanya seperti ini:
 - ...menyalin angka-angkanya ke dokumen Word secara manual...
 - ...memformat tabelnya secara manual...
 - ...lalu seorang *reviewer* meminta Anda mengeluarkan tiga partisipan, dan Anda harus **melakukan semuanya lagi dari awal**, sambil berharap Anda mengklik tombol-tombol yang persis sama.
-- Setiap langkah manual adalah tempat kesalahan bisa menyelinap masuk, dan tidak ada seorang pun (termasuk Anda sendiri) yang bisa memverifikasi kembali apa yang sebenarnya sudah dilakukan.
+- Setiap langkah manual adalah tempat kesalahan sangat mungkin terjadi, dan tidak ada seorang pun (termasuk Anda sendiri) yang bisa memverifikasi kembali apa yang sebenarnya sudah dilakukan.
+  + Kalau pun ada yang mengecek, butuh usaha, waktu, dan tenaga yang sangat besar untuk melakukannya.
 - Kira-kira **separuh dari *paper* psikologi yang dipublikasikan mengandung setidaknya satu statistik yang tidak konsisten** — misalnya, nilai *p* yang tidak cocok dengan statistik ujinya sendiri ([Nuijten et al., 2016](https://link.springer.com/article/10.3758/s13428-015-0664-2)).
 
 :::
@@ -464,17 +470,18 @@ Saya melakukan *pre-registration* dengan tekun selama bertahun-tahun sebelum say
 :::
 
 ::: {.content-box}
-- Setiap *folder* proyek juga merupakan ***repository* [Git](https://id.wikipedia.org/wiki/Git)** — riwayat lengkap dari setiap perubahan, sehingga saya (atau seorang *reviewer*) bisa melihat persis bagaimana sebuah angka muncul.
+- Setiap *folder* proyek juga merupakan ***repository* [Git](https://id.wikipedia.org/wiki/Git)** — riwayat lengkap dari setiap perubahan (*version control*), sehingga saya (atau seorang *reviewer*) bisa melihat persis bagaimana sebuah angka muncul.
+  + Contoh [*version control*](https://github.com/rameliaz/reproducibility/commits/master/) untuk presentasi ini.
 - Dokumennya menarik angka langsung dari hasil analisis.
   + Saya berhenti mengetik hasil secara manual ke Word, yang justru merupakan langkah tempat kesalahan *copy-paste* dulu sering muncul.
 - Contoh: [`grm-tutorial-paper`](https://github.com/rameliaz/grm-tutorial-paper), repository di balik [*paper* yang sudah dipublikasikan](https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265) yang ditulis sepenuhnya sebagai dokumen *literate*.
-- Bonus yang menyenangkan: editor dan *reviewer* berkomentar soal betapa *rapinya* proyek ini terlihat. Ini sebenarnya bukan tujuan utama dari *literate* programming, tapi tentu saja baik untuk reputasi Anda juga.
+- Bonus yang memuaskan😉: editor dan *reviewer* berkomentar soal betapa *rapinya* proyek ini terlihat. Ini sebenarnya bukan tujuan utama dari *literate* programming, tapi ini tentu saja baik untuk reputasi Anda juga.
 :::
 
 ## Alat-Alatnya {.columns-slide}
 
 ::: {.lead}
-Semuanya gratis, semuanya *open source*, dan semuanya punya komunitas serta tutorial yang besar:
+Semuanya gratis, semuanya *open source*, dan semuanya punya komunitas serta tutorial yang beragam:
 :::
 
 ::: {.columns-area}
@@ -497,7 +504,7 @@ Notebook interaktif untuk Python (dan R, Julia). Umum digunakan dalam data scien
 
 ### Git & GitHub/OSF
 
-Version control: riwayat lengkap dari setiap perubahan pada kode dan teks Anda, semacam "track changes" untuk seluruh proyek Anda, jadi tidak ada lagi `thesis_final_v7_REALLYFINAL.docx`.
+*Version control*: riwayat lengkap dari setiap perubahan pada kode dan teks Anda, semacam "*track changes*" untuk seluruh proyek Anda, jadi tidak ada lagi `disertasi_final_v7_BISMILLAH.docx`.
 :::
 :::
 
@@ -530,26 +537,26 @@ b = `r round(coef(model)[2], 2)`.
 - **Satu folder per proyek**, dengan struktur standar: `data/raw/` (read-only!), `data/processed/`, `scripts/`, `output/`, `README.md`.
 - ***Path* relatif**, jangan pernah pakai *path* absolut: `here::here("data", "raw", "survey.csv")`, bukan `C:/Users/amelia/Desktop/...` — sehingga bisa dijalankan di komputer *mana pun*, bukan hanya komputer Anda.
 - **Atur *seed*** (`set.seed(42)`) setiap kali ada unsur keacakan (*randomness*), agar hasilnya identik setiap kali dijalankan.
-- **Catat *environment* Anda**: versi *package* bisa berubah. *Tools* seperti `renv` (R) atau *virtual environment* (Python) menyimpan *snapshot* dari versi persis yang Anda gunakan.
-- **Jangan pernah mengedit data mentah secara manual** — setiap langkah pembersihan data dilakukan lewat *script*, sehingga jejak dari data mentah ke tabel akhir terdokumentasi sepenuhnya.
+- **Catat *environment* Anda**: versi *package* bisa berubah. *Tools* seperti `renv` (<i class="fa-brands fa-r-project"></i>) atau `renv` + `pyenv` (<i class="fa-brands fa-python"></i>) menyimpan *snapshot* dari versi persis yang Anda gunakan.
+- **Jangan pernah meng*edit* data mentah secara manual** — setiap langkah pembersihan data dilakukan lewat *script*, sehingga jejak dari data mentah ke tabel akhir terdokumentasi sepenuhnya. **Selalu simpan data mentah versi asli yang belum dibersihkan**.
 :::
 
 ## *Computational Empathy*
 
 ::: {.lead}
-Semangat di balik semua kebiasaan ini adalah apa yang disebut [The Turing Way](https://book.the-turing-way.org/reproducible-research/overview/overview-definitions) sebagai ***computational empathy***: mengantisipasi kebutuhan orang yang akan mencoba menjalankan pekerjaan Anda *tanpa Anda ada di ruangan*.
+Semangat di balik semua kebiasaan ini adalah apa yang disebut [The Turing Way](https://book.the-turing-way.org/reproducible-research/overview/overview-definitions) sebagai ***computational empathy***: mengantisipasi kebutuhan orang lain yang akan mencoba menjalankan pekerjaan Anda *tanpa bantuan Anda sama sekali*.
 :::
 
 ::: {.incremental}
 
-- Orang ini **tidak** memiliki struktur *folder* Anda, *package* yang Anda *install*, sistem operasi Anda, atau detail krusial yang hanya ada di kepala Anda ("*oh, kamu harus menjalankan script 2 dulu sebelum script 1*").
-- Tanyakan pada diri Anda: *bisakah orang asing di komputer yang berbeda, tanpa kesempatan untuk mengirim email ke saya, sampai dari data mentah saya ke hasil saya?*
+- Orang ini **tidak** memiliki struktur *folder* Anda, *package* yang Anda *install*, sistem operasi Anda, atau detail krusial yang hanya ada di kepala Anda.
+- Tanyakan pada diri Anda: *bisakah orang lain dengan komputer yang berbeda, tanpa kesempatan untuk mengirim email ke saya, bisa menganalisis data mentah sampai ke temuan penelitian?*
 - Dalam praktiknya, *computational empathy* berarti:
-  - sebuah [**README**](https://osf.io/uqyr3/files/2nd9w) yang menjelaskan apa proyek ini, apa yang ada di mana, dan **dalam urutan apa** menjalankan semuanya;
-  - menyatakan **kebutuhan (*requirements*) di depan**: *software*, versi *package* (`renv`!), estimasi waktu *running script*nya;
-  - **mmeberikan komentar "mengapa"-nya** dalam kode Anda;
-  - menghindari dependensi tersembunyi — tanpa *path* absolut, tanpa "hapus baris 13 secara manual dulu," tanpa *file* yang hanya ada di desktop Anda.
-- Uji yang paling disarankan: serahkan proyek Anda ke seorang kolega dan lihat mereka mencobanya. Setiap pertanyaan yang mereka ajukan adalah **potongan dokumentasi yang hilang**.
+  - sebuah [**README**](https://osf.io/uqyr3/files/2nd9w) yang memuat informasi tentang riset Anda, *file* apa yang ada di mana, dan **dalam urutan apa** menjalankan semuanya;
+  - menyatakan ***requirements* di depan**: nama dan versi *software*, versi *package* (`renv`!), estimasi waktu *running script*nya;
+  - **memberikan komentar "mengapa"-nya** dalam *script* Anda;
+  - tanpa *path* absolut, tanpa "*hapus baris 13 secara manual dulu,*" tanpa *file* yang hanya ada di *desktop* Anda.
+- Tes mudah: serahkan material riset Anda ke seorang kolega dan lihat mereka mencoba menganalisisnya. Setiap pertanyaan yang mereka ajukan adalah **potongan dokumentasi yang hilang**.
 - Dan ingat: *orang asing* yang Anda perlakukan dengan baik ini biasanya adalah **diri Anda sendiri di masa depan**.
 
 :::
@@ -562,25 +569,39 @@ Semangat di balik semua kebiasaan ini adalah apa yang disebut [The Turing Way](h
 :::
 
 ::: {.section-bubble}
-Registered Reports
+*Registered Reports* (RR)
 :::
 
-## *Registered Reports*: *Pre-Registration* dengan Kekuatan Super
+## *Registered Reports*: *Pre-Registration* dengan Kekuatan Super🦸‍♀️🦸 {.split-slide}
+
+::: {.split-area}
+
+::: {.split-text}
 
 ::: {.lead}
-Sebuah ***Registered Report* (RR)** adalah format artikel jurnal di mana peer review terjadi **sebelum** hasilnya ada ([Chambers & Tzavella, 2022](https://www.nature.com/articles/s41562-021-01193-7)).
+Sebuah ***Registered Report* (RR)** adalah format artikel jurnal di mana *peer review* terjadi **sebelum** mengambil data ([Chambers & Tzavella, 2022](https://www.nature.com/articles/s41562-021-01193-7)).
 :::
 
 ::: {.incremental}
 
-- **Stage 1**: Anda mengajukan pendahuluan, hipotesis, dan metode yang detail *sebelum* pengumpulan data. *Reviewer* mengkritisi desainnya **selagi Anda masih bisa memperbaikinya**.
-- Jika diterima, Anda mendapatkan ***In-Principle Acceptance* (IPA)**: jurnal berkomitmen untuk mempublikasikan paper Anda **apa pun hasil yang keluar nanti**.
-- **Stage 2**: Anda menjalankan studinya persis seperti yang sudah disetujui, mengajukan paper lengkap; *reviewer* hanya mengecek apakah Anda mengikuti rencana dan menginterpretasikan hasil secara masuk akal.
+- ***Stage* 1**: Anda mengajukan pendahuluan, hipotesis, dan metode yang detail *sebelum* pengumpulan data. *Reviewer* mengkritisi desainnya **selagi Anda masih bisa memperbaikinya**.
+- Jika diterima, Anda mendapatkan ***In-Principle Acceptance* (IPA)**: jurnal berkomitmen untuk mempublikasikan paper Anda **apa pun hasilnya nanti**.
+- ***Stage* 2**: Anda menjalankan studinya persis seperti yang sudah disetujui, mengajukan paper lengkap; *reviewer* hanya mengecek apakah Anda mengikuti rencana dan menginterpretasikan hasil secara masuk akal.
 - Publikasi tidak lagi bergantung pada hasil yang "menarik" → ***publication bias* terpotong dari akarnya**, dan *p*-*hacking* kehilangan tujuannya.
 
 :::
 
-## Dari Pekerjaan Saya Sendiri: Anak Tangga yang Butuh 2,5 Tahun
+:::
+
+::: {.split-graphic}
+
+![](img/rr.png){fig-align="center"}
+
+:::
+
+:::
+
+## Dari Pekerjaan Saya Sendiri: Anak Tangga yang Butuh ~2,5 Tahun
 
 ::: {.lead}
 Saya sekarang sudah menjadi bagian dari tiga *Registered Reports* yang sudah dipublikasikan. Ini adalah yang pertama kali saya menjadi penulis utama (*first author*), dan yang paling saya banggakan.
@@ -591,11 +612,11 @@ Saya sekarang sudah menjadi bagian dari tiga *Registered Reports* yang sudah dip
 - Dipublikasikan sebagai [sebuah *Registered Report*](https://www.tandfonline.com/doi/abs/10.1080/10508619.2025.2535033); [*postprint*-nya tersedia *open-access* di PsyArXiv](https://osf.io/preprints/psyarxiv/bn6r4).
 - Prosesnya lambat, dan pada beberapa titik terasa membuat frustrasi.
   + *Review Stage* 1 mendorong Anda untuk mendesain ulang sebelum Anda sempat mengumpulkan satu pun data.
-  + Ini tidak nyaman, **dan justru di situlah letak seluruh manfaatnya**: saya memperbaiki masalah lebih awal di atas kertas, bukan ketika setelah menjalankan beberapa studi dengan ~300 partisipan.
+  + Ini sangat sulit, **tetapi justru di situlah letak seluruh manfaatnya**: saya memperbaiki potensi masalah desain penelitian lebih awal di atas kertas, bukan ketika setelah menjalankan beberapa studi dengan ~300 partisipan.
 - Saya tidak akan mencoba ini sebagai praktik *reproducibility* pertama saya. Ini baru masuk akal setelah *pre-registration* dan *literate programming* sudah menjadi kebiasaan rutin.
 :::
 
-## Apakah Ini Berhasil?
+## Apakah RR Berhasil?
 
 ::: {.infographic}
 ::: {.infographic-cols}
@@ -624,8 +645,9 @@ jurnal kini menawarkan format RR, termasuk *Nature Human Behaviour*, *Cortex*, d
 ::: {.content-box}
 - **Masukan dari *reviewer* datang saat masih berguna**, sebelum Anda menghabiskan satu tahun untuk mengumpulkan data.
 - **IPA adalah jaminan publikasi yang bisa Anda jadikan dasar merencanakan disertasi**: tidak perlu lagi berharap-harap cemas menunggu hasil publikasi sebelum ujian.
-- **Hasil *null* menjadi temuan yang bisa dipublikasikan**, bukan tahun-tahun yang terbuang percuma dan *sekaligus* baik untuk CV Anda.
-- Soal waktu: *review Stage* 1 memerlukan waktu, jadi RR cocok untuk studi yang direncanakan **jauh-jauh hari** (tetapi sempurna untuk proposal S3!), tapi kurang cocok untuk *pilot study* yang cepat.
+- **Hasil *null* menjadi temuan yang bisa dipublikasikan**, bukan tahun-tahun yang terbuang percuma dan *sekaligus* baik untuk *track record* Anda.
+- Soal waktu: *review Stage* 1 memerlukan waktu, jadi RR cocok untuk studi yang direncanakan **jauh-jauh hari** (tetapi sangat cocok untuk proposal S3!), tapi kurang cocok untuk *pilot study* yang cepat.
+- Dalam beberapa kasus, *reviewer* meminta *pilot study* dulu untuk menjustifikasi desain yang diusulkan dalam RR.
 - Beberapa jurnal menawarkan *fast-track* atau jadwal *review* khusus untuk proyek mahasiswa; **Peer Community In RR** ([PCI RR](https://rr.peercommunityin.org)) me*review* protokol Stage 1 secara independen dari jurnal mana pun.
 - Bicarakan dengan promotor dan kopromotor Anda sejak dini: bab disertasi berbasis RR semakin umum dan sangat berharga bagi karier ilmiah seseorang.
   + Mungkin *belum* menjadi praktik umum di Unair, tapi ini semakin umum di banyak belahan dunia lain.
