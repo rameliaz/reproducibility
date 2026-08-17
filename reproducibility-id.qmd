@@ -61,9 +61,9 @@ Anda membaca sebuah temuan menarik di suatu jurnal top dan membayangkan *paper* 
 
 ## Sebanarnya... bukan masalah baru
 
-![](img/history.JPG){fig-align="center" width="80%"}
+![](img/history.JPG){fig-align="center" width="60%"}
 
-## *Multisite replications*
+## Proyek *multi-site replications*
 
 ::: {.lead}
 Tim-tim riset besar secara sistematis mencoba ulang studi-studi yang sudah dipublikasikan dengan data baru, dan inilah hasilnya:

@@ -61,7 +61,7 @@ You read a fascinating finding in a top journal and want to build your dissertat
 
 ## But the problem started much earlier than that
 
-![](img/history.JPG){fig-align="center" width="80%"}
+![](img/history.JPG){fig-align="center" width="60%"}
 
 ## The Multi-Site Replication Projects
 
