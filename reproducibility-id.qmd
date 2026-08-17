@@ -200,10 +200,10 @@ Mulailah dengan strategi **yang Anda butuhkan**, bukan yang **Anda inginkan**. E
 :::
 
 ::: {.incremental}
-- **Anak tangga 1 — *Data Management Plan***: memiliki hambatan yang paling rendah, manfaat paling langsung. Sebuah *folder* yang bisa dijelajahi siapa pun, termasuk Anda di masa depan.
-- **Anak tangga 2 — Pre-Registration**: sebuah disiplin perencanaan riset — menuliskan hipotesis sebelum Anda tahu jawabannya.
-- **Anak tangga 3 — Literate Programming**: sebuah kebiasaan teknis — biarkan dokumennya sendiri yang menghitung, bukan Anda yang menyalin angka secara manual.
-- **Anak tangga 4 — Registered Reports**: komitmen terbesar — *review* dilakukan sebelum hasil ada, berlangsung selama bertahun-tahun.
+- **Anak tangga 1 — *Data Management Plan***: memiliki hambatan yang paling rendah, tetapi manfaat paling langsung. Sebuah *folder* yang bisa dijelajahi siapa pun, termasuk Anda di masa depan.
+- **Anak tangga 2 — *Pre-Registration***: sebuah disiplin perencanaan riset, yaitu dengan menuliskan hipotesis sebelum Anda melihat data.
+- **Anak tangga 3 — *Literate Programming***: sebuah kebiasaan teknis dengan menganyam teks + *script* analisis dalam satu dokumen. Dengan sekali klik, *software* menjalankan analisis dan menganyam hasil penelitian di dalam teks, bukan disalin secara manual.
+- **Anak tangga 4 — *Registered Reports***: membutuhkan komitmen terbesar — *peer review* dilakukan sebelum mengambil data, bisa berlangsung selama bertahun-tahun.
 - Inilah urutan yang **saya alami** ketika mendaki tangga ini, selama kurang lebih 15 tahun perjalanan karier akademik saya. Saya akan tunjukkan seperti apa bentuknya masing-masing anak tangga ini dari sudut pandang saya.
 :::
 
@@ -237,7 +237,7 @@ Sebuah dokumen singkat dan hidup ([*living document*](https://en.wikipedia.org/w
 ## Menanamkan Kebiasaan Manajemen Data ke dalam Proyek yang Sedang Berjalan
 
 ::: {.lead}
-Saya sedang mengerjakan *scoping review* tentang praktik *reproducibility* di bidang ekonomi dan ilmu sosial, yang merupakan bagian dari proyek yang lebih besar tempat saya terlibat. Struktur *folder* kerjanya seperti ini:
+Saya sedang mengerjakan *scoping review* tentang praktik *reproducibility* di bidang ekonomi dan ilmu sosial, yang merupakan bagian dari proyek penelitian dengan anggota tim dari berbagai institusi. Struktur *folder* kerjanya seperti ini:
 :::
 
 ::: {.content-box}
@@ -266,7 +266,7 @@ litsearch/
 
 ### *Documentation*
 
-Data apa yang akan Anda kumpulkan dan bagaimana caranya? Format apa saja? Sebuah **kamus data (*codebook*)** yang mendeskripsikan setiap variabel (nama, redaksi pertanyaan, *coding*, *missing value*) agar data tetap bisa dipahami tanpa kehadiran Anda.
+Data apa yang akan Anda kumpulkan dan bagaimana caranya? Format apa saja? Bentuknya bisa sebuah [**kamus data (*codebook*)**](libs/codebook.xlsx) yang mendeskripsikan setiap variabel (nama, redaksi pertanyaan, *coding*, *missing value*) agar data tetap bisa dipahami tanpa kehadiran Anda.
 :::
 ::: {.col-item}
 [<i class="fa-solid fa-shield-halved"></i>]{.col-icon}
@@ -556,6 +556,17 @@ Semangat di balik semua kebiasaan ini adalah apa yang disebut [The Turing Way](h
   - menyatakan ***requirements* di depan**: nama dan versi *software*, versi *package* (`renv`!), estimasi waktu *running script*nya;
   - **memberikan komentar "mengapa"-nya** dalam *script* Anda;
   - tanpa *path* absolut, tanpa "*hapus baris 13 secara manual dulu,*" tanpa *file* yang hanya ada di *desktop* Anda.
+
+:::
+
+## *Computational Empathy*
+
+::: {.lead}
+Semangat di balik semua kebiasaan ini adalah apa yang disebut [The Turing Way](https://book.the-turing-way.org/reproducible-research/overview/overview-definitions) sebagai ***computational empathy***: mengantisipasi kebutuhan orang lain yang akan mencoba menjalankan pekerjaan Anda *tanpa bantuan Anda sama sekali*.
+:::
+
+::: {.incremental}
+
 - Tes mudah: serahkan material riset Anda ke seorang kolega dan lihat mereka mencoba menganalisisnya. Setiap pertanyaan yang mereka ajukan adalah **potongan dokumentasi yang hilang**.
 - Dan ingat: *orang asing* yang Anda perlakukan dengan baik ini biasanya adalah **diri Anda sendiri di masa depan**.
 
@@ -776,12 +787,12 @@ Konrad-Zuse-Str. 2a, 44801 Bochum
 :::
 
 ::: {.closing-social}
-<a href="https://www.linkedin.com/company/cais-nrw" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-<a href="https://x.com/cais_nrw" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-<a href="https://www.instagram.com/cais_nrw" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-<a href="https://scholar.social/@cais" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
-<a href="https://www.facebook.com/caisnrw" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-<a href="https://www.youtube.com/@cais_nrw" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+<a href="https://www.linkedin.com/company/center-for-advanced-internet-studies" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="https://bsky.app/profile/cais-research.bsky.social" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+<a href="https://www.instagram.com/caisnrw/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://mastodon.social/@CAISnrw" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
+<a href="https://www.facebook.com/CenterforAdvancedInternetStudies" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.youtube.com/channel/UClCqAar9lGav5spwJOJgrUw" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
 :::
 :::
 :::
