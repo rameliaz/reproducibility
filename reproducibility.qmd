@@ -54,7 +54,7 @@ You read a fascinating finding in a top journal and want to build your dissertat
 
 - **2011 — Bem's "precognition" paper**: a top journal (Journal of Personality and Social Psychology - JPSP) published evidence that people can *feel the future* ([Bem, 2011](https://psycnet.apa.org/record/2011-01894-001)) by using standard methods and standard statistics. If the method can "prove" the impossible, what does that say about the method?
 - [**2011 — The Stapel fraud case**](https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html): a prominent social psychologist was found to have fabricated data in dozens of published papers.
-- **2011 — "False-Positive Psychology"** ([Simmons, Nelson, & Simonsohn](https://journals.sagepub.com/doi/10.1177/0956797611417632)): showed that ordinary, small, undisclosed analytic choices can make *anything* statistically significant — they "demonstrated" that listening to a song makes people younger.
+- **2011 — "False-Positive Psychology"** ([Simmons, Nelson, & Simonsohn](https://journals.sagepub.com/doi/10.1177/0956797611417632)): showed that ordinary, small, undisclosed analytic choices can make *anything* statistically significant — they "demonstrated" that listening to a song makes people feel younger.
 - These events triggered a field-wide question: **how much of our literature can we actually trust?**
 
 :::
@@ -172,7 +172,7 @@ It's mostly not fraud, but rather ordinary incentives acting on ordinary humans.
 ## {.quote-slide}
 
 ::: {.quote-bubble}
-> An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.
+> An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete [software development environment](https://www.youtube.com/watch?v=8qzVV7eEiaI) and the complete set of instructions which generated the figures.
 
 ::: {.quote-author}
 [Buckheit & Donoho (1995)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5), paraphrasing Jon Claerbout

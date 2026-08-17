@@ -10,14 +10,14 @@ project:
     - reproducibility-id.qmd
 
 website:
-  title: "Amelia Zein"
+  title: "Reproducibility"
   navbar:
     left:
       - href: https://rameliaz.github.io/
         icon: house
         text: "by Amelia Zein"
       - icon: github
-        href: https://github.com/rameliaz
+        href: https://github.com/rameliaz/reproducibility
     right:
       - icon: envelope
         href: "mailto:amelia.zein@psikologi.unair.ac.id"

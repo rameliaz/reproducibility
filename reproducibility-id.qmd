@@ -54,7 +54,7 @@ Anda membaca sebuah temuan menarik di suatu jurnal top dan membayangkan *paper* 
 
 - **2011 — *Paper* "prekognisi" Bem**: sebuah jurnal top (Journal of Personality and Social Psychology - JPSP) mempublikasikan bukti bahwa orang bisa *merasakan apa yang akan terjadi di masa depan* ([Bem, 2011](https://psycnet.apa.org/record/2011-01894-001)) dengan menggunakan metode eksperimen dan menguji hipotesisnya dengan tes statistik standar. Jika sebuah eksperimen perilaku bisa "membuktikan" hal yang mustahil, lalu apa implikasinya bagi metode tersebut?
 - [**2011 — Kasus kecurangan akademik Diederik Stapel**](https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html): seorang profesor psikologi sosial terkemuka terbukti memalsukan data di puluhan paper yang sudah dipublikasikan.
-- **2011 — "False-Positive Psychology"** ([Simmons, Nelson, & Simonsohn](https://journals.sagepub.com/doi/10.1177/0956797611417632)): menunjukkan bahwa pilihan-pilihan analitis yang kesannya remeh, biasa, tetapi tidak diungkapkan bisa membuat *apa pun* menjadi signifikan secara statistik. Di *paper* ini, mereka menunjukkan betapa "mudahnya" membuktikan bahwa mendengarkan sebuah lagu yang spesifik ("*When I'm 64*") membuat orang menjadi lebih muda.
+- **2011 — "False-Positive Psychology"** ([Simmons, Nelson, & Simonsohn](https://journals.sagepub.com/doi/10.1177/0956797611417632)): menunjukkan bahwa pilihan-pilihan analitis yang kesannya remeh, biasa, tetapi tidak diungkapkan bisa membuat *apa pun* menjadi signifikan secara statistik. Di *paper* ini, mereka menunjukkan betapa "mudahnya" membuktikan bahwa mendengarkan sebuah lagu yang spesifik ("*When I'm 64*") membuat orang merasa lebih muda.
 - Peristiwa-peristiwa ini memicu pertanyaan besar: **seberapa banyak klaim ilmiah di literatur Psikologi yang benar-benar bisa kita percaya?**
 
 :::
@@ -172,7 +172,7 @@ Ini sebagian besar bukan soal kecurangan yang benar-benar mengandung niat jahat,
 ## {.quote-slide}
 
 ::: {.quote-bubble}
-> An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.
+> An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete [software development environment](https://www.youtube.com/watch?v=8qzVV7eEiaI) and the complete set of instructions which generated the figures.
 
 ::: {.quote-author}
 [Buckheit & Donoho (1995)](https://link.springer.com/chapter/10.1007/978-1-4612-2544-7_5), memparafrasekan Jon Claerbout

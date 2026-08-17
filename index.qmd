@@ -13,10 +13,10 @@ Choose your language / Pilih bahasa:
 
 ::: {.lang-cards}
 
-[**English**\
+[**🇬🇧 English**\
 A first-person perspective on open and reproducible science](reproducibility.html){.lang-card}
 
-[**Bahasa Indonesia**\
+[**🇮🇩 Bahasa Indonesia**\
 Memastikan riset dapat direka ulang dari sudut pandang orang pertama](reproducibility-id.html){.lang-card}
 
 :::
