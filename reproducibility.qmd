@@ -200,11 +200,16 @@ Start with the practice **you really need**, not the one **you want**. The four 
 :::
 
 ::: {.incremental}
-- **Rung 1 — Data Management Plan**: lowest barrier, most direct benefit. A folder that anyone, including future you, can navigate.
-- **Rung 2 — Pre-Registration**: a planning discipline — write the hypothesis down before you know the answer.
-- **Rung 3 — Literate Programming**: a technical habit — let the document compute itself instead of copying numbers by hand.
-- **Rung 4 — Registered Reports**: the biggest commitment — review before results exist, over years.
-- This is the order **I personally** climbed it, over about 15 years of my scientific career. I'll show you what each rung actually looked like from where I stood.
+- **Rung 1 — Data Management Plan**: l*owest barrier, most direct benefit*. A folder that anyone, including future you, can navigate.
+- **Rung 2 — Pre-Registration**: *a planning discipline* — write the hypothesis down before you know the answer.
+- **Rung 3 — Literate Programming**: *a technical habit* — let the document compute itself instead of copying numbers by hand.
+- **Rung 4 — Registered Reports**: *the biggest commitment* — peer-review before results exist, usually takes a longer time than the traditional route from planning to publication.
+:::
+
+. . .
+
+::: {.callout-note appearance="simple"}
+This is the order **I personally** climbed it, over about 15 years of my scientific career. I'll show you what each rung actually looked like from where I stood.
 :::
 
 ## {.section-slide}

@@ -200,11 +200,16 @@ Mulailah dengan strategi **yang Anda butuhkan**, bukan yang **Anda inginkan**. E
 :::
 
 ::: {.incremental}
-- **Anak tangga 1 — *Data Management Plan***: memiliki hambatan yang paling rendah, tetapi manfaat paling langsung. Sebuah *folder* yang bisa dijelajahi siapa pun, termasuk Anda di masa depan.
-- **Anak tangga 2 — *Pre-Registration***: sebuah disiplin perencanaan riset, yaitu dengan menuliskan hipotesis sebelum Anda melihat data.
-- **Anak tangga 3 — *Literate Programming***: sebuah kebiasaan teknis dengan menganyam teks + *script* analisis dalam satu dokumen. Dengan sekali klik, *software* menjalankan analisis dan menganyam hasil penelitian di dalam teks, bukan disalin secara manual.
-- **Anak tangga 4 — *Registered Reports***: membutuhkan komitmen terbesar — *peer review* dilakukan sebelum mengambil data, bisa berlangsung selama bertahun-tahun.
-- Inilah urutan yang **saya alami** ketika mendaki tangga ini, selama kurang lebih 15 tahun perjalanan karier akademik saya. Saya akan tunjukkan seperti apa bentuknya masing-masing anak tangga ini dari sudut pandang saya.
+- **Anak tangga 1 — *Data Management Plan***: memiliki *hambatan teknis yang paling rendah, tetapi manfaat paling instan*. Sebuah *folder* yang bisa dijelajahi siapa pun, termasuk Anda di masa depan.
+- **Anak tangga 2 — *Pre-Registration***: *sebuah disiplin perencanaan riset*, yaitu dengan menuliskan hipotesis sebelum Anda melihat data.
+- **Anak tangga 3 — *Literate Programming***: *sebuah kebiasaan teknis* dengan menganyam teks + *script* analisis dalam satu dokumen. Dengan sekali klik, *software* menjalankan analisis dan menganyam hasil penelitian di dalam teks, bukan disalin secara manual.
+- **Anak tangga 4 — *Registered Reports***: *membutuhkan komitmen terbesar* — *peer review* dilakukan sebelum mengambil data, butuh waktu lebih lama dibandingkan dengan rute publikasi tradisional.
+:::
+
+. . .
+
+::: {.callout-note appearance="simple"}
+Inilah urutan yang **saya alami** ketika mendaki tangga ini, selama kurang lebih 15 tahun perjalanan karier akademik saya. Saya akan tunjukkan seperti apa bentuknya masing-masing anak tangga ini dari sudut pandang saya.
 :::
 
 ## {.section-slide}
