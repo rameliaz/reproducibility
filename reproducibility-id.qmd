@@ -480,7 +480,8 @@ Saya melakukan *pre-registration* dengan tekun selama bertahun-tahun sebelum say
 - Dokumennya menarik angka langsung dari hasil analisis.
   + Saya berhenti mengetik hasil secara manual ke Word, yang justru merupakan langkah tempat kesalahan *copy-paste* dulu sering muncul.
 - Contoh: [`grm-tutorial-paper`](https://github.com/rameliaz/grm-tutorial-paper), repository di balik [*paper* yang sudah dipublikasikan](https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265) yang ditulis sepenuhnya sebagai dokumen *literate*.
-- Bonus yang memuaskan😉: editor dan *reviewer* berkomentar soal betapa *rapinya* proyek ini terlihat. Ini sebenarnya bukan tujuan utama dari *literate* programming, tapi ini tentu saja baik untuk reputasi Anda juga.
+- Bonus yang memuaskan😉: editor dan *reviewer* memberikan komentar tentang *rapinya* data dan material *project* saya. 
+  + Ini sebenarnya bukan tujuan utama dari *literate* programming, tapi ini tentu saja baik untuk reputasi Anda juga.
 :::
 
 ## Alat-Alatnya {.columns-slide}
@@ -601,9 +602,9 @@ Sebuah ***Registered Report* (RR)** adalah format artikel jurnal di mana *peer r
 ::: {.incremental}
 
 - ***Stage* 1**: Anda mengajukan pendahuluan, hipotesis, dan metode yang detail *sebelum* pengumpulan data. *Reviewer* mengkritisi desainnya **selagi Anda masih bisa memperbaikinya**.
-- Jika diterima, Anda mendapatkan ***In-Principle Acceptance* (IPA)**: jurnal berkomitmen untuk mempublikasikan paper Anda **apa pun hasilnya nanti**.
+  + Jika diterima, Anda mendapatkan ***In-Principle Acceptance* (IPA)**: jurnal berkomitmen untuk mempublikasikan paper Anda **apa pun hasilnya nanti**.
 - ***Stage* 2**: Anda menjalankan studinya persis seperti yang sudah disetujui, mengajukan paper lengkap; *reviewer* hanya mengecek apakah Anda mengikuti rencana dan menginterpretasikan hasil secara masuk akal.
-- Publikasi tidak lagi bergantung pada hasil yang "menarik" → ***publication bias* terpotong dari akarnya**, dan *p*-*hacking* kehilangan tujuannya.
+- Publikasi tidak lagi bergantung pada hasil yang "menarik" → *publication bias* terpotong dari akarnya, dan *p*-*hacking* kehilangan tujuannya.
 
 :::
 
@@ -626,8 +627,8 @@ Saya sekarang sudah menjadi bagian dari tiga *Registered Reports* yang sudah dip
 ::: {.content-box}
 - Dari pertama kali merancang desainnya hingga *paper*-nya terbit: **sekitar dua setengah tahun**.
 - Dipublikasikan sebagai [sebuah *Registered Report*](https://www.tandfonline.com/doi/abs/10.1080/10508619.2025.2535033); [*postprint*-nya tersedia *open-access* di PsyArXiv](https://osf.io/preprints/psyarxiv/bn6r4).
-- Prosesnya lambat, dan pada beberapa titik terasa membuat frustrasi.
-  + *Review Stage* 1 mendorong Anda untuk mendesain ulang sebelum Anda sempat mengumpulkan satu pun data.
+- Prosesnya lambat, dan pada titik tertentu, sangat melelahkan.
+  + *Review Stage* 1 mendorong saya untuk mendesain ulang sebelum sempat mengumpulkan satu pun data.
   + Ini sangat sulit, **tetapi justru di situlah letak seluruh manfaatnya**: saya memperbaiki potensi masalah desain penelitian lebih awal di atas kertas, bukan ketika setelah menjalankan beberapa studi dengan ~300 partisipan.
 - Saya tidak akan mencoba ini sebagai praktik *reproducibility* pertama saya. Ini baru masuk akal setelah *pre-registration* dan *literate programming* sudah menjadi kebiasaan rutin.
 :::

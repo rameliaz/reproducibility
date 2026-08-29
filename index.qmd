@@ -9,7 +9,7 @@ format:
 
 ::: {.lang-landing}
 
-Choose your language / Pilih bahasa:
+Choose your language/Pilih bahasa:
 
 ::: {.lang-cards}
 

@@ -480,7 +480,8 @@ I pre-registered diligently for years before I learned Quarto. Literate programm
 - The document pulls numbers directly from the analysis.
   + I stopped hand-typing results into Word, which is exactly the step where copy-paste errors used to creep in.
 - Real example: [`grm-tutorial-paper`](https://github.com/rameliaz/grm-tutorial-paper), the repository behind a [published paper](https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265) written entirely as a literate document.
-- A pleasantly suprising bonus😉: editors and reviewers comment on how *organized* the project looks. That's actually not the point of literate programming, but it doesn't hurt your reputation either.
+- A pleasantly suprising bonus😉: editors and reviewers comment on how *organized* the project looks. 
+  + That's actually not the point of literate programming, but it doesn't hurt your reputation either.
 :::
 
 ## The Tools {.columns-slide}
@@ -590,9 +591,9 @@ A **Registered Report (RR)** is a journal article format where peer review happe
 ::: {.incremental}
 
 - **Stage 1**: you submit introduction, hypotheses, and detailed methods *before* data collection. Reviewers critique the design **while you can still fix it**.
-- If accepted, you receive **In-Principle Acceptance (IPA)**: the journal commits to publishing your paper **regardless of how the results turn out**.
+  + If accepted, you receive **In-Principle Acceptance (IPA)**: the journal commits to publishing your paper **regardless of how the results turn out**.
 - **Stage 2**: you run the study exactly as approved, submit the full paper; reviewers only check that you followed the plan and interpreted results sensibly.
-- Publication no longer depends on getting "exciting" results → **publication bias is cut off at the root**, and *p*-hacking loses its purpose.
+- Publication no longer depends on getting "exciting" results → publication bias is cut off at the root, and *p*-hacking loses its purpose.
 
 :::
 
@@ -616,8 +617,8 @@ I have now been part of three published Registered Reports. This is the one I fi
 - From first conceiving the design to the paper appearing in print: **about two and a half years**.
 - Published as [a Registered Report](https://www.tandfonline.com/doi/abs/10.1080/10508619.2025.2535033); [postprint available open-access on PsyArXiv](https://osf.io/preprints/psyarxiv/bn6r4).
 - It was slow, and at several points frustrating.
-  + Stage 1 review sends you back to redesign before you've collected a single data point.
-  + That is uncomfortable, **and it is the entire benefit**: I fixed problems early on paper, not after running several studies with ~300 participants.
+  + Stage 1 review sent me back to redesign before collecting a single data point.
+  + That was uncomfortable, **but it is the entire benefit**: I fixed problems early on paper, not after running several studies with ~300 participants.
 - I would not have attempted this as my first reproducibility practice. It only made sense once pre-registration and literate programming were already regular habits.
 :::
 
