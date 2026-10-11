@@ -1,5 +1,495 @@
 [
   {
+    "objectID": "reproducibility_unesa.html#agenda",
+    "href": "reproducibility_unesa.html#agenda",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "AGENDA",
+    "text": "AGENDA\n\n\nReplication Crisis and Why Reproducibility Matters\nAt the Individual Level: The Reproducibility Ladder\nAt the Systemic Level: Culture Change\nConclusions"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#section",
+    "href": "reproducibility_unesa.html#section",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "",
+    "text": "01\n\n\nReplication Crisis — and Why Reproducibility Matters"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#lets-start-with-a-thought-experiment",
+    "href": "reproducibility_unesa.html#lets-start-with-a-thought-experiment",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Let’s Start With a Thought Experiment",
+    "text": "Let’s Start With a Thought Experiment\n\nYou read a fascinating finding in a top journal and want to build your research on it.\n\n\nQuestion 1: If another team ran the same study again with new participants, would they find the same result?\nQuestion 2: If you took the original data and the original analysis code, would you get the same numbers reported in the paper?\nIntuitively, we assume the answer to both is “yes, of course it should be! It’s published science in a top Q1 journal!”\nOver the last 15 years, researchers actually checked. The answers were… rather uncomfortable."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#how-it-started-early-2010s",
+    "href": "reproducibility_unesa.html#how-it-started-early-2010s",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "How It Started (early 2010s)",
+    "text": "How It Started (early 2010s)\n\n2011 — Bem’s “precognition” paper: a top journal (Journal of Personality and Social Psychology - JPSP) published evidence that people can feel the future (Bem, 2011) by using standard methods and standard statistics. If the method can “prove” the impossible, what does that say about the method?\n2011 — The Stapel fraud case: a prominent social psychologist was found to have fabricated data in dozens of published papers.\n2011 — “False-Positive Psychology” (Simmons, Nelson, & Simonsohn): showed that ordinary, small, undisclosed analytic choices can make anything statistically significant — they “demonstrated” that listening to a song makes people feel younger.\nThese events triggered a field-wide question: how much of our literature can we actually trust?"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#but-the-problem-started-much-earlier-than-that",
+    "href": "reproducibility_unesa.html#but-the-problem-started-much-earlier-than-that",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "But the problem started much earlier than that",
+    "text": "But the problem started much earlier than that"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#the-multi-site-replication-projects",
+    "href": "reproducibility_unesa.html#the-multi-site-replication-projects",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "The Multi-Site Replication Projects",
+    "text": "The Multi-Site Replication Projects\n\nLarge teams systematically re-ran published studies with new data, and here is what came back:\n\n\n\n\n36%\nof 100 psychology studies replicated — Open Science Collaboration (2015)\n\n\n61%\nof 18 economics lab experiments replicated — Camerer et al. (2016)\n\n\n62%\nof 21 social-science studies from Nature & Science replicated — Camerer et al. (2018)\n\n\n49%\nof 164 papers across 12 disciplines replicated — COS SCORE project (Nature, April 2026)\n\n\n\n\nEven when effects did replicate, they were on average only about half as large as originally reported (i.e., “The Decline Effect”) — SCORE found the same pattern again in 2026.\nSCORE is the largest check yet: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). Reproducing published analyses on the original data succeeded only 54% of the time.\nThis pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the “replication crisis.”"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#three-concepts-you-must-not-confuse",
+    "href": "reproducibility_unesa.html#three-concepts-you-must-not-confuse",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Three Concepts You Must Not Confuse",
+    "text": "Three Concepts You Must Not Confuse\n\nFollowing Barba (2018) and The Turing Way, people mix these up all the time:\n\n\n\n\nReproducibility (🇮🇩 “reka ulang”)\nSame data + same analysis → same result. Someone else (or future you) re-runs your analysis on your data and gets the numbers in your paper.\n\n\n\nReplicability (🇮🇩 “coba ulang”)\nNew data + same method → similar result. An independent team repeats the study with new participants and finds a comparable effect.\n\n\n\nRobustness (🇮🇩 “keandalan”)\nSame data + new analysis → same result or at least, similar conclusion. The finding remains stable when different analytical strategies are used."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#notice-the-differences",
+    "href": "reproducibility_unesa.html#notice-the-differences",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Notice the Differences",
+    "text": "Notice the Differences"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#the-really-uncomfortable-part",
+    "href": "reproducibility_unesa.html#the-really-uncomfortable-part",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "The Really Uncomfortable Part",
+    "text": "The Really Uncomfortable Part\n\nLet’s forget collecting new data (i.e., replication) for a moment. Can we even reproduce the original numbers from the original data? (i.e., “reproducibility”)\n\n\nHardwicke et al. (2018) tried to reproduce results from papers with mandatory open data in the journal Cognition: only 11 of 35 papers were reproducible without help from the original authors.\nArtner et al. (2021) could reproduce only ~70% of major statistical claims from published psychology articles and some only after considerable detective work.\nCrüwell et al. (2023) checked “open data” badges in Psychological Science: only 1 out of 14 articles was rated fully computationally reproducible.\nAnd this directly affects people’s lives: the famous Reinhart & Rogoff austerity paper, which is widely used to justify real economic policies, contained a simple Excel error discovered only when a graduate student got the spreadsheet (Herndon et al., 2014)."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#why-does-this-happen",
+    "href": "reproducibility_unesa.html#why-does-this-happen",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Why Does This Happen?",
+    "text": "Why Does This Happen?\n\nIt’s mostly not fraud, but ordinary humans following the incentives.\n\n\nPublication bias: journals prefer novel, positive, “clean” results. Therefore, null results are often being kept into the file drawer.\nPublish or perish: careers are built on the number of publications, not on their substantive quality.\nQuestionable research practices (QRPs): a grey zone between good practice and misconduct (John et al., 2012):\n\np-hacking: trying many analyses and reporting the one that “works”\nHARKing: Hypothesizing After the Results are Known — presenting an exploratory finding as if predicted (Kerr, 1998)\nSelective reporting of measures, conditions, or outcomes\n\nThe garden of forking paths: even without bad intent, every dataset offers countless defensible analysis choices, thus flexibility in analytical choices can inflate false positives (Gelman & Loken, 2014)."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#why-should-we-care",
+    "href": "reproducibility_unesa.html#why-should-we-care",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Why Should We Care?",
+    "text": "Why Should We Care?\n\nEnsuring that our results are reproducible gives us more confidence in our work.\n\n\n\nYour closest collaborator is you, six months ago and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.\nErrors get caught early, before they end up in your dissertation, your defense, or a retraction.\nInternational reviewers, supervisors, and committees increasingly expect it. Funders and journals now routinely require data, code, and analysis plans.\nIt makes you more efficient. Re-running an analysis after your supervisor/reviewers ask “please just add this one covariate” takes one click instead of one week.\nIt builds trust in your work. Reproducible research gets reused, cited, and extended."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#section-1",
+    "href": "reproducibility_unesa.html#section-1",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "",
+    "text": "02\n\n\nThe Reproducibility Ladder: A Personal-Level Solution"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#a-reproducibility-ladder",
+    "href": "reproducibility_unesa.html#a-reproducibility-ladder",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "A “Reproducibility Ladder”🪜",
+    "text": "A “Reproducibility Ladder”🪜\n\nThe four practices in this talk are not supposed to be a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.\n\n\nRung 1 — Data Management Plan: lowest barrier, most direct benefit. A folder that anyone, including future you, can navigate.\nRung 2 — Pre-Registration: a planning discipline — write the hypothesis down before you know the answer.\nRung 3 — Literate Programming: a technical habit — let the document compute itself instead of copying numbers by hand.\nRung 4 — Registered Reports: the biggest commitment — peer-review before results exist, usually takes a longer time than the traditional route from planning to publication.\n\n\n\n\n\n\n\n\nThis is the order I personally climbed it, over about 15 years of my scientific career."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#rungs-1-2-plan-the-data-then-the-hypotheses",
+    "href": "reproducibility_unesa.html#rungs-1-2-plan-the-data-then-the-hypotheses",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Rungs 1 & 2: Plan the Data, Then the Hypotheses",
+    "text": "Rungs 1 & 2: Plan the Data, Then the Hypotheses\n\n\n\nRung 1 — Data Management Plan\nWhat it is: a short, living document, written before data collection, on how your data will be documented, stored, protected, and shared. The aim is FAIR data: “as open as possible, as closed as necessary.”\nWhat it solves: “If I disappeared tomorrow, could someone else find, understand, and use my data?” It also catches problems while they are still fixable, like a consent form that forbids data sharing.\nIn my own work: my current scoping review lives in one fixed folder structure, with a README that describes every file. I can come back after months on other tasks and know exactly where to look.\nStart with: a DMPTool or DMPonline template, a codebook, and a trusted repository (DRYAD, Zenodo, RIN Dataverse).\n\n\n\nRung 2 — Pre-Registration\nWhat it is: your hypotheses, design, sample size, and analysis plan, written down before data collection in a time-stamped, read-only registry (Nosek et al., 2018).\nWhat it fixes: Separating confirmatory and exploratory in a more transparent manner. You can still deviate from the plan; the deviation just becomes visible.\nIn my own work: Science and Religion in the Times of Crisis. I wrote the hypothesis down before I knew whether the data would support it. I have pre-registered every study since 2021, and by now it is simply part of designing one.\nStart with: AsPredicted (9 questions, most of which your ethics application already answers) or OSF Registries."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#rungs-3-4-let-the-document-compute-let-review-come-first",
+    "href": "reproducibility_unesa.html#rungs-3-4-let-the-document-compute-let-review-come-first",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Rungs 3 & 4: Let the Document Compute, Let Review Come First",
+    "text": "Rungs 3 & 4: Let the Document Compute, Let Review Come First\n\n\n\nRung 3 — Literate Programming\nWhat it is: text, analysis code, and output woven into one document that regenerates itself. Numbers are computed, never typed.\nWhat it fixes: copy-paste errors. Roughly half of published psychology papers contain at least one inconsistent statistic (Nuijten et al., 2016). The document itself becomes the audit trail.\nIn my own work: grm-tutorial-paper is the repository behind a published paper written entirely in Quarto, with Git keeping the full history. These slides are literate programming too😉\nStart with: Quarto or Jupyter, Git, relative paths (here::here()), and renv or groundhog to record your package versions (if you are using ).\n\n\n\nRung 4 — Registered Reports\nWhat it is: peer review before the results exist (Chambers & Tzavella, 2022). Pass Stage 1 and you get in-principle acceptance: the journal publishes the paper whatever the results turn out to be.\nWhat it solves: publication bias, at the root. Once the result no longer decides publication, p-hacking loses its purpose.\nIn my own work: my first-authored Registered Report took about 2.5 years. Stage 1 review sent me back to redesign before I had collected data. That was frustrating, and it was also the whole point.\nStart with: one of the 300+ journals that offer the format, or PCI RR, which reviews Stage 1 protocols independently of any journal."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#section-2",
+    "href": "reproducibility_unesa.html#section-2",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "",
+    "text": "03\n\n\nCulture Change at the Systemic Level"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#why-the-ladder-alone-is-not-enough",
+    "href": "reproducibility_unesa.html#why-the-ladder-alone-is-not-enough",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Why the Ladder Alone Is Not Enough",
+    "text": "Why the Ladder Alone Is Not Enough\n\nRemember the earlier diagnosis: ordinary humans following the incentives. Can we reasonably expect everyone to climb those steep ladders without changing the reward structure?\n\n\nEvery rung costs time that the current system does not count. My Registered Report took ~2.5 years; reviewers who determines AK prestasi only counts one paper.\nIf only the most conscientious researchers change, they pay the price while the system keeps rewarding speed publications and “clean” results.\nMany researchers already have the will and the skills, yet feel “powerless against a culture that does not value or promote those behaviors” (Nosek, 2019).\nSo the question shifts from “What should I do?” to “What would make good practice the easiest path for everyone?”"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#pyramid-of-culture-change",
+    "href": "reproducibility_unesa.html#pyramid-of-culture-change",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Pyramid of Culture Change",
+    "text": "Pyramid of Culture Change\n\nThe Center for Open Science’s model (Nosek, 2019): change is built from the bottom up, and each level only works if the levels below it are in place.\n\n\n\nMake it required Policy Journal and funder mandates: the TOP Guidelines, data-sharing policies (e.g., NIH since 2023), Ministry of HEST’s regulations\n\n\nMake it rewarding Incentives Registered Reports; open practices counted in hiring, promotion, and grants (CoARA)\n\n\nMake it normative Communities Open Science Badges, local open science communities, ReproducibiliTea journal clubs\n\n\nMake it easy User experience Templates (AsPredicted), Open Educational Resources (OER), FORRT, LMU Open Science Center\n\n\nMake it possible Infrastructure Repositories and registries: OSF, Zenodo, DRYAD, RIN Dataverse"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#does-changing-the-system-work",
+    "href": "reproducibility_unesa.html#does-changing-the-system-work",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Does Changing the System Work?",
+    "text": "Does Changing the System Work?\n\n\n\n39%\nof Psychological Science articles shared their data after the journal introduced Open Science Badges, up from under 3%; comparison journals did not change (Kidwell et al., 2016)\n\n\n44%\nof Registered Reports report positive results, compared with 96% of standard psychology articles (Scheel, Schijen, & Lakens, 2021)\n\n\n1 of 14\narticles with an open-data badge was fully computationally reproducible (Crüwell et al., 2023)\n\n\n\n\nBadges and Registered Reports show that changing the rules changes behaviour, quickly and measurably.\nThe third number is the most concerning one: badges so far only reward sharing, but not reproducing. Here, it is clear that available is not the same as reproduced.\nSo the next step is verification. The TOP Guidelines 2025 now list computational reproducibility as a practice of its own."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#section-3",
+    "href": "reproducibility_unesa.html#section-3",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "",
+    "text": "04\n\n\nConclusions"
+  },
+  {
+    "objectID": "reproducibility_unesa.html#conclusion",
+    "href": "reproducibility_unesa.html#conclusion",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nReproducibility is a habit people build and a property of the system they work in. We (ideally) need both.\n\n\n\n\nThe problem is real and ordinary\nOnly 36–62% of findings replicated in the large replication projects, and SCORE could reproduce published analyses from the original data only 54% of the time. The cause is mostly not fraud, but incentives and workflows nobody else can retrace.\n\n\n\nYou can start climbing now\nData management plan → pre-registration → literate programming → Registered Reports. One rung at a time, over the years. The first person you help is the future you.\n\n\n\nBut nobody climbs alone\nCulture changes when good practice becomes possible, easy, normative, rewarding, and finally required. Each of us sits somewhere in that system: as a reviewer, supervisor, editor, or policymaker."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#where-do-you-sit-in-the-pyramid",
+    "href": "reproducibility_unesa.html#where-do-you-sit-in-the-pyramid",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Where Do You Sit in the Pyramid?",
+    "text": "Where Do You Sit in the Pyramid?\n\nMost of us hold more than one role, and each role is a lever.\n\n\n\nAs a researcher (normative): pick one rung for your next study, such as a data management plan or a nine-question pre-registration, and do it where others can see it. Seeing colleagues do it is how a practice becomes normal.\nAs a reviewer (normative): ask to see the data and code. You are allowed to request this (Peer Reviewers’ Openness Initiative).\nAs a supervisor or lecturer (normative): teach the workflow, not only the statistics. This allows students to learn the logic of computational thinking.\nAs an editor (rewarding, required): offer Registered Reports, adopt the TOP Guidelines, and recognise open practices with badges.\nAs a policymaker (rewarding): count open, reproducible work in hiring, promotion, and grants, not just the number of publications (CoARA)."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#where-to-learn-more",
+    "href": "reproducibility_unesa.html#where-to-learn-more",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "Where to Learn More",
+    "text": "Where to Learn More\n\n\nThe Turing Way — a free, community-written handbook on reproducible research (start with the “Guide for Reproducible Research”).\nFORRT — Framework for Open and Reproducible Research Training: glossaries, curated resources, summaries of the key literature.\nOSF support pages — hands-on guides for projects, registrations, and preprints.\nKMU Open Science Center Training Page — a series of self-paced tutorials that covers how to implement open research practices across all research lifecycles.\nRiverbank reading: Munafò et al. (2017), A manifesto for reproducible science — the best single overview paper to start with.\nFind your local open science community (e.g., Airlangga Open Science) — reproducibility is much easier, and more fun, together."
+  },
+  {
+    "objectID": "reproducibility_unesa.html#section-4",
+    "href": "reproducibility_unesa.html#section-4",
+    "title": "How Psychological Research Can Be Made Reproducible",
+    "section": "",
+    "text": "Dr. Rizqy Amelia Zein\nCenter for Advanced Internet Studies (CAIS) & Universitas Airlangga\nE-mail: amelia.zein@cais-research.de · Homepage: rameliaz.github.io\n\n\n\n\n\n\n\nThank you!\n\n\n\nCenter for Advanced Internet Studies (CAIS) gGmbH\nKonrad-Zuse-Str. 2a, 44801 Bochum\n\n\ninfo@cais-research.de\n+49 234 9531 5000\nwww.cais-research.de"
+  },
+  {
+    "objectID": "reproducibility.html#agenda",
+    "href": "reproducibility.html#agenda",
+    "title": "How Research is Made Reproducible",
+    "section": "AGENDA",
+    "text": "AGENDA\n\n\nReplication Crisis and Why Does Reproducibility Matters\nData Management Plan\nPre-Registration\nLiterate Programming\nRegistered Reports\nConclusions"
+  },
+  {
+    "objectID": "reproducibility.html#section",
+    "href": "reproducibility.html#section",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "01\n\n\nReplication Crisis — and Why Reproducibility Matters"
+  },
+  {
+    "objectID": "reproducibility.html#lets-start-with-a-thought-experiment",
+    "href": "reproducibility.html#lets-start-with-a-thought-experiment",
+    "title": "How Research is Made Reproducible",
+    "section": "Let’s Start With a Thought Experiment",
+    "text": "Let’s Start With a Thought Experiment\n\nYou read a fascinating finding in a top journal and want to build your dissertation on it.\n\n\nQuestion 1: If another team ran the same study again with new participants, would they find the same result?\nQuestion 2: If you took the original data and the original analysis code, would you get the same numbers reported in the paper?\nIntuitively, we assume the answer to both is “yes, of course it should be! It’s published science in a top Q1 journal!”\nOver the last 15 years, researchers actually checked. The answers were… rather uncomfortable."
+  },
+  {
+    "objectID": "reproducibility.html#how-it-started-early-2010s",
+    "href": "reproducibility.html#how-it-started-early-2010s",
+    "title": "How Research is Made Reproducible",
+    "section": "How It Started (early 2010s)",
+    "text": "How It Started (early 2010s)\n\n2011 — Bem’s “precognition” paper: a top journal (Journal of Personality and Social Psychology - JPSP) published evidence that people can feel the future (Bem, 2011) by using standard methods and standard statistics. If the method can “prove” the impossible, what does that say about the method?\n2011 — The Stapel fraud case: a prominent social psychologist was found to have fabricated data in dozens of published papers.\n2011 — “False-Positive Psychology” (Simmons, Nelson, & Simonsohn): showed that ordinary, small, undisclosed analytic choices can make anything statistically significant — they “demonstrated” that listening to a song makes people feel younger.\nThese events triggered a field-wide question: how much of our literature can we actually trust?"
+  },
+  {
+    "objectID": "reproducibility.html#but-the-problem-started-much-earlier-than-that",
+    "href": "reproducibility.html#but-the-problem-started-much-earlier-than-that",
+    "title": "How Research is Made Reproducible",
+    "section": "But the problem started much earlier than that",
+    "text": "But the problem started much earlier than that"
+  },
+  {
+    "objectID": "reproducibility.html#the-multi-site-replication-projects",
+    "href": "reproducibility.html#the-multi-site-replication-projects",
+    "title": "How Research is Made Reproducible",
+    "section": "The Multi-Site Replication Projects",
+    "text": "The Multi-Site Replication Projects\n\nLarge teams systematically re-ran published studies with new data, and here is what came back:\n\n\n\n\n36%\nof 100 psychology studies replicated — Open Science Collaboration (2015)\n\n\n61%\nof 18 economics lab experiments replicated — Camerer et al. (2016)\n\n\n62%\nof 21 social-science studies from Nature & Science replicated — Camerer et al. (2018)\n\n\n49%\nof 164 papers across 12 disciplines replicated — COS SCORE project (Nature, April 2026)\n\n\n\n\nEven when effects did replicate, they were on average only about half as large as originally reported (i.e., “The Decline Effect”) — SCORE found the same pattern again in 2026.\nSCORE is the largest check yet: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). Reproducing published analyses on the original data succeeded only 54% of the time.\nThis pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the “replication crisis.”"
+  },
+  {
+    "objectID": "reproducibility.html#three-words-you-must-not-confuse",
+    "href": "reproducibility.html#three-words-you-must-not-confuse",
+    "title": "How Research is Made Reproducible",
+    "section": "Three Words You Must Not Confuse",
+    "text": "Three Words You Must Not Confuse\n\nFollowing Barba (2018) and The Turing Way, people mix these up all the time:\n\n\n\n\nReproducibility (🇮🇩 “reka ulang”)\nSame data + same analysis → same result. Someone else (or future you) re-runs your analysis on your data and gets the numbers in your paper.\n\n\n\nReplicability (🇮🇩 “coba ulang”)\nNew data + same method → similar result. An independent team repeats the study with new participants and finds a comparable effect.\n\n\n\nRobustness (🇮🇩 “keandalan”)\nSame data + new analysis → same result or at least, similar conclusion. The finding remains stable when different analytical strategies are used."
+  },
+  {
+    "objectID": "reproducibility.html#notice-the-differences",
+    "href": "reproducibility.html#notice-the-differences",
+    "title": "How Research is Made Reproducible",
+    "section": "Notice the Differences",
+    "text": "Notice the Differences"
+  },
+  {
+    "objectID": "reproducibility.html#the-really-uncomfortable-part",
+    "href": "reproducibility.html#the-really-uncomfortable-part",
+    "title": "How Research is Made Reproducible",
+    "section": "The Really Uncomfortable Part",
+    "text": "The Really Uncomfortable Part\n\nLet’s forget collecting new data (i.e., replication) for a moment. Can we even reproduce the original numbers from the original data? (i.e., “reproducibility”)\n\n\nHardwicke et al. (2018) tried to reproduce results from papers with mandatory open data in the journal Cognition: only 11 of 35 papers were reproducible without help from the original authors.\nArtner et al. (2021) could reproduce only ~70% of major statistical claims from published psychology articles and some only after considerable detective work.\nCrüwell et al. (2023) checked “open data” badges in Psychological Science: only 1 out of 14 articles was rated fully computationally reproducible.\nAnd this directly affects people’s lives: the famous Reinhart & Rogoff austerity paper, which is widely used to justify real economic policies, contained a simple Excel error discovered only when a graduate student got the spreadsheet (Herndon et al., 2014)."
+  },
+  {
+    "objectID": "reproducibility.html#why-does-this-happen",
+    "href": "reproducibility.html#why-does-this-happen",
+    "title": "How Research is Made Reproducible",
+    "section": "Why Does This Happen?",
+    "text": "Why Does This Happen?\n\nIt’s mostly not fraud, but rather ordinary incentives acting on ordinary humans.\n\n\nPublication bias: journals prefer novel, positive, “clean” results. Therefore, null results are often being kept into the file drawer.\nPublish or perish: careers are built on the number of publications, not on their substantive quality.\nQuestionable research practices (QRPs): a grey zone between good practice and misconduct (John et al., 2012):\n\np-hacking: trying many analyses and reporting the one that “works”\nHARKing: Hypothesizing After the Results are Known — presenting an exploratory finding as if predicted (Kerr, 1998)\nSelective reporting of measures, conditions, or outcomes\n\nThe garden of forking paths: even without bad intent, every dataset offers countless defensible analysis choices, thus flexibility in analytical choices can inflate false positives (Gelman & Loken, 2014)."
+  },
+  {
+    "objectID": "reproducibility.html#section-1",
+    "href": "reproducibility.html#section-1",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.\n\n\nBuckheit & Donoho (1995), paraphrasing Jon Claerbout"
+  },
+  {
+    "objectID": "reproducibility.html#why-should-you-care",
+    "href": "reproducibility.html#why-should-you-care",
+    "title": "How Research is Made Reproducible",
+    "section": "Why Should You Care?",
+    "text": "Why Should You Care?\n\nEnsuring that our results are reproducible gives us more confidence in our work.\n\n\n\nYour closest collaborator is you, six months ago and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.\nErrors get caught early, before they end up in your dissertation, your defense, or a retraction.\nInternational reviewers, supervisors, and committees increasingly expect it. Funders and journals now routinely require data, code, and analysis plans.\nIt makes you more efficient. Re-running an analysis after your supervisor/reviewers ask “please just add this one covariate” takes one click instead of one week.\nIt builds trust in your work. Reproducible research gets reused, cited, and extended."
+  },
+  {
+    "objectID": "reproducibility.html#a-reproducibility-ladder",
+    "href": "reproducibility.html#a-reproducibility-ladder",
+    "title": "How Research is Made Reproducible",
+    "section": "A “Reproducibility Ladder”🪜",
+    "text": "A “Reproducibility Ladder”🪜\n\nStart with the practice you really need, not the one you want. The four practices in this talk are not supposed to be a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.\n\n\nRung 1 — Data Management Plan: lowest barrier, most direct benefit. A folder that anyone, including future you, can navigate.\nRung 2 — Pre-Registration: a planning discipline — write the hypothesis down before you know the answer.\nRung 3 — Literate Programming: a technical habit — let the document compute itself instead of copying numbers by hand.\nRung 4 — Registered Reports: the biggest commitment — peer-review before results exist, usually takes a longer time than the traditional route from planning to publication.\n\n\n\n\n\n\n\n\nThis is the order I personally climbed it, over about 15 years of my scientific career. I’ll show you what each rung actually looked like from where I stood."
+  },
+  {
+    "objectID": "reproducibility.html#section-2",
+    "href": "reproducibility.html#section-2",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "02\n\n\nData Management Plan"
+  },
+  {
+    "objectID": "reproducibility.html#what-is-a-data-management-plan-dmp",
+    "href": "reproducibility.html#what-is-a-data-management-plan-dmp",
+    "title": "How Research is Made Reproducible",
+    "section": "What Is a Data Management Plan (DMP)?",
+    "text": "What Is a Data Management Plan (DMP)?\n\nA short, living document, written before you collect data, describing how data will be collected, documented, stored, protected, and shared.\n\n\nThink of it as answering, in advance: “If I disappeared tomorrow, could someone else find, understand, and use my data?”\nIncreasingly required by funders (DFG, ERC, NIH, and many national funders) and by ethics committees.\nIt forces the right questions at the right time, before problems become unfixable (e.g., a consent form that forbids data sharing).\nFree tools with templates and guidance: DMPTool and DMPonline.\nThese are some good examples: Example 1, Example 2, Example 3, DCC UK DMP Database."
+  },
+  {
+    "objectID": "reproducibility.html#from-my-own-work-writing-the-dmp-habit-into-a-live-project",
+    "href": "reproducibility.html#from-my-own-work-writing-the-dmp-habit-into-a-live-project",
+    "title": "How Research is Made Reproducible",
+    "section": "From My Own Work: Writing the DMP Habit Into a Live Project",
+    "text": "From My Own Work: Writing the DMP Habit Into a Live Project\n\nI’m working on a scoping review of reproducibility practices in economics and social science, which is a part of a larger project I’m participated in. The structure of the working folder looks like this:\n\n\nlitsearch/\n├── codes/                        R scripts\n├── coding/                       Codebooks, coding sheets, and Google Form/Sheet\n├── dataset/                      Analysis-ready datasets exported from coding\n├── output/\n│   ├── search_output/            Literature search pipeline outputs (01–11)\n│   ├── analysis_output/          Tables and figures from the analysis\n│   └── cleaning_log/             Data-quality flags from response cleaning\n└── protocol_logbook.docx         Protocol and decisions logbook\n\nEvery file also gets one sentence of description — e.g. 10_final_set.xlsx: “The 145-paper final corpus… verified against Zotero subcollection RIS exports.” See the README here.\nBenefit #1 — future me: I come back to this folder after months on other tasks and know exactly where to look.\nBenefit #2 — future readers: when this becomes a published paper (hopefully!), reviewers and readers can verify anything I did."
+  },
+  {
+    "objectID": "reproducibility.html#what-goes-into-a-dmp",
+    "href": "reproducibility.html#what-goes-into-a-dmp",
+    "title": "How Research is Made Reproducible",
+    "section": "What Goes Into a DMP?",
+    "text": "What Goes Into a DMP?\n\n\n\nDocumentation\nWhat data will you collect and how? Which formats? A codebook describing every variable (name, question wording, coding, missing values) so the data are interpretable without you.\n\n\n\nStorage & Ethics\nWhere do the data live, how are they backed up (3-2-1 rule), who has access? How are participants protected, including informed consent, anonymization or pseudonymization, legal requirements?\n\n\n\nSharing & Preservation\nWhich data can be shared, where, under what license, and when? What is archived long-term (typically 10 years) and in which trusted repository?"
+  },
+  {
+    "objectID": "reproducibility.html#fair-data",
+    "href": "reproducibility.html#fair-data",
+    "title": "How Research is Made Reproducible",
+    "section": "FAIR Data",
+    "text": "FAIR Data\n\nThe guiding standard for shared research data (Wilkinson et al., 2016), data should be FAIR:\n\n\n\n\nF\nFindable — deposited with a persistent identifier (DOI) and rich metadata\n\n\nA\nAccessible — retrievable via standard protocols; access conditions are clear\n\n\nI\nInteroperable — open formats (CSV, not only SPSS), standard vocabularies\n\n\nR\nReusable — clear license, provenance, and enough documentation to reuse\n\n\n\n\nImportant: FAIR ≠ open. The principle is “as open as possible, as closed as necessary.” Sensitive data can be FAIR while under restricted access."
+  },
+  {
+    "objectID": "reproducibility.html#practical-habits-that-cost-practically-nothing",
+    "href": "reproducibility.html#practical-habits-that-cost-practically-nothing",
+    "title": "How Research is Made Reproducible",
+    "section": "Practical Habits That Cost Practically Nothing",
+    "text": "Practical Habits That Cost Practically Nothing\n\n\nFile naming: machine-readable, human-readable, sortable — 2026-07-08_study1_raw.csv, not data baru FINAL (2).sav. No spaces, no special characters, dates as YYYY-MM-DD.\nRaw data are sacred: store them read-only, in one place; all changes happen via scripts into data/processed/.\nWrite the codebook while you build the survey.\nChoose a repository, not a personal website: OSF, Zenodo, PsychData, RIN Dataverse (BRIN) — they provide DOIs and long-term preservation.\nPick a license so others know what they may do: e.g., CC0/CC-BY for data and materials, MIT/GPL for code.\nPlan consent for sharing: add data-sharing language to your informed consent now, as you cannot retroactively ask 800 anonymous participants."
+  },
+  {
+    "objectID": "reproducibility.html#section-3",
+    "href": "reproducibility.html#section-3",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "03\n\n\nPre-Registration"
+  },
+  {
+    "objectID": "reproducibility.html#the-problem-pre-registration-solves",
+    "href": "reproducibility.html#the-problem-pre-registration-solves",
+    "title": "How Research is Made Reproducible",
+    "section": "The Problem Pre-Registration Solves",
+    "text": "The Problem Pre-Registration Solves\n\nRemember the garden of forking paths: with enough flexibility, some significant result can almost always be found.\nStatistics can only do its job if the distinction between two modes of research is honest:\n\nConfirmatory research: hypotheses specified before seeing the data → p-values are meaningful tests.\nExploratory research: patterns discovered in the data → valuable for generating hypotheses, but p-values no longer mean what they claim.\n\nBoth are legitimate! The problem is presenting exploration as confirmation (HARKing).\nPre-registration restores the distinction: you write down your hypotheses, design, and analysis plan before data collection, in a time-stamped, read-only registry (Nosek et al., 2018)."
+  },
+  {
+    "objectID": "reproducibility.html#from-my-own-work-locking-in-the-hypothesis-before-the-data",
+    "href": "reproducibility.html#from-my-own-work-locking-in-the-hypothesis-before-the-data",
+    "title": "How Research is Made Reproducible",
+    "section": "From My Own Work: Locking In the Hypothesis Before the Data",
+    "text": "From My Own Work: Locking In the Hypothesis Before the Data\n\nOne of my clearer examples: “Science and Religion in the Times of Crisis”, pre-registered on OSF.\n\n\n\nThe study tests the “dilution effect”: whether offering more explanations for a crisis reduces how useful people find each explanation (Jackson et al., 2024).\nI wrote the hypothesis down, in a time-stamped, public record, before I knew whether the data would support it.\nIt greatly helped me to plan my study better and defend my design choice when discussing it with my supervisor.\nWhatever came back, I could not simply reframe the study afterward as “this is what I predicted all along.” The time-stamp made that impossible and that helps keeping me honest with myself.\nI have pre-registered every study I have run since 2021.\n\nIt is now simply normal part of designing a study."
+  },
+  {
+    "objectID": "reproducibility.html#what-goes-into-a-pre-registration",
+    "href": "reproducibility.html#what-goes-into-a-pre-registration",
+    "title": "How Research is Made Reproducible",
+    "section": "What Goes Into a Pre-Registration?",
+    "text": "What Goes Into a Pre-Registration?\n\nFree registries with templates: OSF Registries and AsPredicted. Typical contents:\n\n\n\n\nHypotheses & Design\nDirectional hypotheses, IVs and DVs with exact operationalizations, study design, conditions, and procedure.\n\n\n\nSample & Exclusions\nTarget sample size with justification (e.g., power analysis), stopping rule, and exclusion criteria.\n\n\n\nAnalysis Plan\nThe exact statistical model for each hypothesis, handling of missing data and outliers, inference criteria plus what you will do if assumptions fail."
+  },
+  {
+    "objectID": "reproducibility.html#common-worries-and-why-theyre-mostly-unfounded",
+    "href": "reproducibility.html#common-worries-and-why-theyre-mostly-unfounded",
+    "title": "How Research is Made Reproducible",
+    "section": "Common Worries (and Why They’re Mostly Unfounded)",
+    "text": "Common Worries (and Why They’re Mostly Unfounded)\n\n“It’s a prison — I can’t deviate.” You can! Deviations are fine; you just report them transparently (“we deviated from the plan because…”). The registry only makes deviations visible.\n“It kills exploration.” No. You can explore freely; results are simply labelled as exploratory. Many templates even have a section for planned exploratory analyses.\n“Someone will scoop my idea.” Registrations can be embargoed (kept private) until you publish.\n“It’s too much work.” An AsPredicted registration is 9 questions. And most of it is text you need for your ethics application and methods section anyway. You are basically writing it earlier.\nCaveat: pre-registration is not magic. Many pre-registrations are vague, and deviations are common and often unreported (van den Akker et al., 2024). The value comes from specific plans and transparent reporting, which is a skill you can practice from your very first study."
+  },
+  {
+    "objectID": "reproducibility.html#section-4",
+    "href": "reproducibility.html#section-4",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "04\n\n\nLiterate Programming"
+  },
+  {
+    "objectID": "reproducibility.html#the-copy-paste-workflow-a.k.a.-how-errors-are-born",
+    "href": "reproducibility.html#the-copy-paste-workflow-a.k.a.-how-errors-are-born",
+    "title": "How Research is Made Reproducible",
+    "section": "The Copy-Paste Workflow (a.k.a. How Errors Are Born)",
+    "text": "The Copy-Paste Workflow (a.k.a. How Errors Are Born)\n\nThe traditional workflow in psychology looks like this:\n\n\nRun the analysis in SPSS by clicking through menus…\n…copy the numbers into a Word document by hand…\n…format the table manually…\n…then a reviewer asks you to exclude three participants and you do all of it again, hoping you click the same buttons.\nEvery manual step is a place where errors sneak in and nobody (including you) can later verify what exactly was done.\n\nEven if someone were to check, it would take a tremendous amount of effort, time, and energy to do so.\n\nRoughly half of published psychology papers contain at least one inconsistent statistic — e.g., a p-value that does not match its own test statistic (Nuijten et al., 2016)."
+  },
+  {
+    "objectID": "reproducibility.html#section-5",
+    "href": "reproducibility.html#section-5",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.\n\n\nDonald Knuth (1984), Literate Programming"
+  },
+  {
+    "objectID": "reproducibility.html#literate-programming-one-document-to-rule-them-all",
+    "href": "reproducibility.html#literate-programming-one-document-to-rule-them-all",
+    "title": "How Research is Made Reproducible",
+    "section": "Literate Programming: One Document to Rule Them All",
+    "text": "Literate Programming: One Document to Rule Them All\n\nIdea: weave your narrative text, your analysis code, and its output (tables, figures, statistics) into a single document that regenerates itself.\n\n\nYou write text and code together; one click (“Render”) runs all code and produces the finished report, so numbers, tables and figures are inserted automatically.\nChange the data or the analysis → re-render → every number in the document updates itself without having to manually copy-paste the numbers.\nThe document is the audit trail: anyone can see exactly which code produced which result.\nFun fact: these very slides are literate programming😉 This is a Quarto document rendered to a presentation."
+  },
+  {
+    "objectID": "reproducibility.html#from-my-own-work-where-the-ladder-bent",
+    "href": "reproducibility.html#from-my-own-work-where-the-ladder-bent",
+    "title": "How Research is Made Reproducible",
+    "section": "From My Own Work: Where the Ladder Bent",
+    "text": "From My Own Work: Where the Ladder Bent\n\nI pre-registered diligently for years before I learned Quarto. Literate programming was the rung I picked up much after and it changed how I write my papers.\n\n\n\nEvery project folder is also a Git repository — a full history of every change (version control), so I (or a reviewer) can see exactly how a number came to be.\n\nExample of version control for this presentation.\n\nThe document pulls numbers directly from the analysis.\n\nI stopped hand-typing results into Word, which is exactly the step where copy-paste errors used to creep in.\n\nReal example: grm-tutorial-paper, the repository behind a published paper written entirely as a literate document.\nA pleasantly suprising bonus😉: editors and reviewers comment on how organized the project looks.\n\nThat’s actually not the point of literate programming, but it doesn’t hurt your reputation either."
+  },
+  {
+    "objectID": "reproducibility.html#the-tools",
+    "href": "reproducibility.html#the-tools",
+    "title": "How Research is Made Reproducible",
+    "section": "The Tools",
+    "text": "The Tools\n\nAll free, all open source, all with huge communities and tutorials:\n\n\n\n\nQuarto/R Markdown\nText (Markdown) + chunks of R/Python code → papers, slides, websites, dissertations. Together with R and RStudio/Positron. quarto.org\n\n\n\nJupyter Notebooks\nInteractive notebooks for Python (and R, Julia). Common in data science and computational modelling. jupyter.org\n\n\n\nGit & GitHub/OSF\nVersion control: a full history of every change to your code and text, which “track changes” for your whole project, so no more disertasi_final_v7_BISMILLAH.docx."
+  },
+  {
+    "objectID": "reproducibility.html#what-it-looks-like",
+    "href": "reproducibility.html#what-it-looks-like",
+    "title": "How Research is Made Reproducible",
+    "section": "What It Looks Like",
+    "text": "What It Looks Like\nInstead of copying numbers, you write:\n```{r}\ndata &lt;- read.csv(here::here(\"data\", \"processed\", \"study1.csv\"))\nmodel &lt;- lm(wellbeing ~ social_media_use + age, data = data)\n```\nAnd in your text you write:\nSocial media use was negatively associated with wellbeing,\nb = `r round(coef(model)[2], 2)`.\n\nWhen rendered, `r ` is replaced by the actual value computed from the data so it is always current, never mistyped.\nPackages like papaja and apaquarto (APA manuscripts) and apaTables format entire result sections for you."
+  },
+  {
+    "objectID": "reproducibility.html#beyond-the-document-a-reproducible-project",
+    "href": "reproducibility.html#beyond-the-document-a-reproducible-project",
+    "title": "How Research is Made Reproducible",
+    "section": "Beyond the Document: A Reproducible Project",
+    "text": "Beyond the Document: A Reproducible Project\n\nLiterate programming works best inside a well-organized project:\n\n\n\nOne folder per project, with a standard structure: data/raw/ (read-only!), data/processed/, scripts/, output/, README.md.\nRelative paths, never absolute ones: here::here(\"data\", \"raw\", \"survey.csv\") instead of C:/Users/amelia/Desktop/... — so it runs on any computer, not just yours.\nSet a seed (set.seed(42)) whenever randomness is involved, so results are identical on every run.\nRecord your environment: package versions change! Tools like renv () or renv + pyenv () snapshot the exact versions you used.\nNever edit raw data by hand — every cleaning step happens in a script, so the path from raw data to final table is fully documented. Always keep your raw data untouched."
+  },
+  {
+    "objectID": "reproducibility.html#computational-empathy",
+    "href": "reproducibility.html#computational-empathy",
+    "title": "How Research is Made Reproducible",
+    "section": "Computational Empathy",
+    "text": "Computational Empathy\n\nThe mindset behind all of these habits is what The Turing Way calls it computational empathy: anticipating the needs of the person who will try to run your work without you in the room.\n\n\nThat person does not have your folder structure, your installed packages, your operating system or the crucial detail that lives only in your head (“oh, you have to run script 2 before script 1”).\nAsk yourself: could a stranger on a different computer, with no chance to email me get from my raw data to my results?\nIn practice, computational empathy means:\n\na README that says what the project is, what is where, and in which order to run things;\nstating requirements up front: software, package versions (renv!), expected run time;\ncommenting the “why” in your code;\navoiding hidden dependencies — no absolute paths, no “manually delete row 13 first,” no files that exist only on your desktop.\n\nThe kindest test: hand your project to a colleague and watch them try. Every question they ask is a missing piece of documentation.\nAnd remember: the stranger you are being kind to is usually future you."
+  },
+  {
+    "objectID": "reproducibility.html#section-6",
+    "href": "reproducibility.html#section-6",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "05\n\n\nRegistered Reports"
+  },
+  {
+    "objectID": "reproducibility.html#registered-reports-pre-registration-with-superpowers",
+    "href": "reproducibility.html#registered-reports-pre-registration-with-superpowers",
+    "title": "How Research is Made Reproducible",
+    "section": "Registered Reports: Pre-Registration with Superpowers🦸‍♀️🦸",
+    "text": "Registered Reports: Pre-Registration with Superpowers🦸‍♀️🦸\n\n\n\nA Registered Report (RR) is a journal article format where peer review happens before the results exist (Chambers & Tzavella, 2022).\n\n\nStage 1: you submit introduction, hypotheses, and detailed methods before data collection. Reviewers critique the design while you can still fix it.\n\nIf accepted, you receive In-Principle Acceptance (IPA): the journal commits to publishing your paper regardless of how the results turn out.\n\nStage 2: you run the study exactly as approved, submit the full paper; reviewers only check that you followed the plan and interpreted results sensibly.\nPublication no longer depends on getting “exciting” results → publication bias is cut off at the root, and p-hacking loses its purpose."
+  },
+  {
+    "objectID": "reproducibility.html#from-my-own-work-the-rung-that-took-2.5-years",
+    "href": "reproducibility.html#from-my-own-work-the-rung-that-took-2.5-years",
+    "title": "How Research is Made Reproducible",
+    "section": "From My Own Work: The Rung That Took ~2.5 Years",
+    "text": "From My Own Work: The Rung That Took ~2.5 Years\n\nI have now been part of three published Registered Reports. This is the one I first-authored, and the one I’m proudest of.\n\n\n\nFrom first conceiving the design to the paper appearing in print: about two and a half years.\nPublished as a Registered Report; postprint available open-access on PsyArXiv.\nIt was slow, and at several points frustrating.\n\nStage 1 review sent me back to redesign before collecting a single data point.\nThat was uncomfortable, but it is the entire benefit: I fixed problems early on paper, not after running several studies with ~300 participants.\n\nI would not have attempted this as my first reproducibility practice. It only made sense once pre-registration and literate programming were already regular habits."
+  },
+  {
+    "objectID": "reproducibility.html#does-it-work",
+    "href": "reproducibility.html#does-it-work",
+    "title": "How Research is Made Reproducible",
+    "section": "Does It Work?",
+    "text": "Does It Work?\n\n\n\n96%\nof standard psychology articles report positive (hypothesis-confirming) results — a statistically implausible success rate\n\n\n44%\nof Registered Reports report positive results (Scheel, Schijen, & Lakens, 2021)\n\n\n300+\njournals now offer the RR format, incl. Nature Human Behaviour, Cortex, and many top psychology journals (COS list)\n\n\n\n\nRRs are also rated as more rigorous and higher quality than comparable standard papers (Soderberg et al., 2021)."
+  },
+  {
+    "objectID": "reproducibility.html#registered-reports-and-your-phd",
+    "href": "reproducibility.html#registered-reports-and-your-phd",
+    "title": "How Research is Made Reproducible",
+    "section": "Registered Reports and Your PhD",
+    "text": "Registered Reports and Your PhD\n\n\nThe reviewer feedback arrives when it is useful, before you spend a year collecting data.\nIPA is a publication guarantee you can plan a dissertation around: no more praying for significant results in study 3 of 3.\nNull results become publishable findings, not wasted years, which is honest science and good for your track record.\nTiming matters: Stage 1 review takes time, so RRs suit studies planned well in advance (perfect for a PhD proposal!), but less suited for quick pilot work.\nIn some cases, reviewers may request a pilot study first to justify the design proposed in the RR.\nSome journals offer fast-track or scheduled review for student projects; Peer Community In RR (PCI RR) reviews Stage 1 protocols journal-independently.\nTalk to your supervisor and co-supervisor early: an RR-based dissertation chapter is increasingly common and highly valuable for one’s scientific career.\n\nProbably, not yet a common practice in Airlangga, but it is getting common in many parts of the world."
+  },
+  {
+    "objectID": "reproducibility.html#section-7",
+    "href": "reproducibility.html#section-7",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "06\n\n\nConclusions"
+  },
+  {
+    "objectID": "reproducibility.html#where-i-started",
+    "href": "reproducibility.html#where-i-started",
+    "title": "How Research is Made Reproducible",
+    "section": "Where I Started",
+    "text": "Where I Started\n\nStart with the transparency you need, not the transparency you want. Here is the order I actually climbed:\n\n\n\nData Management Plan — lowest barrier, most immediate payoff. I started here because it directly helped the study I was running right then.\nPre-registration — once organizing data was routine, planning the analysis in advance was the natural next commitment.\nLiterate programming — a technical skill I built once pre-registration had already made me think in terms of “the plan, written down.”\nRegistered Report — the hardest rung, and the one that took 2.5 years. I would not have started here.\n\n\nAll of these happened over roughly 15 years, started from one habit at a time."
+  },
+  {
+    "objectID": "reproducibility.html#the-big-picture",
+    "href": "reproducibility.html#the-big-picture",
+    "title": "How Research is Made Reproducible",
+    "section": "The Big Picture",
+    "text": "The Big Picture\n\nPlan → write a data management plan; pre-register your hypotheses and analysis plan — or go all-in with a registered report.\nDo → organize your project in one folder; keep raw data read-only; analyze with literate programming so every result is regenerable with one click.\nShare → deposit data (FAIR!), code, and materials in a trusted repository with a DOI and a license; link everything from the paper, with enough computational empathy that a stranger can actually run it.\nThese practices only require habits, and habits are easiest to build now, at the start of your PhD, before you have legacy chaos to untangle.\nReproducibility is a spectrum, not a purity yes/no test: every step (a codebook here, a script there) already makes your work more trustworthy than without doing anything."
+  },
+  {
+    "objectID": "reproducibility.html#your-starter-kit-for-your-1st-year",
+    "href": "reproducibility.html#your-starter-kit-for-your-1st-year",
+    "title": "How Research is Made Reproducible",
+    "section": "Your Starter Kit for Your 1st Year",
+    "text": "Your Starter Kit for Your 1st Year\n\nConcrete first steps:\n\n\n\n\nThis Week\nCreate a free Zenodo account. Set up your first project with a clean folder structure and a README. Rename your files properly (yes, all of them).\n\n\n\nThis Month\nLearn how to use  and Quarto or R Markdown by trying out available tutorials (Intro to , R4DS, Quarto TPG). Then, write your next assignment as a literate document. Draft a one-page DMP for your dissertation project.\n\n\n\nThis Year\nPre-register your first study on OSF or AsPredicted. Discuss with your supervisor whether a chapter could become a Registered Report."
+  },
+  {
+    "objectID": "reproducibility.html#where-to-learn-more",
+    "href": "reproducibility.html#where-to-learn-more",
+    "title": "How Research is Made Reproducible",
+    "section": "Where to Learn More",
+    "text": "Where to Learn More\n\n\nThe Turing Way — a free, community-written handbook on reproducible research (start with the “Guide for Reproducible Research”).\nFORRT — Framework for Open and Reproducible Research Training: glossaries, curated resources, summaries of the key literature.\nOSF support pages — hands-on guides for projects, registrations, and preprints.\nquarto.org — official tutorials for literate programming with R and Python.\nRiverbank reading: Munafò et al. (2017), A manifesto for reproducible science — the best single overview paper to start with.\nFind your local open science community (e.g., Airlangga Open Science) — reproducibility is much easier, and more fun, together."
+  },
+  {
+    "objectID": "reproducibility.html#section-8",
+    "href": "reproducibility.html#section-8",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "Your closest collaborator is you six months ago, but you don’t reply to emails.\n\n\nMark Holder (popularized by Karl Broman) — make life easy for future you."
+  },
+  {
+    "objectID": "reproducibility.html#section-9",
+    "href": "reproducibility.html#section-9",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "Dr. Rizqy Amelia Zein\nCenter for Advanced Internet Studies (CAIS) & Universitas Airlangga\nE-mail: amelia.zein@cais-research.de · Homepage: rameliaz.github.io\n\n\n\n\n\n\n\nThank you!\nSelamat datang & selamat memulai perjalanan doktoral Anda😉🎉\n\n\n\nCenter for Advanced Internet Studies (CAIS) gGmbH\nKonrad-Zuse-Str. 2a, 44801 Bochum\n\n\ninfo@cais-research.de\n+49 234 9531 5000\nwww.cais-research.de"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "How Research is Made Reproducible",
+    "section": "",
+    "text": "Choose your language/Pilih bahasa:\n\n🇬🇧 English\nA first-person perspective on open and reproducible science\n🇮🇩 Bahasa Indonesia\nMemastikan riset dapat direka ulang dari sudut pandang orang pertama"
+  },
+  {
     "objectID": "reproducibility-id.html#agenda",
     "href": "reproducibility-id.html#agenda",
     "title": "Agar Riset Dapat Direka Ulang",
@@ -320,327 +810,5 @@
     "title": "Agar Riset Dapat Direka Ulang",
     "section": "",
     "text": "Dr. Rizqy Amelia Zein\nCenter for Advanced Internet Studies (CAIS) & Universitas Airlangga\nE-mail: amelia.zein@cais-research.de · Homepage: rameliaz.github.io\n\n\n\n\n\n\n\nTerima kasih!\nSelamat datang & selamat memulai perjalanan doktoral Anda😉🎉\n\n\n\nCenter for Advanced Internet Studies (CAIS) gGmbH\nKonrad-Zuse-Str. 2a, 44801 Bochum\n\n\ninfo@cais-research.de\n+49 234 9531 5000\nwww.cais-research.de"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "Choose your language/Pilih bahasa:\n\n🇬🇧 English\nA first-person perspective on open and reproducible science\n🇮🇩 Bahasa Indonesia\nMemastikan riset dapat direka ulang dari sudut pandang orang pertama"
-  },
-  {
-    "objectID": "reproducibility.html#agenda",
-    "href": "reproducibility.html#agenda",
-    "title": "How Research is Made Reproducible",
-    "section": "AGENDA",
-    "text": "AGENDA\n\n\nReplication Crisis and Why Does Reproducibility Matters\nData Management Plan\nPre-Registration\nLiterate Programming\nRegistered Reports\nConclusions"
-  },
-  {
-    "objectID": "reproducibility.html#section",
-    "href": "reproducibility.html#section",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "01\n\n\nReplication Crisis — and Why Reproducibility Matters"
-  },
-  {
-    "objectID": "reproducibility.html#lets-start-with-a-thought-experiment",
-    "href": "reproducibility.html#lets-start-with-a-thought-experiment",
-    "title": "How Research is Made Reproducible",
-    "section": "Let’s Start With a Thought Experiment",
-    "text": "Let’s Start With a Thought Experiment\n\nYou read a fascinating finding in a top journal and want to build your dissertation on it.\n\n\nQuestion 1: If another team ran the same study again with new participants, would they find the same result?\nQuestion 2: If you took the original data and the original analysis code, would you get the same numbers reported in the paper?\nIntuitively, we assume the answer to both is “yes, of course it should be! It’s published science in a top Q1 journal!”\nOver the last 15 years, researchers actually checked. The answers were… rather uncomfortable."
-  },
-  {
-    "objectID": "reproducibility.html#how-it-started-early-2010s",
-    "href": "reproducibility.html#how-it-started-early-2010s",
-    "title": "How Research is Made Reproducible",
-    "section": "How It Started (early 2010s)",
-    "text": "How It Started (early 2010s)\n\n2011 — Bem’s “precognition” paper: a top journal (Journal of Personality and Social Psychology - JPSP) published evidence that people can feel the future (Bem, 2011) by using standard methods and standard statistics. If the method can “prove” the impossible, what does that say about the method?\n2011 — The Stapel fraud case: a prominent social psychologist was found to have fabricated data in dozens of published papers.\n2011 — “False-Positive Psychology” (Simmons, Nelson, & Simonsohn): showed that ordinary, small, undisclosed analytic choices can make anything statistically significant — they “demonstrated” that listening to a song makes people feel younger.\nThese events triggered a field-wide question: how much of our literature can we actually trust?"
-  },
-  {
-    "objectID": "reproducibility.html#but-the-problem-started-much-earlier-than-that",
-    "href": "reproducibility.html#but-the-problem-started-much-earlier-than-that",
-    "title": "How Research is Made Reproducible",
-    "section": "But the problem started much earlier than that",
-    "text": "But the problem started much earlier than that"
-  },
-  {
-    "objectID": "reproducibility.html#the-multi-site-replication-projects",
-    "href": "reproducibility.html#the-multi-site-replication-projects",
-    "title": "How Research is Made Reproducible",
-    "section": "The Multi-Site Replication Projects",
-    "text": "The Multi-Site Replication Projects\n\nLarge teams systematically re-ran published studies with new data, and here is what came back:\n\n\n\n\n36%\nof 100 psychology studies replicated — Open Science Collaboration (2015)\n\n\n61%\nof 18 economics lab experiments replicated — Camerer et al. (2016)\n\n\n62%\nof 21 social-science studies from Nature & Science replicated — Camerer et al. (2018)\n\n\n49%\nof 164 papers across 12 disciplines replicated — COS SCORE project (Nature, April 2026)\n\n\n\n\nEven when effects did replicate, they were on average only about half as large as originally reported (i.e., “The Decline Effect”) — SCORE found the same pattern again in 2026.\nSCORE is the largest check yet: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). Reproducing published analyses on the original data succeeded only 54% of the time.\nThis pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the “replication crisis.”"
-  },
-  {
-    "objectID": "reproducibility.html#three-words-you-must-not-confuse",
-    "href": "reproducibility.html#three-words-you-must-not-confuse",
-    "title": "How Research is Made Reproducible",
-    "section": "Three Words You Must Not Confuse",
-    "text": "Three Words You Must Not Confuse\n\nFollowing Barba (2018) and The Turing Way, people mix these up all the time:\n\n\n\n\nReproducibility (🇮🇩 “reka ulang”)\nSame data + same analysis → same result. Someone else (or future you) re-runs your analysis on your data and gets the numbers in your paper.\n\n\n\nReplicability (🇮🇩 “coba ulang”)\nNew data + same method → similar result. An independent team repeats the study with new participants and finds a comparable effect.\n\n\n\nRobustness (🇮🇩 “keandalan”)\nSame data + new analysis → same result or at least, similar conclusion. The finding remains stable when different analytical strategies are used."
-  },
-  {
-    "objectID": "reproducibility.html#notice-the-differences",
-    "href": "reproducibility.html#notice-the-differences",
-    "title": "How Research is Made Reproducible",
-    "section": "Notice the Differences",
-    "text": "Notice the Differences"
-  },
-  {
-    "objectID": "reproducibility.html#the-really-uncomfortable-part",
-    "href": "reproducibility.html#the-really-uncomfortable-part",
-    "title": "How Research is Made Reproducible",
-    "section": "The Really Uncomfortable Part",
-    "text": "The Really Uncomfortable Part\n\nLet’s forget collecting new data (i.e., replication) for a moment. Can we even reproduce the original numbers from the original data? (i.e., “reproducibility”)\n\n\nHardwicke et al. (2018) tried to reproduce results from papers with mandatory open data in the journal Cognition: only 11 of 35 papers were reproducible without help from the original authors.\nArtner et al. (2021) could reproduce only ~70% of major statistical claims from published psychology articles and some only after considerable detective work.\nCrüwell et al. (2023) checked “open data” badges in Psychological Science: only 1 out of 14 articles was rated fully computationally reproducible.\nAnd this directly affects people’s lives: the famous Reinhart & Rogoff austerity paper, which is widely used to justify real economic policies, contained a simple Excel error discovered only when a graduate student got the spreadsheet (Herndon et al., 2014)."
-  },
-  {
-    "objectID": "reproducibility.html#why-does-this-happen",
-    "href": "reproducibility.html#why-does-this-happen",
-    "title": "How Research is Made Reproducible",
-    "section": "Why Does This Happen?",
-    "text": "Why Does This Happen?\n\nIt’s mostly not fraud, but rather ordinary incentives acting on ordinary humans.\n\n\nPublication bias: journals prefer novel, positive, “clean” results. Therefore, null results are often being kept into the file drawer.\nPublish or perish: careers are built on the number of publications, not on their substantive quality.\nQuestionable research practices (QRPs): a grey zone between good practice and misconduct (John et al., 2012):\n\np-hacking: trying many analyses and reporting the one that “works”\nHARKing: Hypothesizing After the Results are Known — presenting an exploratory finding as if predicted (Kerr, 1998)\nSelective reporting of measures, conditions, or outcomes\n\nThe garden of forking paths: even without bad intent, every dataset offers countless defensible analysis choices, thus flexibility in analytical choices can inflate false positives (Gelman & Loken, 2014)."
-  },
-  {
-    "objectID": "reproducibility.html#section-1",
-    "href": "reproducibility.html#section-1",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.\n\n\nBuckheit & Donoho (1995), paraphrasing Jon Claerbout"
-  },
-  {
-    "objectID": "reproducibility.html#why-should-you-care",
-    "href": "reproducibility.html#why-should-you-care",
-    "title": "How Research is Made Reproducible",
-    "section": "Why Should You Care?",
-    "text": "Why Should You Care?\n\nEnsuring that our results are reproducible gives us more confidence in our work.\n\n\n\nYour closest collaborator is you, six months ago and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.\nErrors get caught early, before they end up in your dissertation, your defense, or a retraction.\nInternational reviewers, supervisors, and committees increasingly expect it. Funders and journals now routinely require data, code, and analysis plans.\nIt makes you more efficient. Re-running an analysis after your supervisor/reviewers ask “please just add this one covariate” takes one click instead of one week.\nIt builds trust in your work. Reproducible research gets reused, cited, and extended."
-  },
-  {
-    "objectID": "reproducibility.html#a-reproducibility-ladder",
-    "href": "reproducibility.html#a-reproducibility-ladder",
-    "title": "How Research is Made Reproducible",
-    "section": "A “Reproducibility Ladder”🪜",
-    "text": "A “Reproducibility Ladder”🪜\n\nStart with the practice you really need, not the one you want. The four practices in this talk are not supposed to be a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.\n\n\nRung 1 — Data Management Plan: lowest barrier, most direct benefit. A folder that anyone, including future you, can navigate.\nRung 2 — Pre-Registration: a planning discipline — write the hypothesis down before you know the answer.\nRung 3 — Literate Programming: a technical habit — let the document compute itself instead of copying numbers by hand.\nRung 4 — Registered Reports: the biggest commitment — peer-review before results exist, usually takes a longer time than the traditional route from planning to publication.\n\n\n\n\n\n\n\n\nThis is the order I personally climbed it, over about 15 years of my scientific career. I’ll show you what each rung actually looked like from where I stood."
-  },
-  {
-    "objectID": "reproducibility.html#section-2",
-    "href": "reproducibility.html#section-2",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "02\n\n\nData Management Plan"
-  },
-  {
-    "objectID": "reproducibility.html#what-is-a-data-management-plan-dmp",
-    "href": "reproducibility.html#what-is-a-data-management-plan-dmp",
-    "title": "How Research is Made Reproducible",
-    "section": "What Is a Data Management Plan (DMP)?",
-    "text": "What Is a Data Management Plan (DMP)?\n\nA short, living document, written before you collect data, describing how data will be collected, documented, stored, protected, and shared.\n\n\nThink of it as answering, in advance: “If I disappeared tomorrow, could someone else find, understand, and use my data?”\nIncreasingly required by funders (DFG, ERC, NIH, and many national funders) and by ethics committees.\nIt forces the right questions at the right time, before problems become unfixable (e.g., a consent form that forbids data sharing).\nFree tools with templates and guidance: DMPTool and DMPonline.\nThese are some good examples: Example 1, Example 2, Example 3, DCC UK DMP Database."
-  },
-  {
-    "objectID": "reproducibility.html#from-my-own-work-writing-the-dmp-habit-into-a-live-project",
-    "href": "reproducibility.html#from-my-own-work-writing-the-dmp-habit-into-a-live-project",
-    "title": "How Research is Made Reproducible",
-    "section": "From My Own Work: Writing the DMP Habit Into a Live Project",
-    "text": "From My Own Work: Writing the DMP Habit Into a Live Project\n\nI’m working on a scoping review of reproducibility practices in economics and social science, which is a part of a larger project I’m participated in. The structure of the working folder looks like this:\n\n\nlitsearch/\n├── codes/                        R scripts\n├── coding/                       Codebooks, coding sheets, and Google Form/Sheet\n├── dataset/                      Analysis-ready datasets exported from coding\n├── output/\n│   ├── search_output/            Literature search pipeline outputs (01–11)\n│   ├── analysis_output/          Tables and figures from the analysis\n│   └── cleaning_log/             Data-quality flags from response cleaning\n└── protocol_logbook.docx         Protocol and decisions logbook\n\nEvery file also gets one sentence of description — e.g. 10_final_set.xlsx: “The 145-paper final corpus… verified against Zotero subcollection RIS exports.” See the README here.\nBenefit #1 — future me: I come back to this folder after months on other tasks and know exactly where to look.\nBenefit #2 — future readers: when this becomes a published paper (hopefully!), reviewers and readers can verify anything I did."
-  },
-  {
-    "objectID": "reproducibility.html#what-goes-into-a-dmp",
-    "href": "reproducibility.html#what-goes-into-a-dmp",
-    "title": "How Research is Made Reproducible",
-    "section": "What Goes Into a DMP?",
-    "text": "What Goes Into a DMP?\n\n\n\nDocumentation\nWhat data will you collect and how? Which formats? A codebook describing every variable (name, question wording, coding, missing values) so the data are interpretable without you.\n\n\n\nStorage & Ethics\nWhere do the data live, how are they backed up (3-2-1 rule), who has access? How are participants protected, including informed consent, anonymization or pseudonymization, legal requirements?\n\n\n\nSharing & Preservation\nWhich data can be shared, where, under what license, and when? What is archived long-term (typically 10 years) and in which trusted repository?"
-  },
-  {
-    "objectID": "reproducibility.html#fair-data",
-    "href": "reproducibility.html#fair-data",
-    "title": "How Research is Made Reproducible",
-    "section": "FAIR Data",
-    "text": "FAIR Data\n\nThe guiding standard for shared research data (Wilkinson et al., 2016), data should be FAIR:\n\n\n\n\nF\nFindable — deposited with a persistent identifier (DOI) and rich metadata\n\n\nA\nAccessible — retrievable via standard protocols; access conditions are clear\n\n\nI\nInteroperable — open formats (CSV, not only SPSS), standard vocabularies\n\n\nR\nReusable — clear license, provenance, and enough documentation to reuse\n\n\n\n\nImportant: FAIR ≠ open. The principle is “as open as possible, as closed as necessary.” Sensitive data can be FAIR while under restricted access."
-  },
-  {
-    "objectID": "reproducibility.html#practical-habits-that-cost-practically-nothing",
-    "href": "reproducibility.html#practical-habits-that-cost-practically-nothing",
-    "title": "How Research is Made Reproducible",
-    "section": "Practical Habits That Cost Practically Nothing",
-    "text": "Practical Habits That Cost Practically Nothing\n\n\nFile naming: machine-readable, human-readable, sortable — 2026-07-08_study1_raw.csv, not data baru FINAL (2).sav. No spaces, no special characters, dates as YYYY-MM-DD.\nRaw data are sacred: store them read-only, in one place; all changes happen via scripts into data/processed/.\nWrite the codebook while you build the survey.\nChoose a repository, not a personal website: OSF, Zenodo, PsychData, RIN Dataverse (BRIN) — they provide DOIs and long-term preservation.\nPick a license so others know what they may do: e.g., CC0/CC-BY for data and materials, MIT/GPL for code.\nPlan consent for sharing: add data-sharing language to your informed consent now, as you cannot retroactively ask 800 anonymous participants."
-  },
-  {
-    "objectID": "reproducibility.html#section-3",
-    "href": "reproducibility.html#section-3",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "03\n\n\nPre-Registration"
-  },
-  {
-    "objectID": "reproducibility.html#the-problem-pre-registration-solves",
-    "href": "reproducibility.html#the-problem-pre-registration-solves",
-    "title": "How Research is Made Reproducible",
-    "section": "The Problem Pre-Registration Solves",
-    "text": "The Problem Pre-Registration Solves\n\nRemember the garden of forking paths: with enough flexibility, some significant result can almost always be found.\nStatistics can only do its job if the distinction between two modes of research is honest:\n\nConfirmatory research: hypotheses specified before seeing the data → p-values are meaningful tests.\nExploratory research: patterns discovered in the data → valuable for generating hypotheses, but p-values no longer mean what they claim.\n\nBoth are legitimate! The problem is presenting exploration as confirmation (HARKing).\nPre-registration restores the distinction: you write down your hypotheses, design, and analysis plan before data collection, in a time-stamped, read-only registry (Nosek et al., 2018)."
-  },
-  {
-    "objectID": "reproducibility.html#from-my-own-work-locking-in-the-hypothesis-before-the-data",
-    "href": "reproducibility.html#from-my-own-work-locking-in-the-hypothesis-before-the-data",
-    "title": "How Research is Made Reproducible",
-    "section": "From My Own Work: Locking In the Hypothesis Before the Data",
-    "text": "From My Own Work: Locking In the Hypothesis Before the Data\n\nOne of my clearer examples: “Science and Religion in the Times of Crisis”, pre-registered on OSF.\n\n\n\nThe study tests the “dilution effect”: whether offering more explanations for a crisis reduces how useful people find each explanation (Jackson et al., 2024).\nI wrote the hypothesis down, in a time-stamped, public record, before I knew whether the data would support it.\nIt greatly helped me to plan my study better and defend my design choice when discussing it with my supervisor.\nWhatever came back, I could not simply reframe the study afterward as “this is what I predicted all along.” The time-stamp made that impossible and that helps keeping me honest with myself.\nI have pre-registered every study I have run since 2021.\n\nIt is now simply normal part of designing a study."
-  },
-  {
-    "objectID": "reproducibility.html#what-goes-into-a-pre-registration",
-    "href": "reproducibility.html#what-goes-into-a-pre-registration",
-    "title": "How Research is Made Reproducible",
-    "section": "What Goes Into a Pre-Registration?",
-    "text": "What Goes Into a Pre-Registration?\n\nFree registries with templates: OSF Registries and AsPredicted. Typical contents:\n\n\n\n\nHypotheses & Design\nDirectional hypotheses, IVs and DVs with exact operationalizations, study design, conditions, and procedure.\n\n\n\nSample & Exclusions\nTarget sample size with justification (e.g., power analysis), stopping rule, and exclusion criteria.\n\n\n\nAnalysis Plan\nThe exact statistical model for each hypothesis, handling of missing data and outliers, inference criteria plus what you will do if assumptions fail."
-  },
-  {
-    "objectID": "reproducibility.html#common-worries-and-why-theyre-mostly-unfounded",
-    "href": "reproducibility.html#common-worries-and-why-theyre-mostly-unfounded",
-    "title": "How Research is Made Reproducible",
-    "section": "Common Worries (and Why They’re Mostly Unfounded)",
-    "text": "Common Worries (and Why They’re Mostly Unfounded)\n\n“It’s a prison — I can’t deviate.” You can! Deviations are fine; you just report them transparently (“we deviated from the plan because…”). The registry only makes deviations visible.\n“It kills exploration.” No. You can explore freely; results are simply labelled as exploratory. Many templates even have a section for planned exploratory analyses.\n“Someone will scoop my idea.” Registrations can be embargoed (kept private) until you publish.\n“It’s too much work.” An AsPredicted registration is 9 questions. And most of it is text you need for your ethics application and methods section anyway. You are basically writing it earlier.\nCaveat: pre-registration is not magic. Many pre-registrations are vague, and deviations are common and often unreported (van den Akker et al., 2024). The value comes from specific plans and transparent reporting, which is a skill you can practice from your very first study."
-  },
-  {
-    "objectID": "reproducibility.html#section-4",
-    "href": "reproducibility.html#section-4",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "04\n\n\nLiterate Programming"
-  },
-  {
-    "objectID": "reproducibility.html#the-copy-paste-workflow-a.k.a.-how-errors-are-born",
-    "href": "reproducibility.html#the-copy-paste-workflow-a.k.a.-how-errors-are-born",
-    "title": "How Research is Made Reproducible",
-    "section": "The Copy-Paste Workflow (a.k.a. How Errors Are Born)",
-    "text": "The Copy-Paste Workflow (a.k.a. How Errors Are Born)\n\nThe traditional workflow in psychology looks like this:\n\n\nRun the analysis in SPSS by clicking through menus…\n…copy the numbers into a Word document by hand…\n…format the table manually…\n…then a reviewer asks you to exclude three participants and you do all of it again, hoping you click the same buttons.\nEvery manual step is a place where errors sneak in and nobody (including you) can later verify what exactly was done.\n\nEven if someone were to check, it would take a tremendous amount of effort, time, and energy to do so.\n\nRoughly half of published psychology papers contain at least one inconsistent statistic — e.g., a p-value that does not match its own test statistic (Nuijten et al., 2016)."
-  },
-  {
-    "objectID": "reproducibility.html#section-5",
-    "href": "reproducibility.html#section-5",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.\n\n\nDonald Knuth (1984), Literate Programming"
-  },
-  {
-    "objectID": "reproducibility.html#literate-programming-one-document-to-rule-them-all",
-    "href": "reproducibility.html#literate-programming-one-document-to-rule-them-all",
-    "title": "How Research is Made Reproducible",
-    "section": "Literate Programming: One Document to Rule Them All",
-    "text": "Literate Programming: One Document to Rule Them All\n\nIdea: weave your narrative text, your analysis code, and its output (tables, figures, statistics) into a single document that regenerates itself.\n\n\nYou write text and code together; one click (“Render”) runs all code and produces the finished report, so numbers, tables and figures are inserted automatically.\nChange the data or the analysis → re-render → every number in the document updates itself without having to manually copy-paste the numbers.\nThe document is the audit trail: anyone can see exactly which code produced which result.\nFun fact: these very slides are literate programming😉 This is a Quarto document rendered to a presentation."
-  },
-  {
-    "objectID": "reproducibility.html#from-my-own-work-where-the-ladder-bent",
-    "href": "reproducibility.html#from-my-own-work-where-the-ladder-bent",
-    "title": "How Research is Made Reproducible",
-    "section": "From My Own Work: Where the Ladder Bent",
-    "text": "From My Own Work: Where the Ladder Bent\n\nI pre-registered diligently for years before I learned Quarto. Literate programming was the rung I picked up much after and it changed how I write my papers.\n\n\n\nEvery project folder is also a Git repository — a full history of every change (version control), so I (or a reviewer) can see exactly how a number came to be.\n\nExample of version control for this presentation.\n\nThe document pulls numbers directly from the analysis.\n\nI stopped hand-typing results into Word, which is exactly the step where copy-paste errors used to creep in.\n\nReal example: grm-tutorial-paper, the repository behind a published paper written entirely as a literate document.\nA pleasantly suprising bonus😉: editors and reviewers comment on how organized the project looks.\n\nThat’s actually not the point of literate programming, but it doesn’t hurt your reputation either."
-  },
-  {
-    "objectID": "reproducibility.html#the-tools",
-    "href": "reproducibility.html#the-tools",
-    "title": "How Research is Made Reproducible",
-    "section": "The Tools",
-    "text": "The Tools\n\nAll free, all open source, all with huge communities and tutorials:\n\n\n\n\nQuarto/R Markdown\nText (Markdown) + chunks of R/Python code → papers, slides, websites, dissertations. Together with R and RStudio/Positron. quarto.org\n\n\n\nJupyter Notebooks\nInteractive notebooks for Python (and R, Julia). Common in data science and computational modelling. jupyter.org\n\n\n\nGit & GitHub/OSF\nVersion control: a full history of every change to your code and text, which “track changes” for your whole project, so no more disertasi_final_v7_BISMILLAH.docx."
-  },
-  {
-    "objectID": "reproducibility.html#what-it-looks-like",
-    "href": "reproducibility.html#what-it-looks-like",
-    "title": "How Research is Made Reproducible",
-    "section": "What It Looks Like",
-    "text": "What It Looks Like\nInstead of copying numbers, you write:\n```{r}\ndata &lt;- read.csv(here::here(\"data\", \"processed\", \"study1.csv\"))\nmodel &lt;- lm(wellbeing ~ social_media_use + age, data = data)\n```\nAnd in your text you write:\nSocial media use was negatively associated with wellbeing,\nb = `r round(coef(model)[2], 2)`.\n\nWhen rendered, `r ` is replaced by the actual value computed from the data so it is always current, never mistyped.\nPackages like papaja and apaquarto (APA manuscripts) and apaTables format entire result sections for you."
-  },
-  {
-    "objectID": "reproducibility.html#beyond-the-document-a-reproducible-project",
-    "href": "reproducibility.html#beyond-the-document-a-reproducible-project",
-    "title": "How Research is Made Reproducible",
-    "section": "Beyond the Document: A Reproducible Project",
-    "text": "Beyond the Document: A Reproducible Project\n\nLiterate programming works best inside a well-organized project:\n\n\n\nOne folder per project, with a standard structure: data/raw/ (read-only!), data/processed/, scripts/, output/, README.md.\nRelative paths, never absolute ones: here::here(\"data\", \"raw\", \"survey.csv\") instead of C:/Users/amelia/Desktop/... — so it runs on any computer, not just yours.\nSet a seed (set.seed(42)) whenever randomness is involved, so results are identical on every run.\nRecord your environment: package versions change! Tools like renv () or renv + pyenv () snapshot the exact versions you used.\nNever edit raw data by hand — every cleaning step happens in a script, so the path from raw data to final table is fully documented. Always keep your raw data untouched."
-  },
-  {
-    "objectID": "reproducibility.html#computational-empathy",
-    "href": "reproducibility.html#computational-empathy",
-    "title": "How Research is Made Reproducible",
-    "section": "Computational Empathy",
-    "text": "Computational Empathy\n\nThe mindset behind all of these habits is what The Turing Way calls it computational empathy: anticipating the needs of the person who will try to run your work without you in the room.\n\n\nThat person does not have your folder structure, your installed packages, your operating system or the crucial detail that lives only in your head (“oh, you have to run script 2 before script 1”).\nAsk yourself: could a stranger on a different computer, with no chance to email me get from my raw data to my results?\nIn practice, computational empathy means:\n\na README that says what the project is, what is where, and in which order to run things;\nstating requirements up front: software, package versions (renv!), expected run time;\ncommenting the “why” in your code;\navoiding hidden dependencies — no absolute paths, no “manually delete row 13 first,” no files that exist only on your desktop.\n\nThe kindest test: hand your project to a colleague and watch them try. Every question they ask is a missing piece of documentation.\nAnd remember: the stranger you are being kind to is usually future you."
-  },
-  {
-    "objectID": "reproducibility.html#section-6",
-    "href": "reproducibility.html#section-6",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "05\n\n\nRegistered Reports"
-  },
-  {
-    "objectID": "reproducibility.html#registered-reports-pre-registration-with-superpowers",
-    "href": "reproducibility.html#registered-reports-pre-registration-with-superpowers",
-    "title": "How Research is Made Reproducible",
-    "section": "Registered Reports: Pre-Registration with Superpowers🦸‍♀️🦸",
-    "text": "Registered Reports: Pre-Registration with Superpowers🦸‍♀️🦸\n\n\n\nA Registered Report (RR) is a journal article format where peer review happens before the results exist (Chambers & Tzavella, 2022).\n\n\nStage 1: you submit introduction, hypotheses, and detailed methods before data collection. Reviewers critique the design while you can still fix it.\n\nIf accepted, you receive In-Principle Acceptance (IPA): the journal commits to publishing your paper regardless of how the results turn out.\n\nStage 2: you run the study exactly as approved, submit the full paper; reviewers only check that you followed the plan and interpreted results sensibly.\nPublication no longer depends on getting “exciting” results → publication bias is cut off at the root, and p-hacking loses its purpose."
-  },
-  {
-    "objectID": "reproducibility.html#from-my-own-work-the-rung-that-took-2.5-years",
-    "href": "reproducibility.html#from-my-own-work-the-rung-that-took-2.5-years",
-    "title": "How Research is Made Reproducible",
-    "section": "From My Own Work: The Rung That Took ~2.5 Years",
-    "text": "From My Own Work: The Rung That Took ~2.5 Years\n\nI have now been part of three published Registered Reports. This is the one I first-authored, and the one I’m proudest of.\n\n\n\nFrom first conceiving the design to the paper appearing in print: about two and a half years.\nPublished as a Registered Report; postprint available open-access on PsyArXiv.\nIt was slow, and at several points frustrating.\n\nStage 1 review sent me back to redesign before collecting a single data point.\nThat was uncomfortable, but it is the entire benefit: I fixed problems early on paper, not after running several studies with ~300 participants.\n\nI would not have attempted this as my first reproducibility practice. It only made sense once pre-registration and literate programming were already regular habits."
-  },
-  {
-    "objectID": "reproducibility.html#does-it-work",
-    "href": "reproducibility.html#does-it-work",
-    "title": "How Research is Made Reproducible",
-    "section": "Does It Work?",
-    "text": "Does It Work?\n\n\n\n96%\nof standard psychology articles report positive (hypothesis-confirming) results — a statistically implausible success rate\n\n\n44%\nof Registered Reports report positive results (Scheel, Schijen, & Lakens, 2021)\n\n\n300+\njournals now offer the RR format, incl. Nature Human Behaviour, Cortex, and many top psychology journals (COS list)\n\n\n\n\nRRs are also rated as more rigorous and higher quality than comparable standard papers (Soderberg et al., 2021)."
-  },
-  {
-    "objectID": "reproducibility.html#registered-reports-and-your-phd",
-    "href": "reproducibility.html#registered-reports-and-your-phd",
-    "title": "How Research is Made Reproducible",
-    "section": "Registered Reports and Your PhD",
-    "text": "Registered Reports and Your PhD\n\n\nThe reviewer feedback arrives when it is useful, before you spend a year collecting data.\nIPA is a publication guarantee you can plan a dissertation around: no more praying for significant results in study 3 of 3.\nNull results become publishable findings, not wasted years, which is honest science and good for your track record.\nTiming matters: Stage 1 review takes time, so RRs suit studies planned well in advance (perfect for a PhD proposal!), but less suited for quick pilot work.\nIn some cases, reviewers may request a pilot study first to justify the design proposed in the RR.\nSome journals offer fast-track or scheduled review for student projects; Peer Community In RR (PCI RR) reviews Stage 1 protocols journal-independently.\nTalk to your supervisor and co-supervisor early: an RR-based dissertation chapter is increasingly common and highly valuable for one’s scientific career.\n\nProbably, not yet a common practice in Airlangga, but it is getting common in many parts of the world."
-  },
-  {
-    "objectID": "reproducibility.html#section-7",
-    "href": "reproducibility.html#section-7",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "06\n\n\nConclusions"
-  },
-  {
-    "objectID": "reproducibility.html#where-i-started",
-    "href": "reproducibility.html#where-i-started",
-    "title": "How Research is Made Reproducible",
-    "section": "Where I Started",
-    "text": "Where I Started\n\nStart with the transparency you need, not the transparency you want. Here is the order I actually climbed:\n\n\n\nData Management Plan — lowest barrier, most immediate payoff. I started here because it directly helped the study I was running right then.\nPre-registration — once organizing data was routine, planning the analysis in advance was the natural next commitment.\nLiterate programming — a technical skill I built once pre-registration had already made me think in terms of “the plan, written down.”\nRegistered Report — the hardest rung, and the one that took 2.5 years. I would not have started here.\n\n\nAll of these happened over roughly 15 years, started from one habit at a time."
-  },
-  {
-    "objectID": "reproducibility.html#the-big-picture",
-    "href": "reproducibility.html#the-big-picture",
-    "title": "How Research is Made Reproducible",
-    "section": "The Big Picture",
-    "text": "The Big Picture\n\nPlan → write a data management plan; pre-register your hypotheses and analysis plan — or go all-in with a registered report.\nDo → organize your project in one folder; keep raw data read-only; analyze with literate programming so every result is regenerable with one click.\nShare → deposit data (FAIR!), code, and materials in a trusted repository with a DOI and a license; link everything from the paper, with enough computational empathy that a stranger can actually run it.\nThese practices only require habits, and habits are easiest to build now, at the start of your PhD, before you have legacy chaos to untangle.\nReproducibility is a spectrum, not a purity yes/no test: every step (a codebook here, a script there) already makes your work more trustworthy than without doing anything."
-  },
-  {
-    "objectID": "reproducibility.html#your-starter-kit-for-your-1st-year",
-    "href": "reproducibility.html#your-starter-kit-for-your-1st-year",
-    "title": "How Research is Made Reproducible",
-    "section": "Your Starter Kit for Your 1st Year",
-    "text": "Your Starter Kit for Your 1st Year\n\nConcrete first steps:\n\n\n\n\nThis Week\nCreate a free Zenodo account. Set up your first project with a clean folder structure and a README. Rename your files properly (yes, all of them).\n\n\n\nThis Month\nLearn how to use  and Quarto or R Markdown by trying out available tutorials (Intro to , R4DS, Quarto TPG). Then, write your next assignment as a literate document. Draft a one-page DMP for your dissertation project.\n\n\n\nThis Year\nPre-register your first study on OSF or AsPredicted. Discuss with your supervisor whether a chapter could become a Registered Report."
-  },
-  {
-    "objectID": "reproducibility.html#where-to-learn-more",
-    "href": "reproducibility.html#where-to-learn-more",
-    "title": "How Research is Made Reproducible",
-    "section": "Where to Learn More",
-    "text": "Where to Learn More\n\n\nThe Turing Way — a free, community-written handbook on reproducible research (start with the “Guide for Reproducible Research”).\nFORRT — Framework for Open and Reproducible Research Training: glossaries, curated resources, summaries of the key literature.\nOSF support pages — hands-on guides for projects, registrations, and preprints.\nquarto.org — official tutorials for literate programming with R and Python.\nRiverbank reading: Munafò et al. (2017), A manifesto for reproducible science — the best single overview paper to start with.\nFind your local open science community (e.g., Airlangga Open Science) — reproducibility is much easier, and more fun, together."
-  },
-  {
-    "objectID": "reproducibility.html#section-8",
-    "href": "reproducibility.html#section-8",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "Your closest collaborator is you six months ago, but you don’t reply to emails.\n\n\nMark Holder (popularized by Karl Broman) — make life easy for future you."
-  },
-  {
-    "objectID": "reproducibility.html#section-9",
-    "href": "reproducibility.html#section-9",
-    "title": "How Research is Made Reproducible",
-    "section": "",
-    "text": "Dr. Rizqy Amelia Zein\nCenter for Advanced Internet Studies (CAIS) & Universitas Airlangga\nE-mail: amelia.zein@cais-research.de · Homepage: rameliaz.github.io\n\n\n\n\n\n\n\nThank you!\nSelamat datang & selamat memulai perjalanan doktoral Anda😉🎉\n\n\n\nCenter for Advanced Internet Studies (CAIS) gGmbH\nKonrad-Zuse-Str. 2a, 44801 Bochum\n\n\ninfo@cais-research.de\n+49 234 9531 5000\nwww.cais-research.de"
   }
 ]

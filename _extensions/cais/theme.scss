@@ -197,22 +197,29 @@ $presentation-line-height:         1.45;
     }
 
     // Meta-Informationen
+    // display:flex + order steuert die visuelle Reihenfolge unabhängig von
+    // der Reihenfolge im title-slide.html-Markup (dort bleibt die klassische
+    // Pandoc-Feldreihenfolge institute/department/event/author/date erhalten).
     .cais-title-meta {
       margin-top: auto;
       padding-top: 1.2em;
+      display: flex;
+      flex-direction: column;
     }
 
-    // Institut (dunkelgrau)
-    .cais-institute {
-      color: $cais-dunkelgrau;
-      font-size: 0.72em;
-      font-weight: 400;
+    // Vortragende (CAIS-Blau, hervorgehoben) – zuerst
+    .cais-author {
+      order: 1;
+      color: $cais-blue;
+      font-size: 0.78em;
+      font-weight: 700;
       line-height: 1.4;
-      margin: 0 0 0.4em;
+      margin: 0 0 0.2em;
     }
 
-    // Abteilung (dunkelgrau)
+    // Abteilung (dunkelgrau) – zweitens
     .cais-department {
+      order: 2;
       color: $cais-dunkelgrau;
       font-size: 0.72em;
       font-weight: 400;
@@ -220,26 +227,29 @@ $presentation-line-height:         1.45;
       margin: 0 0 0.6em;
     }
 
-    // Veranstaltungsname (CAIS-Blau)
+    // Institut (dunkelgrau) – drittens
+    .cais-institute {
+      order: 3;
+      color: $cais-dunkelgrau;
+      font-size: 0.72em;
+      font-weight: 400;
+      line-height: 1.4;
+      margin: 0 0 0.4em;
+    }
+
+    // Veranstaltungsname (dunkelgrau, wie Institut/Abteilung) – viertens
     .cais-event {
-      color: $cais-blue;
+      order: 4;
+      color: $cais-dunkelgrau;
       font-size: 0.72em;
       font-weight: 400;
       line-height: 1.4;
       margin: 0 0 0.2em;
     }
 
-    // Vortragende (CAIS-Blau)
-    .cais-author {
-      color: $cais-blue;
-      font-size: 0.72em;
-      font-weight: 400;
-      line-height: 1.4;
-      margin: 0 0 0.2em;
-    }
-
-    // Datum (CAIS-Blau)
+    // Datum (CAIS-Blau) – zuletzt
     .cais-date {
+      order: 5;
       color: $cais-blue;
       font-size: 0.72em;
       font-weight: 400;
@@ -708,8 +718,6 @@ $presentation-line-height:         1.45;
     border-radius: 6px;
 
     .col-item {
-      text-align: center;
-
       .col-icon {
         font-size: 2em;
         margin-bottom: 0.3em;
@@ -728,44 +736,6 @@ $presentation-line-height:         1.45;
         line-height: 1.45;
         margin: 0;
       }
-    }
-  }
-}
-
-// ════════════════════════════════════════════════════════════
-// TEXT + GRAFIK – 2 Spalten, Text links breiter / Grafik rechts
-// Verwendung: ## Überschrift {.split-slide}
-//   ::: {.split-area}
-//   ::: {.split-text} ... :::
-//   ::: {.split-graphic} ... :::
-//   :::
-// ════════════════════════════════════════════════════════════
-
-.reveal .slides section.split-slide {
-  padding: 5% 6% !important;
-
-  h2 { margin-bottom: 0.4em; }
-
-  .split-area {
-    display: grid;
-    grid-template-columns: 1.7fr 1fr;
-    gap: 2.5em;
-    align-items: center;
-  }
-
-  .split-text {
-    .lead { max-width: 100%; }
-  }
-
-  .split-graphic {
-    display: flex;
-    justify-content: center;
-
-    img {
-      max-width: 100%;
-      max-height: 65vh;
-      width: auto;
-      height: auto;
     }
   }
 }
@@ -1119,8 +1089,6 @@ $presentation-line-height:         1.45;
     .infographic-item {
       text-align: center;
       .stat {
-        display: block;
-        text-align: center;
         font-size: 2.5em;
         font-weight: 700;
         color: $cais-blue;

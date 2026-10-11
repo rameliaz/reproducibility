@@ -1,0 +1,467 @@
+---
+title: "How Psychological Research Can Be Made Reproducible"
+subtitle: "A first-person perspective on open and reproducible science"
+author:
+  - "Dr. Rizqy Amelia Zein"
+institute:
+  - "Research Data & Methods Team, Center for Advanced Internet Studies (CAIS)"
+  - "Department of Psychology, Universitas Airlangga"
+event: "The 5th International Conference on Psychology and Education (ICPE) 2025"
+format:
+  cais-revealjs:
+    logo: img/Transparent.png
+    footer: "Reproducible Research | Zein | 2026"
+    auto-stretch: false
+    chalkboard: true
+    css: reproducibility_unesa.css
+---
+
+## AGENDA {.agenda-slide}
+<!-- Klasse: .agenda-slide -->
+
+1. Replication Crisis and Why Reproducibility Matters
+2. At the Individual Level: The Reproducibility Ladder
+3. At the Systemic Level: Culture Change
+4. Conclusions
+
+## {.section-slide}
+<!-- Zwischentitelfolie 01 -->
+
+::: {.section-number}
+01
+:::
+
+::: {.section-bubble}
+Replication Crisis — and Why Reproducibility Matters
+:::
+
+## Let's Start With a Thought Experiment
+
+::: {.lead}
+You read a fascinating finding in a top journal and want to build your research on it.
+:::
+
+::: {.incremental}
+
+- **Question 1:** If another team ran the *same study again with new participants*, would they find the same result?
+- **Question 2:** If you took the *original data and the original analysis code*, would you get the same numbers reported in the paper?
+- Intuitively, we assume the answer to both is "*yes, of course it should be! It's published science in a top Q1 journal!*"
+- Over the last 15 years, researchers actually checked. The answers were... **rather uncomfortable**.
+
+:::
+
+## How It Started (early 2010s)
+
+::: {.incremental}
+
+- **2011 — Bem's "precognition" paper**: a top journal (Journal of Personality and Social Psychology - JPSP) published evidence that people can *feel the future* ([Bem, 2011](https://psycnet.apa.org/record/2011-01894-001)) by using standard methods and standard statistics. If the method can "prove" the impossible, what does that say about the method?
+- [**2011 — The Stapel fraud case**](https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html): a prominent social psychologist was found to have fabricated data in dozens of published papers.
+- **2011 — "False-Positive Psychology"** ([Simmons, Nelson, & Simonsohn](https://journals.sagepub.com/doi/10.1177/0956797611417632)): showed that ordinary, small, undisclosed analytic choices can make *anything* statistically significant — they "demonstrated" that listening to a song makes people feel younger.
+- These events triggered a field-wide question: **how much of our literature can we actually trust?**
+
+:::
+
+## But the problem started much earlier than that
+
+![](img/history.JPG){fig-align="center" width="60%"}
+
+## The Multi-Site Replication Projects
+
+::: {.lead}
+Large teams systematically re-ran published studies with new data, and here is what came back:
+:::
+
+::: {.infographic}
+::: {.infographic-cols}
+::: {.infographic-item}
+[36%]{.stat}
+
+of 100 psychology studies replicated — [Open Science Collaboration (2015)](https://www.science.org/doi/10.1126/science.aac4716)
+:::
+::: {.infographic-item}
+[61%]{.stat}
+
+of 18 economics lab experiments replicated — [Camerer et al. (2016)](https://www.science.org/doi/10.1126/science.aaf0918)
+:::
+::: {.infographic-item}
+[62%]{.stat}
+
+of 21 social-science studies from *Nature* & *Science* replicated — [Camerer et al. (2018)](https://www.nature.com/articles/s41562-018-0399-z)
+:::
+::: {.infographic-item}
+[49%]{.stat}
+
+of 164 papers across 12 disciplines replicated — COS **SCORE project** ([Nature, April 2026](https://www.cos.io/about/news/large-scale-collaboration-releases-new-findings-on-research-credibility))
+:::
+:::
+:::
+
+::: {.incremental}
+
+- Even when effects did replicate, they were on average **only about half as large** as originally reported (i.e., "[The Decline Effect](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full)") — SCORE found the same pattern again in 2026.
+- **SCORE is the largest check yet**: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). Reproducing published analyses on the *original* data succeeded [only 54% of the time](https://www.nature.com/articles/s41586-026-10203-5).
+- This pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the **"[replication crisis](https://www.nature.com/articles/d41586-026-00955-5)."**
+
+:::
+
+## Three Concepts You Must Not Confuse {.columns-slide}
+
+::: {.lead}
+Following [Barba (2018)](https://arxiv.org/abs/1802.03311) and [The Turing Way](https://book.the-turing-way.org/), people mix these up all the time:
+:::
+
+::: {.columns-area}
+::: {.col-item}
+[<i class="fa-solid fa-rotate-right"></i>]{.col-icon}
+
+### Reproducibility (🇮🇩 "*reka ulang*")
+
+**Same data + same analysis → same result.** Someone else (or future you) re-runs *your* analysis on *your* data and gets the numbers in your paper. 
+:::
+::: {.col-item}
+[<i class="fa-solid fa-people-group"></i>]{.col-icon}
+
+### Replicability (🇮🇩 "*coba ulang*")
+
+**New data + same method → similar result.** An independent team repeats the study with new participants and finds a comparable effect.
+:::
+::: {.col-item}
+[<i class="fa-solid fa-lightbulb"></i>]{.col-icon}
+
+### Robustness (🇮🇩 "*keandalan*")
+
+**Same data + new analysis → same result or at least, similar conclusion.** The finding remains stable when different analytical strategies are used.
+:::
+:::
+
+## Notice the Differences
+
+![](img/matrix.JPG){fig-align="center"}
+
+## The Really Uncomfortable Part
+
+::: {.lead}
+Let's forget collecting new data (i.e., replication) for a moment. Can we even reproduce the *original numbers* from the *original data*? (i.e., "reproducibility")
+:::
+
+::: {.incremental}
+
+- [Hardwicke et al. (2018)](https://royalsocietypublishing.org/doi/10.1098/rsos.180448) tried to reproduce results from papers with *mandatory open data* in the journal *Cognition*: only 11 of 35 papers were reproducible without help from the original authors.
+- [Artner et al. (2021)](https://psycnet.apa.org/record/2020-81352-001) could reproduce only ~70% of major statistical claims from published psychology articles and some only after considerable detective work.
+- [Crüwell et al. (2023)](https://journals.sagepub.com/doi/10.1177/09567976221140828) checked "open data" badges in *Psychological Science*: only 1 out of 14 articles was rated fully computationally reproducible.
+- And this directly affects people's lives: the famous **Reinhart & Rogoff** austerity paper, which is widely used to justify real economic policies, contained a simple **Excel error** discovered only when a graduate student got the spreadsheet ([Herndon et al., 2014](https://academic.oup.com/cje/article/38/2/257/1714018)).
+
+:::
+
+## Why Does This Happen?
+
+::: {.lead}
+It's mostly not fraud, but ordinary humans following the incentives.
+:::
+
+::: {.incremental}
+
+- **Publication bias**: journals prefer novel, positive, "clean" results. Therefore, null results are often being kept into the file drawer.
+- **Publish or perish**: careers are built on the *number* of publications, not on their substantive quality.
+- **Questionable research practices (QRPs)**: a grey zone between good practice and misconduct ([John et al., 2012](https://journals.sagepub.com/doi/10.1177/0956797611430953)):
+  - ***p*-hacking**: trying many analyses and reporting the one that "works"
+  - **HARKing**: *Hypothesizing After the Results are Known* — presenting an exploratory finding as if predicted ([Kerr, 1998](https://journals.sagepub.com/doi/10.1207/s15327957pspr0203_4))
+  - **Selective reporting** of measures, conditions, or outcomes
+- **The garden of forking paths**: even without bad intent, every dataset offers countless defensible analysis choices, thus flexibility in analytical choices can inflate false positives ([Gelman & Loken, 2014](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)).
+
+:::
+
+## Why Should *We* Care? {.text-slide-bg}
+
+::: {.lead}
+Ensuring that our results are reproducible gives us more confidence in our work.
+:::
+
+::: {.content-box}
+- **Your closest collaborator is you, six months ago** and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.
+- **Errors get caught early**, before they end up in your dissertation, your defense, or a retraction.
+- **International reviewers, supervisors, and committees increasingly expect it**. Funders and journals now routinely require data, code, and analysis plans.
+- **It makes you more efficient**. Re-running an analysis after your supervisor/reviewers ask "*please just add this one covariate*" takes one click instead of one week.
+- **It builds trust in your work**. Reproducible research gets reused, cited, and extended.
+:::
+
+## {.section-slide}
+<!-- Zwischentitelfolie 02 -->
+
+::: {.section-number}
+02
+:::
+
+::: {.section-bubble}
+The Reproducibility Ladder: A Personal-Level Solution
+:::
+
+## A "Reproducibility Ladder"🪜
+
+::: {.lead}
+The four practices in this talk are *not supposed to be* a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.
+:::
+
+::: {.incremental}
+- **Rung 1 — Data Management Plan**: *lowest barrier, most direct benefit*. A folder that anyone, including future you, can navigate.
+- **Rung 2 — Pre-Registration**: *a planning discipline* — write the hypothesis down before you know the answer.
+- **Rung 3 — Literate Programming**: *a technical habit* — let the document compute itself instead of copying numbers by hand.
+- **Rung 4 — Registered Reports**: *the biggest commitment* — peer-review before results exist, usually takes a longer time than the traditional route from planning to publication.
+:::
+
+. . .
+
+::: {.callout-note appearance="simple"}
+This is the order **I personally** climbed it, over about 15 years of my scientific career. 
+:::
+
+## Rungs 1 & 2: Plan the Data, Then the Hypotheses {.columns-slide}
+
+::: {.columns-area .two-col}
+::: {.col-item}
+[<i class="fa-solid fa-folder-tree"></i>]{.col-icon}
+
+### Rung 1 — Data Management Plan
+
+**What it is:** a short, living document, written *before* data collection, on how your data will be documented, stored, protected, and shared. The aim is [FAIR](https://www.nature.com/articles/sdata201618) data: *"as open as possible, as closed as necessary."*
+
+**What it solves:** *"If I disappeared tomorrow, could someone else find, understand, and use my data?"* It also catches problems while they are still fixable, like a consent form that forbids data sharing.
+
+**In my own work:** my current scoping review lives in one fixed folder structure, with a [README](libs/README.md) that describes every file. I can come back after months on other tasks and know exactly where to look.
+
+**Start with:** a [DMPTool](https://dmptool.org) or [DMPonline](https://dmponline.dcc.ac.uk) template, a [codebook](libs/codebook.xlsx), and a trusted repository ([DRYAD](https://datadryad.org/), [Zenodo](https://zenodo.org), [RIN Dataverse](https://data.brin.go.id/)).
+:::
+::: {.col-item}
+[<i class="fa-solid fa-lock"></i>]{.col-icon}
+
+### Rung 2 — Pre-Registration
+
+**What it is:** your hypotheses, design, sample size, and analysis plan, written down *before* data collection in a time-stamped, read-only registry ([Nosek et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114)).
+
+**What it fixes:** Separating confirmatory and exploratory in a more transparent manner. You can still deviate from the plan; the deviation just becomes *visible*.
+
+**In my own work:** [*Science and Religion in the Times of Crisis*](https://osf.io/ctru2/overview). I wrote the hypothesis down before I knew whether the data would support it. I have pre-registered every study since 2021, and by now it is simply part of designing one.
+
+**Start with:** [AsPredicted](https://aspredicted.org) (9 questions, most of which your ethics application already answers) or [OSF Registries](https://osf.io/registries).
+:::
+:::
+
+## Rungs 3 & 4: Let the Document Compute, Let Review Come First {.columns-slide}
+
+::: {.columns-area .two-col}
+::: {.col-item}
+[<i class="fa-solid fa-code"></i>]{.col-icon}
+
+### Rung 3 — Literate Programming
+
+**What it is:** text, analysis code, and output woven into *one* document that regenerates itself. Numbers are computed, never typed.
+
+**What it fixes:** copy-paste errors. Roughly **half** of published psychology papers contain at least one inconsistent statistic ([Nuijten et al., 2016](https://link.springer.com/article/10.3758/s13428-015-0664-2)). The document itself becomes the audit trail.
+
+**In my own work:** [`grm-tutorial-paper`](https://github.com/rameliaz/grm-tutorial-paper) is the repository behind a [published paper](https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265) written entirely in Quarto, with Git keeping the full history. These slides are literate programming too😉
+
+**Start with:** [Quarto](https://quarto.org) or [Jupyter](https://jupyter.org), Git, relative paths (`here::here()`), and `renv` or `groundhog` to record your package versions (if you are using <i class="fa-brands fa-r-project"></i>).
+:::
+::: {.col-item}
+[<i class="fa-solid fa-file-signature"></i>]{.col-icon}
+
+### Rung 4 — Registered Reports
+
+**What it is:** peer review *before* the results exist ([Chambers & Tzavella, 2022](https://www.nature.com/articles/s41562-021-01193-7)). Pass Stage 1 and you get **in-principle acceptance**: the journal publishes the paper whatever the results turn out to be.
+
+**What it solves:** publication bias, at the root. Once the result no longer decides publication, *p*-hacking loses its purpose.
+
+**In my own work:** my first-authored [Registered Report](https://www.tandfonline.com/doi/abs/10.1080/10508619.2025.2535033) took about **2.5 years**. Stage 1 review sent me back to redesign before I had collected data. That was frustrating, and it was also the whole point.
+
+**Start with:** one of the [300+ journals](https://www.cos.io/initiatives/registered-reports) that offer the format, or [PCI RR](https://rr.peercommunityin.org), which reviews Stage 1 protocols independently of any journal.
+:::
+:::
+
+## {.section-slide}
+<!-- Zwischentitelfolie 03 -->
+
+::: {.section-number}
+03
+:::
+
+::: {.section-bubble}
+Culture Change at the Systemic Level
+:::
+
+## Why the Ladder Alone Is Not Enough
+
+::: {.lead}
+Remember the earlier diagnosis: *ordinary humans following the incentives.* Can we reasonably expect everyone to climb those steep ladders without changing the reward structure?
+:::
+
+::: {.incremental}
+
+- Every rung costs time that the current system does not count. My Registered Report took ~2.5 years; reviewers who determines AK prestasi only counts **one** paper.
+- If only the most conscientious researchers change, they pay the price while the system keeps rewarding speed publications and "clean" results.
+- Many researchers already have the will and the skills, yet feel *"powerless against a culture that does not value or promote those behaviors"* ([Nosek, 2019](https://www.cos.io/blog/strategy-for-culture-change)).
+- So the question shifts from *"What should I do?"* to ***"What would make good practice the easiest path for everyone?"***
+
+:::
+
+## Pyramid of Culture Change
+
+::: {.lead}
+The Center for Open Science's model ([Nosek, 2019](https://www.cos.io/blog/strategy-for-culture-change)): change is built from the bottom up, and each level only works if the levels below it are in place.
+:::
+
+::: {.pyramid}
+::: {.pyr-row .lvl5 .fragment fragment-index=5}
+[**Make it required** [Policy]{.pyr-sub}]{.pyr-band} [Journal and funder mandates: the [TOP Guidelines](https://www.cos.io/initiatives/top-guidelines), data-sharing policies (e.g., NIH since 2023), Ministry of HEST's regulations]{.pyr-ex}
+:::
+::: {.pyr-row .lvl4 .fragment fragment-index=4}
+[**Make it rewarding** [Incentives]{.pyr-sub}]{.pyr-band} [Registered Reports; open practices counted in hiring, promotion, and grants ([CoARA](https://coara.eu))]{.pyr-ex}
+:::
+::: {.pyr-row .lvl3 .fragment fragment-index=3}
+[**Make it normative** [Communities]{.pyr-sub}]{.pyr-band} [Open Science Badges, local open science communities, [ReproducibiliTea](https://reproducibilitea.org) journal clubs]{.pyr-ex}
+:::
+::: {.pyr-row .lvl2 .fragment fragment-index=2}
+[**Make it easy** [User experience]{.pyr-sub}]{.pyr-band} [Templates ([AsPredicted](https://aspredicted.org)), Open Educational Resources (OER), [FORRT](https://forrt.org/), [LMU Open Science Center](https://www.osc.lmu.de/)]{.pyr-ex}
+:::
+::: {.pyr-row .lvl1 .fragment fragment-index=1}
+[**Make it possible** [Infrastructure]{.pyr-sub}]{.pyr-band} [Repositories and registries: [OSF](https://osf.io), [Zenodo](https://zenodo.org), [DRYAD](https://datadryad.org/), [RIN Dataverse](https://data.brin.go.id/)]{.pyr-ex}
+:::
+:::
+
+## Does Changing the System Work?
+
+::: {.infographic}
+::: {.infographic-cols}
+::: {.infographic-item}
+[39%]{.stat}
+
+of *Psychological Science* articles shared their data after the journal introduced Open Science Badges, up from **under 3%**; comparison journals did not change ([Kidwell et al., 2016](https://doi.org/10.1371/journal.pbio.1002456))
+:::
+::: {.infographic-item}
+[44%]{.stat}
+
+of Registered Reports report positive results, compared with **96%** of standard psychology articles ([Scheel, Schijen, & Lakens, 2021](https://journals.sagepub.com/doi/10.1177/25152459211007467))
+:::
+::: {.infographic-item}
+[1 of 14]{.stat}
+
+articles with an open-data badge was fully computationally reproducible ([Crüwell et al., 2023](https://journals.sagepub.com/doi/10.1177/09567976221140828))
+:::
+:::
+:::
+
+::: {.incremental}
+
+- Badges and Registered Reports show that **changing the rules changes behaviour**, quickly and measurably.
+- The third number is the most concerning one: badges so far only reward *sharing*, but not *reproducing*. Here, it is clear that *available* is not the same as *reproduced*.
+- So the next step is **verification**. The [TOP Guidelines 2025](https://www.cos.io/initiatives/top-guidelines) now list computational reproducibility as a practice of its own.
+
+:::
+
+## {.section-slide}
+<!-- Zwischentitelfolie 04 -->
+
+::: {.section-number}
+04
+:::
+
+::: {.section-bubble}
+Conclusions
+:::
+
+## Conclusion {.columns-slide}
+
+::: {.lead}
+Reproducibility is a habit people build *and* a property of the system they work in. We (ideally) need both.
+:::
+
+::: {.columns-area}
+::: {.col-item}
+[<i class="fa-solid fa-triangle-exclamation"></i>]{.col-icon}
+
+### The problem is real and ordinary
+
+Only 36–62% of findings replicated in the large replication projects, and SCORE could reproduce published analyses from the original data only 54% of the time. The cause is mostly not fraud, but incentives and workflows nobody else can retrace.
+:::
+::: {.col-item}
+[<i class="fa-solid fa-stairs"></i>]{.col-icon}
+
+### You can start climbing now
+
+Data management plan → pre-registration → literate programming → Registered Reports. One rung at a time, over the years. The first person you help is the future you.
+:::
+::: {.col-item}
+[<i class="fa-solid fa-sitemap"></i>]{.col-icon}
+
+### But nobody climbs alone
+
+Culture changes when good practice becomes possible, easy, normative, rewarding, and finally required. Each of us sits somewhere in that system: as a reviewer, supervisor, editor, or policymaker.
+:::
+:::
+
+## Where Do *You* Sit in the Pyramid? {.text-slide-bg}
+
+::: {.lead}
+Most of us hold more than one role, and each role is a lever.
+:::
+
+::: {.content-box}
+- **As a researcher** (*normative*): pick *one* rung for your next study, such as a data management plan or a nine-question pre-registration, and do it where others can see it. Seeing colleagues do it is how a practice becomes normal.
+- **As a reviewer** (*normative*): ask to see the data and code. You are allowed to request this ([Peer Reviewers' Openness Initiative](https://www.opennessinitiative.org)).
+- **As a supervisor or lecturer** (*normative*): teach the workflow, not only the statistics. This allows students to learn the logic of computational thinking.
+- **As an editor** (*rewarding, required*): offer Registered Reports, adopt the [TOP Guidelines](https://www.cos.io/initiatives/top-guidelines), and recognise open practices with badges.
+- **As a policymaker** (*rewarding*): count open, reproducible work in hiring, promotion, and grants, not just the number of publications ([CoARA](https://coara.eu)).
+:::
+
+## Where to Learn More {.text-slide-bg}
+
+::: {.content-box}
+- **[The Turing Way](https://book.the-turing-way.org)** — a free, community-written handbook on reproducible research (start with the "Guide for Reproducible Research").
+- **[FORRT](https://forrt.org)** — Framework for Open and Reproducible Research Training: glossaries, curated resources, summaries of the key literature.
+- **[OSF support pages](https://help.osf.io)** — hands-on guides for projects, registrations, and preprints.
+- **[KMU Open Science Center Training Page](https://www.osc.lmu.de/training/)** — a series of self-paced tutorials that covers how to implement open research practices across all research lifecycles.
+- Riverbank reading: [Munafò et al. (2017), *A manifesto for reproducible science*](https://www.nature.com/articles/s41562-016-0021) — the best single overview paper to start with.
+- Find your local **open science community** (e.g., [Airlangga Open Science](https://sainsterbukaua.github.io/)) — reproducibility is much easier, and more fun, together.
+:::
+
+## {.closing-slide .no-footer}
+
+::: {.closing-left}
+::: {.closing-contact-box}
+**Dr. Rizqy Amelia Zein**\
+Center for Advanced Internet Studies (CAIS) & Universitas Airlangga\
+E-mail: [amelia.zein@cais-research.de](mailto:amelia.zein@cais-research.de) · Homepage: [rameliaz.github.io](https://rameliaz.github.io/)
+:::
+
+::: {.closing-cais-logo}
+![](img/Transparent.png)
+:::
+:::
+
+::: {.closing-right}
+::: {.closing-text}
+Thank you!
+:::
+
+::: {.closing-bottom}
+::: {.closing-org}
+Center for Advanced Internet Studies (CAIS) gGmbH
+
+Konrad-Zuse-Str. 2a, 44801 Bochum
+:::
+
+::: {.closing-contact-info}
+[info@cais-research.de](mailto:info@cais-research.de)\
++49 234 9531 5000\
+[www.cais-research.de](https://www.cais-research.de)
+:::
+
+::: {.closing-social}
+<a href="https://www.linkedin.com/company/center-for-advanced-internet-studies" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="https://bsky.app/profile/cais-research.bsky.social" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+<a href="https://www.instagram.com/caisnrw/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://mastodon.social/@CAISnrw" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
+<a href="https://www.facebook.com/CenterforAdvancedInternetStudies" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.youtube.com/channel/UClCqAar9lGav5spwJOJgrUw" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+:::
+:::
+:::

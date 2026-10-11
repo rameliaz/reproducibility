@@ -2,7 +2,10 @@
 title: "Agar Riset Dapat Direka Ulang"
 subtitle: "Memastikan riset dapat direka ulang dari sudut pandang orang pertama"
 author:
-  - "Dr. Rizqy Amelia Zein (Research Data and Methods Team, Center for Advanced Internet Studies & Department of Psychology, Universitas Airlangga)"
+  - "Dr. Rizqy Amelia Zein"
+institute:
+  - "Research Data & Methods Team, Center for Advanced Internet Studies (CAIS)"
+  - "Department of Psychology, Universitas Airlangga"
 event: "Matrikulasi Program Studi S3 Psikologi"
 format:
   cais-revealjs:

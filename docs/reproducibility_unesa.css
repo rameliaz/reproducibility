@@ -1,0 +1,44 @@
+/* Extra layouts for reproducibility_unesa.qmd (on top of the CAIS theme) */
+
+/* Two-column variant of .columns-area, used for the rung summaries */
+.reveal .slides section.columns-slide .columns-area.two-col {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+}
+.reveal .slides section.columns-slide .columns-area.two-col .col-item p {
+  font-size: 0.72em;
+}
+.reveal .slides section.columns-slide .columns-area.two-col .col-item p + p {
+  margin-top: 0.6em;
+}
+
+/* COS culture-change pyramid: band on the left, examples on the right */
+.reveal .pyramid .pyr-row p {
+  display: grid;
+  grid-template-columns: 48% 1fr;
+  gap: 1.5em;
+  align-items: center;
+  margin: 0.2em 0;
+  font-size: 0.76em;
+}
+.reveal .pyramid .pyr-band {
+  display: block;
+  margin: 0 auto;
+  padding: 0.55em 0;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.25;
+}
+.reveal .pyramid .pyr-sub {
+  display: block;
+  font-weight: 300;
+  font-size: 0.85em;
+}
+.reveal .pyramid .pyr-ex { color: #444; line-height: 1.35; }
+
+/* Each band's top edge matches the bottom edge of the band above */
+.reveal .pyramid .lvl5 .pyr-band { width: 36%;  background: #0a1628; clip-path: polygon(22% 0, 78% 0, 100% 100%, 0 100%); }
+.reveal .pyramid .lvl4 .pyr-band { width: 52%;  background: #083853; clip-path: polygon(15.4% 0, 84.6% 0, 100% 100%, 0 100%); }
+.reveal .pyramid .lvl3 .pyr-band { width: 68%;  background: #055a7d; clip-path: polygon(11.8% 0, 88.2% 0, 100% 100%, 0 100%); }
+.reveal .pyramid .lvl2 .pyr-band { width: 84%;  background: #037ba8; clip-path: polygon(9.5% 0, 90.5% 0, 100% 100%, 0 100%); }
+.reveal .pyramid .lvl1 .pyr-band { width: 100%; background: #009dd2; clip-path: polygon(8% 0, 92% 0, 100% 100%, 0 100%); }

@@ -2,7 +2,10 @@
 title: "How Research is Made Reproducible"
 subtitle: "A first-person perspective on open and reproducible science"
 author:
-  - "Dr. Rizqy Amelia Zein (Research Data and Methods Team, Center for Advanced Internet Studies & Department of Psychology, Universitas Airlangga)"
+  - "Dr. Rizqy Amelia Zein"
+institute:
+  - "Research Data & Methods Team, Center for Advanced Internet Studies (CAIS)"
+  - "Department of Psychology, Universitas Airlangga"
 event: "Matrikulasi Program Studi S3 Psikologi"
 format:
   cais-revealjs:
