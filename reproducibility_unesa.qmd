@@ -13,7 +13,6 @@ format:
     footer: "Reproducible Research | Zein | 2026"
     auto-stretch: false
     chalkboard: true
-    css: reproducibility_unesa.css
 ---
 
 ## AGENDA {.agenda-slide}

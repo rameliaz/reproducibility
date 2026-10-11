@@ -261,7 +261,7 @@ $presentation-line-height:         1.45;
   .cais-title-right {
     width: 65%;
     background-color: $cais-blue;
-    background-image: url('../../../../../img/background.png');
+    background-image: url('../../../../img/background.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -741,6 +741,62 @@ $presentation-line-height:         1.45;
 }
 
 // ════════════════════════════════════════════════════════════
+// 2 SPALTEN – Variante von .columns-slide (mehr Text pro Spalte)
+// Verwendung: ## Überschrift {.columns-slide}
+//   ::: {.columns-area .two-col}
+//   ::: {.col-item} [Icon]{.col-icon} ### Titel Text :::
+//   :::
+// ════════════════════════════════════════════════════════════
+
+.reveal .slides section.columns-slide .columns-area.two-col {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+
+  .col-item {
+    p { font-size: 0.72em; }
+    p + p { margin-top: 0.6em; }
+  }
+}
+
+// ════════════════════════════════════════════════════════════
+// TEXT + GRAFIK – 2 Spalten, Text links breiter / Grafik rechts
+// Verwendung: ## Überschrift {.split-slide}
+//   ::: {.split-area}
+//   ::: {.split-text} ... :::
+//   ::: {.split-graphic} ... :::
+//   :::
+// ════════════════════════════════════════════════════════════
+
+.reveal .slides section.split-slide {
+  padding: 5% 6% !important;
+
+  h2 { margin-bottom: 0.4em; }
+
+  .split-area {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 2.5em;
+    align-items: center;
+  }
+
+  .split-text {
+    .lead { max-width: 100%; }
+  }
+
+  .split-graphic {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      max-height: 65vh;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+// ════════════════════════════════════════════════════════════
 // ÜBERBLICK-FOLIE – 3 Bilder mit Beschriftung (8 Columns V1)
 // Verwendung: ## Überschrift {.overview-slide}
 //   ::: {.overview-grid}
@@ -999,7 +1055,7 @@ $presentation-line-height:         1.45;
   .closing-right {
     flex: 1;
     background-color: $cais-blue;
-    background-image: url('../../../../../img/background.png');
+    background-image: url('../../../../img/background.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1097,6 +1153,61 @@ $presentation-line-height:         1.45;
       p { font-size: 0.62em; color: #444; margin-top: 0.4em; }
     }
   }
+}
+
+// ════════════════════════════════════════════════════════════
+// PYRAMIDE – gestufte Ebenen links, Beispiele rechts
+// Verwendung (oberste Ebene zuerst, .lvl1 = Basis, max. 5 Ebenen):
+//   ::: {.pyramid}
+//   ::: {.pyr-row .lvl5}
+//   [**Titel** [Untertitel]{.pyr-sub}]{.pyr-band} [Beispiele]{.pyr-ex}
+//   :::
+//   :::
+// ════════════════════════════════════════════════════════════
+
+.reveal .slides section .pyramid {
+  .pyr-row p {
+    display: grid;
+    grid-template-columns: 48% 1fr;
+    gap: 1.5em;
+    align-items: center;
+    margin: 0.2em 0;
+    font-size: 0.76em;
+  }
+
+  .pyr-band {
+    display: block;
+    margin: 0 auto;
+    padding: 0.55em 0;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.25;
+  }
+
+  .pyr-sub {
+    display: block;
+    font-weight: 300;
+    font-size: 0.85em;
+  }
+
+  .pyr-ex { color: #444; line-height: 1.35; }
+
+  // Von Navy (Spitze) zu CAIS-Blau (Basis). Jede Stufe verjüngt sich um
+  // 7.5 % pro Seite, sodass ihre Oberkante die Unterkante der darüberliegenden trifft.
+  .lvl4 .pyr-band { width: 55%;  background: mix($cais-blue, $cais-navy, 25%); clip-path: polygon(13.64% 0, 86.36% 0, 100% 100%, 0 100%); }
+  .lvl3 .pyr-band { width: 70%;  background: mix($cais-blue, $cais-navy, 50%); clip-path: polygon(10.71% 0, 89.29% 0, 100% 100%, 0 100%); }
+  .lvl2 .pyr-band { width: 85%;  background: mix($cais-blue, $cais-navy, 75%); clip-path: polygon(8.82% 0, 91.18% 0, 100% 100%, 0 100%); }
+  .lvl1 .pyr-band { width: 100%; background: $cais-blue;                    clip-path: polygon(7.5% 0, 92.5% 0, 100% 100%, 0 100%); }
+
+  // Spitze: echtes Dreieck. Bei gleicher Steigung braucht die 40 %-Basis
+  // 20 / 7.5 = 2.67 Stufenhöhen (Stufe = 3.41em → 9.1em); der Text sitzt unten.
+  .lvl5 .pyr-band {
+    width: 40%;
+    padding: 6.39em 0 0.4em;
+    background: $cais-navy;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  }
+  .lvl5 .pyr-ex { align-self: end; padding-bottom: 0.4em; }
 }
 
 // ════════════════════════════════════════════════════════════

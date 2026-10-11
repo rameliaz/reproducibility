@@ -4,6 +4,7 @@ project:
   resources:
     - img/
     - libs/
+    - .nojekyll
   render:
     - index.qmd
     - reproducibility.qmd
