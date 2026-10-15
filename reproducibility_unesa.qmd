@@ -6,7 +6,7 @@ author:
 institute:
   - "Research Data & Methods Team, Center for Advanced Internet Studies (CAIS)"
   - "Department of Psychology, Universitas Airlangga"
-event: "The 5th International Conference on Psychology and Education (ICPE) 2025"
+event: "The 5th International Conference on Psychology and Education (ICPE) 2025, Universitas Negeri Surabaya (UNESA)"
 format:
   cais-revealjs:
     logo: img/Transparent.png
@@ -49,21 +49,6 @@ You read a fascinating finding in a top journal and want to build your research 
 
 :::
 
-## How It Started (early 2010s)
-
-::: {.incremental}
-
-- **2011 — Bem's "precognition" paper**: a top journal (Journal of Personality and Social Psychology - JPSP) published evidence that people can *feel the future* ([Bem, 2011](https://psycnet.apa.org/record/2011-01894-001)) by using standard methods and standard statistics. If the method can "prove" the impossible, what does that say about the method?
-- [**2011 — The Stapel fraud case**](https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html): a prominent social psychologist was found to have fabricated data in dozens of published papers.
-- **2011 — "False-Positive Psychology"** ([Simmons, Nelson, & Simonsohn](https://journals.sagepub.com/doi/10.1177/0956797611417632)): showed that ordinary, small, undisclosed analytic choices can make *anything* statistically significant — they "demonstrated" that listening to a song makes people feel younger.
-- These events triggered a field-wide question: **how much of our literature can we actually trust?**
-
-:::
-
-## But the problem started much earlier than that
-
-![](img/history.JPG){fig-align="center" width="60%"}
-
 ## The Multi-Site Replication Projects
 
 ::: {.lead}
@@ -90,15 +75,15 @@ of 21 social-science studies from *Nature* & *Science* replicated — [Camerer e
 ::: {.infographic-item}
 [49%]{.stat}
 
-of 164 papers across 12 disciplines replicated — COS **SCORE project** ([Nature, April 2026](https://www.cos.io/about/news/large-scale-collaboration-releases-new-findings-on-research-credibility))
+of 164 papers across 12 disciplines replicated — COS **SCORE project** ([Tyner, et al., 2026](https://www.nature.com/articles/s41586-025-10078-y))
 :::
 :::
 :::
 
 ::: {.incremental}
 
-- Even when effects did replicate, they were on average **only about half as large** as originally reported (i.e., "[The Decline Effect](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full)") — SCORE found the same pattern again in 2026.
-- **SCORE is the largest check yet**: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). 
+- Even when effects did replicate, they were on average **only about half as large** as originally reported (i.e., "[The Decline Effect](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full)") — SCORE found the similar pattern again in 2026 (rounghly ~40% of the original effect sizes).
+- **SCORE is the largest check yet**: 865 researchers assessed 164 papers drawn from 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). 
 - This pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the **"[replication crisis](https://www.nature.com/articles/d41586-026-00955-5)."**
 
 :::
@@ -137,6 +122,22 @@ Following [Barba (2018)](https://arxiv.org/abs/1802.03311) and [The Turing Way](
 
 ![](img/matrix.JPG){fig-align="center"}
 
+## How It Started (early 2010s)
+
+::: {.incremental}
+
+- **2011 — Bem's "precognition" paper**: a top journal (Journal of Personality and Social Psychology - JPSP) published evidence that people can *feel the future* ([Bem, 2011](https://psycnet.apa.org/record/2011-01894-001)) by using standard methods and standard statistics. If the method can "prove" the impossible, what does that say about the method?
+- [**2011 — The Stapel fraud case**](https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html): a prominent [social psychologist](https://en.wikipedia.org/wiki/Diederik_Stapel#Investigations) was found to have fabricated data in dozens of published papers.
+- **2011 — "False-Positive Psychology"** ([Simmons, Nelson, & Simonsohn](https://journals.sagepub.com/doi/10.1177/0956797611417632)): showed that ordinary, small, undisclosed analytic choices can make *anything* statistically significant — they "demonstrated" that listening to a song ("*When I'm 64*") makes people feel younger.
+- These events triggered a field-wide question: **how much of our literature can we actually trust?**
+
+:::
+
+## But the problem started much earlier than that
+
+![](img/history.JPG){fig-align="center" width="60%"}
+
+
 ## The Really Uncomfortable Part
 
 ::: {.lead}
@@ -150,7 +151,7 @@ Let's forget collecting new data (i.e., replication) for a moment. Can we even r
 - [Crüwell et al. (2023)](https://journals.sagepub.com/doi/10.1177/09567976221140828) checked "open data" badges in *Psychological Science*: only 1 out of 14 articles was rated fully computationally reproducible.
 - The **SCORE** project ([Nature, 2026](https://www.nature.com/articles/s41586-026-10203-5)) re-ran the same analysis on the *original* data for 143 papers: 74% reproduced at least approximately, but only **54% precisely**. 
   + Data were available for just 24% of the 600 papers assessed, and success dropped to 11% (precise) when the dataset had to be rebuilt from public sources, versus 77% when both data and code were shared.
-- And this directly affects people's lives: the famous **Reinhart & Rogoff** austerity paper, which is widely used to justify real economic policies, contained a simple **Excel error** discovered only when a graduate student got the spreadsheet ([Herndon et al., 2014](https://academic.oup.com/cje/article/38/2/257/1714018)).
+- And this directly affects people's lives: the famous **Reinhart & Rogoff** austerity paper, which is widely used to justify real economic policies, contained a major **Excel error** discovered when a graduate student got the spreadsheet ([Herndon et al., 2014](https://academic.oup.com/cje/article/38/2/257/1714018)).
 
 :::
 
@@ -200,7 +201,7 @@ The Reproducibility Ladder: A Personal-Level Solution
 ## A "Reproducibility Ladder"🪜
 
 ::: {.lead}
-The four practices in this talk are *not supposed to be* a to-do list to finish in one year. They are a ladder you climb over years of your future professional career.
+The four practices in this talk are *not supposed to be* a to-do list to finish in one year. They are a ladder one may climb over years of their future professional career.
 :::
 
 ::: {.incremental}
@@ -255,13 +256,13 @@ This is the order **I personally** climbed it, over about 15 years of my scienti
 
 ### Rung 3 — Literate Programming
 
-**What it is:** text, analysis code, and output woven into *one* document that regenerates itself. Numbers are computed, never typed.
+**What it is:** text, analysis code, and output woven into *one* document that regenerates itself. Numbers are computed, never typed/copied-pasted.
 
 **What it fixes:** copy-paste errors. Roughly **half** of published psychology papers contain at least one inconsistent statistic ([Nuijten et al., 2016](https://link.springer.com/article/10.3758/s13428-015-0664-2)). The document itself becomes the audit trail.
 
-**In my own work:** [`grm-tutorial-paper`](https://github.com/rameliaz/grm-tutorial-paper) is the repository behind a [published paper](https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265) written entirely in Quarto, with Git keeping the full history. These slides are literate programming too😉
+**In my own work:** [`grm-tutorial-paper`](https://github.com/rameliaz/grm-tutorial-paper) is the repository behind a [published paper](https://onlinelibrary.wiley.com/doi/full/10.1002/ijop.13265) written entirely in `quarto`, with `git` keeping the full history. These slides are literate programming too😉
 
-**Start with:** [Quarto](https://quarto.org) or [Jupyter](https://jupyter.org), Git, relative paths (`here::here()`), and `renv` or `groundhog` to record your package versions (if you are using <i class="fa-brands fa-r-project"></i>).
+**Start with:** [Quarto](https://quarto.org) or [Jupyter](https://jupyter.org), `git`, relative paths (`here::here()`), and `renv` or `groundhog` to record your package versions (if you are using <i class="fa-brands fa-r-project"></i>).
 :::
 ::: {.col-item}
 [<i class="fa-solid fa-file-signature"></i>]{.col-icon}
@@ -402,13 +403,13 @@ Culture changes when good practice becomes possible, easy, normative, rewarding,
 ## Where Do *You* Sit in the Pyramid? {.text-slide-bg}
 
 ::: {.lead}
-Most of us hold more than one role, and each role is a lever.
+Most of us hold more than one role, and each role is an opportunity to contribute to changing the system.
 :::
 
 ::: {.content-box}
 - **As a researcher** (*normative*): pick *one* rung for your next study, such as a data management plan or a nine-question pre-registration, and do it where others can see it. Seeing colleagues do it is how a practice becomes normal.
 - **As a reviewer** (*normative*): ask to see the data and code. You are allowed to request this ([Peer Reviewers' Openness Initiative](https://www.opennessinitiative.org)).
-- **As a supervisor or lecturer** (*normative*): teach the workflow, not only the statistics. This allows students to learn the logic of computational thinking.
+- **As a supervisor or lecturer** (*normative*): teach the workflow as well as the statistics, and give equal appreciation to significant and non-significant results. This enables students to grasp the logic of computational thinking and adopt the mindset that all results have theoretical value.
 - **As an editor** (*rewarding, required*): offer Registered Reports, adopt the [TOP Guidelines](https://www.cos.io/initiatives/top-guidelines), and recognise open practices with badges.
 - **As a policymaker** (*rewarding*): count open, reproducible work in hiring, promotion, and grants, not just the number of publications ([CoARA](https://coara.eu)).
 :::
