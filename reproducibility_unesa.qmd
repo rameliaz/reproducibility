@@ -180,10 +180,10 @@ Ensuring that our results are reproducible gives us more confidence in our work.
 
 ::: {.content-box}
 - **Your closest collaborator is you, six months ago** and past-you does not answer Whatsapp chats. A reproducible workflow means you can always retrace your own steps.
-- **Errors get caught early**, before they end up in your dissertation, your defense, or a retraction.
+- **Errors get caught early**, before they end up in your research papers, or worse, a retraction.
 - **International reviewers, supervisors, and committees increasingly expect it**. Funders and journals now routinely require data, code, and analysis plans.
-- **It makes you more efficient**. Re-running an analysis after your supervisor/reviewers ask "*please just add this one covariate*" takes one click instead of one week.
-- **It builds trust in your work**. Reproducible research gets reused, cited, and extended.
+- **It makes you more efficient**. Re-running an analysis after your collaborator/reviewers ask "*please just add this one covariate*" takes one click instead of one week digging the data and codes.
+- **It builds trust in your work**. Reproducible research gets reused, cited, and extended by the research community.
 :::
 
 ## {.section-slide}
@@ -200,7 +200,7 @@ The Reproducibility Ladder: A Personal-Level Solution
 ## A "Reproducibility Ladder"🪜
 
 ::: {.lead}
-The four practices in this talk are *not supposed to be* a to-do list to finish this semester, or even the whole PhD program. They are a ladder you climb over years of your future professional career.
+The four practices in this talk are *not supposed to be* a to-do list to finish in one year. They are a ladder you climb over years of your future professional career.
 :::
 
 ::: {.incremental}
