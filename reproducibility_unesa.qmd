@@ -98,7 +98,7 @@ of 164 papers across 12 disciplines replicated — COS **SCORE project** ([Natur
 ::: {.incremental}
 
 - Even when effects did replicate, they were on average **only about half as large** as originally reported (i.e., "[The Decline Effect](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02874/full)") — SCORE found the same pattern again in 2026.
-- **SCORE is the largest check yet**: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). Reproducing published analyses on the *original* data succeeded [only 54% of the time](https://www.nature.com/articles/s41586-026-10203-5).
+- **SCORE is the largest check yet**: 865 researchers assessed 3,900 papers (2009–2018, 62 journals, spanning economics, psychology, political science, sociology, and more). 
 - This pattern, across psychology, economics, and beyond, now confirmed at scale, is what the media dubbed the **"[replication crisis](https://www.nature.com/articles/d41586-026-00955-5)."**
 
 :::
@@ -148,6 +148,8 @@ Let's forget collecting new data (i.e., replication) for a moment. Can we even r
 - [Hardwicke et al. (2018)](https://royalsocietypublishing.org/doi/10.1098/rsos.180448) tried to reproduce results from papers with *mandatory open data* in the journal *Cognition*: only 11 of 35 papers were reproducible without help from the original authors.
 - [Artner et al. (2021)](https://psycnet.apa.org/record/2020-81352-001) could reproduce only ~70% of major statistical claims from published psychology articles and some only after considerable detective work.
 - [Crüwell et al. (2023)](https://journals.sagepub.com/doi/10.1177/09567976221140828) checked "open data" badges in *Psychological Science*: only 1 out of 14 articles was rated fully computationally reproducible.
+- The **SCORE** project ([Nature, 2026](https://www.nature.com/articles/s41586-026-10203-5)) re-ran the same analysis on the *original* data for 143 papers: 74% reproduced at least approximately, but only **54% precisely**. 
+  + Data were available for just 24% of the 600 papers assessed, and success dropped to 11% (precise) when the dataset had to be rebuilt from public sources, versus 77% when both data and code were shared.
 - And this directly affects people's lives: the famous **Reinhart & Rogoff** austerity paper, which is widely used to justify real economic policies, contained a simple **Excel error** discovered only when a graduate student got the spreadsheet ([Herndon et al., 2014](https://academic.oup.com/cje/article/38/2/257/1714018)).
 
 :::
