@@ -75,7 +75,7 @@ of 21 social-science studies from *Nature* & *Science* replicated — [Camerer e
 ::: {.infographic-item}
 [49%]{.stat}
 
-of 164 papers across 12 disciplines replicated — COS **SCORE project** ([Tyner, et al., 2026](https://www.nature.com/articles/s41586-025-10078-y))
+of 164 papers across 6 disciplines replicated — COS **SCORE project** ([Tyner, et al., 2026](https://www.nature.com/articles/s41586-025-10078-y))
 :::
 :::
 :::
